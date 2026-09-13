@@ -1,0 +1,449 @@
+pubmed_id	isolate_name	accession	accession_type	organism	drug_standardized	drug_raw	mic_operator	mic_value	mic_units	sir_call	breakpoint_standard	laboratory_typing_method	source_location	confidence
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.06	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	azithromycin	azithromycin	=	256.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	azithromycin	azithromycin	=	2.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	751304	SAMEA5976374	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	azithromycin	azithromycin	=	256.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1020163	SAMEA5976348	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	2554636	SAMEA5976345	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0607F10	SAMEA5976342	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405I	SAMEA5976373	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	azithromycin	azithromycin	=	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	azithromycin	azithromycin	>	512.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	2.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60689	SAMEA5976340	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	BSPR-P-8208	SAMEA5976379	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	397607	SAMEA5976380	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	311174	SAMN09433803	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	254833B	SAMEA5976363	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70364	SAMEA5976358	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70361	SAMEA5976357	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	53306	SAMEA5976375	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	azithromycin	azithromycin	=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70343	SAMEA5976339	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	196804	SAMEA5976370	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H061980337	SAMEA5976366	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70252	SAMEA5976341	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	74926	SAMEA5976383	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	>	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70362	SAMEA5976359	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	azithromycin	azithromycin	=	128.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	azithromycin	azithromycin	=	128.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.06	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	azithromycin	azithromycin	=	16.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	679052	SAMN10905410	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	<=	0.5	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.25	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H04340470	SAMEA5976352	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	201504	SAMEA5976371	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70296	SAMEA5976338	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70349	SAMEA5976354	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=	0.06	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H041100279	SAMEA5976351	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	241825	SAMN09422756	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70367	SAMEA5976361	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	747829	SAMN11885456	BioSample	Salmonella enterica	azithromycin	azithromycin	=	8.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ampicillin	ampicillin	<=	4.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	<=	0.03	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	850890	SAMN13506113	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	ampicillin	ampicillin	>	64.0	mg/L		CLSI	MIC	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	746785	SAMN12009231	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	50142	SAMEA5976347	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	186605	SAMN11096947	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	64206	SAMEA5976376	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	95907	SAMEA5976378	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	553780	SAMN09566346	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H043660496	SAMEA5976353	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	24994	SAMN03475765	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	64354	SAMEA5976382	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H044300234	SAMEA5976364	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	550813	SAMN10458659	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0442400362	SAMEA5976355	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70366	SAMEA5976362	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Resistant	CLSI		bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H071600082	SAMEA5976368	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	1035531	SAMEA5976350	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	1028	SAMEA5976381	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	624445	SAMN10272281	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	643706	SAMEA5976377	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0507H39181	SAMEA5976344	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	140405II	SAMEA5976372	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	728837	SAMN12039647	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	70360	SAMEA5976356	BioSample	Salmonella enterica	azithromycin	azithromycin	=		µg/mL	Susceptible	CLSI		bv_brc_genome_amr	high
+37316492	70365	SAMEA5976360	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Intermediate	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	0508H45184	SAMEA5976346	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Resistant	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	137139	SAMN09426733	BioSample	Salmonella enterica	ceftriaxone	ceftriaxone	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	H0637404447	SAMEA5976367	BioSample	Salmonella enterica	ampicillin	ampicillin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high
+37316492	60329	SAMEA5976349	BioSample	Salmonella enterica	ciprofloxacin	ciprofloxacin	=		µg/mL	Susceptible	clsi	Broth dilution	bv_brc_genome_amr	high

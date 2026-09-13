@@ -1,0 +1,16 @@
+{
+  "id": "34515028",
+  "pmid": 34515028,
+  "pmcid": "PMC8494480",
+  "doi": "10.1016/S2666-5247(21)00112-7",
+  "category": "cat3_messy_mapping",
+  "title": "Multiple introductions of multidrug-resistant typhoid associated with acute international travel",
+  "journal": "Lancet Microbe",
+  "year": 2021,
+  "description": "AST matrices use clinical isolate codes (e.g. H12...), while sequence accessions (ERR/SAMN) are located across separate supplementary spreadsheets.",
+  "primary_table": "elife-67852-supp1.xlsx",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8494480/bin/elife-67852-supp1.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8494480/bin/elife-67852-supp2.xlsx"
+  ]
+}

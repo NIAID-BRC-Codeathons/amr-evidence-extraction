@@ -1,0 +1,16 @@
+{
+  "id": "37316492",
+  "pmid": 37316492,
+  "pmcid": "PMC10267216",
+  "doi": "10.1038/s41467-023-38902-6",
+  "category": "cat3_messy_mapping",
+  "title": "A global genomic analysis of Salmonella Concord reveals lineages with high antimicrobial resistance",
+  "journal": "Nat Commun",
+  "year": 2023,
+  "description": "Supplementary files 41467_2023_38902_MOESM4_ESM.csv & MOESM5_ESM.xlsx where historical strain codes must be joined to BioSamples.",
+  "primary_table": "41467_2023_38902_MOESM5_ESM.xlsx",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267216/bin/41467_2023_38902_MOESM5_ESM.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267216/bin/41467_2023_38902_MOESM4_ESM.csv"
+  ]
+}
