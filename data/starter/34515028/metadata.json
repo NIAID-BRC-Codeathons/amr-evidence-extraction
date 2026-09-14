@@ -10,7 +10,19 @@
   "description": "AST matrices use clinical isolate codes (e.g. H12...), while sequence accessions (ERR/SAMN) are located across separate supplementary spreadsheets.",
   "primary_table": "elife-67852-supp1.xlsx",
   "supp_files": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8494480/bin/elife-67852-supp1.xlsx",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8494480/bin/elife-67852-supp2.xlsx"
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp1.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp10.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp11.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp12.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp13.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp2.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp3.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp4.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp5.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp6.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp7.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp8.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp9.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-transrepform1.docx"
   ]
 }

@@ -9,5 +9,7 @@
   "year": 2018,
   "description": "Negative Control 2: Describes AST percentages and disk diffusion resistance in text prose and summary proportions only; lacks per-isolate tabular MIC data.",
   "primary_table": "None",
-  "supp_files": []
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/6007101/bin/AEM.02829-17_zam012188570s1.pdf"
+  ]
 }

@@ -1,0 +1,210 @@
+Appl Environ Microbiol
+Appl. Environ. Microbiol
+83
+aem
+7605801
+AEM
+Applied and Environmental Microbiology
+0099-2240
+1098-5336
+American Society for Microbiology (ASM)
+PMC6007101
+PMC6007101.1
+6007101
+6007101
+29678910
+10.1128/AEM.02829-17
+02829-17
+1
+Environmental Microbiology
+Serotype Diversity and Antimicrobial Resistance among
+Salmonella enterica
+Isolates from Patients at an Equine Referral Hospital
+Diversity of
+Salmonella enterica
+Isolates from Equine Patients
+Leon et al.
+https://orcid.org/0000-0002-0041-4495
+Leon
+I. M.
+a
+https://orcid.org/0000-0001-9154-8909
+Lawhon
+S. D.
+a
+https://orcid.org/0000-0002-1152-0664
+Norman
+K. N.
+b
+Threadgill
+D. S.
+a
+http://orcid.org/0000-0001-5790-3137
+Ohta
+N.
+a
+Vinasco
+J.
+a
+https://orcid.org/0000-0002-0538-5961
+Scott
+H. M.
+a
+a
+Department of Veterinary Pathobiology, Texas A&M University, College Station, Texas, USA
+b
+Department of Veterinary Integrative Biosciences, Texas A&M University, College Station, Texas, USA
+Stabb
+Eric V.
+Editor
+University of Georgia
+Address correspondence to H. M. Scott,
+hmscott@cvm.tamu.edu
+.
+Citation
+Leon IM, Lawhon SD, Norman KN, Threadgill DS, Ohta N, Vinasco J, Scott HM. 2018. Serotype diversity and antimicrobial resistance among
+Salmonella enterica
+isolates from patients at an equine referral hospital. Appl Environ Microbiol 84:e02829-17.
+https://doi.org/10.1128/AEM.02829-17
+.
+20
+4
+2018
+18
+6
+2018
+1
+7
+2018
+84
+13
+315493
+e02829-17
+20
+12
+2017
+9
+4
+2018
+18
+12
+2018
+18
+12
+2018
+28
+06
+2018
+18
+12
+2018
+Copyright © 2018 American Society for Microbiology.
+2018
+American Society for Microbiology
+All Rights Reserved
+.
+ABSTRACT
+Although
+Salmonella enterica
+can produce life-threatening colitis in horses, certain serotypes are more commonly associated with clinical disease. Our aim was to evaluate the proportional morbidity attributed to different serotypes, as well as the phenotypic and genotypic antimicrobial resistance (AMR) of
+Salmonella
+isolates from patients at an equine referral hospital in the southern United States. A total of 255
+Salmonella
+isolates was obtained from clinical samples of patients admitted to the hospital between 2007 and 2015. Phenotypic resistance to 14 antibiotics surveilled by the U.S. National Antimicrobial Resistance Monitoring System was determined using a commercially available panel. Whole-genome sequencing was used to identify serotypes and genotypic AMR. The most common serotypes were
+Salmonella enterica
+serotype Newport (18%),
+Salmonella enterica
+serotype Anatum (15.2%), and
+Salmonella enterica
+serotype Braenderup (11.8%). Most (
+n
+= 219) of the isolates were pansusceptible, while 25 were multidrug resistant (≥3 antimicrobial classes). Genes encoding beta-lactam resistance, such as
+bla
+CMY-2
+,
+bla
+SHV-12
+,
+bla
+CTX-M-27
+, and
+bla
+TEM-1B
+, were detected. The
+qnr
+B2 and
+aac(6′)-Ib-cr
+genes were present in isolates with reduced susceptibility to ciprofloxacin. Genes encoding resistance to gentamicin (
+aph(3′)-Ia
+,
+aac(6′)-IIc
+), streptomycin (
+str
+A and
+str
+B), sulfonamides (
+sul1
+), trimethoprim (
+dfrA
+), phenicols (
+catA
+), tetracyclines [
+tet
+(A) and
+tet
+(E)], and macrolides [
+ere
+(A)] were also identified. The main predicted incompatibility plasmid type was I1 (10%). Core genome-based analyses revealed phylogenetic associations between isolates of common serotypes. The presence of AMR
+Salmonella
+in equine patients increases the risk of unsuccessful treatment and causes concern for potential zoonotic transmission to attending veterinary personnel, animal caretakers, and horse owners. Understanding the epidemiology of
+Salmonella
+in horses admitted to referral hospitals is important for the prevention, control, and treatment of salmonellosis.
+IMPORTANCE
+In horses, salmonellosis is a leading cause of life-threatening colitis. At veterinary teaching hospitals, nosocomial outbreaks can increase the risk of zoonotic transmission, lead to restrictions on admissions, impact hospital reputation, and interrupt educational activities. The antimicrobials most often used in horses are included in the 5th revision of the World Health Organization's list of critically important antimicrobials for human medicine. Recent studies have demonstrated a trend of increasing bacterial resistance to drugs commonly used to treat
+Salmonella
+infections. In this study, we identify temporal trends in the distribution of
+Salmonella
+serotypes and their mechanisms of antimicrobial resistance; furthermore, we are able to determine the likely origin of several temporal clusters of infection by using whole-genome sequencing. These data can be used to focus strategies to better contain the dissemination and enhance the mitigation of
+Salmonella
+infections and to provide evidence-based policies and guidelines to steward antimicrobial use in veterinary medicine.
+KEYWORDS
+Salmonella
+antibiotic resistance
+antimicrobial agents
+horses
+nosocomial
+whole-genome sequencing
+pmc-status-qastatus
+0
+pmc-status-live
+yes
+pmc-status-embargo
+no
+pmc-status-released
+yes
+pmc-prop-open-access
+no
+pmc-prop-olf
+no
+pmc-prop-manuscript
+no
+pmc-prop-legally-suppressed
+no
+pmc-prop-has-pdf
+yes
+pmc-prop-has-supplement
+yes
+pmc-prop-pdf-only
+no
+pmc-prop-suppress-copyright
+no
+pmc-prop-is-real-version
+no
+pmc-prop-is-scanned-article
+no
+pmc-prop-preprint
+no
+pmc-prop-in-epmc
+yes
+cover-date
+July 2018

@@ -10,6 +10,8 @@
   "description": "Negative Control 1: Supplementary file 'Supplementary Tables.xlsx' reports qualitative disk/agar diffusion SIR only, NO quantitative numeric MIC values.",
   "primary_table": "Supplementary Tables.xlsx",
   "supp_files": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8767345/bin/Supplementary%20Tables.xlsx"
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s001.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s002.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s003.xlsx"
   ]
 }

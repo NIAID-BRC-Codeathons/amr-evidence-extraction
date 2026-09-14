@@ -10,7 +10,12 @@
   "description": "Supplementary files 41467_2023_38902_MOESM4_ESM.csv & MOESM5_ESM.xlsx where historical strain codes must be joined to BioSamples.",
   "primary_table": "41467_2023_38902_MOESM5_ESM.xlsx",
   "supp_files": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267216/bin/41467_2023_38902_MOESM5_ESM.xlsx",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267216/bin/41467_2023_38902_MOESM4_ESM.csv"
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM1_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM2_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM3_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM4_ESM.csv",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM5_ESM.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM6_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM7_ESM.xlsx"
   ]
 }
