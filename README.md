@@ -42,3 +42,30 @@ Team assignments are still being finalized. Participants can review their projec
 ## Working here
 
 This repository is the team's working space for the codeathon — code, notebooks, data pointers, and notes. Replace this README with the real thing once the charter is written. Team members get access through the [NIAID-BRC-Codeathons](https://github.com/NIAID-BRC-Codeathons) organization; accept the invitation if you have not already.
+
+## Repository Structure
+
+```
+.
+|-- data/              # Input literature corpora and benchmark datasets
+|   `-- starter/       # Curated evaluation papers organized by PMID
+|-- docs/              # Project documentation and developer guides
+|   |-- paper_classification.md
+|   `-- testing.md
+|-- src/               
+|   `-- amr_excel_extraction/  # Python source code for extraction package
+|       |-- excel_extractor.py
+|       |-- llm.py
+|       `-- schemas.py
+`-- tests/             # Layered unit and integration test suite
+    |-- conftest.py
+    `-- test_excel_extractor.py
+```
+
+### Directory Details
+
+- **`data/`**: Input literature files and evaluation benchmarks. The `data/starter/` directory contains curated evaluation papers organized by PMID, including raw supplementary files (Excel, XML, PDF), paper metadata, and BV-BRC ground truth TSV files where available.
+- **`docs/`**: Project documentation, including corpus categorization and the testing guide ([docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md)).
+- **`src/`**: Source code. Currently contains only the `amr_extraction` package, implementing the hybrid LLM sheet/column mapping and deterministic table unpivoting pipeline.
+- **`tests/`**: Contains tests. See [docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md) for execution instructions.
+
