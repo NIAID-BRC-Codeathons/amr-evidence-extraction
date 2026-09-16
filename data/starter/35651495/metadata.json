@@ -1,0 +1,17 @@
+{
+  "id": "35651495",
+  "pmid": 35651495,
+  "pmcid": "PMC9150820",
+  "doi": "10.1128/spectrum.02647-21",
+  "category": "cat2_xlsx_supplement",
+  "title": "Whole Genome Sequencing, Antibiotic Resistance, and Epidemiology Features of Nontyphoidal Salmonella",
+  "journal": "Microbiol Spectr",
+  "year": 2022,
+  "description": "Frontiers/Spectrum study with Table_3.XLSX containing AST phenotypic MIC data for 260 isolates across our 5-drug surveillance panel.",
+  "primary_table": "Table_3.XLSX",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/9150820/bin/Table_1.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/9150820/bin/Table_2.XLS",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/9150820/bin/Table_3.XLSX"
+  ]
+}

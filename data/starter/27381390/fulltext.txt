@@ -1,0 +1,158 @@
+Antimicrob Agents Chemother
+Antimicrob. Agents Chemother
+82
+aac
+0315061
+AAC
+Antimicrobial Agents and Chemotherapy
+0066-4804
+1098-6596
+American Society for Microbiology (ASM)
+PMC4997858
+PMC4997858.1
+4997858
+4997858
+27381390
+10.1128/AAC.01030-16
+01030-16
+1
+Epidemiology and Surveillance
+Whole-Genome Sequencing for Detecting Antimicrobial Resistance in Nontyphoidal
+Salmonella
+WGS of
+Salmonella
+McDermott et al.
+McDermott
+Patrick F.
+a
+Tyson
+Gregory H.
+a
+Kabera
+Claudine
+a
+Chen
+Yuansha
+a
+Li
+Cong
+a
+Folster
+Jason P.
+b
+Ayers
+Sherry L.
+a
+Lam
+Claudia
+a
+Tate
+Heather P.
+a
+Zhao
+Shaohua
+a
+a
+Division of Animal and Food Microbiology, Office of Research, Center for Veterinary Medicine, U.S. Food and Drug Administration, Laurel, Maryland, USA
+b
+Division of Foodborne, Waterborne, and Environmental Diseases, Centers for Disease Control and Prevention, Atlanta, Georgia, USA
+Address correspondence to Patrick F. McDermott,
+Patrick.McDermott@fda.hhs.gov
+.
+Citation
+McDermott PF, Tyson GH, Kabera C, Chen Y, Li C, Folster JP, Ayers SL, Lam C, Tate HP, Zhao S. 2016. Whole-genome sequencing for detecting antimicrobial resistance in nontyphoidal
+Salmonella
+. Antimicrob Agents Chemother 60:5515–5520. doi:
+10.1128/AAC.01030-16
+.
+5
+7
+2016
+22
+8
+2016
+9
+2016
+60
+9
+274634
+5515
+5520
+13
+5
+2016
+31
+5
+2016
+27
+6
+2016
+01
+03
+2017
+01
+03
+2017
+14
+09
+2016
+01
+03
+2017
+Copyright © 2016, American Society for Microbiology. All Rights Reserved.
+2016
+American Society for Microbiology
+Laboratory-based
+in vitro
+antimicrobial susceptibility testing is the foundation for guiding anti-infective therapy and monitoring antimicrobial resistance trends. We used whole-genome sequencing (WGS) technology to identify known antimicrobial resistance determinants among strains of nontyphoidal
+Salmonella
+and correlated these with susceptibility phenotypes to evaluate the utility of WGS for antimicrobial resistance surveillance. Six hundred forty
+Salmonella
+of 43 different serotypes were selected from among retail meat and human clinical isolates that were tested for susceptibility to 14 antimicrobials using broth microdilution. The MIC for each drug was used to categorize isolates as susceptible or resistant based on Clinical and Laboratory Standards Institute clinical breakpoints or National Antimicrobial Resistance Monitoring System (NARMS) consensus interpretive criteria. Each isolate was subjected to whole-genome shotgun sequencing, and resistance genes were identified from assembled sequences. A total of 65 unique resistance genes, plus mutations in two structural resistance loci, were identified. There were more unique resistance genes (
+n =
+59) in the 104 human isolates than in the 536 retail meat isolates (
+n =
+36). Overall, resistance genotypes and phenotypes correlated in 99.0% of cases. Correlations approached 100% for most classes of antibiotics but were lower for aminoglycosides and beta-lactams. We report the first finding of extended-spectrum β-lactamases (ESBLs) (
+bla
+CTX-M1
+and
+bla
+SHV2a
+) in retail meat isolates of
+Salmonella
+in the United States. Whole-genome sequencing is an effective tool for predicting antibiotic resistance in nontyphoidal
+Salmonella
+, although the use of more appropriate surveillance breakpoints and increased knowledge of new resistance alleles will further improve correlations.
+This work was supported by the U.S. Food and Drug Administration with internal funds as part of routine work.
+pmc-status-qastatus
+0
+pmc-status-live
+yes
+pmc-status-embargo
+no
+pmc-status-released
+yes
+pmc-prop-open-access
+no
+pmc-prop-olf
+no
+pmc-prop-manuscript
+no
+pmc-prop-legally-suppressed
+no
+pmc-prop-has-pdf
+yes
+pmc-prop-has-supplement
+yes
+pmc-prop-pdf-only
+no
+pmc-prop-suppress-copyright
+no
+pmc-prop-is-real-version
+no
+pmc-prop-is-scanned-article
+no
+pmc-prop-preprint
+no
+pmc-prop-in-epmc
+yes

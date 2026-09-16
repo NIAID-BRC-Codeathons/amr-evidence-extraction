@@ -1,0 +1,2869 @@
+pmc
+Microb Genom
+Microb Genom
+3160
+microgen
+101671820
+mgen
+Microbial Genomics
+2057-5858
+Microbiology Society
+PMC8767345
+PMC8767345.1
+8767345
+8767345
+34907895
+10.1099/mgen.0.000725
+000725
+1
+Research Articles
+Pathogens and Epidemiology
+Genomic diversity of antimicrobial resistance in non-typhoidal
+Salmonella
+in Victoria, Australia
+http://mgen.microbiologyresearch.org
+https://orcid.org/0000-0002-7058-6022
+Sia
+Cheryll M.
+1
+*
+https://orcid.org/0000-0002-0557-0518
+Baines
+Sarah L.
+1
+Valcanis
+Mary
+2
+Lee
+Darren Y. J.
+1
+https://orcid.org/0000-0002-2257-8781
+Gonçalves da Silva
+Anders
+2
+https://orcid.org/0000-0002-0096-9474
+Ballard
+Susan A.
+2
+Easton
+Marion
+3
+Seemann
+Torsten
+2
+Howden
+Benjamin P.
+1
+2
+Ingle
+Danielle J.
+1
+4
+*
+†
+https://orcid.org/0000-0001-7363-6665
+Williamson
+Deborah A.
+1
+2
+5
+*
+†
+1
+​
+Department of Microbiology and Immunology
+,
+The University of Melbourne at The Peter Doherty Institute for Infection and Immunity
+,
+Melbourne, Victoria
+,
+Australia
+2
+​
+Microbiological Diagnostic Unit Public Health Laboratory
+,
+Department of Microbiology & Immunology, The University of Melbourne at The Peter Doherty Institute for Infection and Immunity
+,
+Melbourne, Victoria
+,
+Australia
+3
+​
+Department of Health
+,
+Victoria
+,
+Australia
+4
+​
+National Centre for Epidemiology and Population Health
+,
+The Australian National University
+,
+Canberra
+,
+Australia
+5
+​
+Department of Microbiology
+,
+Royal Melbourne Hospital
+,
+Melbourne
+,
+Australia
+*Correspondence:
+Cheryll M. Sia,
+cheryll.sia@student.unimelb.edu.au
+*Correspondence:
+Deborah A. Williamson,
+deborah.williamson@unimelb.edu.au
+*Correspondence:
+Danielle J. Ingle,
+danielle.ingle@unimelb.edu.au
+†
+These authors share senior authorship.
+2021
+15
+12
+2021
+7
+12
+398817
+000725
+29
+6
+2021
+21
+10
+2021
+15
+12
+2021
+19
+01
+2022
+02
+09
+2025
+© 2021 The Authors
+2021
+https://creativecommons.org/licenses/by/4.0/
+This is an open-access article distributed under the terms of the Creative Commons Attribution License. This article was made open access via a Publish and Read agreement between the Microbiology Society and the corresponding author’s institution.
+Non-typhoidal
+Salmonella
+(NTS) is the second most common cause of foodborne bacterial gastroenteritis in Australia with antimicrobial resistance (AMR) increasing in recent years. Whole-genome sequencing (WGS) provides opportunities for
+in silico
+detection of AMR determinants. The objectives of this study were two-fold: (1) establish the utility of WGS analyses for inferring phenotypic resistance in NTS, and (2) explore clinically relevant genotypic AMR profiles to third generation cephalosporins (3GC) in NTS lineages. The concordance of 2490 NTS isolates with matched WGS and phenotypic susceptibility data against 13 clinically relevant antimicrobials was explored.
+In silico
+serovar prediction and typing was performed on assembled reads and interrogated for known AMR determinants. The surrounding genomic context, plasmid determinants and co-occurring AMR patterns were further investigated for multidrug resistant serovars harbouring
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+. Our data demonstrated a high correlation between WGS and phenotypic susceptibility testing. Phenotypic-genotypic concordance was observed between 2440/2490 (98.0 %) isolates, with overall sensitivity and specificity rates >98 % and positive and negative predictive values >97 %. The most common AMR determinants were
+bla
+TEM-1
+,
+sul2
+,
+tet
+(A),
+strA-strB
+and
+floR
+. Phenotypic resistance to cefotaxime and azithromycin was low and observed in 6.2 % (151/2486) and 0.9 % (16/1834) of the isolates, respectively. Several multi-drug resistant NTS lineages were resistant to 3GC due to different genetic mechanisms including
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+. This study shows WGS can enhance existing AMR surveillance in NTS datasets routinely produced in public health laboratories to identify emerging AMR in NTS. These approaches will be critical for developing capacity to detect emerging public health threats such as resistance to 3GC.
+Salmonella
+antimicrobial resistance
+whole genome sequencing
+public health surveillance
+National Health and Medical Research Council
+GNT1196103
+BenjaminP Howden
+National Health and Medical Research Council
+GNT1195210
+DanielleJ Ingle
+National Health and Medical Research Council
+GNT1174555
+DeborahA Williamson
+National Health and Medical Research Council
+APP1149991
+BenjaminP Howden
+National Health and Medical Research Council
+APP1129770
+BenjaminP Howden
+pmc-status-qastatus
+0
+pmc-status-live
+yes
+pmc-status-embargo
+no
+pmc-status-released
+yes
+pmc-prop-open-access
+yes
+pmc-prop-olf
+no
+pmc-prop-manuscript
+no
+pmc-prop-legally-suppressed
+no
+pmc-prop-has-pdf
+yes
+pmc-prop-has-supplement
+yes
+pmc-prop-pdf-only
+no
+pmc-prop-suppress-copyright
+no
+pmc-prop-is-real-version
+no
+pmc-prop-is-scanned-article
+no
+pmc-prop-preprint
+no
+pmc-prop-in-epmc
+yes
+pmc-license-ref
+CC BY
+OpenAccessEmbargo
+0
+Data Summary
+All FASTQ paired-end reads were submitted to National Centre for Biotechnology Information (NCBI) and are available under BioProject
+PRJNA319593
+. Supplementary Material is available at Figshare:
+https://doi.org/10.6084/m9.figshare.16556748.v1
+[
+1
+] .
+Impact Statement
+In this study, we demonstrated the utilisation of whole genome sequencing in public health in Australia. We evaluated the concordance of inferring phenotypic resistance from genomic data in non-typhoidal
+Salmonella
+(NTS) from Victoria, Australia collected over the past two decades. We subsequently identified prevalent and emerging antimicrobial resistance (AMR) determinants and profiles associated with NTS serovars. Further, we characterised the genomic context of multidrug resistant NTS isolates harbouring third generation cephalosporin resistance. This study illustrates how genomics has redefined public health surveillance and provides an insight into the population of AMR non-typhoidal
+Salmonella
+circulating Australia.
+Introduction
+Salmonellosis is a major gastrointestinal disease, estimated to cause 93.8 million infections in humans globally per year [
+2, 3
+]. The causative agents are serovars of non-typhoidal
+Salmonella enterica
+subspecies
+enterica
+(NTS), which have broad animal and environmental reservoirs [
+4, 5
+]. Of concern, antimicrobial resistance (AMR) has been increasingly reported in NTS serovars [
+6, 7
+]. Due to the global nature of the food supply chain, AMR NTS, including multi-drug resistant (MDR; defined as resistance to ≥3 antimicrobial classes [
+8
+]) NTS, has emerged as a global public health threat [
+5–7, 9
+].
+One of the cornerstones in understanding and potentially interrupting the dissemination of AMR NTS is timely and effective surveillance. For decades, phenotypic antimicrobial susceptibility testing (AST) has been used to monitor AMR in NTS [
+10–12
+]. Increasingly, whole genome sequencing (WGS) has been used to complement, or even replace phenotypic susceptibility testing for NTS in public health laboratories [
+11, 13, 14
+]. This genomic information enables deeper exploration into the emergence and evolution of distinct serovars, and the genetic context of AMR mechanisms [
+11, 15
+]. Previous studies have demonstrated strong concordance between genotypic and phenotypic susceptibility testing for NTS [
+13, 14, 16
+], although studies have differed in the phenotypic methods used (e.g. broth microdilution vs agar dilution) and interpretive criteria applied (e.g. Clinical and Laboratory Standards Institute, CLSI vs European Committee on Antimicrobial Susceptibility Testing, EUCAST). As such, results from published studies can be challenging to compare and may not directly extrapolate to other settings.
+Australia has one of the highest rates of salmonellosis in the developed world, with recent work highlighting the potential for ‘incursions’ of MDR NTS lineages into Australia [
+6
+]. The serious threat posed by MDR NTS, in particular the increasing prevalence of plasmid-mediated AmpC (PMAC) and extended-spectrum beta-lactamase (ESBL) producing NTS strains conferring third-generation cephalosporins (3GCs) resistance [
+17, 18
+], has been recognised as one that requires novel strategies for enhanced surveillance and control of emerging threats [
+19
+]. To date however, there are limited data assessing the utility of genomics-based surveillance of NTS in Australia, specifically in relation to genotypic AMR surveillance. Accordingly, we sought to (i) assess the ability of genotypic AMR detection to predict phenotypic susceptibility and resistance in the context of a large collection of NTS, and (ii) to identify and investigate emerging 3GCs resistance profiles associated with specific NTS lineages. Our data provides valuable information on the emergence and spread of AMR NTS serovars, and further highlights the utility of genomics for AMR surveillance.
+Methods
+Setting and data sources
+In Australia, salmonellosis is a notifiable disease. The Microbiological Diagnostic Unit Public Health Laboratory (MDU PHL) is the bacterial reference laboratory for the State of Victoria in Australia. Phenotypic antimicrobial susceptibility testing was routinely performed on all
+Salmonella
+isolates, while WGS was only performed when requested until routine WGS commenced in mid-2018. Only isolates that had both phenotypic susceptibilities and WGS data were included in this study. In total, there were 2490 NTS human isolates received at MDU PHL between 1 January 2000 and 31 December 2018 that fit this selection criteria. Details of all isolates in this study are in Table S1 (available in the online version of this article).
+Phenotypic antimicrobial susceptibility testing
+Phenotypic antimicrobial susceptibility testing was performed using agar breakpoint dilution. Results were interpreted according to Clinical and Laboratory Standards Institute (CLSI) guidelines [
+20
+] (Table S2). Depending on when specific testing was introduced (Table S2), susceptibility of NTS was determined for ampicillin, cefotaxime, meropenem, azithromycin, gentamicin, kanamycin, spectinomycin, streptomycin, chloramphenicol, tetracycline, ciprofloxacin, sulfathiazole and trimethoprim (Table S2). Decreased susceptibility to ciprofloxacin was also determined.
+DNA extraction, whole genome sequencing and genome assembly
+DNA extraction was performed using the QIAsymphony DNA Sample Preparation Kit (Qiagen). WGS was performed using Nextera XT as per manufacturer’s instruction. Paired-end reads of 150 bp were generated using the Illumina NextSeq 500/550 platform (Illumina, San Diego, CA), while 300 bp paired-end reads were generated using the Illumina MiSeq platform (Illumina, San Diego, CA). Reads were trimmed and quality checked using Trimmomatic [
+21
+], before they were
+de novo
+assembled using Shovill (used v1.0.1, v1.0.3, v1.0.4 and v1.0.9) (
+https://github.com/tseemann/shovill
+), which subsamples the reads to a minimum of 18× coverage and then assembles using SPAdes (used v3.12.0, v3.13.0 and v3.13.1) [
+22
+]. The version of each tool was dependent on the pipeline used at the time WGS was performed. All assembled reads were subjected to the following quality checks: a minimum Phred quality score >30, read coverage >40× and an estimated genome size between 4.2–5.2 Mbp before they were deposited to the MDU PHL
+Salmonella
+database. FASTQ paired-end reads are available at BioProject
+PRJNA319593.
+In silico
+detection of AMR determinants, multi-locus sequence type and serovar
+Genome assemblies were screened for known AMR determinants in the National Center for Biotechnology Information (NCBI) Bacterial Antimicrobial Resistance Reference Gene Database 2019-09-07 using ABRicate v0.9.8 (
+https://github.com/tseemann/abricate
+) with a minimum nucleotide identity (ID) of 95 % and minimum coverage (COV) of 100%, which was internally validated for this study using different threshold combinations as the optimal threshold for identifying AMR determinants for this pipeline. Known point mutations associated with AMR were detected using Antimicrobial Resistance Identification by Assembly (ARIBA) v2.13.3 [
+23
+] against the Comprehensive Antibiotic Resistance Database (CARD) v3.0.1 [
+24
+] at a lower identity threshold of 90 % ID and 100 % COV to ensure all possible point mutations were identified. These specific point mutations were in the quinolone resistance determining region (QRDR) of the DNA gyrase (
+gyrA
+and
+gyrB
+) and topoisomerase (
+parC
+and
+parE
+) subunits [
+16, 25
+]. The output from ABRicate was then tabularised and summarised using Pandoo (
+https://github.com/schultzm/pandoo
+), while ARIBA utilised its in-built
+summary
+tool. Only AMR determinants with a known phenotype were analysed in this study.
+Genome assemblies were screened to infer multi-locus sequence type (ST) using
+mlst
+v2.16.1 (
+https://github.com/tseemann/mlst
+) using default parameters with the
+S. enterica
+MLST scheme [
+26
+]. Serovars for all NTS genomes were determined using
+Salmonella in silico
+Typing Resource (SISTR) v1.1.1 [
+27
+].
+Correlation of phenotypic and genotypic AMR
+Concordance between antimicrobial susceptibility phenotype and the AMR genotype was assessed by comparing susceptibility profiles for each antimicrobial with the presence of known AMR determinants. Very major errors (VME, phenotypically resistant but genotypically susceptible) and major errors (ME, phenotypically susceptible but genotypically resistant) were distinguished [
+28
+]. Resulting graphs and plots were visualised using
+ggplot2
+v3.2.1 [
+29
+]. The frequency of the detected AMR genes for each NTS lineage, defined by inferred serovar and ST, was also calculated (
+https://github.com/Siacm/Phenotypic-genotypic-correlation
+). The sensitivity, specificity, positive predictive value (PPV) and negative predictive value (NPV) of predicting genotypic resistance was determined, with a 95 % confidence interval, for each antimicrobial. Repeat susceptibility testing was performed on all discordant isolates, with their corresponding WGS reads re-screened for AMR determinants using ARIBA at 95 % ID and 100 % COV. This was done to establish whether a combined mapping/alignment approach that uses paired end reads as input would improve discrepancies.
+Phylogenomic analysis of core genome
+To show the distribution of 3GC resistance determinants amongst the most resistant NTS isolates in this study, a maximum likelihood (ML) phylogenetic tree of all MDR NTS isolates was inferred to provide a basic population structure. NTS isolates that were defined as MDR were mapped to a publicly available reference genome,
+S
+. Typhimurium ST19 LT2 strain (NCBI accession
+AE006468.2
+) using Snippy v4.4.6 (
+https://github.com/tseemann/snippy
+) with a minimum read coverage of 10× at variant sites and a proportion of variant evidence of 0.90, which is part of the Nullarbor pipeline (v2.0.20191007). The resulting core genome SNP alignment was then used to infer a phylogenetic tree with IQ-TREE v1.6 [
+30
+] with ultrafast bootstrapping with 1000 replicates [
+31
+] using the GTR+G4 substitution model. The resulting ML tree was then visualised using
+ggtree
+R package [
+32
+].
+Genome annotation, plasmid detection and analysis of surrounding genomic region of 3GCs genes
+The genetic context of isolates harbouring either
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+, the three most common 3GC resistance determinants was further explored. Prokka v1.14.6 [
+33
+] was used to annotate and identify assembled contigs harbouring
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+, while Artemis v18.1.0 [
+34
+] and blastp was used to visualise and identify flanking coding sequences, respectively. Annotations of insertion sequences (IS) were checked against the ISfinder database 2021-01-15 [
+35
+]. Figure annotations were created using DnaFeaturesViewer v3.0.3 python script (
+https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer/
+). Plasmid replicons were detected in the assemblies using ABRicate v0.9.8 in conjunction with the PlasmidFinder [
+36
+] database with a 80 % ID and 95 % COV threshold. These cut-offs were in line with the author’s recommendations [
+36
+] but were adjusted to a higher coverage threshold to determine the best matching replicon. PlasmidSPAdes v3.15.0 [
+37
+] was used with default parameters to
+de novo
+assemble putative plasmids in all isolates harbouring
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+. The assembly graphs of the reconstructed plasmids were viewed using Bandage [
+38
+] and were used as input for NCBI blastn to search for a reference plasmid of the same plasmid replicon type with a similar backbone. Mauve v2.4.0 [
+39
+] was then used to reorder the contigs of each isolate harbouring
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+to the reference plasmid and visualised using Blast Ring Image Generator (BRIG) v0.95 [
+40
+]. Plasmid sequences that aligned to >90 % coverage of the reference plasmid backbone were identified as the putative plasmid harbouring
+bla
+CMY-2
+,
+bla
+CTX-M-55
+or
+bla
+CTX-M-65
+.
+Co-occurrence networks of AMR genes
+In order to investigate the co-occurrence of AMR determinants, pairwise co-occurrence matrices were constructed for the most common 3GC resistance encoding plasmid types. Co-occurrence networks were visualised in R using
+igraph
+v1.2.4.1 [
+41
+]. The nodes represent genes, and the frequency of the co-occurrence of genes exceeding a given threshold are represented by the connecting branches (edges). Thresholds were analysed using a standard deviation (SD) of AMR gene content for each NTS serovar using an approach previously described [
+42
+].
+Results
+Phenotypic AMR profiles
+In total, 540/2490 (21.7 %) isolates were phenotypically resistant to at least one antimicrobial (
+Fig. 1
+, Table S2). Resistance was highest for ampicillin (427/2474; 17.3%), followed by tetracycline (354/2469; 14.3%), sulfathiazole (300/2479; 12.1%) and streptomycin (245/2378; 10.3%). Resistance to cefotaxime, was low (153/2486; 6.2%), as was resistance to azithromycin (16/1834, 0.9%) and ciprofloxacin (25/2113; 1.2%). Intermediate susceptibility to ciprofloxacin was detected in a further 375/2490 isolates (15.1%). A total of 336 isolates (13.5%) were phenotypically considered to be MDR defined as resistance to three or more antimicrobial classes [
+8
+] (Table S1). No isolates were phenotypically resistant to meropenem.
+Fig. 1.
+Overall AMR profiles from genomic and phenotypic data. (
+a
+) Bar plot representing all phenotypic susceptibilities and concordant genotypic susceptibilities for each antimicrobial (
+x
+-axis). The height of each bar corresponds to the number of isolates (
+y
+-axis) with its respective count labelled on top of each bar. Each drug has been categorised according to its antimicrobial class with the overall number of isolates (
+n
+) tested for that drug. (
+b
+) Number and distribution of phenotypic isolates demonstrating resistance to at most two antimicrobial classes and multidrug resistance over a timespan of 18 years. (
+c
+) Diverse pattern of phenotypic resistance to particular antimicrobials over a timespan of 18 years. (
+d
+) Phenotypic susceptibility profiles of top ten resistant serovars over a time span of 18 years.
+High concordance between AMR phenotypes and genotypes
+A total of 2440/2490 (98.0 %) isolates had concordant phenotypic and genotypic AMR profiles, based on 30 506 possible isolate and antimicrobial combinations (
+Fig. 1
+, Table S2). The overall sensitivity (AMR phenotype and genotype both resistant) was 98.7 % and had a PPV of 97.94%, while the specificity (AMR phenotype and genotype both susceptible) was 99.9 % and an NPV of 99.91 % (
+Fig. 1
+, Table S2). Azithromycin had the lowest sensitivity and PPV (both 87.5%) with previously described AMR determinants detected in 14/16 phenotypically resistant isolates. Overall, 50 isolates had discordant results, comprised of 68 phenotype-genotype mismatches. Of these 50 isolates, 16 (32.0 %) isolates were classified as having VME, 32 (64.0 %) had ME and two (4.0%) isolates were found to exhibit VME for one antimicrobial and ME for another antimicrobial. There were seven isolates that had VME to at least two antimicrobials, with the remaining 11 VME isolates discordant for one antimicrobial (Table S3). Of the 34 isolates with ME, eight of these had ME to two different antimicrobials. The antimicrobial with the most ME (24.0%,
+n
+=10) was streptomycin with the detection of
+aadA
+genes (
+n
+=9) and a susceptible phenotype. A
+bla
+TEM
+gene with 99.8 % identity to
+bla
+TEM-12
+was responsible for both cefotaxime ME discrepancies (Table S3). Both isolates had a non-synonymous mutation at amino acid position 162:S-R relative to
+bla
+TEM-12
+(Genbank accession
+NG_050163.1
+) suggesting the possibility of a novel
+bla
+TEM
+allele that does not confer resistance to 3GCs. Repeat phenotypic susceptibility testing and WGS analysis confirmed these discrepancies. Overall, the specificity of AMR prediction exceeded 99.5 % in all antimicrobials tested.
+Distribution of genomic determinants of antimicrobial resistance
+In total, 94 serovars were detected using
+in silico
+serovar prediction (Table S1). Amongst these 94 serovars, 77 different genomic AMR determinants were identified. This included two efflux pump genes, eight unique point mutations in QRDRs and 67 acquired resistance genes (
+Fig. 2
+, Table S4). The diversity of AMR genotypes was further reflected in 166 different combinations of AMR determinants within the 2490 NTS isolates. The most common genes mediating AMR were
+bla
+TEM
+(
+bla
+TEM-1
+(
+n
+=287) and
+bla
+TEM-135
+(
+n
+=50); ampicillin resistance),
+strAB
+(
+n
+=222; streptomycin resistance),
+sul
+(
+sul1
+(
+n
+=63) and
+sul2
+(
+n
+=241); sulfathiazole resistance)
+, tet
+(
+tet
+(A) (
+n
+=233)
+and tet
+(B) (
+n
+=116); tetracycline resistance) and
+floR
+(
+n
+=105; chloramphenicol resistance) (
+Fig. 2
+, Table S4). Ciprofloxacin resistance was most frequently mediated by point mutations in the QRDR region of the
+gyrA
+and
+parC
+genes (
+n
+=13), although in some isolates (
+n
+=9) the resistance profile was due to a single point mutation and an acquired
+qnr
+gene. Reduced susceptibility to ciprofloxacin, determined by either one or two point mutations in QRDRs or the presence of
+qnrs1
+(Table S1), was uncommon in the NTS. These profiles were observed in 369/2490 (14.8 %) from 36 different serovar ST lineages. However, nearly two thirds of these isolates were
+S
+. Enteritidis ST11 (
+n
+=238) with the single QRDR point mutation
+gyrA
+D87Y
+detected in 126 isolates and
+gyrA
+D87N
+detected in 94 isolates. The next most common serovar ST was I 4,[5],12:i:- ST34 where the
+qnrs1
+was detected in 22/26 isolates with inferred reduced susceptibility. Other intermediate combinations included a single plasmid mediated quinolone resistance (PMQR) gene with or without
+parC
+[57:T-S] (Table S5). The
+mph
+(A) gene was detected in all fourteen concordant isolates that were resistant to azithromycin. Resistance to 3GCs was mediated by
+bla
+CMY-2
+(
+n
+=81), variants of
+bla
+CTX-M
+(
+n
+=62), or both (
+n
+=4) (Table S5).
+Fig. 2.
+Distribution of AMR determinants by antimicrobial class. (
+a
+) Heatmap of combined overall genotypic AMR profiles observed for each NTS strain. This is the broad AMR profile of each lineage and not just a single resistant isolate. The total number of isolates for each NTS strain is labelled in closed parenthesis (
+x
+-axis). The AMR genes (
+y
+-axis) are coloured according to their antimicrobial target. (
+b
+) Bar plot demonstrating the frequency of AMR determinants arranged in decreasing order according to each antimicrobial target. The values at the ends of each bar plot refer to the number of isolates harbouring that AMR determinant. AMR genes that conferred resistance to multiple antimicrobials were grouped into one category i.e. spectinomycin and streptomycin. (AMR, antimicrobial resistance; NTS, non-typhoidal
+Salmonella
+).
+Several lineages were defined by AMR determinants unique to that lineage. For example,
+S
+. Senftenberg ST14 was the only lineage where
+bla
+SHV-12
+and
+dfrA19
+were detected. Isolates from
+S
+. Typhimurium ST19 harboured class A β-lactamase genes
+bla
+TEM-12
+and
+bla
+CTX-M-9
+in addition to chloramphenicol
+O
+-acetyl transferase
+catA1
+,
+bla
+CARB-2
+and
+tet
+(G). The latter two genes have been associated with
+Salmonella
+genomic island I [
+43–45
+]. Nearly all the
+bla
+TEM-135
+genes (
+n
+=48/50) in the NTS dataset were identified in
+S
+. Enteritidis ST11. Moreover, chromosomal QRDR point mutations in the
+gyrA
+subunit were primarily observed in
+S
+. Enteritidis ST11 (
+n
+=235), while the QRDR point mutation profile
+gyrA
+[83:S-F],
+gyrA
+[87:D-Y],
+parC
+[80:S-I],
+parC
+[57:T-S] was unique to
+S
+. Kentucky ST198. Other lineages were notably characterised by a lack of any AMR determinants, such as
+S
+. Dublin ST10 and
+S
+. Newport ST31.
+Emergence of third generation cephalosporin resistance in multidrug resistant serovars
+Of the concordant isolates that conferred 3GC cefotaxime resistance, 84.8 % (
+n
+=128/151) were identified as MDR. The 3GC resistant isolates primarily carried
+bla
+CMY-2
+(
+n
+=68),
+bla
+CTX-M-55
+(
+n
+=32) or
+bla
+CTX-M-65
+(
+n
+=13); accordingly, we specifically investigated AMR profiles in MDR lineages harbouring any of these 3GC resistance determinants. The emergence of these 3GC resistance genes was frequently associated with the presence of distinct plasmid replicons (Table S6).
+The surrounding genomic region and plasmid profiles differed between the serovars in which the
+bla
+CMY-2
+gene was detected. In MDR
+S
+. Stanley ST29, the IncC plasmid replicon was detected in a cluster of isolates with the
+bla
+CMY-2
+gene flanked by a truncated (∆) IS
+Ecp1
+and genes
+blc-sugE
+(
+Fig. 3a, b
+). In contrast, the genetic environment of
+bla
+CMY-2
+in a cluster of MDR
+S
+. Typhimurium ST19 and
+S
+. 4,[5],12:i:- ST34 isolates was found to be flanked by ∆IS
+1294
+and
+blc-sugE
+(
+Fig. 3a, b
+). The plasmid replicons also differed, with IncFIB(pB171)/IncFII(pHN7A8) detected in
+S
+. Typhimurium ST19 and IncI1 Alpha in
+S
+. 4,[5],12:i:- ST34 (
+Fig. 3a, b
+, Table S6). None of the plasmid sequences in these isolates aligned to known plasmids (IncC: pYU07-18 (
+CP035548.1
+), pSE12-01738-2 (
+CP027679.1
+), p28322-2 (
+CP051360.1
+), p15C38-2 (
+LC501585.1
+), pST56-1 (
+CP050740.1
+); IncFIB/IncFII: pJJ1987_1 (
+CP013836.1
+), pSC138 (
+NC_006856.1
+), p33673 (
+CP012683.1
+), pHH12_P2 (
+CP058915.1
+), IncI: pS10584 (
+KX058576.1
+)).
+Fig. 3.
+Inferred population structure and genomic profiles of
+bla
+CMY-2
+,
+bla
+CTX-M-55
+and
+bla
+CTX-M-65
+within 334 MDR NTS from Australia. (
+a
+) Phylogenetic tree of 334 MDR isolates with the distribution of third-generation cephalosporins (3GCs) resistance determinants bla
+CMY-2
+, bla
+CTX-M-55
+and bla
+CTX-M-65
+. The ST34 clade is comprised of both monophasic and biphasic
+S
+. Typhimurium ST34 strains. Individual antimicrobial resistance genes form the inner coloured shapes of the tree. The inner ring refers to the plasmid type detected. The outer rings refer to the different genetic environments observed surrounding bla
+CMY-2
+, bla
+CTX-M-55
+and bla
+CTX-M-65
+. (
+b
+) Genetic context of the two main transposition units seen in bla
+CMY-2
+-positive MDR isolates. (
+c
+) Genetic context of the main transposition unit seen in bla
+CTX-M-55
+-positive MDR isolates. (
+d
+) Genetic context of the main transposition unit seen in bla
+CTX-M-65
+-positive MDR isolates. (
+e
+) BRIG plot demonstrating an IncFIB(K) plasmid harboured by
+S
+. Infantis isolates from this study aligned to the U.S reference plasmid, pCVM44454. (ST, sequence type; MDR, multidrug resistant).
+A cluster of eight MDR
+S
+. 4,[5],12:i:- ST34 isolates with an IncC replicon harboured
+bla
+CTX-M-55
+, and primarily co-occurred with
+floR
+,
+tet
+(A) and
+qnrS1
+(
+Fig. 3a
+, Table S6, Fig. S1). Conversely, 50 % (
+n
+=5/10) of MDR
+S
+. Uganda ST684 isolates encoding
+bla
+CTX-M-55
+did not co-occur with
+qnrS1
+but instead
+bla
+CTX-M-55
+was co-located on the same contig as
+bla
+TEM-215
+. ∆IS
+Ecp1
+was found upstream of
+bla
+CTX-M-55
+in all but five
+bla
+CTX-M-55
+-positive MDR isolates (
+Fig. 3c
+). The presence of the genetic structure ∆IS
+Ecp1-bla
+CTX-M-55
+in isolates without a plasmid type identified by PlasmidFinder suggests that
+bla
+CTX-M-55
+could have integrated in the chromosome. Similarly, the plasmid sequences were not associated with known plasmids (IncC: pST101-1 (
+CP050732.1
+), p16E080 (
+NZ_MN647788.1
+), pVb0499 (
+NZ_MF627445.1
+), IncFIB/IncFII: pN16EC0879-1 (
+CP043745.1
+), FDAARGOS_446 (
+CP023947.1
+), IncHI2/IncHI2A: pMTY18780-1 (
+AP023198.1
+), pPJM1 (
+MN539017.1
+)).
+The 13 MDR
+S
+. Infantis isolates were shown to carry a MDR IncFIB(K) plasmid which included the
+bla
+CTX-M-65
+gene (
+Fig. 3e
+). These plasmids were highly similar to pCVM44454 (Genbank accession
+CP016413.1
+), a pESI (plasmid for emerging
+S
+. Infantis,
+NZ_CP047882.1
+)-like MDR plasmid detected from a human isolate in the U.S [
+46
+] (
+Fig. 3a, e
+). The genomic context surrounding the
+bla
+CTX-M-65
+gene was consistent in all
+S
+. Infantis isolates and was identified as ∆IS
+26
+-v1-
+flpA
+-∆IS
+Ecp1- bla
+CTX-M-65
+-∆IS
+903B-∆tonB
+(
+Fig. 3d, e
+). The co-occurrence AMR gene pattern that defined
+S
+. Infantis was
+bla
+CTX-M-65
+,
+aadA1
+,
+sul1
+and
+tet
+(A) and the IncFIB(K) replicon (Fig. S1c).
+Discussion
+Here, we demonstrate the utility of WGS data for inferring AMR profiles from a collection of 2490 NTS. We observed high sensitivity (98.7%), specificity (99.9%), PPV (97.9%) and NPV (99.9%) rates for concordance between genomic and phenotypic AMR profiles. These findings are consistent with studies exploring AMR prediction from WGS in foodborne enteric pathogens [
+13, 14, 47–52
+]. Notably, azithromycin had the lowest sensitivity and PPV rates in our dataset, similar to findings in other studies [
+53–55
+]. This may in part be due to the lack of specific MIC thresholds for this drug in NTS as CLSI only specifies interpretive criteria for typhoidal
+Salmonella
+serovars [
+20, 56
+]. Some AMR determinants, such as
+tet
+(M) and
+aadA
+variants, have also shown to exhibit low levels of resistance [
+57, 58
+]. Further, novel mechanisms such as upregulation of efflux pumps have been putatively identified as mediating resistance to azithromycin, although additional experimental work is required to demonstrate phenotypic resistance [
+56, 59, 60
+]. The parameters used in this study adhered to recommended cut-off thresholds, but were limited to the detection of known AMR mechanisms present in public AMR reference databases [
+56
+]. Novel AMR mechanisms are commonly identified from discordant phenotypic susceptibilities [
+13, 61
+], which would be missed when relying on either phenotypic or genotypic susceptibilities alone. As such, regular phenotypic and genotypic characterisation of AST amongst NTS should be performed in public health laboratories to ensure novel mechanisms of resistance are still detected.
+In addition to detection of AMR mechanisms, genomic-based surveillance can be used for the early identification of ‘incursions’ and spread of MDR NTS. For example, we identified several MDR lineages known to disseminate internationally, such as the epidemic ciprofloxacin-resistant
+S
+. Kentucky ST198 lineage that originated from Africa and has recently been classified as a high-risk pathogen by the World Health Organization [
+19, 62, 63
+]. NTS serovars
+S
+. Dublin and
+S
+. Newport, which have exhibited increasing rates of MDR overseas [
+64–66
+], had low AMR rates in our study. This highlights the need to identify the emergence of MDR lineages in Australia and continuously monitor AMR within these lineages. The greater resolution afforded from genomic-based AMR profiles is critical for future surveillance of ‘one health’ pathogens, such as MDR NTS, for which multiple animal reservoirs exist and which are intricately linked with the global food chain [
+67
+].
+Although 3GC genes were relatively rare in our dataset, we identified variants of
+bla
+CMY
+and different
+bla
+CTX-M
+genes known to be associated with human and animals NTS infections in other countries [
+67–71
+]. For example, the IS
+Ecp1
+transposition unit (TPU) associated with
+bla
+CMY-2
+and
+blc-sugE
+in IncC plasmids have been reported in chicken, cow and human NTS isolates from North America and Asia [
+72
+], while
+bla
+CTX-M-55
+(in conjunction with an IncC replicon) in the
+S
+. 4,[5],12:i: ST34 lineage has been associated with retail meats, particularly pork products, from several Asian countries [
+68, 71, 73
+]. The MDR
+S
+. Infantis ST32, characterised by the
+bla
+CTX-M-65
+gene and IncFIB(K) plasmid replicons, has been detected in both European and North America in recent years from both humans and animals [
+46, 74, 75
+]. Further, the IS
+1294-bla
+CMY-2
+TPU have been identified on IncI and IncF plasmids worldwide from different members of Enterobacteriaceae [
+67, 76–79
+]. The predominance of
+bla
+CTX-M-55
+in comparison to
+bla
+CTX-M-9
+and
+bla
+CTX-M-14
+, which were the leading
+bla
+CTX-M
+variants found previously in Australian livestock, indicate the emergence of
+bla
+CTX-M-55
+from imported meat or overseas travel [
+68–71, 73
+]. The increase of MDR lineages that confer resistance to clinically relevant antimicrobials, as seen in
+bla
+CTX-M-55
+isolates co-occurring with
+qnrS1
+, have been observed in NTS isolates from Asia [
+68, 73
+] and poses a serious public health threat. Incursions of 3GCs-producing MDR NTS lineages could result in outbreaks where antimicrobial treatment options will be limited. Applying AMR surveillance to food pathogen genomic databases, such as GenomeTrakr [
+80
+], could provide the ability for early genomic detection of emerging 3GC resistant NTS lineages in Australia and offer a significant opportunity to rapidly identify transmission events and limit potential outbreaks in the future.
+A key strength of this study is the temporal span and scale of the NTS dataset. The two-decade time span shows the application of genomic surveillance in the detection of emergence of AMR NTS in Australia. Similar to other studies, a limitation of our study is that we only assessed known point mutations. Recent studies have shown that point mutations in regulatory genes associated with efflux pumps lead to an altered porin expression [
+59, 60
+]. However, future work is required to investigate efflux pumps in NTS before these could be included in genomic AMR surveillance. As a result, discordant profiles may be a result of novel AMR mechanisms or novel genes that have not yet been included in publicly available databases. Further, the lack of breakpoint interpretation in the CLSI guidelines for NTS in some antimicrobials, such as azithromycin, have also contributed to discrepant combinations [
+20, 81
+]. Future research in characterising novel AMR mechanisms in NTS both from genomic analyses and phenotypic experiments will help to further refine inferring AMR profiles from WGS data.
+Our study also demonstrates the different transposons and plasmids found in association with
+bla
+CMY-2
+,
+bla
+CTX-M-55
+and
+bla
+CTX-M-65
+in several MDR NTS lineages, and highlights the major role that mobile genetic elements such as transposons, class 1 integrons and plasmid resistance islands, contribute to the emergence of MDR in NTS, both in Australia and globally [
+13, 14, 82–90
+]. Integrating AMR and plasmid profiles with the ST and serovar, provides a means of early detection for emerging MDR profiles that could represent serious public health threats. For example, in our data we identified the international
+S
+. Infantis pESI-like MDR plasmid [
+46
+]; this is the first time this has been reported in Australian NTS isolates. Mobile elements may also integrate into the chromosome as has been previously reported for
+bla
+TEM-1
+,
+strA-strB
+,
+sul2
+genes mobilised on Tn
+6029
+in
+S
+. 4,[5],12:i:- [
+91
+]. This has resulted in the characteristic ASSuT AMR profile that has historically acted as an epidemiological marker for this lineage [
+91, 92
+]. Further work with long read sequencing would resolve the limitations in this study involved in analysing regions flanked by IS, such as
+bla
+CTX-M-55
+[
+93
+], and provide a more detailed insight into the integration and transmission of these mobile regions.
+In summary, we demonstrate a high concordance (99.8%) between genotypic and phenotypic AMR profiles in NTS and highlight how WGS data can be utilised to identify emerging AMR NTS in Australia. Our data further highlight the utility of inferring AMR profiles for NTS from WGS data routinely produced in public health laboratories. Our data provide a framework for the ongoing genomic surveillance of AMR in NTS in our setting; and may potentially act as an early warning system for significant changes in the AMR profiles of NTS.
+Supplementary Data
+Supplementary material 1
+Click here for additional data file.
+Supplementary material 2
+Click here for additional data file.
+Supplementary material 3
+Click here for additional data file.
+Funding information
+The Microbiological Diagnostic Unit Public Health Laboratory is funded by the Victorian Government. This work was supported by a National Health and Medical Research Council (NHMRC), Australia Project Grant (APP1129770) and Partnership Grant (APP1149991). D.A.W. is supported by an NHMRC Investigator Grant (GNT1174555). D.J.I. was supported by a National Health and Medical Research Council (NHMRC) Emerging Leadership Fellowship (GNT1195210). B.P.H. was supported by NHMRC Leadership Fellowship (GNT1196103).
+Acknowledgements
+We thank all members of the Bioinformatics Group and Enteric Group at MDUPHL including Jessica Barnden, Samantha Hall, Elizabeth Fagan, Jutta Byrne and Phoebe Webster.
+Author contributions
+Conceptualization: D.W., D.I., B.H., C.S. Data curation: C. S., M.V., S.A.B. Formal analysis: C.S. Methodology: C.S., S.L.B, D.L., A.S., T.S., M.V. Visualization: C.S. Writing – original manuscript draft: C.S. Writing – review and editing: S.L.B, M.V., M.E., B.H., D.I., D.W.
+Conflicts of interest
+The authors declare that there are no conflicts of interest.
+Abbreviations: AMR, antimicrobial resistance; ARIBA, Antimicrobial Resistance Identification by Assembly; AST, antimicrobial susceptibility testing; BRIG, Blast Ring Image Generator; CARD, Comprehensive Antibiotic Resistance Database; CLSI, Clinical and Laboratory Standards Institute; ESBL, extended-spectrum beta-lactamase; 3GCs, third-generation cephalosporins; IS, insertion sequences; MDR, multi-drug resistant; MEs, major errors; NCBI, National Center for Biotechnology Information; NPV, negative predictive value; NTS, non-typhoidal
+Salmonella
+; PHL, Microbiological Diagnostic Unit Public Health Laboratory; PMAC, plasmid-mediated AmpC; PPV, positive predictive value; QRDR, quinolone resistance determining region; SISTR,
+Salmonella in silico
+Typing Resource; ST, sequence type; TPU, transposition unit; VMEs, very major errors; WGS, whole genome sequencing.
+All supporting data, code and protocols have been provided within the article or through supplementary data files. One supplementary figure and six supplementary tables are available with the online version of this article.
+References
+1
+Sia
+C
+Baines
+S
+Valcanis
+M
+Lee
+DYJ
+Goncalves De Silva
+A
+et al
+Figshare
+2021
+10.6084/m9.figshare.16556748.v1
+2
+Majowicz
+SE
+Musto
+J
+Scallan
+E
+Angulo
+FJ
+Kirk
+M
+et al
+The global burden of nontyphoidal
+Salmonella
+gastroenteritis
+Clin Infect Dis
+2010
+50
+882
+889
+10.1086/650733
+20158401
+3
+National Notifiable Diseases Surveillance System Department of Health Canberra
+Notification for all diseases by State and Territory and Year
+2019
+http://www9.health.gov.au/cda/source/rpt_2_sel.cfm
+4
+Chen
+MH
+Wang
+SW
+Hwang
+WZ
+Tsai
+SJ
+Hsih
+YC
+et al
+Contamination of
+Salmonella
+Schwarzengrund cells in chicken meat from traditional marketplaces in Taiwan and comparison of their antibiograms with those of the human isolates
+Poult Sci
+2010
+89
+359
+365
+10.3382/ps.2009-00001
+20075291
+5
+Thomas
+M
+Fenske
+GJ
+Antony
+L
+Ghimire
+S
+Welsh
+R
+et al
+Whole genome sequencing-based detection of antimicrobial resistance and virulence in non-typhoidal
+Salmonella
+enterica isolated from wildlife
+Gut Pathog
+2017
+9
+66.
+10.1186/s13099-017-0213-x
+29201148
+PMC5697165
+6
+Williamson
+DA
+Lane
+CR
+Easton
+M
+Valcanis
+M
+Strachan
+J
+et al
+Increasing antimicrobial resistance in nontyphoidal
+Salmonella
+isolates in Australia from 1979 to 2015
+Antimicrob Agents Chemother
+2018
+62
+e02012-17.
+10.1128/AAC.02012-17
+29180525
+PMC5786757
+7
+Andino
+A
+Hanning
+I
+.
+Salmonella
+enterica: survival, colonization, and virulence differences among serovars
+Scientific World Journal
+2015
+2015
+520179
+16
+10.1155/2015/520179
+25664339
+PMC4310208
+8
+Magiorakos
+A-P
+Srinivasan
+A
+Carey
+RB
+Carmeli
+Y
+Falagas
+ME
+et al
+Multidrug-resistant, extensively drug-resistant and pandrug-resistant bacteria: an international expert proposal for interim standard definitions for acquired resistance
+Clin Microbiol Infect
+2012
+18
+268
+281
+10.1111/j.1469-0691.2011.03570.x
+21793988
+9
+Silva
+C
+Calva
+E
+Maloy
+S
+Atlas
+RM
+Maloy
+S
+One Health and Food-Borne Disease:
+Salmonella
+Transmission between Humans, Animals, and Plants
+Microbiol Spectr
+2014
+2
+O
+2013
+10.1128/microbiolspec.OH-0020-2013
+26082128
+10
+Threlfall
+EJ
+Frost
+JA
+Ward
+LR
+Rowe
+B
+Increasing spectrum of resistance in multiresistant
+Salmonella
+Typhimurium
+The Lancet
+1996
+347
+1053
+1054
+10.1016/S0140-6736(96)90199-3
+8606603
+11
+Ellington
+MJ
+Ekelund
+O
+Aarestrup
+FM
+Canton
+R
+Doumith
+M
+et al
+The role of whole genome sequencing in antimicrobial susceptibility testing of bacteria: report from the EUCAST Subcommittee
+Clin Microbiol Infect
+2017
+23
+2
+22
+10.1016/j.cmi.2016.11.012
+27890457
+12
+Mensah
+N
+Tang
+Y
+Cawthraw
+S
+AbuOun
+M
+Fenner
+J
+et al
+Determining antimicrobial susceptibility in
+Salmonella enterica
+serovar Typhimurium through whole genome sequencing: a comparison against multiple phenotypic susceptibility testing methods
+BMC Microbiol
+2019
+19
+148
+10.1186/s12866-019-1520-9
+31266463
+PMC6604184
+13
+Neuert
+S
+Nair
+S
+Day
+MR
+Doumith
+M
+Ashton
+PM
+et al
+Prediction of phenotypic antimicrobial resistance profiles from whole genome sequences of non-typhoidal
+Salmonella enterica
+Front Microbiol
+2018
+9
+592.
+10.3389/fmicb.2018.00592
+29636749
+PMC5880904
+14
+McDermott
+PF
+Tyson
+GH
+Kabera
+C
+Chen
+Y
+Li
+C
+et al
+Whole-genome sequencing for detecting antimicrobial resistance in nontyphoidal
+Salmonella
+Antimicrob Agents Chemother
+2016
+60
+5515
+5520
+10.1128/AAC.01030-16
+27381390
+PMC4997858
+15
+Hendriksen
+RS
+Bortolaia
+V
+Tate
+H
+Tyson
+GH
+Aarestrup
+FM
+et al
+Using genomics to track global antimicrobial resistance
+Front Public Health
+2019
+7
+242
+10.3389/fpubh.2019.00242
+31552211
+PMC6737581
+16
+Zankari
+E
+Hasman
+H
+Kaas
+RS
+Seyfarth
+AM
+Agersø
+Y
+et al
+Genotyping using whole-genome sequencing is a realistic alternative to surveillance based on phenotypic antimicrobial susceptibility testing
+J Antimicrob Chemother
+2013
+68
+771
+777
+10.1093/jac/dks496
+23233485
+17
+Centers for Disease Control and Prevention
+Antibiotic resistance threats in the United States
+2019
+https://www.cdc.gov/drugresistance/pdf/threats-report/2019-ar-threats-report-508.pdf
+18
+Antunes
+P
+Coque
+TM
+Peixe
+L
+Emergence of an IncIγ plasmid encoding CMY-2 ß-lactamase associated with the international ST19 OXA-30-producing ß-lactamase
+Salmonella
+Typhimurium multidrug-resistant clone
+J Antimicrob Chemother
+2010
+65
+2097
+2100
+10.1093/jac/dkq293
+20685754
+19
+Tacconelli
+E
+Carrara
+E
+Savoldi
+A
+Harbarth
+S
+Mendelson
+M
+et al
+Discovery, research, and development of new antibiotics: the WHO priority list of antibiotic-resistant bacteria and tuberculosis
+Lancet Infect Dis
+2018
+18
+318
+327
+10.1016/S1473-3099(17)30753-3
+29276051
+20
+Clinical Laboratory Standards Institute
+M100 Performance Standards for Antimicrobial Susceptibility Testing
+28th ed
+Wayne, PA
+CLSI
+2018
+21
+Bolger
+AM
+Lohse
+M
+Usadel
+B
+Trimmomatic: a flexible trimmer for Illumina sequence data
+Bioinformatics
+2014
+30
+2114
+2120
+10.1093/bioinformatics/btu170
+24695404
+PMC4103590
+22
+Bankevich
+A
+Nurk
+S
+Antipov
+D
+Gurevich
+AA
+Dvorkin
+M
+et al
+SPAdes: A new genome assembly algorithm and its applications to single-cell sequencing
+J Comput Biol
+2012
+19
+455
+477
+10.1089/cmb.2012.0021
+22506599
+PMC3342519
+23
+Hunt
+M
+Mather
+AE
+Sánchez-Busó
+L
+Page
+AJ
+Parkhill
+J
+et al
+ARIBA: rapid antimicrobial resistance genotyping directly from sequencing reads
+Microb Genom
+2017
+3
+10
+10.1099/mgen.0.000131
+PMC5695208
+29177089
+24
+Jia
+B
+Raphenya
+AR
+Alcock
+B
+Waglechner
+N
+Guo
+P
+et al
+CARD 2017: expansion and model-centric curation of the comprehensive antibiotic resistance database
+Nucleic Acids Res
+2017
+45
+D566
+D573
+10.1093/nar/gkw1004
+27789705
+PMC5210516
+25
+Heil
+EL
+Johnson
+JK
+Impact of CLSI breakpoint changes on microbiology laboratories and antimicrobial stewardship programs
+J Clin Microbiol
+2016
+54
+840
+844
+10.1128/JCM.02424-15
+26791363
+PMC4809933
+26
+Achtman
+M
+Wain
+J
+Weill
+F-X
+Nair
+S
+Zhou
+Z
+et al
+Multilocus sequence typing as a replacement for serotyping in
+Salmonella enterica
+PLoS Pathog
+2012
+8
+e1002776
+10.1371/journal.ppat.1002776
+22737074
+PMC3380943
+27
+Yoshida
+CE
+Kruczkiewicz
+P
+Laing
+CR
+Lingohr
+EJ
+Gannon
+VPJ
+et al
+The
+Salmonella In Silico
+Typing Resource (SISTR): an open web-accessible tool for rapidly typing and subtyping draft
+Salmonella
+genome assemblies
+PLoS One
+2016
+11
+e0147101.
+10.1371/journal.pone.0147101
+26800248
+PMC4723315
+28
+Gordon
+NC
+Price
+JR
+Cole
+K
+Everitt
+R
+Morgan
+M
+et al
+Prediction of
+Staphylococcus aureus
+antimicrobial resistance by whole-genome sequencing
+J Clin Microbiol
+2014
+52
+1182
+1191
+10.1128/jcm.03117-13
+24501024
+PMC3993491
+29
+Wickham
+H
+ggplot2: Elegant Graphics for Data Analysis
+Springer
+2016
+30
+Nguyen
+L-T
+Schmidt
+HA
+von Haeseler
+A
+Minh
+BQ
+IQ-TREE: AFast and effective stochastic algorithm for estimating maximumlikelihood phylogenies
+Mol Biol Evol
+2015
+32
+268
+274
+10.1093/molbev/msu300
+25371430
+PMC4271533
+31
+Minh
+BQ
+Nguyen
+MAT
+von Haeseler
+A
+Ultrafast approximation for phylogenetic bootstrap
+Mol Biol Evol
+2013
+30
+1188
+1195
+10.1093/molbev/mst024
+23418397
+PMC3670741
+32
+Yu
+G
+Smith
+DK
+Zhu
+H
+Guan
+Y
+Lam
+TT
+et al
+ggtree : an r package for visualization and annotation of phylogenetic trees with their covariates and other associated data
+Methods Ecol Evol
+2016
+8
+28
+36
+10.1111/2041-210X.12628
+33
+Seemann
+T
+Prokka: rapid prokaryotic genome annotation
+Bioinformatics
+2014
+30
+2068
+2069
+10.1093/bioinformatics/btu153
+24642063
+34
+Carver
+T
+Harris
+SR
+Berriman
+M
+Parkhill
+J
+McQuillan
+JA
+Artemis: an integrated platform for visualization and analysis of high-throughput sequence-based experimental data
+Bioinformatics
+2012
+28
+464
+469
+10.1093/bioinformatics/btr703
+22199388
+PMC3278759
+35
+Siguier
+P
+Perochon
+J
+Lestrade
+L
+Mahillon
+J
+Chandler
+M
+ISfinder: the reference centre for bacterial insertion sequences
+Nucleic Acids Research
+2006
+34
+D32
+D36
+10.1093/Nar/Gkj014
+16381877
+PMC1347377
+36
+Carattoli
+A
+Zankari
+E
+García-Fernández
+A
+Voldby Larsen
+M
+Lund
+O
+et al
+In silico
+detection and typing of plasmids using PlasmidFinder and plasmid multilocus sequence typing
+Antimicrob Agents Chemother
+2014
+58
+3895
+3903
+10.1128/AAC.02412-14
+24777092
+PMC4068535
+37
+Antipov
+D
+Hartwick
+N
+Shen
+M
+Raiko
+M
+Lapidus
+A
+et al
+plasmidspades: assembling plasmids from whole genome sequencing data
+Bioinformatics
+2016
+btw493
+10.1093/bioinformatics/btw493
+27466620
+38
+Wick
+RR
+Schultz
+MB
+Zobel
+J
+Holt
+KE
+Bandage: interactive visualization of de novo genome assemblies
+Bioinformatics
+2015
+31
+3350
+3352
+10.1093/bioinformatics/btv383
+26099265
+PMC4595904
+39
+Darling
+ACE
+Mau
+B
+Blattner
+FR
+Perna
+NT
+Mauve: multiple alignment of conserved genomic sequence with rearrangements
+Genome Res
+2004
+14
+1394
+1403
+10.1101/gr.2289704
+15231754
+PMC442156
+40
+Alikhan
+N-F
+Petty
+NK
+Ben Zakour
+NL
+Beatson
+SA
+BLAST ring image generator (BRIG): simple prokaryote genome comparisons
+BMC genomics
+2011
+12
+402
+10.1186/1471-2164-12-402
+21824423
+PMC3163573
+41
+Csardi
+G
+Nepusz
+T
+The igraph software package for complex network research
+InterJournal, Complex Systems
+2006
+http://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5cd1e3cbb208fc26c99de080/1557259212150/c1602a3c126ba822d0bc4293371c.pdf
+42
+Ingle
+DJ
+Levine
+MM
+Kotloff
+KL
+Holt
+KE
+Robins-Browne
+RM
+Dynamics of antimicrobial resistance in intestinal
+Escherichia coli
+from children in community settings in South Asia and sub-Saharan Africa
+Nat Microbiol
+2018
+3
+1063
+1073
+10.1038/s41564-018-0217-4
+30127495
+PMC6787116
+43
+Schultz
+E
+Barraud
+O
+Madec
+J-Y
+Haenni
+M
+Cloeckaert
+A
+et al
+Multidrug resistance
+Salmonella
+genomic Island 1 in a
+Morganella morganii
+subsp.
+morganii
+human clinical isolate from France
+mSphere
+2017
+2
+1
+5
+10.1128/mSphere.00118-17
+PMC5397566
+28435889
+44
+Monte
+DFM
+Sellera
+FP
+Lopes
+R
+Keelara
+S
+Landgraf
+M
+et al
+Class 1 integron-borne cassettes harboring
+bla
+CARB-2
+gene in multidrug-resistant and virulent
+Salmonella
+Typhimurium ST19 strains recovered from clinical human stool samples, United States
+PLoS One
+2020
+15
+e0240978
+10.1371/journal.pone.0240978
+33125394
+PMC7598458
+45
+Zhao
+S
+Li
+C
+Hsu
+C-H
+Tyson
+GH
+Strain
+E
+et al
+Comparative genomic analysis of 450 strains of
+Salmonella enterica
+Isolated from diseased animals
+Genes
+2020
+11
+1025
+10.3390/genes11091025
+PMC7564550
+32883017
+46
+Tate
+H
+Folster
+JP
+Hsu
+C-H
+Chen
+J
+Hoffmann
+M
+et al
+Comparative analysis of extended-spectrum-β-lactamase CTX-M-65-producing
+Salmonella enterica
+serovar Infantis isolates from humans, food animals, and retail chickens in the United States
+Antimicrob Agents Chemother
+2017
+61
+10.1128/AAC.00488-17
+PMC5487606
+28483962
+47
+Day
+MR
+Doumith
+M
+Do Nascimento
+V
+Nair
+S
+Ashton
+PM
+et al
+Comparison of phenotypic and WGS-derived antimicrobial resistance profiles of
+Salmonella enterica
+serovars Typhi and Paratyphi
+J Antimicrob Chemother
+2018
+73
+365
+372
+10.1093/jac/dkx379
+29216342
+48
+Sadouki
+Z
+Day
+MR
+Doumith
+M
+Chattaway
+MA
+Dallman
+TJ
+et al
+Comparison of phenotypic and WGS-derived antimicrobial resistance profiles of
+Shigella sonnei
+isolated from cases of diarrhoeal disease in England and Wales, 2015
+J Antimicrob Chemother
+2017
+72
+2496
+2502
+10.1093/jac/dkx170
+28591819
+49
+Stoesser
+N
+Batty
+EM
+Eyre
+DW
+Morgan
+M
+Wyllie
+DH
+et al
+Predicting antimicrobial susceptibilities for
+Escherichia coli
+and
+Klebsiella pneumoniae
+isolates using whole genomic sequence data
+J Antimicrob Chemother
+2013
+68
+2234
+2244
+10.1093/jac/dkt180
+23722448
+PMC3772739
+50
+Tyson
+GH
+McDermott
+PF
+Li
+C
+Chen
+Y
+Tadesse
+DA
+et al
+WGS accurately predicts antimicrobial resistance in
+Escherichia coli
+J Antimicrob Chemother
+2015
+70
+2763
+2769
+10.1093/jac/dkv186
+26142410
+PMC11606221
+51
+van Vliet
+AHM
+Kusters
+JG
+Use of alignment-free phylogenetics for rapid genome sequence-based typing of
+Helicobacter pylori
+virulence markers and antibiotic susceptibility
+J Clin Microbiol
+2015
+53
+2877
+2888
+10.1128/JCM.01357-15
+26135867
+PMC4540916
+52
+Zhao
+S
+Tyson
+GH
+Chen
+Y
+Li
+C
+Mukherjee
+S
+et al
+Whole-genome sequencing analysis accurately predicts antimicrobial resistance phenotypes in
+Campylobacter
+spp
+Appl Environ Microbiol
+2016
+82
+459
+466
+10.1128/AEM.02873-15
+26519386
+PMC4711122
+53
+Goldblatt
+J
+Ward
+A
+Yusuf
+M
+Day
+M
+Godbole
+G
+et al
+Azithromycin susceptibility testing for
+Salmonella enterica
+isolates: discordances in results using MIC gradient strips
+J Antimicrob Chemother
+2020
+75
+1820
+1823
+10.1093/jac/dkaa097
+32221592
+54
+Khan
+S
+Kurup
+P
+Vinod
+V
+Biswas
+R
+Pillai
+GK
+et al
+Reconsidering azithromycin disc diffusion interpretive criteria for
+Salmonellae
+in view of azithromycin MIC creep among typhoidal and nontyphoidal
+Salmonella
+J Lab Physicians
+2019
+11
+39
+44
+10.4103/JLP.JLP_99_18
+30983801
+PMC6437832
+55
+Katiyar
+A
+Sharma
+P
+Dahiya
+S
+Singh
+H
+Kapil
+A
+et al
+Genomic profiling of antimicrobial resistance genes in clinical isolates of
+Salmonella
+Typhi from patients infected with Typhoid fever in India
+Sci Rep
+2020
+10
+8299.
+10.1038/s41598-020-64934-0
+32427945
+PMC7237477
+56
+Doyle
+RM
+O’Sullivan
+DM
+Aller
+SD
+Bruchmann
+S
+Clark
+T
+et al
+Discordant bioinformatic predictions of antimicrobial resistance from whole-genome sequencing data of bacterial isolates: an inter-laboratory study
+Microb Genom
+2020
+6
+10.1099/mgen.0.000335
+32048983
+PMC7067211
+57
+Frye
+JG
+Jackson
+CR
+Genetic mechanisms of antimicrobial resistance identified in
+Salmonella enterica, Escherichia coli,
+and
+Enteroccocus
+spp. isolated from U.S. food animals
+Front Microbiol
+2013
+4
+135.
+10.3389/fmicb.2013.00135
+23734150
+PMC3661942
+58
+Sunde
+M
+Norström
+M
+The genetic background for streptomycin resistance in
+Escherichia coli
+influences the distribution of MICs
+J Antimicrob Chemother
+2005
+56
+87
+90
+10.1093/jac/dki150
+15897222
+59
+Doumith
+M
+Ellington
+MJ
+Livermore
+DM
+Woodford
+N
+Molecular mechanisms disrupting porin expression in ertapenem-resistant
+Klebsiella
+and
+Enterobacter
+spp. clinical isolates from the UK
+J Antimicrob Chemother
+2009
+63
+659
+667
+10.1093/jac/dkp029
+19233898
+60
+Ye
+Y
+Xu
+L
+Han
+Y
+Chen
+Z
+Liu
+C
+et al
+Mechanism for carbapenem resistance of clinical Enterobacteriaceae isolates
+Exp Ther Med
+2018
+15
+1143
+1149
+10.3892/etm.2017.5485
+29399114
+PMC5772903
+61
+Hicks
+AL
+Kissler
+SM
+Lipsitch
+M
+Grad
+YH
+Holt
+KE
+Surveillance to maintain the sensitivity of genotype-based antibiotic resistance diagnostics
+PLoS Biol
+2019
+17
+e3000547
+10.1371/journal.pbio.3000547
+31714937
+PMC6874359
+62
+Hawkey
+J
+Le Hello
+S
+Doublet
+B
+Granier
+SA
+Hendriksen
+RS
+et al
+Global phylogenomics of multidrug-resistant
+Salmonella enterica
+serotype Kentucky ST198
+Microbial Genomics
+2019
+5
+10.1099/mgen.0.000269
+PMC6700661
+31107206
+63
+Park
+AK
+Shin
+E
+Kim
+S
+Park
+J
+Jeong
+HJ
+et al
+Traveller-associated high-level ciprofloxacin-resistant
+Salmonella enterica
+Serovar Kentucky in the Republic of Korea
+J Glob Antimicrob Resist
+2020
+22
+190
+194
+10.1016/j.jgar.2019.12.014
+31899348
+64
+Harvey
+RR
+Friedman
+CR
+Crim
+SM
+Judd
+M
+Barrett
+KA
+et al
+Epidemiology of
+Salmonella enterica
+serotype Dublin infections among humans, United States, 1968–2013
+Emerg Infect Dis
+2017
+23
+1493
+1501
+10.3201/eid2309.170136
+PMC5572876
+28820133
+65
+Mangat
+CS
+Bekal
+S
+Avery
+BP
+Côté
+G
+Daignault
+D
+et al
+Genomic Investigation of the Emergence of Invasive Multidrug-Resistant
+Salmonella enterica
+Serovar Dublin in Humans and Animals in Canada
+Antimicrob Agents Chemother
+2019
+63
+10.1128/AAC.00108-19
+PMC6535508
+31036694
+66
+Plumb
+ID
+Schwensohn
+CA
+Gieraltowski
+L
+Tecle
+S
+Schneider
+ZD
+et al
+Outbreak of
+Salmonella
+newport infections with decreased susceptibility to azithromycin linked to beef obtained in the United States and soft cheese obtained in Mexico - United States, 2018-2019
+MMWR Morb Mortal Wkly Rep
+2019
+68
+713
+717
+10.15585/mmwr.mm6833a1
+31437141
+PMC6705891
+67
+Sidjabat
+HE
+Seah
+KY
+Coleman
+L
+Sartor
+A
+Derrington
+P
+et al
+Expansive spread of IncI1 plasmids carrying
+bla
+CMY-2
+amongst
+Escherichia coli
+Int J Antimicrob Agents
+2014
+44
+203
+208
+10.1016/j.ijantimicag.2014.04.016
+25052868
+68
+Nadimpalli
+M
+Fabre
+L
+Yith
+V
+Sem
+N
+Gouali
+M
+et al
+CTX-M-55-type ESBL-producing
+Salmonella enterica
+are emerging among retail meats in Phnom Penh, Cambodia
+J Antimicrob Chemother
+2019
+74
+342
+348
+10.1093/jac/dky451
+30376113
+69
+Hamamoto
+K
+Ueda
+S
+Toyosato
+T
+Yamamoto
+Y
+Hirai
+I
+High prevalence of cPrevalence of Chromosomal
+bla
+CTX-M-14
+in
+Escherichia coli
+isolates possessing
+bla
+CTX-M-14
+Antimicrob Agents Chemother
+2016
+60
+2582
+2584
+10.1128/AAC.00108-16
+26810652
+PMC4808179
+70
+Sparham
+SJ
+Kwong
+JC
+Valcanis
+M
+Easton
+M
+Trott
+DJ
+et al
+Emergence of multidrug resistance in locally-acquired human infections with
+Salmonella
+Typhimurium in Australia owing to a new clade harbouring
+bla
+CTX-M-9
+Int J Antimicrob Agents
+2017
+50
+101
+105
+10.1016/j.ijantimicag.2017.02.014
+28476613
+71
+Xu
+G
+An
+W
+Wang
+H
+Zhang
+X
+Prevalence and characteristics of extended-spectrum β-lactamase genes in
+Escherichia coli
+isolated from piglets with post-weaning diarrhea in Heilongjiang province, China
+Front Microbiol
+2015
+6
+1103.
+10.3389/fmicb.2015.01103
+26500640
+PMC4597763
+72
+Chiu
+C-H
+Lee
+J-J
+Wang
+M-H
+Chu
+C
+Genetic analysis and plasmid-mediated
+bla
+CMY-2
+in
+Salmonella
+and
+Shigella
+and the Ceftriaxone Susceptibility regulated by the
+ISEcp-1 tnpA-bla
+CMY-2
+-blc-sugE
+Journal of Microbiology, Immunology and Infection
+2021
+54
+649
+657
+10.1016/j.jmii.2020.01.008
+32169530
+73
+Zhang
+C-Z
+Ding
+X-M
+Lin
+X-L
+Sun
+R-Y
+Lu
+Y-W
+et al
+The emergence of chromosomally located
+bla
+CTX-M-55
+in
+Salmonella
+from foodborne animals in China
+Front Microbiol
+2019
+10
+10.3389/fmicb.2019.01268
+PMC6560199
+31231347
+74
+Lee
+W
+Bloomfield
+S
+Mather
+A
+Edwards
+A
+Chattaway
+M
+et al
+Analysis of β-lactam, azithromycin and fosfomycin resistance in non-typhoidal
+Salmonella
+: Characterisation of an
+S
+. Infantis plasmid
+Access Microbiology
+2020
+2
+7A
+10.1099/acmi.ac2020.po0405
+75
+Brown
+AC
+Chen
+JC
+Watkins
+LKF
+Campbell
+D
+Folster
+JP
+et al
+CTX-M-65 extended-spectrum β-lactamase-producing
+Salmonella enterica
+serotype Infantis, United States1
+Emerg Infect Dis
+2018
+24
+2284
+2291
+10.3201/eid2412.180500
+30457533
+PMC6256390
+76
+Karczmarczyk
+M
+Wang
+J
+Leonard
+N
+Fanning
+S
+Complete nucleotide sequence of a conjugative IncF plasmid from an
+Escherichia coli
+isolate of equine origin containing
+bla
+CMY-2
+within a novel genetic context
+FEMS Microbiol Lett
+2014
+352
+123
+127
+10.1111/1574-6968.12364
+24386888
+77
+Tagg
+KA
+Iredell
+JR
+Partridge
+SR
+Complete sequencing of IncI1 sequence type 2 plasmid pJIE512b indicates mobilization of
+bla
+CMY-2
+from an IncA/C plasmid
+Antimicrob Agents Chemother
+2014
+58
+4949
+4952
+10.1128/AAC.02773-14
+24890591
+PMC4135994
+78
+Yassine
+H
+Bientz
+L
+Cros
+J
+Goret
+J
+Bébéar
+C
+et al
+Experimental evidence for IS1294b-mediated transposition of the
+bla
+CMY-2
+cephalosporinase gene in Enterobacteriaceae
+J Antimicrob Chemother
+2015
+70
+697
+700
+10.1093/jac/dku472
+25428924
+79
+Yasugi
+M
+Hatoya
+S
+Motooka
+D
+Matsumoto
+Y
+Shimamura
+S
+et al
+Whole-genome analyses of extended-spectrum or AmpC β-lactamase-producing
+Escherichia coli
+isolates from companion dogs in Japan
+PloS one
+2021
+16
+e0246482
+10.1371/journal.pone.0246482
+33544781
+PMC7864471
+80
+Timme
+RE
+Sanchez Leon
+M
+Allard
+MW
+Utilizing the public genometrakr database for foodborne pathogen traceback. Foodborne bacterial pathogens
+Methods in Molecular Biology. 1918
+New York, NY
+Springer New York
+2018
+201–212
+81
+Li
+X-Z
+Plésiat
+P
+Nikaido
+H
+The challenge of efflux-mediated antibiotic resistance in gram-negative bacteria
+Clin Microbiol Rev
+2015
+28
+337
+418
+10.1128/CMR.00117-14
+25788514
+PMC4402952
+82
+Abraham
+S
+Groves
+MD
+Trott
+DJ
+Chapman
+TA
+Turner
+B
+et al
+.
+Salmonella
+enterica isolated from infections in Australian livestock remain susceptible to critical antimicrobials
+Int J Antimicrob Agents
+2014
+43
+126
+130
+10.1016/j.ijantimicag.2013.10.014
+24314826
+83
+Arnott
+A
+Wang
+Q
+Bachmann
+N
+Sadsad
+R
+Biswas
+C
+et al
+Multidrug-resistant
+Salmonella enterica
+4,[5],12:i:- Sequence Type 34, New South Wales, Australia, 2016-2017
+Emerg Infect Dis
+2018
+24
+751
+753
+10.3201/eid2404.171619
+29553318
+PMC5875280
+84
+Cain
+AK
+Liu
+X
+Djordjevic
+SP
+Hall
+RM
+Transposons related to Tn1696 in IncHI2 plasmids in multiply antibiotic resistant
+Salmonella enterica
+serovar Typhimurium from Australian animals
+Microb Drug Resist
+2010
+16
+197
+202
+10.1089/mdr.2010.0042
+20701539
+85
+Graham
+RMA
+Hiley
+L
+Rathnayake
+IU
+Jennison
+AV
+Comparative genomics identifies distinct lineages of
+S
+. Enteritidis from Queensland, Australia
+PLoS One
+2018
+13
+e0191042
+10.1371/journal.pone.0191042
+29338017
+PMC5770046
+86
+Miko
+A
+Pries
+K
+Schroeter
+A
+Helmuth
+R
+Molecular mechanisms of resistance in multidrug-resistant serovars of
+Salmonella enterica
+isolated from foods in Germany
+J Antimicrob Chemother
+2005
+56
+1025
+1033
+10.1093/jac/dki365
+16227350
+87
+Pornsukarom
+S
+Thakur
+S
+Schaffner
+DW
+Horizontal dissemination of antimicrobial resistance determinants in multiple
+Salmonella
+serotypes following isolation from the commercial swine operation environment after manure application
+Appl Environ Microbiol
+2017
+83
+20
+10.1128/AEM.01503-17
+PMC5626988
+28802274
+88
+Trongjit
+S
+Angkititrakul
+S
+Tuttle
+RE
+Poungseree
+J
+Padungtod
+P
+et al
+Prevalence and antimicrobial resistance in
+Salmonella enterica
+isolated from broiler chickens, pigs and meat products in Thailand-Cambodia border provinces
+Microbiol Immunol
+2017
+61
+23
+33
+10.1111/1348-0421.12462
+28042666
+89
+Yau
+S
+Liu
+X
+Djordjevic
+SP
+Hall
+RM
+RSF1010-like plasmids in Australian
+Salmonella enterica
+serovar Typhimurium and origin of their
+sul2-strA-strB
+antibiotic resistance gene cluster
+Microb Drug Resist
+2010
+16
+249
+252
+10.1089/mdr.2010.0033
+20617928
+90
+Ambrose
+SJ
+Harmer
+CJ
+Hall
+RM
+Evolution and typing of IncC plasmids contributing to antibiotic resistance in Gram-negative bacteria
+Plasmid
+2018
+99
+40
+55
+10.1016/j.plasmid.2018.08.001
+30081066
+91
+Reid
+CJ
+Roy Chowdhury
+P
+Djordjevic
+SP
+Tn6026 and Tn6029 are found in complex resistance regions mobilised by diverse plasmids and chromosomal islands in multiple antibiotic resistant Enterobacteriaceae
+Plasmid
+2015
+80
+127
+137
+10.1016/j.plasmid.2015.04.005
+25917547
+92
+Petrovska
+L
+Mather
+AE
+AbuOun
+M
+Branchu
+P
+Harris
+SR
+et al
+Microevolution of monophasic
+Salmonella
+Typhimurium during epidemic, United Kingdom, 2005–2010
+Emerg Infect Dis
+2016
+22
+617
+624
+10.3201/eid2204.150531
+26982594
+PMC4806966
+93
+Ingle
+DJ
+Ambrose
+RL
+Baines
+SL
+Duchene
+S
+Gonçalves da Silva
+A
+et al
+Evolutionary dynamics of multidrug resistant
+Salmonella enterica
+serovar 4,[5],12:i:- in Australia
+Nat Commun
+2021
+12
+4786
+10.1038/s41467-021-25073-w
+34373455
+PMC8352879

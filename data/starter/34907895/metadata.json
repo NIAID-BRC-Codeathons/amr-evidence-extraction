@@ -1,0 +1,17 @@
+{
+  "id": "34907895",
+  "pmid": 34907895,
+  "pmcid": "PMC8767345",
+  "doi": "10.1016/S2666-5247(21)00244-3",
+  "category": "cat4_negative_control",
+  "title": "Genomic diversity of antimicrobial resistance in non-typhoidal Salmonella",
+  "journal": "Lancet Microbe",
+  "year": 2022,
+  "description": "Negative Control 1: Supplementary file 'Supplementary Tables.xlsx' reports qualitative disk/agar diffusion SIR only, NO quantitative numeric MIC values.",
+  "primary_table": "Supplementary Tables.xlsx",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s001.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s002.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s003.xlsx"
+  ]
+}

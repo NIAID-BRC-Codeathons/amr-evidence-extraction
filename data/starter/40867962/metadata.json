@@ -1,0 +1,13 @@
+{
+  "id": "40867962",
+  "pmid": 40867962,
+  "pmcid": "PMC12382991",
+  "doi": "10.3389/fmicb.2024.1437171",
+  "category": "cat1_jats_xml",
+  "title": "Resistance Response and Regulatory Mechanisms of Ciprofloxacin-Induced Resistant Salmonella enterica Serovar Enteritidis",
+  "journal": "Front Microbiol",
+  "year": 2024,
+  "description": "Main-text Table 1 provides numeric MIC values and inequalities (<=0.004, >32, etc.) for Ciprofloxacin, Ceftriaxone, Enrofloxacin, Ofloxacin, Ampicillin, etc.",
+  "primary_table": "Table 1",
+  "supp_files": []
+}

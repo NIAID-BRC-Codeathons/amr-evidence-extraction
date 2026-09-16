@@ -1,0 +1,336 @@
+{
+  "summary": [
+    {
+      "id": "27381390",
+      "pmcid": "PMC4997858",
+      "supp_files": 5,
+      "supp_present": 0,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 6
+    },
+    {
+      "id": "29678910",
+      "pmcid": "PMC6007101",
+      "supp_files": 1,
+      "supp_present": 0,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 2
+    },
+    {
+      "id": "31266463",
+      "pmcid": "PMC6604184",
+      "supp_files": 1,
+      "supp_present": 1,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 1
+    },
+    {
+      "id": "34515028",
+      "pmcid": "PMC8494480",
+      "supp_files": 14,
+      "supp_present": 6,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 9
+    },
+    {
+      "id": "34907895",
+      "pmcid": "PMC8767345",
+      "supp_files": 3,
+      "supp_present": 1,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 3
+    },
+    {
+      "id": "35651495",
+      "pmcid": "PMC9150820",
+      "supp_files": 3,
+      "supp_present": 2,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 2
+    },
+    {
+      "id": "37316492",
+      "pmcid": "PMC10267216",
+      "supp_files": 7,
+      "supp_present": 3,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 5
+    },
+    {
+      "id": "40867962",
+      "pmcid": "PMC12382991",
+      "supp_files": 0,
+      "supp_present": 0,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 1
+    },
+    {
+      "id": "42587319",
+      "pmcid": "PMC13471373",
+      "supp_files": 10,
+      "supp_present": 0,
+      "xml": true,
+      "text": true,
+      "pdf": false,
+      "failures": 11
+    }
+  ],
+  "failures": [
+    {
+      "paper_id": "27381390",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd1.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "27381390",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd2.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "27381390",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd3.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "27381390",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd4.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "27381390",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd5.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "27381390",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997858/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "29678910",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6007101/bin/AEM.02829-17_zam012188570s1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "29678910",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6007101/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "31266463",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6604184/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp10.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp11.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp12.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp6.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp7.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp8.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-supp9.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8494480/bin/elife-67852-transrepform1.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34515028",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8494480/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34907895",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s001.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34907895",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8767345/bin/mgen-7-0725-s002.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "34907895",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8767345/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "35651495",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9150820/bin/Table_1.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "35651495",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9150820/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "37316492",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM1_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "37316492",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM2_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "37316492",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM3_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "37316492",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10267216/bin/41467_2023_38902_MOESM6_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "37316492",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267216/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "40867962",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12382991/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM10_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM1_ESM.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM2_ESM.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM3_ESM.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM4_ESM.docx",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM5_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM6_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM7_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM8_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM9_ESM.pdf",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    },
+    {
+      "paper_id": "42587319",
+      "type": "pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13471373/",
+      "error": "not downloaded; PMC returned an anti-bot HTML interstitial"
+    }
+  ]
+}

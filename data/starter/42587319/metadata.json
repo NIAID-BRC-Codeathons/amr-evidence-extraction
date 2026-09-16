@@ -1,0 +1,24 @@
+{
+  "id": "42587319",
+  "pmid": 42587319,
+  "pmcid": "PMC13471373",
+  "doi": "10.1186/s12934-025-02758-5",
+  "category": "cat1_jats_xml",
+  "title": "WaaL-WaaP receptor cross-talk drives phage-induced collateral sensitivity to colistin in Salmonella Pullorum",
+  "journal": "Microb Cell Fact",
+  "year": 2025,
+  "description": "Main-text Table 2 contains an exact matrix of 8 Salmonella strains x 16 antibiotics with explicit numeric MICs (including inequalities < 0.25).",
+  "primary_table": "Table 2",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM10_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM1_ESM.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM2_ESM.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM3_ESM.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM4_ESM.docx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM5_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM6_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM7_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM8_ESM.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/13471373/bin/13567_2026_1825_MOESM9_ESM.pdf"
+  ]
+}

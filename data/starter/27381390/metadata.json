@@ -1,0 +1,19 @@
+{
+  "id": "27381390",
+  "pmid": 27381390,
+  "pmcid": "PMC4997858",
+  "doi": "10.1128/AAC.00535-16",
+  "category": "cat2_xlsx_supplement",
+  "title": "Whole-Genome Sequencing for Detecting Antimicrobial Resistance in Nontyphoidal Salmonella",
+  "journal": "Antimicrob Agents Chemother",
+  "year": 2016,
+  "description": "McDermott et al. AAC benchmark. Multi-tab supplementary spreadsheets with merged headers and 15+ antimicrobial columns across 640 isolates.",
+  "primary_table": "zac009165488sd1.xlsx",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd1.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd2.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd3.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd4.xlsx",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4997858/bin/AAC.01030-16_zac009165488sd5.xlsx"
+  ]
+}

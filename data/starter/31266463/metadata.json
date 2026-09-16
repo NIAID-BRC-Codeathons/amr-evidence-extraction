@@ -1,0 +1,15 @@
+{
+  "id": "31266463",
+  "pmid": 31266463,
+  "pmcid": "PMC6604184",
+  "doi": "10.1186/s12866-019-1520-y",
+  "category": "cat2_xlsx_supplement",
+  "title": "Determining antimicrobial susceptibility in Salmonella enterica serovar Typhimurium through whole genome sequencing",
+  "journal": "BMC Microbiol",
+  "year": 2019,
+  "description": "Supplementary spreadsheet 12866_2019_1520_MOESM1_ESM.xlsx with raw broth microdilution MIC measurements across antibiotics.",
+  "primary_table": "12866_2019_1520_MOESM1_ESM.xlsx",
+  "supp_files": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/6604184/bin/12866_2019_1520_MOESM1_ESM.xlsx"
+  ]
+}
