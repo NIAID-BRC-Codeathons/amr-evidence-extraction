@@ -1,0 +1,1002 @@
+{
+  "summary": [
+    {
+      "pmid": "35756053",
+      "pmcid": "PMC9226621",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "26806258",
+      "pmcid": "PMC4898209",
+      "ast_location": "main_text_table",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "25903077",
+      "pmcid": "PMC4407387",
+      "ast_location": "supplement",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 6,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 13,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "24787619",
+      "pmcid": "PMC4040999",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 30,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "22238576",
+      "pmcid": "PMC3253072",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "16569891",
+      "pmcid": "PMC1426932",
+      "ast_location": "main_text_prose",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "19769538",
+      "pmcid": null,
+      "ast_location": "no_pmc_record",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "31996449",
+      "pmcid": "PMC7098754",
+      "ast_location": "main_text_prose",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 18,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "25733508",
+      "pmcid": "PMC4394801",
+      "ast_location": "main_text_prose",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "23158674",
+      "pmcid": "PMC3556525",
+      "ast_location": "supplement",
+      "supplement_files": 1,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "31424550",
+      "pmcid": "PMC6798832",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 1,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29723570",
+      "pmcid": null,
+      "ast_location": "no_pmc_record",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "35425984",
+      "pmcid": null,
+      "ast_location": "no_pmc_record",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 20,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29729180",
+      "pmcid": "PMC6221151",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "30696529",
+      "pmcid": "PMC6351993",
+      "ast_location": "supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29487865",
+      "pmcid": "PMC5816877",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 4,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29377579",
+      "pmcid": null,
+      "ast_location": "no_pmc_record",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "28704546",
+      "pmcid": "PMC5509299",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 1,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "29229636",
+      "pmcid": "PMC5786761",
+      "ast_location": "supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "32025709",
+      "pmcid": "PMC7177496",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 1,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "31474962",
+      "pmcid": "PMC6702299",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 7,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "30988144",
+      "pmcid": "PMC6535555",
+      "ast_location": "main_text_prose",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "35189301",
+      "pmcid": null,
+      "ast_location": "no_pmc_record",
+      "supplement_files": 0,
+      "supplement_downloaded": 0,
+      "failures": 0
+    },
+    {
+      "pmid": "25038069",
+      "pmcid": "PMC4195474",
+      "ast_location": "main_text_and_supplement",
+      "supplement_files": 3,
+      "supplement_downloaded": 0,
+      "failures": 0
+    }
+  ],
+  "failures": [
+    {
+      "pmid": "35756053",
+      "pmcid": "PMC9226621",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9226621/bin/Table_1.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35756053",
+      "pmcid": "PMC9226621",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9226621/bin/Table_2.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35756053",
+      "pmcid": "PMC9226621",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9226621/bin/Table_3.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/mbo001183654sd1.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/mbo001183654s1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29295910",
+      "pmcid": "PMC5750399",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5750399/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_1.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_2.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_3.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_4.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_5.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_6.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Image_7.png",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_1.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_2.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_3.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_4.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_5.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33658988",
+      "pmcid": "PMC7917082",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7917082/bin/Table_6.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "24787619",
+      "pmcid": "PMC4040999",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4040999/bin/supp_6_5_1174__index.html",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "24787619",
+      "pmcid": "PMC4040999",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4040999/bin/supp_evu092_Supplementary_Figures.doc",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "24787619",
+      "pmcid": "PMC4040999",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4040999/bin/supp_evu092_Supplementary_Tables.doc",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-sf001.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-st001.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-st002.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-sf002.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-sf003.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-st003.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-sf004.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-sf005.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-s0001.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/mBio.02882-20-st004.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "33293382",
+      "pmcid": "PMC7733948",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7733948/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "22238576",
+      "pmcid": "PMC3253072",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/3253072/bin/pone.0028316.s001.ppt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "22238576",
+      "pmcid": "PMC3253072",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/3253072/bin/pone.0028316.s002.doc",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "22238576",
+      "pmcid": "PMC3253072",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/3253072/bin/pone.0028316.s003.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s2.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s3.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s4.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s5.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s6.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s7.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s8.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s9.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s10.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s11.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s12.txt",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s13.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s15.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s14.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s16.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s17.mov",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "26686880",
+      "pmcid": "PMC4703848",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4703848/bin/ncomms10063-s18.mov",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "23158674",
+      "pmcid": "PMC3556525",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/3556525/bin/mmc1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "31424550",
+      "pmcid": "PMC6798832",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6798832/bin/dkz341_supplementary_data.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-st001.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf001.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-st002.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf002.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf003.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-st003.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf004.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf005.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-sf006.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/mbio.03196-21-st004.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "35038924",
+      "pmcid": "PMC8764539",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8764539/bin/",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29729180",
+      "pmcid": "PMC6221151",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6221151/bin/BJD-179-951-s001.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29729180",
+      "pmcid": "PMC6221151",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6221151/bin/BJD-179-951-s002.pptx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29729180",
+      "pmcid": "PMC6221151",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6221151/bin/BJD-179-951-s003.mp4",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "30696529",
+      "pmcid": "PMC6351993",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6351993/bin/1800215_TOLEMAN_SupplementaryFigureS1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "30696529",
+      "pmcid": "PMC6351993",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6351993/bin/1800215_TOLEMAN_SupplementaryTableS1.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "30696529",
+      "pmcid": "PMC6351993",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6351993/bin/1800215_TOLEMAN_SupplementaryTableS2.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29487865",
+      "pmcid": "PMC5816877",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5816877/bin/2087693.f1.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29487865",
+      "pmcid": "PMC5816877",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5816877/bin/2087693.f2.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29487865",
+      "pmcid": "PMC5816877",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5816877/bin/2087693.f3.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29487865",
+      "pmcid": "PMC5816877",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5816877/bin/2087693.f4.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "28704546",
+      "pmcid": "PMC5509299",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5509299/bin/pone.0181072.s001.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29229636",
+      "pmcid": "PMC5786761",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5786761/bin/supp_62_2_e02000-17__index.html",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29229636",
+      "pmcid": "PMC5786761",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5786761/bin/AAC.02000-17_zac002186908s1.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "29229636",
+      "pmcid": "PMC5786761",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5786761/bin/AAC.02000-17_zac002186908s2.pdf",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "32025709",
+      "pmcid": "PMC7177496",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7177496/bin/dkz570_supplementary_data.zip",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "31474962",
+      "pmcid": "PMC6702299",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6702299/bin/Table_1.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "31474962",
+      "pmcid": "PMC6702299",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6702299/bin/Table_2.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "31474962",
+      "pmcid": "PMC6702299",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6702299/bin/Table_3.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Data_Sheet_1.PDF",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Data_Sheet_2.PDF",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Data_Sheet_3.PDF",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Table_1.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Table_2.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Table_3.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "34589061",
+      "pmcid": "PMC8473885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8473885/bin/Table_4.XLSX",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "25038069",
+      "pmcid": "PMC4195474",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4195474/bin/supp_69_11_2920__index.html",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "25038069",
+      "pmcid": "PMC4195474",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4195474/bin/supp_dku271_dku271supp_table1.xlsx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    },
+    {
+      "pmid": "25038069",
+      "pmcid": "PMC4195474",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4195474/bin/supp_dku271_dku271supp_table2.docx",
+      "error": "not downloaded; PMC returned an anti-bot/HTML interstitial instead of the file"
+    }
+  ]
+}
