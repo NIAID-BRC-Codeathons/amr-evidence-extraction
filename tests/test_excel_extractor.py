@@ -216,6 +216,71 @@ def test_extract_ast_records_ground_truth_overlap(
 
 
 # ==============================================================================
+# Unit Tests: Header Detection & Header Guard
+# ==============================================================================
+
+def test_detect_header_row():
+    """Test detect_header_row across varied table layouts."""
+    from amr_extraction.excel_extractor import detect_header_row
+
+    # Standard layout with headers at row 0
+    p_35651495 = "data/starter/35651495/supplements/Table_3.XLSX"
+    assert detect_header_row(p_35651495, "Sheet1") == 0
+
+    # Layout with title row at 0 and headers at row 1
+    p_27381390 = "data/starter/27381390/supplements/AAC.01030-16_zac009165488sd1.xlsx"
+    assert detect_header_row(p_27381390, "Table S1") == 1
+
+    # Layout with title and notes at rows 0-4 and headers at row 5
+    p_34907895 = "data/starter/34907895/supplements/Supplementary Tables.xlsx"
+    assert detect_header_row(p_34907895, "Supplementary Table S1") == 5
+
+
+def test_extract_ast_records_filters_header_pollution(tmp_path):
+    """Test that extract_ast_records skips rows matching header or subheader patterns."""
+    from amr_extraction.excel_extractor import extract_ast_records
+    from amr_extraction.schemas import ColumnMapping, SheetColumnMap
+
+    test_file = tmp_path / "test_table.xlsx"
+    data = [
+        ["CVM_NUMBER", "Nucleotide accession", "GENUS", "AMP"],
+        ["CVM_NUMBER", "Nucleotide accession", "GENUS", "AMP"],  # Repeated header row
+        ["N29307", "JYTM00000000", "Salmonella", "<= 1"],       # Valid isolate row
+        ["Range measured", None, None, "4 - 64"],               # Subheader row
+        ["Cutoff (>= X)", None, None, "32"],                     # Subheader row
+    ]
+    df = pd.DataFrame(data[1:], columns=data[0])
+    df.to_excel(test_file, index=False)
+
+    col_map = SheetColumnMap(
+        sheet_name="Sheet1",
+        header_row_index=0,
+        reasoning="Test layout",
+        columns=[
+            ColumnMapping(column_name="CVM_NUMBER", role=ColumnRole.LOCAL_ID),
+            ColumnMapping(column_name="Nucleotide accession", role=ColumnRole.PUBLIC_ACCESSION),
+            ColumnMapping(column_name="GENUS", role=ColumnRole.ORGANISM),
+            ColumnMapping(column_name="AMP", role=ColumnRole.DRUG_MIC, drug_name="ampicillin"),
+        ],
+    )
+
+    records = extract_ast_records(
+        excel_path=test_file,
+        sheet_name="Sheet1",
+        column_map=col_map,
+        pubmed_id="27381390",
+    )
+
+    assert len(records) == 1
+    rec = records[0]
+    assert rec.isolate_name == "N29307"
+    assert rec.accession == "JYTM00000000"
+    assert rec.organism == "Salmonella"
+    assert rec.mic_operator == "<="
+    assert rec.mic_value == "1"
+
+
+# ==============================================================================
 # Integration Tests: Live LLM (@pytest.mark.llm)
 # ==============================================================================
 

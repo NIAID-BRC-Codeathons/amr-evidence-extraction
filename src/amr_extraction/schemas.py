@@ -40,9 +40,9 @@ class SheetColumnMap(BaseModel):
     """Complete column mapping for one sheet."""
 
     sheet_name: str
-    columns: list[ColumnMapping] = Field(default_factory=list)
+    columns: list[ColumnMapping]
     header_row_index: int | None = None
-    reasoning: str = ""
+    reasoning: str
 
 
 class ASTExtractionRecord(BaseModel):

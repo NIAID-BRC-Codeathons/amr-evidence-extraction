@@ -2,8 +2,21 @@
 
 import os
 from pathlib import Path
+import re
 import pandas as pd
 import pytest
+
+# Automatically load environment variables from .env if present
+_env_file = Path(__file__).resolve().parent.parent / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text().splitlines():
+        _line = _line.strip()
+        if not _line or _line.startswith("#"):
+            continue
+        _line = re.sub(r"^export\s+", "", _line)
+        if "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ[_k.strip()] = _v.strip("\"'")
 
 from amr_extraction.schemas import (
     ColumnMapping,

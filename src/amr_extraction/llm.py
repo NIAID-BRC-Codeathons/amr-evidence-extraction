@@ -6,6 +6,8 @@ This is the only module in the package that imports google.genai.
 
 import logging
 import os
+from pathlib import Path
+import re
 import time
 from typing import TypeVar
 
@@ -13,11 +15,25 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel
 
+# Automatically load .env if present and GOOGLE_API_KEY is not yet in os.environ
+if not os.environ.get("GOOGLE_API_KEY"):
+    for env_candidate in [Path(".env"), Path(__file__).resolve().parent.parent.parent / ".env"]:
+        if env_candidate.exists():
+            for _line in env_candidate.read_text().splitlines():
+                _line = _line.strip()
+                if not _line or _line.startswith("#"):
+                    continue
+                _line = re.sub(r"^export\s+", "", _line)
+                if "=" in _line:
+                    _k, _v = _line.split("=", 1)
+                    os.environ.setdefault(_k.strip(), _v.strip("\"'"))
+            break
+
 logger = logging.getLogger(__name__)
 
 T = TypeVar("T", bound=BaseModel)
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.6-flash"
 
 
 def query_structured(
@@ -51,6 +67,7 @@ def query_structured(
         response_mime_type="application/json",
         response_schema=response_schema,
         temperature=temperature,
+        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
     )
 
     start_time = time.perf_counter()
