@@ -1,0 +1,19 @@
+# Table 2: Rare Variants in 16 Candidate Genes Linked to hVISA/VISAa
+Candidate Genes	Etest	PAP-AUC
+VSSA (n = 49)	VISA (n = 26)	VSSA (n = 26)	hVISA/VISA (n = 49)
+walR	1	5	0	6
+walK	6	5	2	9
+rpoB	8	8	7	9
+sarA	1	0	1	0
+graR	0	1	0	1
+graS	1	1	1	1
+vraF	2	1	2	1
+vraG	4	4	3	5
+clpP	0	0	0	0
+stp1 (PP2C)	4	4	4	4
+ccpA	1	0	0	1
+prsA	3	0	1	2
+vraR	1	2	1	2
+vraS	1	2	1	2
+yvqF	5	7	4	8
+agrA	0	1	0	1

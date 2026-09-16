@@ -1,0 +1,11 @@
+# Table 2: Fusidic acid resistance (FusR) determinants identified in case and control isolates, and associated minimum inhibitory concentrations (MICs)
+FusR determinant	Amino acid substitution	Number of isolates (case status)	Fusidic acid MIC (mg mL−1)
+fusA	A307S,a L461S	1 (AD)	4
+fusA	L461S	2 (AD)	4
+fusA	E444K	1 (NC)	4
+fusA	V90I, A655Tb	1 (AD)	16
+fusA	A376V, P40Q, L461S	1 (AD)	> 32
+fusA	L461K	3 (2 AD, 1 NC)	> 32
+fusA	T34S,a D283N,a H457Y, P635La	1 (AD)	> 32
+fusB	n/a	3 (2 AD, 1 NC)	8–16
+fusC	n/a	15 (10 AD, 5 NC)	8–16

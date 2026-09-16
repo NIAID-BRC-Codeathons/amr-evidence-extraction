@@ -24,6 +24,54 @@ Use BV-BRC curated data as the truth set. Report extraction precision/recall, ac
 - Arjun Prasad  Co-team-lead
 - Andrew Davis
 
+## Setup
+
+Requires Python 3.10+. From the repo root:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate       # Windows: venv\Scripts\activate
+pip install -e .
+```
+
+`pip install -e .` installs this package (`amr_extraction`) in editable mode along with its
+dependencies (`pandas`, `openpyxl`, `pydantic`, `google-genai`), as declared in `pyproject.toml`.
+It must be run from the repo root — running it from a subdirectory (e.g. `data/`) fails with
+*"does not appear to be a Python project"* since that's where `pyproject.toml` lives.
+
+For running the test suite too, install the `dev` extra instead:
+
+```bash
+pip install -e ".[dev]"
+```
+
+The AST-finder script's supplement downloader (`data/query_pmids_to_find_ast/find_ast_evidence.py`)
+can fall back to a real headless-Chromium browser (via Playwright) when PMC's anti-bot page blocks
+a plain download. That's an optional extra, since it pulls in a ~300MB browser binary:
+
+```bash
+pip install -e ".[browser]"
+playwright install chromium
+```
+
+Skip this if you don't need it — the script works fine without it, just with more supplement
+downloads reported as failures (or pass `--no-browser` to suppress the fallback explicitly).
+
+Scripts under `data/` (like `data/query_pmids_to_find_ast/find_ast_evidence.py`) that use
+`amr_extraction` add `src/` to `sys.path` themselves, so no separate install step is needed for
+them beyond the one above — just make sure you've run `pip install -e .` from the repo root at
+least once in whichever environment you're using.
+
+The supplement-extraction pipeline (`amr_extraction.llm`) also needs a Gemini API key in the
+`GOOGLE_API_KEY` environment variable. Get a free key from
+[Google AI Studio](https://aistudio.google.com/apikey), then:
+
+```bash
+export GOOGLE_API_KEY="your-key-here"          # current terminal session only
+# or, to persist it across terminals:
+echo 'export GOOGLE_API_KEY="your-key-here"' >> ~/.zshrc && source ~/.zshrc
+```
+
 ## Repository Structure
 
 ```

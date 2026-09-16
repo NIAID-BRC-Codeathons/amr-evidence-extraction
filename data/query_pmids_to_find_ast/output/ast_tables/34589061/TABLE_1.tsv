@@ -1,0 +1,10 @@
+# TABLE 1: Characterization of Oxazolidinone-resistant CoNS isolated in Moscow hospitals.
+Species	MLST	N	Sites	Source	MIC, mg/L	cfr	SNPs
+					LNZ	TDZ		23S rRNA*	rpl3
+S. epidermidis	ST2	6	E	Blood, sputum, intubation tube	>32	2–4	−	G2576T, (G2602T)	–
+		2	F	Intubation tube, feces	>32	16	−	G2576T, (G2602T)	Gly137Val, His146Arg, Met156Thr
+	ST23	2	A	Blood	32	2	−	G2576T, (G2602T)	–
+	ST22	20	A, B, D, E	Blood	>32	>32	−	C2534T, (C2560T),T2504A, (T2530A)	Asp159Tyr, Gly152Asp
+S. hominis	ST2	10	A,C,D,E	Blood	>32	4–8	–	G2576T, (G2603T)	Met156Thr, Val154Leu
+		6	A,F	Blood, feces, sputum	>32	4–8	+	G2576T, (G2603T)	Met156Thr, Val154Leu
+S. haemolyticus	ST1	1	A	Blood	>32	0.25	+	–	–

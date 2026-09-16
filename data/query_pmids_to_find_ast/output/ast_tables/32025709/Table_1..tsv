@@ -1,0 +1,14 @@
+# Table 1.: Evaluation of the genetic predictions of antibiotic susceptible/resistant phenotype made by the NGD tool for 778 MRSA isolates after repeat testing for discrepancies
+Drugs	True positives	True negatives	False positives	False negatives	Accuracy (%)	Sensitivity (%)	Specificity (%)	Very major errors (%)	Major errors (%)
+Cefoxitin	778	0	0	0	100	100	NA	0	NA
+Erythromycin	324	384	1	1	99.72	99.69	99.74	0.31	0.26
+Tetracycline	101	609	0	0	100	100	100	0	0
+Rifampicin	8	699	0	0	100	100	100	0	0
+Fusidic acid	220	494	1	1	99.72	99.55	99.79	0.45	0.21
+Gentamicin	53	668	0	0	100	100	100	0	0
+Chloramphenicol	4	684	0	4	99.42	50	100	50	0
+Mupirocin	31	571	6	0	99.01	100	98.96	0	1.04
+Linezolid	0	692	0	0	100	NA	100	NA	0
+Ciprofloxacin	398	289	0	5	99.28	98.76	100	1.24	0
+Trimethoprim	0	0	0	3	0	NA	NA	NA	NA
+Overall	1917	5090	8	14	99.69	99.27	99.84	0.72	0.15

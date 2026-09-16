@@ -1,0 +1,2 @@
+# Superseded — dependencies are now declared in the repo's pyproject.toml.
+# From the repo root: pip install -e .   (see the "Setup" section in the repo's README.md)

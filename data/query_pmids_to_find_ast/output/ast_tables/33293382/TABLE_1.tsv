@@ -1,0 +1,16 @@
+# TABLE 1: Microbiological features of 13 clinical isolates from 2 cases of flucloxacillin treatment failure with secondary oxacillin resistance
+Clinical case (diagnosis)	Isolate ID	Source	Time post-initial infection (days)	Oxacillin MIC (mg/liter)	Other resistance phenotype(s)	MLST	Resistance gene
+Case 1 (prosthetic-joint infection)	AUS0325	Synovial biopsy	0	0.5		88	blaZ
+	AUS0326	Synovial biopsy	73	1	Rifampin	88	blaZ
+	AUS0327	Synovial fluid	187	1	Rifampin	88	blaZ
+	AUS0328	Bone biopsy	258	1	Rifampin	88	blaZ
+	AUS0329	Synovial fluid	258	1	Rifampin	88	blaZ
+	AUS0331	Synovial biopsy	258	1	Rifampin	88	blaZ
+	AUS0332	Synovial biopsy	258	1	Rifampin	88	blaZ
+
+Case 2 (prosthetic-valve endocarditis)	21162	Blood	0	0.25		34	blaZ
+	21163	Blood	4	4		34	blaZ
+	21164	Blood	64	0.25		34	blaZ
+	21165	Blood	127	2	Rifampin, fusidic acid	34	blaZ
+	21166	Blood	131	0.25	Rifampin, fusidic acid	34	blaZ
+	23506	Blood	263	0.5		34	blaZ

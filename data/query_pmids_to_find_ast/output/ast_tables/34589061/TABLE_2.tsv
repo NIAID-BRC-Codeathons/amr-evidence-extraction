@@ -1,0 +1,8 @@
+# TABLE 2: Glycopeptide and lipoglycopeptides susceptibility and PAP analysis in linezolid-resistant coagulase-negative staphylococci.
+	MLST	n	Range MIC, mg/L	PAP/AUC	AAS* in RpoB
+			VAN	TEC	DLB	TLV	ORI	DAP	RIF	Range	M**	D471E	H481N	I527M
+LRSE	ST2	8	1–4	0.25–4	0.03–0.06	0.06–0.125	<0.06	0.25–0.5	>4	0.38–0.9	0.59	+	−	+
+	ST22	16	1–2	0.125–4	<0.03	0.03–0.125	<0.06	0.125–0.5	0.25–1	0.37–0.99	0.76	−	+	−
+	ST22	4	2–4	4	<0.03	0.06–0.125	<0.06	0.25–0.5	<0.03	0.75–0.98	0.85	−	−	−
+	ST23	2	2–4	2 and 16	0.06	0.125	0.125	0.5	>4	0.67–0.85	NA	+	−	+
+LRSH	ST2	16	1–2	4–16	0.03–0.125	0.06–0.125	0.03–0.125	0.125–0.5	0.5–2	0.40–0.9	0.75	−	+	−

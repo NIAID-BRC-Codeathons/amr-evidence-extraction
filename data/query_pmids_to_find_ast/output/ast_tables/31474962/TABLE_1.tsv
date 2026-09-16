@@ -1,0 +1,20 @@
+# TABLE 1: Antimicrobial susceptibility of S. aureus isolates from a single patient suffering from successive bacteremia during hospitalization.
+		MIC (μg/mL)	
+Strain	Days after hospitalization	VAN	TEIC	DAP	LZD	ABK	OXA	AMP	IPM	MEPM	BIPM	DRPM	LVFX	CPFX	MINO	EM/CLDM	ST	QPR/DPR	References
+KG-03	24	0.5	1	0.25	2	0.5	>128	16	2	8	8	8	64	64	8	>4/0.5	0.25	1	This study
+KG-06	40	2	2	1	2	2	128	16	32	16	32	8	64	64	8	>4/0.5	0.06	1	This study
+KG-18	51	8	2	2	1	4	4	1	<=0.06	0.25	0.25	<=0.06	32	64	8	>4/0.5	0.25	1	This study
+KG-19	51	1	1	0.5	1	2	32	16	0.5	2	2	1	16	64	8	>4/0.5	0.25	1	This study
+KG-22	54	4	4	2	1	8	64	8	0.125	2	1	0.5	32	32	4	>4/0.5	0.06	0.5	This study
+KG-23	56	1	2	1	1	0.5	64	16	0.125	1	1	0.5	32	64	8	>4/0.5	0.06	1	This study
+KG-28	58	1	4	2	1	0.5	>128	32	>64	32	64	32	32	32	8	>4/0.5	0.25	1	This study
+KG-32	65	2	4	1	2	1	128	8	1	4	4	2	32	64	8	>4/0.5	0.25	1	This study
+KG-35	65	4	1	1	2	2	64	8	1	2	2	1	32	64	8	>4/0.5	0.06	0.5	This study
+KG-38	75	2	2	1	0.5	2	64	8	0.25	1	1	0.5	16	32	4	>4/0.5	0.06	1	This study
+KG-39	83	2	2	1	0.5	2	64	8	2	4	8	2	32	32	4	>4/0.5	0.06	0.5	This study
+KG-41	99	4	4	2	1	4	32	4	0.5	2	2	0.5	32	64	8	>4/0.5	0.06	1	This study
+KG-43	100	1	4	1	1	0.5	128	8	0.25	0.5	0.5	0.25	32	64	8	>4/0.5	0.25	1	This study
+N315	n/a	1	0.5	0.5	2	1	32	16	1	4	4	1	0.5	0.5	0.125	>4/0.5	0.125	1	Kuroda et al., 2001
+Mu3	n/a	2	8	1	2	4	>128	16	64	32	64	32	16	32	16	>4/0.5	0.125	0.5	Kuroda et al., 2001
+Mu50	n/a	8	8	2	2	4	>128	16	16	8	16	8	32	>16	8	>4/0.5	0.125	0.5	Kuroda et al., 2001
+ATCC29213	n/a	1	1	0.5	2	1	<=0.5	0.5	<=0.06	<=0.06	<=0.06	<=0.06	0.5	0.25	0.125	<=4/0.5	0.125	0.5	Type strain
