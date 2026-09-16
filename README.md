@@ -23,6 +23,7 @@ Use BV-BRC curated data as the truth set. Report extraction precision/recall, ac
 - Marcus Nguyen Co-team-lead
 - Arjun Prasad  Co-team-lead
 - Andrew Davis
+- Liliana Brown
 
 ## Setup
 
