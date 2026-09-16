@@ -76,6 +76,43 @@ def _infer_accession_type(accession: str | None) -> str | None:
     return "Accession"
 
 
+def detect_header_row(
+    excel_path: str | Path,
+    sheet_name: str,
+    max_check_rows: int = 15,
+) -> int:
+    """Detect the 0-indexed row containing column headers.
+
+    Examines the first max_check_rows of the worksheet without headers.
+    Identifies the first row with substantial non-null string content,
+    ignoring title rows that contain only 1-2 cells across the row.
+    """
+    df_raw = pd.read_excel(excel_path, sheet_name=sheet_name, header=None, nrows=max_check_rows)
+    scores: list[tuple[int, int]] = []
+    for idx, row in df_raw.iterrows():
+        non_null_strings = sum(1 for v in row if isinstance(v, str) and v.strip())
+        scores.append((non_null_strings, int(idx)))
+
+    max_strings = max((s[0] for s in scores), default=0)
+    if max_strings <= 1:
+        return 0
+
+    threshold = max(2, int(max_strings * 0.4))
+    for count, idx in scores:
+        if count >= threshold:
+            return idx
+    return 0
+
+
+HEADER_KEYWORDS = {
+    "cvm_number", "isolate", "isolate_id", "isolate id", "isolate_name",
+    "sample", "sample_id", "sample id", "specimen", "sequencing_number",
+    "accession", "nucleotide accession", "accession number",
+    "genus", "organism", "species", "range measured", "cutoff",
+    "cutoff (>= x)", "breakpoint",
+}
+
+
 def extract_ast_records(
     excel_path: str | Path,
     sheet_name: str,
@@ -93,7 +130,11 @@ def extract_ast_records(
     Returns:
         List of ASTExtractionRecord objects.
     """
-    header_row = column_map.header_row_index if column_map.header_row_index is not None else 0
+    if column_map.header_row_index is not None and column_map.header_row_index > 0:
+        header_row = column_map.header_row_index
+    else:
+        header_row = detect_header_row(excel_path, sheet_name)
+
     df = pd.read_excel(excel_path, sheet_name=sheet_name, header=header_row)
 
     # Categorize columns from mapping
@@ -153,6 +194,15 @@ def extract_ast_records(
         else:
             isolate_name = f"isolate_{idx + 1}"
 
+        # Guard against header or subheader rows accidentally parsed as data
+        iso_clean = isolate_name.lower().strip()
+        if iso_clean in HEADER_KEYWORDS:
+            continue
+        if primary_id_col and iso_clean == str(primary_id_col).lower().strip():
+            continue
+        if any(kw in iso_clean for kw in ("range measured", "cutoff")):
+            continue
+
         # Resolve accession
         accession = None
         accession_type = None
@@ -184,6 +234,9 @@ def extract_ast_records(
                 raw_s = str(raw_mic_val).strip()
                 if raw_s in {"S", "R", "I", "Susceptible", "Resistant", "Intermediate"}:
                     sir_call = raw_s
+
+            if mic_val is None and sir_call is None:
+                continue
 
             record = ASTExtractionRecord(
                 pubmed_id=pubmed_id,
@@ -227,7 +280,8 @@ def classify_sheets(
     classifications: list[SheetClassification] = []
 
     for name in sheet_names:
-        df_preview = pd.read_excel(excel_path, sheet_name=name, nrows=8)
+        hdr = detect_header_row(excel_path, name)
+        df_preview = pd.read_excel(excel_path, sheet_name=name, header=hdr, nrows=8)
         preview_csv = _generate_sheet_preview(df_preview)
 
         prompt = f"""You are an expert microbiologist analyzing supplementary data files from scientific papers on antimicrobial resistance (AMR).
@@ -270,7 +324,8 @@ def map_columns(
     Returns:
         SheetColumnMap with roles assigned to each column.
     """
-    df_preview = pd.read_excel(excel_path, sheet_name=sheet_name, nrows=8)
+    hdr = detect_header_row(excel_path, sheet_name)
+    df_preview = pd.read_excel(excel_path, sheet_name=sheet_name, header=hdr, nrows=8)
     preview_csv = _generate_sheet_preview(df_preview)
 
     prompt = f"""You are an expert in antimicrobial susceptibility testing (AST) and clinical microbiology data curation.
@@ -304,11 +359,14 @@ When you detect this pattern:
 
 Provide:
 1. sheet_name: "{sheet_name}"
-2. columns: List of ColumnMapping for every column in the table.
-3. header_row_index: 0 (or integer row index if headers start on a lower row).
-4. reasoning: Brief explanation of the layout and column assignments.
+2. header_row_index: {hdr} (or integer row index if headers start on a different row).
+3. reasoning: A concise 1-sentence summary of the layout. Keep reasoning short.
+4. columns: A ColumnMapping item for EVERY single column listed in "Columns to classify". You MUST classify all {len(df_preview.columns)} columns.
 """
-    return query_fn(prompt=prompt, response_schema=SheetColumnMap)
+    result = query_fn(prompt=prompt, response_schema=SheetColumnMap)
+    if (result.header_row_index is None or result.header_row_index == 0) and hdr > 0:
+        result.header_row_index = hdr
+    return result
 
 
 def extract_from_excel(
