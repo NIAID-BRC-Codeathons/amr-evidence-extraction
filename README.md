@@ -2,7 +2,7 @@
 
 **NIAID-BRCs AI Codeathon 2.0** · September 16–18, 2026 · Argonne National Laboratory
 
-Extracting antimicrobial susceptibility and genotype–phenotype evidence from literature, harmonizing AMR and virulence databases, and combining that evidence with genome-based predictive models.
+Extract AST data from supplementary data in published articles.
 
 Project page: https://niaid-brc-codeathons.github.io/projects/amr-evidence-extraction/
 
