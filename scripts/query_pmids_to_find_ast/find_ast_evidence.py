@@ -734,7 +734,7 @@ def extract_ast_from_supplements(records: dict[str, PaperRecord], outdir: Path) 
     (this script adds ../../src to sys.path automatically when run from inside the repo)."""
     try:
         from amr_extraction.excel_extractor import extract_from_excel
-        from amr_extraction.llm import query_structured
+        from amr_extraction.llm import DailyQuotaExhausted, query_structured
     except ImportError as e:
         print(
             f"  WARNING: could not import amr_extraction ({e}). This usually means a dependency "
@@ -752,11 +752,17 @@ def extract_ast_from_supplements(records: dict[str, PaperRecord], outdir: Path) 
         return []
 
     all_rows: list[dict] = []
+    quota_exhausted = False
     for pmid, rec in records.items():
+        if quota_exhausted:
+            break
         supp_dir = outdir / "supplements" / pmid
         if not supp_dir.is_dir():
             continue
         for fpath in sorted(supp_dir.iterdir()):
+            if quota_exhausted:
+                rec.extraction_notes.append(f"{fpath.name}: skipped (daily Gemini quota exhausted this run)")
+                continue
             if fpath.suffix.lower() not in (".xlsx", ".xls"):
                 rec.extraction_notes.append(
                     f"{fpath.name}: skipped (only .xlsx/.xls are supported by excel_extractor; "
@@ -766,6 +772,22 @@ def extract_ast_from_supplements(records: dict[str, PaperRecord], outdir: Path) 
             print(f"  Extracting AST records from {fpath.name} (pmid {pmid}) via LLM column mapping ...")
             try:
                 extracted = extract_from_excel(excel_path=fpath, pubmed_id=pmid, query_fn=query_structured)
+            except DailyQuotaExhausted as e:
+                # Retrying this (query_structured already tried, correctly, exactly zero times
+                # for this specific error) or moving on to the next file won't help — the quota is
+                # shared across every call this script makes for the rest of the day, so stop
+                # immediately instead of burning through every remaining file just to fail the
+                # same way each time.
+                print(
+                    f"  STOPPING extraction: {e}\n"
+                    "  Files already downloaded aren't lost — re-run with --no-download once the "
+                    "quota resets (or with GEMINI_MODEL set to a different model, which has its "
+                    "own separate daily quota) to pick up where this left off.",
+                    file=sys.stderr,
+                )
+                rec.extraction_notes.append(f"{fpath.name}: extraction failed (daily Gemini quota exhausted)")
+                quota_exhausted = True
+                continue
             except Exception as e:  # noqa: BLE001 - surface any extractor failure per-file, keep going
                 rec.extraction_notes.append(f"{fpath.name}: extraction failed ({e})")
                 continue

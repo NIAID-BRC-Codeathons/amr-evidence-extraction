@@ -60,6 +60,22 @@ so a multi-sheet workbook (which makes 2 Gemini calls per sheet) is less likely 
 per-minute cap in the first place. Everything else (a real 400, a parsing failure, etc.) still
 fails immediately and shows up in `extraction_notes` as before — retrying those wouldn't help.
 
+**Correction, found on a real run:** not every `429` is the per-minute limit the retry logic
+above was built for. Google's free tier also enforces a **daily** cap per model (as of writing,
+20 requests/day for `gemini-3.6-flash`) — a 429 for that reason looks identical at first glance
+(same status code, same-shaped "retry in Ns" hint), but no amount of backoff fixes it until the
+quota resets, so the retry logic was burning ~165s (10+20+45+90s) on every single file, only to
+fail every time, for the rest of the run. Google's error response does distinguish the two
+internally via a `quotaId` field (`...PerDayPerProjectPerModel-FreeTier` vs.
+`...PerMinutePerProjectPerModel...`), so `query_structured()` now checks that specifically and,
+for a daily-quota 429, raises a distinct `DailyQuotaExhausted` immediately with **zero** retries.
+`extract_ast_from_supplements()` catches that and stops the whole extraction step right there —
+marking every remaining file with a short "skipped (daily Gemini quota exhausted this run)" note
+instead of attempting (and failing) each one — rather than ever getting to a hundreds-of-seconds
+death-by-a-thousand-retries. Files already downloaded aren't lost: re-run with `--no-download`
+once the quota resets (or with `GEMINI_MODEL` set to a different model — each has its own
+separate daily allowance) to pick up extraction where it left off.
+
 ## Supplement downloads: PMC's anti-bot challenge, and the browser fallback
 
 If `supplement_downloaded` kept coming back 0 for you, here's why, and what's now fixed.
