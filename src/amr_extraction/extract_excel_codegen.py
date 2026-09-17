@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 import pandas as pd
 from typing import List, Optional
 from pydantic import BaseModel, Field
@@ -11,6 +12,22 @@ from google import genai
 from google.genai import types
 
 from amr_extraction.excel_extractor import detect_header_row
+
+DEFAULT_MODEL = "models/gemini-3.8-flash"
+DEFAULT_ANTIBIOTICS_PATH = str(Path(__file__).resolve().parent / "antibiotics.list.txt")
+
+
+def load_antibiotics_list(path: Optional[str] = None) -> list[str]:
+    """Loads standard antibiotic names from a text file.
+
+    If path is None, loads from DEFAULT_ANTIBIOTICS_PATH.
+    Raises FileNotFoundError if the file does not exist.
+    """
+    target_path = path if path is not None else DEFAULT_ANTIBIOTICS_PATH
+    if not os.path.exists(target_path):
+        raise FileNotFoundError(f"Antibiotics list file not found: {target_path}")
+    with open(target_path, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
 
 # ---------------------------------------------------------------------------
 # Pydantic schema for sheet discovery
@@ -61,7 +78,7 @@ Explain your reasoning clearly in 'reasoning'.
 
     t0 = time.time()
     response = client.models.generate_content(
-        model="models/gemini-3.7-flash",
+        model=DEFAULT_MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
@@ -380,7 +397,7 @@ def generate_metadata_code(
     print(f"[*] Requesting metadata extraction code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
     response = client.models.generate_content(
-        model="models/gemini-3.7-flash",
+        model=DEFAULT_MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.0,
@@ -662,7 +679,7 @@ def generate_transformation_code(
     print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
     response = client.models.generate_content(
-        model="models/gemini-3.7-flash",
+        model=DEFAULT_MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.0,
@@ -855,11 +872,9 @@ def process_excel_with_code_gen(
         print(f"[!] Notice: No Excel files (.xlsx, .xls) found to process.", file=sys.stderr)
         return
 
-    antibiotics_list = None
-    if antibiotics_list_path and os.path.exists(antibiotics_list_path):
-        with open(antibiotics_list_path, 'r') as f:
-            antibiotics_list = [line.strip() for line in f if line.strip()]
-        print(f"[*] Loaded {len(antibiotics_list)} standard antibiotics from '{antibiotics_list_path}'", flush=True)
+    target_antibiotics_path = antibiotics_list_path if antibiotics_list_path is not None else DEFAULT_ANTIBIOTICS_PATH
+    antibiotics_list = load_antibiotics_list(target_antibiotics_path)
+    print(f"[*] Loaded {len(antibiotics_list)} standard antibiotics from '{target_antibiotics_path}'", flush=True)
 
     token_tracker = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
     start_total_time = time.time()
@@ -1037,7 +1052,7 @@ def build_cli_parser() -> argparse.ArgumentParser:
     parser.add_argument("-o", "--output", default="gemini_ast_codegen.tsv", help="Output TSV file (default: gemini_ast_codegen.tsv)")
     parser.add_argument("--save-code", default="generated_transform.py", help="File to save generated Python code (default: generated_transform.py)")
     parser.add_argument("--supp-dir", default=None, help="Directory containing additional supplementary spreadsheets (.xlsx, .xls) to scan or search for BioSample metadata mapping (default: same directory as input file)")
-    parser.add_argument("--antibiotics-list", default=None, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
+    parser.add_argument("--antibiotics-list", default=DEFAULT_ANTIBIOTICS_PATH, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
     parser.add_argument("--pmid", default=None, help="PubMed ID associated with the dataset (if not specified, inferred from path)")
     return parser
 

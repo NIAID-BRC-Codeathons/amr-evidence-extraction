@@ -6,6 +6,7 @@ import pytest
 from amr_extraction.extract_excel_codegen import (
     build_transformation_prompt,
     build_metadata_transformation_prompt,
+    build_cli_parser,
     classify_single_sheet,
     enrich_ast_with_metadata,
     execute_generated_code,
@@ -14,8 +15,11 @@ from amr_extraction.extract_excel_codegen import (
     generate_transformation_code,
     is_biosample_accession,
     is_candidate_metadata_sheet,
+    load_antibiotics_list,
     needs_accession_enrichment,
+    process_excel_with_code_gen,
     validate_extracted_records,
+    DEFAULT_ANTIBIOTICS_PATH,
     EXPECTED_OUTPUT_COLUMNS,
     SheetSelection,
 )
@@ -1021,6 +1025,88 @@ def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
     df = pd.read_csv(out_tsv, sep="\t", dtype=str)
     assert list(df.columns) == EXPECTED_OUTPUT_COLUMNS
     assert df.loc[0, "pmid"] == "99999999"
+
+
+def test_default_antibiotics_list_file_exists_and_loads():
+    """Verify default antibiotics list file exists and contains expected standard drugs."""
+    drugs = load_antibiotics_list()
+    assert isinstance(drugs, list)
+    assert len(drugs) == 52
+    assert "ampicillin" in drugs
+    assert "ciprofloxacin" in drugs
+    assert "vancomycin" in drugs
+
+
+def test_load_antibiotics_list_custom_and_missing(tmp_path):
+    """Verify load_antibiotics_list loads custom files and raises FileNotFoundError when missing."""
+    custom_file = tmp_path / "custom_drugs.txt"
+    custom_file.write_text("DrugA\nDrugB\n\n  DrugC  \n")
+
+    loaded = load_antibiotics_list(str(custom_file))
+    assert loaded == ["DrugA", "DrugB", "DrugC"]
+
+    non_existent = tmp_path / "does_not_exist.txt"
+    with pytest.raises(FileNotFoundError):
+        load_antibiotics_list(str(non_existent))
+
+
+def test_cli_parser_defaults_antibiotics_list():
+    """Verify CLI parser sets default --antibiotics-list to DEFAULT_ANTIBIOTICS_PATH."""
+    parser = build_cli_parser()
+    args = parser.parse_args(["some_file.xlsx"])
+    assert args.antibiotics_list == DEFAULT_ANTIBIOTICS_PATH
+
+
+def test_process_excel_uses_default_antibiotics_list(monkeypatch, tmp_path):
+    """Verify process_excel_with_code_gen passes default antibiotics list to code generation."""
+    excel_file = tmp_path / "test.xlsx"
+    with pd.ExcelWriter(excel_file) as writer:
+        pd.DataFrame({"Isolate": ["ISO-1"], "CIP": ["4"]}).to_excel(writer, sheet_name="AST", index=False)
+
+    captured_antibiotics = {}
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.classify_single_sheet",
+        lambda sheet_name, preview_df, client, token_tracker: SheetSelection(
+            sheet_name=sheet_name,
+            contains_ast_data=True,
+            has_mic_values=True,
+            has_sir_calls=False,
+            reasoning="AST sheet"
+        )
+    )
+
+    def mock_gen_code(sheet_name, preview_df, client, token_tracker, previous_errors=None, antibiotics_list=None):
+        captured_antibiotics["list"] = antibiotics_list
+        return """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "Ciprofloxacin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": None,
+        "notes": None,
+    }])
+"""
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_transformation_code",
+        mock_gen_code
+    )
+
+    out_tsv = tmp_path / "output.tsv"
+    process_excel_with_code_gen(
+        excel_path=str(excel_file),
+        output_tsv=str(out_tsv),
+    )
+
+    assert "list" in captured_antibiotics
+    assert captured_antibiotics["list"] is not None
+    assert "ciprofloxacin" in captured_antibiotics["list"]
+
 
 
 
