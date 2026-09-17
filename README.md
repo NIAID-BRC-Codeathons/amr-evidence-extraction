@@ -46,7 +46,7 @@ For running the test suite too, install the `dev` extra instead:
 pip install -e ".[dev]"
 ```
 
-The AST-finder script's supplement downloader (`data/query_pmids_to_find_ast/find_ast_evidence.py`)
+The AST-finder script's supplement downloader (`scripts/query_pmids_to_find_ast/find_ast_evidence.py`)
 can fall back to a real headless-Chromium browser (via Playwright) when PMC's anti-bot page blocks
 a plain download. That's an optional extra, since it pulls in a ~300MB browser binary:
 
@@ -58,10 +58,10 @@ playwright install chromium
 Skip this if you don't need it — the script works fine without it, just with more supplement
 downloads reported as failures (or pass `--no-browser` to suppress the fallback explicitly).
 
-Scripts under `data/` (like `data/query_pmids_to_find_ast/find_ast_evidence.py`) that use
-`amr_extraction` add `src/` to `sys.path` themselves, so no separate install step is needed for
-them beyond the one above — just make sure you've run `pip install -e .` from the repo root at
-least once in whichever environment you're using.
+Scripts under `scripts/` (like `scripts/query_pmids_to_find_ast/find_ast_evidence.py`) that
+use `amr_extraction` add `src/` to `sys.path` themselves, so no separate install step is needed
+for them beyond the one above — just make sure you've run `pip install -e .` from the repo root
+at least once in whichever environment you're using.
 
 The supplement-extraction pipeline (`amr_extraction.llm`) also needs a Gemini API key in the
 `GOOGLE_API_KEY` environment variable. Get a free key from
@@ -82,6 +82,10 @@ echo 'export GOOGLE_API_KEY="your-key-here"' >> ~/.zshrc && source ~/.zshrc
 |-- docs/              # Project documentation and developer guides
 |   |-- paper_classification.md
 |   `-- testing.md
+|-- scripts/           # Standalone pipeline scripts (not part of the installable package)
+|   `-- query_pmids_to_find_ast/
+|       |-- find_ast_evidence.py
+|       `-- README_ast_finder.md
 |-- src/               
 |   `-- amr_excel_extraction/  # Python source code for extraction package
 |       |-- excel_extractor.py
@@ -96,6 +100,7 @@ echo 'export GOOGLE_API_KEY="your-key-here"' >> ~/.zshrc && source ~/.zshrc
 
 - **`data/`**: Input literature files and evaluation benchmarks. The `data/starter/` directory contains curated evaluation papers organized by PMID, including raw supplementary files (Excel, XML, PDF), paper metadata, and BV-BRC ground truth TSV files where available.
 - **`docs/`**: Project documentation, including corpus categorization and the testing guide ([docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md)).
+- **`scripts/`**: Standalone scripts that use the `amr_extraction` package but aren't part of it — e.g. `query_pmids_to_find_ast/find_ast_evidence.py`, which takes a PMID list and finds/downloads AST evidence (see its own README for details). Distinct from `src/` (the installable package) and `data/` (pure input/benchmark data).
 - **`src/`**: Source code. Currently contains only the `amr_extraction` package, implementing the hybrid LLM sheet/column mapping and deterministic table unpivoting pipeline.
 - **`tests/`**: Contains tests. See [docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md) for execution instructions.
 

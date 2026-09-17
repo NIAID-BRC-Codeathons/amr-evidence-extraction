@@ -23,7 +23,7 @@ You asked for three things on top of the original script — all added:
    This needs `GOOGLE_API_KEY` set, plus the packages in `requirements.txt` installed (see
    "Installing dependencies" below — you do **not** need `pip install -e .`; the script adds
    `../../src` to `sys.path` itself, which I verified resolves correctly from
-   `data/query_pmids_to_find_ast/find_ast_evidence.py`). PDF/docx/csv supplements are downloaded
+   `scripts/query_pmids_to_find_ast/find_ast_evidence.py`). PDF/docx/csv supplements are downloaded
    but **not** run through the extractor — that module only handles Excel workbooks — the script
    notes this per-file in the `extraction_notes` column rather than silently skipping.
 
@@ -141,6 +141,50 @@ script's location, and that it degrades cleanly (clear warning, empty result, no
 `GOOGLE_API_KEY` isn't set. Please run it for real and send me the console output / any WARNING
 lines if BV-BRC comes back empty — the query syntax there is my best guess at BV-BRC's RQL
 (`https://www.bv-brc.org/api/doc/`), not something I could verify.
+
+## How the main-text AST tables are found and pulled
+
+For each PMID with a PMCID, the script fetches the paper's full-text XML from PMC (the JATS
+format PMC's API serves, not the PDF layout) and does two things with it:
+
+1. **Finds every table.** PMC's XML marks each table as a `<table-wrap>` block, with a `<label>`
+   (e.g. "Table 2"), a `<caption>`, and the actual `<table><tr><td>...` grid. `extract_tables_from_xml()`
+   walks every `<table-wrap>` in the document and pulls out the label, caption, and every row's
+   cell text — this is real extracted content, not just "the paper has a table" — so a table like
+   a 21-drug MIC susceptibility table comes out with every drug name, MIC value, and S/I/R call
+   intact, one row per line.
+
+2. **Decides which tables are actually AST results**, as opposed to, say, a strain-metadata table,
+   a phylogenetics table, or a genotype/AMR-gene table that just happens to share vocabulary with
+   real susceptibility-testing tables. It does this with two keyword checks against each table's
+   caption and first few rows: a broad AST-keyword set (MIC, susceptible/resistant/intermediate,
+   CLSI, EUCAST, disk/disc diffusion, zone diameter, breakpoint, Sensititre, broth microdilution,
+   E-test, VITEK, Phoenix, antibiogram) and a narrower "strong AST" set used specifically to
+   override false positives — a table whose caption mentions "gene(s)" without any of that
+   stronger phenotypic-testing vocabulary is treated as a genotype/resistance-gene table (AMR
+   gene presence/absence), not real AST data, even though the word "resistance" alone would
+   otherwise match. Tables labeled as supplementary ("Table S1", "Supplementary Table...") are
+   skipped here since those live in the supplement, not the main text — see the downloads section
+   below for those.
+
+Tables that pass both checks are written to `ast_tables/<pmid>/<table_label>.tsv`, with the
+caption as a leading `#`-comment line and one row per line after that. This is separate from (and
+usually more reliable than) the `ast_location` classification column, which is a coarser
+main-text/supplement/both/none guess based on keyword density across the whole paper — the actual
+`ast_table_files` are the real data to look at.
+
+## Output folder reference
+
+Everything below is written under `--outdir` (default `output/`, i.e. `scripts/query_pmids_to_find_ast/output/`):
+
+| path | what it is |
+|---|---|
+| `paper_classification_<name>.tsv` | The main result: one row per unique PMID, with every column described above and in the original script docstring. Start here. |
+| `ast_tables/<pmid>/<label>.tsv` | Real AST table content pulled straight out of the paper's own main text (see "How the main-text AST tables are found and pulled" above) — drug names, MIC values, S/I/R calls, etc., as actually printed in the paper. |
+| `supplements/<pmid>/<filename>` | Supplementary files downloaded from PMC as-is (xlsx, pdf, docx, zip, whatever the paper attached) — see `supplement_paths` in the main TSV for the exact local path per file. |
+| `ast_records_extracted.tsv` | Normalized, per-isolate AST records (isolate, drug, MIC, S/I/R) pulled out of the downloaded `.xlsx`/`.xls` supplements by the repo's LLM-based column-mapping extractor. Only written if at least one supplement was both downloaded and successfully parsed. |
+| `download_report.json` | Machine-readable summary of the whole run: per-paper counts (supplement files found/downloaded, AST tables extracted, BV-BRC genomes matched, extraction failures) plus the full list of download failures with their error messages. Handy for scripting a "what still needs attention" check without re-parsing the main TSV. |
+| `anti_bot_samples/<pmid>_<filename>.html` | **Debugging output, not data.** When PMC refuses to serve a supplement file — even after the Playwright browser fallback — the script saves up to 3 examples of exactly what PMC sent back instead (almost always its "Preparing to download..." anti-bot interstitial page). This exists so you can *see* what a block actually looks like (a JS challenge vs. a captcha vs. a plain 403) rather than just getting an error string. Once you've confirmed why a handful of downloads failed, this folder is safe to delete — it doesn't feed into anything else the script does. |
 
 ## Usage
 
