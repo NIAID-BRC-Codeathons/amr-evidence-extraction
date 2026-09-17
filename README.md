@@ -159,6 +159,11 @@ rmvirtualenv amr-evidence-extraction   # delete it entirely
 |   |-- paper_classification.md
 |   `-- testing.md
 |-- scripts/           # Standalone pipeline scripts (not part of the installable package)
+|   |-- accuracy_metrics/
+|   |   |-- computeAccuracy1.py
+|   |   |-- extractErrors.py
+|   |   |-- runAllAcc.sh
+|   |   `-- statToTab.py
 |   `-- query_pmids_to_find_ast/
 |       |-- find_ast_evidence.py
 |       `-- README_ast_finder.md
@@ -176,7 +181,30 @@ rmvirtualenv amr-evidence-extraction   # delete it entirely
 
 - **`data/`**: Input literature files and evaluation benchmarks. The `data/starter/` directory contains curated evaluation papers organized by PMID, including raw supplementary files (Excel, XML, PDF), paper metadata, and BV-BRC ground truth TSV files where available.
 - **`docs/`**: Project documentation, including corpus categorization and the testing guide ([docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md)).
-- **`scripts/`**: Standalone scripts that use the `amr_extraction` package but aren't part of it — e.g. `query_pmids_to_find_ast/find_ast_evidence.py`, which takes a PMID list and finds/downloads AST evidence (see its own README for details). Distinct from `src/` (the installable package) and `data/` (pure input/benchmark data).
+- **`scripts/`**: Standalone scripts that use the `amr_extraction` package but aren't part of it - e.g. `query_pmids_to_find_ast/find_ast_evidence.py`, which takes a PMID list and finds/downloads AST evidence (see its own README for details), and `accuracy_metrics/runAllAcc.sh` for evaluating extraction accuracy against ground truth. Distinct from `src/` (the installable package) and `data/` (pure input/benchmark data).
 - **`src/`**: Source code. Currently contains only the `amr_extraction` package, implementing the hybrid LLM sheet/column mapping and deterministic table unpivoting pipeline.
 - **`tests/`**: Contains tests. See [docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md) for execution instructions.
+
+## Accuracy Metrics Scripts (`scripts/accuracy_metrics`)
+
+The `scripts/accuracy_metrics/` directory contains scripts to evaluate extracted AST data against ground truth datasets.
+
+### `runAllAcc.sh`
+
+The shell script `runAllAcc.sh` will compare a set of paper runs against ground truth data (both aggregated across all papers and individually per paper).
+
+To run the script:
+
+```bash
+cd scripts/accuracy_metrics
+bash runAllAcc.sh
+```
+
+Steps performed by `runAllAcc.sh`:
+
+1. **Aggregate Paper Results**: Concatenates extracted TSVs from individual paper runs (`../../data/andrew_ast/*.tsv`) into `output.all.tsv`.
+2. **Compute Aggregate Accuracy**: Runs `computeAccuracy1.py` comparing `output.all.tsv` against ground truth (`../../data/rawTSV/dataset.staph.merged.txt`), generating full match rows in `output.all.comp.tsv` and summary metrics in `output.all.acc.txt`.
+3. **Tabulate Metrics**: Runs `statToTab.py` to convert `output.all.acc.txt` into a tabular format in `output.all.acc.tsv`.
+4. **Extract Errors**: Runs `extractErrors.py` on `output.all.comp.tsv` to output rows with incorrect SIR or MIC values to `output.all.err.tsv`.
+5. **Per-Paper Evaluation**: Iterates over each individual paper TSV in `../../data/andrew_ast/*.tsv`, running `computeAccuracy1.py` and `statToTab.py` to write per-paper comparison tables and statistics into the `accuracies/` directory.
 
