@@ -1,0 +1,363 @@
+#antibiotic	synonym	combination
+G418		
+GE2270A		
+GE37468		
+Imipenem-EDTA-PA		
+L-681,217		
+SB22484		
+UK-69,753		
+acridine dye		
+acriflavin		
+actinomycin		
+actinomycin D		
+amikacin	AMK	
+amoxicillin	AMX	
+amoxicillin-clavulanic acid	AMC	yes
+amoxicillin-clavulanic acid	augmentin	yes
+amphotericin B		
+ampicillin	AMP	
+ampicillin-sulbactam	SAM	yes
+amythiamicin A		
+anidulafungin		
+antibiotic A40926		
+antibiotic A47934		
+apramycin		
+arbekacin		
+arsphenamine		
+arylomycin		
+astromicin		
+aurodox		
+avilamycin		
+avoparcin		
+azamulin		
+azdimycin		
+azidamfenicol		
+azithromycin	AZM	
+azlocillin	AZL	
+aztreonam	ATM	
+aztreonam-avibactam		yes
+bacitracin		
+bacitracin A		
+bacitracin B		
+bacitracin F		
+balhimycin		
+bedaquiline		
+benzylpenicillin		
+bicyclomycin		
+bleomycin		
+bleomycin A2		
+bleomycin B2		
+bleomycinic acid		
+brodimoprim		
+butirosin		
+capreomycin		
+carbenicillin	CAR	
+carbomycin		
+caspofungin		
+cefaclor	CEC	
+cefadroxil	CFR	
+cefalexin		
+cefalotin		
+cefamandole	FAM	
+cefazolin	CFZ	
+cefdinir	CDR	
+cefditoren	CDN	
+cefepime	FEP	
+cefetamet	FET	
+cefiderocol		
+cefixime	CFM	
+cefmetazole	CMZ	
+cefonicid	CID	
+cefoperazone	CFP	
+cefotaxime	CTX	
+cefotaxime-clavulanic acid		yes
+cefotetan	CTT	
+cefotiam		
+cefovecin		
+cefoxitin	FOX	
+cefpirome		
+cefpodoxime	CPD	
+cefpodoxime-proxetil		
+cefprozil	CPR	
+ceftaroline		
+ceftazidime	CAZ	
+ceftazidime-avibactam		yes
+ceftazidime-clavulanic acid		yes
+ceftibuten	CTB	
+ceftiofur		
+ceftizoxime	ZOX	
+ceftobiprole		
+ceftolozane-tazobactam		yes
+ceftriaxone	CRO	
+cefuroxime	CXM	
+celesticetin		
+cephalexin	LEX	
+cephalothin	CEF	
+cephamycin		
+cephapirin	HAP	
+cephem		
+cephradine	RAD	
+chalcomycin		
+chloramphenicol	CHL	
+chloroeremomycin		
+chlortetracycline		
+cinoxacin	CIN	
+ciprofloxacin	CIP	
+clarithromycin	CLR	
+clavulanic acid	CLA	
+clinafloxacin	CLX	
+clindamycin	CLI	
+clofazimine		
+clorobiocin		
+cloxacillin		
+colistin	CST	
+colistin A		
+colistin B		
+coumermycin A1		
+cyclic thiazolyl peptide elfamycin		
+cycloserine		
+dalbavancin		
+dalfopristin		
+danofloxacin		
+daptomycin	DAP	
+defensin		
+delafloxacin		
+demeclocycline		
+diaminopyrimidine		
+dibekacin		
+dicloxacillin	DCX	
+dihydromocimycin		
+dirithromycin	DTM	
+doripenem	DOR	
+doxycycline	DOX	
+edeine		
+edeine A		
+edeine B		
+edeine D		
+edeine F		
+efrotomycin		
+elfamycin		
+enacyloxin IIa		
+enoxacin	ENX	
+enrofloxacin		
+eravacycline		
+ertapenem	ERT	
+erythromycin	ERY	
+ethambutol		
+ethionamide		
+factumycin		
+fidaxomicin		
+fleroxacin	FLE	
+flomoxef		
+florfenicol		
+flucloxacillin		
+fluconazole		
+flucytosine		
+fluoroquinolone		
+fosfomycin	FOF	
+fosfomycin-glucose-6-phosphate		
+fosmidomycin		
+furazolidone		
+fusidic acid		
+gamithromycin		
+ganefromycin		
+gatifloxacin	GAT	
+gentamicin	GEN	
+gentamicin B		
+gentamicin C		
+gepotidacin		
+glycylcycline		
+gramicidin		
+gramicidin A		
+gramicidin B		
+gramicidin C		
+gramicidin D		
+gramicidin S		
+grepafloxacin	GRX	
+griseoviridin		
+heneicomycin		
+hygromycin B		
+iclaprim		
+imipenem	IPM	
+imipenem-relebactam		yes
+isavuconazole		
+isepamicin		
+isoniazid		
+isopenicillin N		
+itraconazole		
+josamycin		
+kanamycin	KAN	
+kanamycin A		
+kasugamicin		
+kirromycin		
+kirrothricin		
+kitasamycin		
+levofloxacin	LVX	
+lincomycin		
+lincosamide		
+linezolid	LZD	
+lipopeptide antibiotic		
+lividomycin		
+lividomycin A		
+lividomycin B		
+lomefloxacin	LOM	
+loracarbef	LOR	
+madumycin II		
+mafenide		
+magainin		
+marbofloxacin		
+mecillinam		
+megalomycin		
+meropenem	MEM	
+meropenem-vaborbactam		yes
+methicillin	MET	
+methicillin	meticillin	
+methymycin		
+metronidazole		
+mezlocillin	MEZ	
+micafungin		
+midecamycin		
+minocycline	MIN	
+moenomycin		
+moenomycin A1		
+moxalactam	MOX	
+moxifloxacin	MXF	
+mupirocin		
+mycinamicin		
+nafcillin	NAF	
+nalidixic acid	NAL	
+narbomycin		
+neomycin		
+netilmicin	NET	
+nicotinamide		
+niddamycin		
+nitrofurantoin	NIT	
+norfloxacin	NOR	
+novobiocin		
+ofloxacin	OFX	
+oleandomycin		
+omadacycline		
+orbifloxacin		
+oritavancin		
+ostreogrycin B3		
+oxacillin	OXA	
+oxytetracycline		
+para-aminosalicylic acid		
+paromomycin		
+patricin A		
+patricin B		
+pefloxacin		
+penam		
+penicillin	PEN	
+penicillin N		
+phenelfamycin A		
+phenelfamycin B		
+phenelfamycin C		
+phenelfamycin D		
+phenelfamycin E		
+phenelfamycin F		
+phenelfamycin G		
+phenelfamycin H		
+phenicol		
+phenoxymethylpenicillin		
+pikromycin		
+piperacillin	PIP	
+piperacillin-sulbactam		yes
+piperacillin-tazobactam	TZP	yes
+plazomicin		
+pleuromutilin		
+polymyxin		
+polymyxin B	PMB	
+polymyxin B1		
+polymyxin B2		
+polymyxin B3		
+polymyxin B4		
+posaconazole		
+pradofloxacin		
+pristinamycin IA		
+pristinamycin IB		
+pristinamycin IIA		
+propicillin		
+prothionamide		
+pulvomycin		
+puromycin		
+pyrazinamide		
+quinupristin		
+quinupristin-dalfopristin	Q-D	
+retapamulin		
+ribostamycin		
+rifabutin	RFB	
+rifampin	RIF	
+rifampin	rifaldazine	
+rifampin	rifampicin	
+rifamycin		
+rifapentine	RFP	
+rifaximin		
+ristocetin		
+rosaramicin		
+roxithromycin		
+sisomicin		
+sparfloxacin	SPX	
+spectinomycin	SPT	
+spiramycin		
+streptogramin		
+streptogramin A antibiotic		
+streptogramin B antibiotic		
+streptomycin	STR	
+streptothricin		
+sulbactam	SUL	
+sulfacetamide		
+sulfadiazine		
+sulfadimethoxine	sulphadimethoxine	
+sulfadimidine		
+sulfadoxine		
+sulfamethizole		
+sulfamethoxazole		
+sulfasalazine		
+sulfisoxazole		
+sulfonamide		
+sulopenem		
+sulphathiazole		
+surotomycin		
+synercid		
+tazobactam	TZB	
+tedizolid		
+teicoplanin	TEC	
+telavancin		
+telithromycin	TEL	
+temocillin		
+tetracycline	TET	
+tetroxoprim		
+thiamphenicol		
+thiostrepton		
+tiamulin		
+ticarcillin	TIC	
+ticarcillin-clavulanic acid	TIM	yes
+tigecycline	TGC	
+tildipirosin		
+tilmicosin		
+timentin		
+tinidazole		
+tobramycin	TOB	
+triclosan		
+trimethoprim	TMP	
+trimethoprim-sulfamethoxazole	SXT	yes
+trimethoprim-sulfamethoxazole	co-trimoxazole	yes
+trimethoprim-sulfamethoxazole	cotrimoxazole	yes
+trovafloxacin	TVA	
+tuberactinomycin		
+tulathromycin		
+tunicamycin		
+tylosin		
+tyrothricin		
+unphenelfamycin		
+valnemulin		
+vancomycin	VAN	
+verdamicin		
+vernamycin B-gamma		
+vernamycin C		
+vertilimicin		
+viomycin		
+virginiamycin S2		
+voriconazole		
+zoliflodacin		
