@@ -4517,74 +4517,312 @@ pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	as
 29729180	BJD-179-951-s001.xlsx	Sheet 1	1541-61		SAMEA104602137				ERS2213419		chloramphenicol	=	8	S	mic_sign '=' inferred
 29729180	BJD-179-951-s001.xlsx	Sheet 1	1541-61		SAMEA104602137				ERS2213419		rifampin	<=	0.03	S	
 pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
-31474962	TABLE_1.tsv	TABLE_1	isolate_1								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_1								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_1								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_1								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_2								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_2								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_2								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_2								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_3								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_3								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_3								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_3								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_4								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_4								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_4								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_4								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_5								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_5								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_5								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_5								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_6								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_6								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_6								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_6								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_7								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_7								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_7								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_7								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_8								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_8								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_8								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_8								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_9								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_9								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_9								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_9								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_10								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_10								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_10								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_10								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_11								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_11								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_11								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_11								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_12								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_12								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_12								sulfamethoxazole/trimethoprim	=	0.06		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_12								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_13								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_13								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_13								sulfamethoxazole/trimethoprim	=	0.25		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_13								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_14								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_14								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_14								sulfamethoxazole/trimethoprim	=	0.125		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_14								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_15								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_15								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_15								sulfamethoxazole/trimethoprim	=	0.125		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_15								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_16								erythromycin	>	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_16								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_16								sulfamethoxazole/trimethoprim	=	0.125		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_16								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_17								erythromycin	<=	4		
-31474962	TABLE_1.tsv	TABLE_1	isolate_17								clindamycin	=	0.5		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_17								sulfamethoxazole/trimethoprim	=	0.125		mic_sign '=' inferred
-31474962	TABLE_1.tsv	TABLE_1	isolate_17								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		vancomycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		teicoplanin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		daptomycin	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		arbekacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		oxacillin	>	128		
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		imipenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		meropenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		biapenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		doripenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		levofloxacin	=	64.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-03	PRJDB8056	SAMD00164374				DRS091762		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		vancomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		teicoplanin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		arbekacin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		oxacillin	=	128		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		imipenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		meropenem	=	16		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		biapenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		doripenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		levofloxacin	=	64.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-06	PRJDB8056	SAMD00164375				DRS091763		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		vancomycin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		teicoplanin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		daptomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		arbekacin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		oxacillin	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		ampicillin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		imipenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		meropenem	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		biapenem	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		doripenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-18	PRJDB8056	SAMD00164376				DRS091764		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		teicoplanin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		daptomycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		arbekacin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		oxacillin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		imipenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		meropenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		biapenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		doripenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		levofloxacin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-19	PRJDB8056	SAMD00164377				DRS091765		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		vancomycin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		teicoplanin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		daptomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		arbekacin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		oxacillin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		imipenem	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		meropenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		biapenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		doripenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		ciprofloxacin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		minocycline	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-22	PRJDB8056	SAMD00164378				DRS091766		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		teicoplanin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		arbekacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		oxacillin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		imipenem	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		meropenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		biapenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		doripenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-23	PRJDB8056	SAMD00164379				DRS091767		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		teicoplanin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		daptomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		arbekacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		oxacillin	>	128		
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		ampicillin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		imipenem	>	64		
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		meropenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		biapenem	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		doripenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		ciprofloxacin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-28	PRJDB8056	SAMD00164380				DRS091768		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		vancomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		teicoplanin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		arbekacin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		oxacillin	=	128		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		imipenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		meropenem	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		biapenem	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		doripenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-32	PRJDB8056	SAMD00164381				DRS091769		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		vancomycin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		teicoplanin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		arbekacin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		oxacillin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		imipenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		meropenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		biapenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		doripenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-35	PRJDB8056	SAMD00164382				DRS091770		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		vancomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		teicoplanin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		linezolid	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		arbekacin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		oxacillin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		imipenem	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		meropenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		biapenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		doripenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		levofloxacin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		ciprofloxacin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		minocycline	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-38	PRJDB8056	SAMD00164383				DRS091771		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		vancomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		teicoplanin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		linezolid	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		arbekacin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		oxacillin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		imipenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		meropenem	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		biapenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		doripenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		ciprofloxacin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		minocycline	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-39	PRJDB8056	SAMD00164384				DRS091772		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		vancomycin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		teicoplanin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		daptomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		arbekacin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		oxacillin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		ampicillin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		imipenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		meropenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		biapenem	=	2		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		doripenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		trimethoprim/sulfamethoxazole	=	0.06		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-41	PRJDB8056	SAMD00164385				DRS091773		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		teicoplanin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		linezolid	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		arbekacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		oxacillin	=	128		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		ampicillin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		imipenem	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		meropenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		biapenem	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		doripenem	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		ciprofloxacin	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		trimethoprim/sulfamethoxazole	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	KG-43	PRJDB8056	SAMD00164386				DRS091774		clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								teicoplanin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								daptomycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								arbekacin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								oxacillin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								imipenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								meropenem	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								biapenem	=	4		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								doripenem	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								levofloxacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								ciprofloxacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								minocycline	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								quinupristin/dalfopristin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	N315								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	N315								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								vancomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								teicoplanin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								daptomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								arbekacin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								oxacillin	>	128		
+31474962	TABLE_1.tsv	TABLE_1	Mu3								ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								imipenem	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								meropenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								biapenem	=	64		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								doripenem	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								levofloxacin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								ciprofloxacin	=	32		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								minocycline	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu3								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	Mu3								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								vancomycin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								teicoplanin	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								daptomycin	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								arbekacin	=	4.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								oxacillin	>	128		
+31474962	TABLE_1.tsv	TABLE_1	Mu50								ampicillin	=	16.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								imipenem	=	16		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								meropenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								biapenem	=	16		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								doripenem	=	8		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								levofloxacin	=	32.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								ciprofloxacin	>	16		
+31474962	TABLE_1.tsv	TABLE_1	Mu50								minocycline	=	8.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	Mu50								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	Mu50								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								vancomycin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								teicoplanin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								daptomycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								linezolid	=	2.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								arbekacin	=	1.0		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								oxacillin	<=	0.5		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								ampicillin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								imipenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								meropenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								biapenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								doripenem	<=	0.06		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								levofloxacin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								ciprofloxacin	=	0.25		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								minocycline	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								erythromycin	<=	4		
+31474962	TABLE_1.tsv	TABLE_1	ATCC29213								clindamycin	=	0.5		mic_sign '=' inferred
 pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
 33293382	TABLE_1.tsv	TABLE_1	AUS0325								oxacillin	=	0.5		mic_sign '=' inferred
 33293382	TABLE_1.tsv	TABLE_1	AUS0326								oxacillin	=	1.0		mic_sign '=' inferred
