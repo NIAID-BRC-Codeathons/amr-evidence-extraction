@@ -73,6 +73,82 @@ export GOOGLE_API_KEY="your-key-here"          # current terminal session only
 echo 'export GOOGLE_API_KEY="your-key-here"' >> ~/.zshrc && source ~/.zshrc
 ```
 
+Google's free tier caps requests **per day**, not just per minute (20 requests/day for
+`gemini-3.6-flash` at time of writing) — the supplement-extraction step makes 2 Gemini calls per
+spreadsheet sheet, so it's easy to exhaust this processing even a handful of files. If you hit
+this, `find_ast_evidence.py` stops immediately (see its README for details) rather than retrying
+uselessly; re-run later once the quota resets, or set `GEMINI_MODEL` to a different model, which
+has its own separate daily quota.
+
+### Alternative: a local model via Ollama (no API key, no daily quota)
+
+Instead of Gemini, the supplement-extraction step can run entirely against a local model through
+[Ollama](https://ollama.com) — no API key, no network egress for the LLM calls, and no daily
+quota to run into. Trade-off: local models in the size that fits on a laptop (7B-8B parameters)
+follow a strict JSON schema less reliably than Gemini, so expect more failed/retried extractions.
+
+```bash
+# 1. Install the Ollama app (https://ollama.com/download) and make sure it's running
+#    (the menu-bar app runs the `ollama serve` daemon for you; or run `ollama serve` yourself).
+
+# 2. Pull a model. Anything Ollama's library has works, e.g.:
+ollama pull llama3.1:8b
+# ...or any GGUF model from Hugging Face:
+ollama pull hf.co/bartowski/Qwen2.5-7B-Instruct-GGUF
+
+# 3. Install the ollama Python client into this project's environment:
+pip install -e ".[ollama]"
+
+# 4. Point find_ast_evidence.py at it:
+python find_ast_evidence.py Staph.pmid_only.txt --no-download \
+    --llm-provider ollama --llm-model llama3.1:8b
+```
+
+`--llm-provider`/`--llm-model` can also be set via the `LLM_PROVIDER`/`OLLAMA_MODEL` (or
+`GEMINI_MODEL`) environment variables instead of flags. See `find_ast_evidence.py --help` for
+details, and its own README for more on how the extraction step uses whichever provider is active.
+
+### Alternative: virtualenvwrapper
+
+If you'd rather manage this project's environment with `mkvirtualenv`/`workon`/`rmvirtualenv`
+(conda-`env-list`-style) instead of activating `venv/` by hand, that works fine too and doesn't
+touch the plain `venv/` setup above — pick whichever one you actually use.
+
+```bash
+# One-time: install virtualenvwrapper (Homebrew avoids Python's "externally managed
+# environment" restriction, which a plain `pip install` will otherwise hit on newer macOS):
+brew install virtualenv virtualenvwrapper
+
+# Hook it into your shell — add to ~/.zshrc (or ~/.bash_profile):
+cat >> ~/.zshrc <<'RCEOF'
+
+# --- virtualenvwrapper ---
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+source $(brew --prefix)/bin/virtualenvwrapper.sh
+RCEOF
+source ~/.zshrc
+
+# Create this project's environment (creates + auto-activates a new env under $WORKON_HOME,
+# separate from any venv/ folder already in the repo):
+cd path/to/amr-evidence-extraction
+mkvirtualenv amr-evidence-extraction
+pip install -e ".[browser]"
+playwright install chromium
+
+# Optional: make `workon amr-evidence-extraction` also cd here automatically
+setvirtualenvproject $WORKON_HOME/amr-evidence-extraction $(pwd)
+```
+
+Day to day:
+
+```bash
+workon amr-evidence-extraction   # activate (and cd here, if you ran setvirtualenvproject)
+workon                            # list every environment, like `micromamba env list`
+deactivate                        # leave it
+rmvirtualenv amr-evidence-extraction   # delete it entirely
+```
+
 ## Repository Structure
 
 ```

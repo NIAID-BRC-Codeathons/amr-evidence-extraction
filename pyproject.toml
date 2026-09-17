@@ -19,6 +19,9 @@ dev = [
 browser = [
     "playwright>=1.40",
 ]
+ollama = [
+    "ollama>=0.4.0",
+]
 
 [build-system]
 requires = ["setuptools>=61.0"]

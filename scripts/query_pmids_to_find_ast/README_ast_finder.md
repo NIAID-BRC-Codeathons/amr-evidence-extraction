@@ -76,6 +76,45 @@ death-by-a-thousand-retries. Files already downloaded aren't lost: re-run with `
 once the quota resets (or with `GEMINI_MODEL` set to a different model — each has its own
 separate daily allowance) to pick up extraction where it left off.
 
+## New: `--llm-provider` — swap Gemini for a local Ollama model
+
+The extraction step (step 6, `extract_ast_from_supplements`) no longer hardcodes Gemini.
+`amr_extraction.llm.query_structured()` now dispatches to one of two backends based on
+`--llm-provider` (or the `LLM_PROVIDER` env var, same effect):
+
+- `gemini` (default) — unchanged behavior, including the retry/daily-quota logic described above.
+  Needs `GOOGLE_API_KEY`.
+- `ollama` — sends the same prompt + JSON schema to a locally-running
+  [Ollama](https://ollama.com) daemon via the `ollama` Python package's `chat(..., format=<json
+  schema>)`, which constrains the model's output to that schema, then parses the result the same
+  way as the Gemini path (`response_schema.model_validate_json(...)`). No API key, no per-minute
+  or daily quota — it's just calling `localhost:11434`. Needs `pip install -e ".[ollama]"` and
+  `ollama pull <model>` done ahead of time, and the daemon actually running (`ollama serve`, or
+  just have the Ollama app open).
+
+`--llm-model` overrides the model name for whichever provider is active (`GEMINI_MODEL` /
+`OLLAMA_MODEL` env vars do the same). Example:
+
+```bash
+python find_ast_evidence.py Staph.pmid_only.txt --no-download \
+    --llm-provider ollama --llm-model llama3.1:8b
+```
+
+Both providers are called through the exact same `query_fn` signature
+(`query_fn(prompt=..., response_schema=...)`) that `excel_extractor.py` already used, so nothing
+else in the extraction pipeline (sheet classification, column mapping, MIC parsing) changed — only
+which backend answers the prompt. `DailyQuotaExhausted` (see above) is Gemini-specific and is
+never raised on the Ollama path; a failed Ollama call (daemon not running, model not pulled, bad
+JSON back) raises a plain `RuntimeError`/`ValueError` with a message telling you what to check,
+and is caught per-file by the existing `except Exception` in `extract_ast_from_supplements()`
+(so one bad file doesn't stop the whole run the way a Gemini daily-quota exhaustion does).
+
+Worth knowing before you reach for this: a 7B-8B local model is noticeably less reliable at
+strictly following a JSON schema than Gemini is, so expect a higher rate of "extraction failed"
+notes on the Ollama path, especially on messier spreadsheets. It's a good option when you're
+blocked on Gemini's daily quota and want to keep moving, less good as a wholesale replacement if
+accuracy matters more than availability.
+
 ## Supplement downloads: PMC's anti-bot challenge, and the browser fallback
 
 If `supplement_downloaded` kept coming back 0 for you, here's why, and what's now fixed.

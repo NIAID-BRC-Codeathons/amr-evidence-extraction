@@ -19,8 +19,10 @@ genome_id \\t genome_id \\t pmid mapping (e.g. Staph.pmid.txt), this script:
      (--no-browser to disable this and just report those as failures).
   6. For downloaded .xlsx/.xls supplements, runs the repo's existing LLM-based extractor
      (amr_extraction.excel_extractor) to pull out normalized, per-isolate AST records
-     (isolate, drug, MIC, S/I/R) — requires GOOGLE_API_KEY and the amr_extraction package
-     importable (run this from within the repo, or `pip install -e .` first).
+     (isolate, drug, MIC, S/I/R) — requires the amr_extraction package importable (run this from
+     within the repo, or `pip install -e .` first) and an LLM backend: Gemini (default; needs
+     GOOGLE_API_KEY) or a local Ollama daemon (--llm-provider ollama; needs `ollama serve` running
+     and the model pulled). See --llm-provider / --llm-model below.
 
 USAGE
     python find_ast_evidence.py data/query_pmids_to_find_ast/Staph.pmid_only.txt \\
@@ -28,6 +30,9 @@ USAGE
 
     # Skip slower/optional steps:
     python find_ast_evidence.py Staph.pmid_only.txt --no-bvbrc --no-download --no-extract
+
+    # Use a local Ollama model instead of Gemini for the extraction step:
+    python find_ast_evidence.py Staph.pmid_only.txt --no-download --llm-provider ollama --llm-model llama3.1:8b
 
 NETWORK
     Talks to eutils.ncbi.nlm.nih.gov (paper metadata + full text), www.bv-brc.org (genome
@@ -892,12 +897,47 @@ def main() -> None:
     )
     ap.add_argument("--ncbi-api-key", default=None, metavar="KEY", help="Equivalent to NCBI_API_KEY (raises the eutils rate limit).")
     ap.add_argument("--ncbi-email", default=None, metavar="EMAIL", help="Equivalent to NCBI_EMAIL (good E-utilities citizenship).")
+    ap.add_argument(
+        "--llm-provider",
+        choices=["gemini", "ollama"],
+        default=os.environ.get("LLM_PROVIDER", "gemini"),
+        help=(
+            "Which LLM backend to use for supplement extraction (step 6). 'gemini' (default) "
+            "needs GOOGLE_API_KEY and hits Google's API (subject to its free-tier daily quota). "
+            "'ollama' runs fully locally against a running `ollama serve` daemon - no API key or "
+            "internet needed for the LLM step itself, but you must `pip install ollama` and "
+            "`ollama pull <model>` first. Defaults to $LLM_PROVIDER if set, else gemini."
+        ),
+    )
+    ap.add_argument(
+        "--llm-model",
+        default=None,
+        metavar="MODEL",
+        help=(
+            "Model name override for whichever --llm-provider is selected (e.g. gemini-3.6-flash "
+            "for gemini, or llama3.1:8b / qwen2.5:7b for ollama). Defaults to the GEMINI_MODEL or "
+            "OLLAMA_MODEL env var (matching the active provider), or that provider's built-in default."
+        ),
+    )
     args = ap.parse_args()
 
     if args.ncbi_api_key:
         os.environ["NCBI_API_KEY"] = args.ncbi_api_key
     if args.ncbi_email:
         os.environ["NCBI_EMAIL"] = args.ncbi_email
+
+    # Picked up by amr_extraction.llm.query_structured() via LLM_PROVIDER / GEMINI_MODEL /
+    # OLLAMA_MODEL env vars, since extract_ast_from_supplements() passes query_structured itself
+    # (not a per-call wrapper) as excel_extractor's query_fn.
+    os.environ["LLM_PROVIDER"] = args.llm_provider
+    if args.llm_model:
+        if args.llm_provider == "ollama":
+            os.environ["OLLAMA_MODEL"] = args.llm_model
+        else:
+            os.environ["GEMINI_MODEL"] = args.llm_model
+    if not args.no_extract:
+        print(f"LLM provider for supplement extraction: {args.llm_provider}"
+              + (f" (model: {args.llm_model})" if args.llm_model else ""))
 
     records = parse_input(args.input)
     print(f"Found {len(records)} unique valid PMIDs in {args.input}")
