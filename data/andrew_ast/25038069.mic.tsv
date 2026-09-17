@@ -1,1263 +1,1264 @@
-file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Gentamicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Gentamicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Erythromycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Erythromycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Oxacillin			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Oxacillin			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Oxacillin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Oxacillin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Fusidic acid			I	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Fusidic acid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Fusidic acid			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Tetracycline			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Tetracycline			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Ciprofloxacin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Ciprofloxacin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Rifampicin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Rifampicin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Vancomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Trimethoprim			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Trimethoprim			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Trimethoprim			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Trimethoprim			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Trimethoprim			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Trimethoprim			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Mupirocin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Linezolid			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Fosfomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Fosfomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Daptomycin			R	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Daptomycin			S	
-supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Daptomycin			S	
+pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_41								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_61								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_51								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_54								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_42								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_43								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Trimethoprim			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_6								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_36								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_35								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_41								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Trimethoprim			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_10								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_11								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_39								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_5								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_9								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_7								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_49								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_67								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_1								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_56								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_53								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_83								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_46								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_90								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_42								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_43								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_57								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_37								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_50								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_46								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_51								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_31								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Trimethoprim			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_88								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_44								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_38								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_36								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_52								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_38								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_85								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_8								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_53								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Trimethoprim			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_4								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Oxacillin			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_40								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_2								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_77								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_3								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_12								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_78								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_48								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_84								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_49								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_70								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_65								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_32								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_62								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_26								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_34								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_59								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_55								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_66								Daptomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_58								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_45								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_56								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_47								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_39								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_72								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_63								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_58								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_61								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_59								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_32								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_29								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_33								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_34								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_52								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_27								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_30								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_26								Daptomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_76								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_25								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_75								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_54								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_31								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_62								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_64								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_74								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	JCSC1435								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_18								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_25								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_20								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_45								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Rifampicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_55								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_29								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_66								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_15								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_13								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_27								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_91								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Trimethoprim			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_86								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_63								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_14								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_16								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_57								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Trimethoprim			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_87								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_64								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_71								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_30								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_73								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Fusidic acid			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_44								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_67								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_35								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Oxacillin			I	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_40								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_47								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_19								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_81								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_48								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_28								Fosfomycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_33								Fosfomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_17								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Ciprofloxacin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_65								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_22								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_24								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Oxacillin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7068_7_23								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Gentamicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Erythromycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Fusidic acid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Tetracycline			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_68								Linezolid			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Gentamicin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Erythromycin			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Oxacillin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Fusidic acid			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Tetracycline			R	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Ciprofloxacin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Rifampicin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Vancomycin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Mupirocin			S	
+25038069	supp_dku271_dku271supp_table1.xlsx	Ark1	7067_4_28								Linezolid			S	
