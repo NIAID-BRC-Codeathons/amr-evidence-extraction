@@ -50,21 +50,36 @@ record to have an `isolate_id` or `accession`, so a purely aggregate table legit
 produces zero valid records -- an accurate reflection of the source table, not a bug. In
 practice, expect a majority of PMIDs to produce no output at all.
 
-**Accession columns are always empty.** `bioproject_accession`, `biosample_accession`,
-`assembly_accession`, `genbank_accessions`, `refseq_accessions`, `sra_accession`, and
-`other_accessions` will be blank in every row this script produces, even for tables that do
-extract real per-isolate records. Checked directly: none of the main-text `ast_tables/*/*.tsv`
+**Accession columns are empty right out of this script, but can be filled in afterward.**
+`bioproject_accession`, `biosample_accession`, `assembly_accession`, `genbank_accessions`,
+`refseq_accessions`, `sra_accession`, and `other_accessions` will be blank in every row this
+script produces -- journal main-text tables report strain names and clinical data, not
+deposited-database identifiers (checked directly: none of the main-text `ast_tables/*/*.tsv`
 files in this repo contain anything that looks like a BioSample/SRA/BioProject/GenBank
-accession (`SAMN*`, `SRR*`, `PRJNA*`, `GCA_*`, etc.) -- journal main-text tables report strain
-names and clinical data, not deposited-database identifiers. Those almost always live in a
-separate supplementary data-availability file instead, which is what
-`extract_excel_codegen.py` (run against downloaded supplements) is for. This isn't a bug or a
-prompt-tuning issue -- there's nothing for the LLM to find in these particular source tables.
-Attaching accessions to main-text isolate records would require a deliberate cross-file join
-against a paper's supplement/accession table, not just extraction from `ast_tables/` alone.
+accession). Those live in the paper's Data Availability statement / supplementary files
+instead. There are now two ways to recover them after the fact, rather than from
+`ast_tables/` alone:
+  - `extract_excel_codegen.py`, run against downloaded supplements, if the paper has one with
+    accessions in it.
+  - `scripts/query_pmids_to_find_ast/match_isolates_to_biosample.py`, which takes the
+    BioProject accession `find_ast_evidence.py` already found for a PMID, resolves its linked
+    BioSamples from NCBI, and matches their `strain` attribute against this script's
+    `isolate_id` values -- filling in `bioproject_accession`/`biosample_accession`/
+    `sra_accession` for any isolate whose real strain name is recoverable this way. See that
+    script's own docstring/README entry for usage; it requires network access this repo's
+    sandboxed tooling doesn't have, so it's meant to be run from a normal terminal.
 
-**Some `ast_tables/*.tsv` files are malformed and unreadable.** A few tables written by
-`find_ast_evidence.py`'s table extraction have ragged rows (a stray tab inside a cell value)
-that pandas can't parse (`Error tokenizing data. C error: Expected N fields...`). This script
-catches that per-file and skips it rather than crashing the whole PMID or batch -- it shows up
-as part of the "no valid records" bucket in the batch summary, not a separate error count.
+**Some `ast_tables/*.tsv` files have a merged/spanning sub-header line, or are otherwise
+malformed.** A number of these tables have a second header-ish line before the real
+per-column header row -- a leftover from a merged/spanned cell in the original HTML/XML table
+(e.g. a single `MIC (µg/mL)` label spanning many drug columns). `read_ast_table()` detects and
+skips exactly one such line when it's clearly narrower than the real header and data rows that
+follow it (this was the root cause of a real bug: the isolate/strain-name column was getting
+silently absorbed into pandas' index instead of becoming a real column, so extraction fell back
+to generic `isolate_1`, `isolate_2`, ... labels instead of the paper's actual strain names). A
+few tables have a genuine two-row header instead (two differently-shaped label rows that would
+need to be merged, not discarded) -- those are deliberately left alone rather than risking a
+wrong guess, and a few others have ragged rows pandas can't parse at all
+(`Error tokenizing data. C error: Expected N fields...`). Both cases are caught per-file and
+skipped rather than crashing the whole PMID or batch -- they show up as part of the "no valid
+records" bucket in the batch summary, not a separate error count.

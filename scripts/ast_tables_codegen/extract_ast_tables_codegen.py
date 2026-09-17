@@ -22,16 +22,14 @@ IMPORTANT CAVEATS:
      valid records -- that's an accurate reflection of the source table, not a bug in this script.
   2. The accession columns (bioproject_accession, biosample_accession, assembly_accession,
      genbank_accessions, refseq_accessions, sra_accession, other_accessions) will be empty in
-     EVERY row this script produces, even for tables that extract real per-isolate records.
-     Checked directly: none of the main-text ast_tables/*/*.tsv files in this repo contain
-     anything that looks like a BioSample/SRA/BioProject/GenBank accession (SAMN*, SRR*, PRJNA*,
-     GCA_*, etc.) -- journal main-text tables report strain names / clinical data, not deposited-
-     database identifiers; those almost always live in a separate supplementary data-availability
-     file instead, which is what extract_excel_codegen.py (run against downloaded supplements)
-     is for. This isn't a bug or a prompt-tuning issue -- there's nothing for the LLM to find in
-     these particular source tables. Getting accessions attached to main-text isolate records
-     would require a deliberate cross-file join against a paper's supplement/accession table, not
-     just extraction from ast_tables/ alone.
+     EVERY row this script produces, even for tables that extract real per-isolate records --
+     journal main-text tables report strain names / clinical data, not deposited-database
+     identifiers. Those live in the paper's Data Availability statement / supplementary files
+     instead. Two ways to fill them in afterward: extract_excel_codegen.py against a downloaded
+     supplement, if one has accessions in it, or
+     scripts/query_pmids_to_find_ast/match_isolates_to_biosample.py, which resolves the
+     BioProject accession find_ast_evidence.py already found for a PMID against NCBI and matches
+     BioSample strain names to this script's isolate_id values (see that script's docstring).
 
 USAGE
     # Batch mode (default): process every PMID folder under --tables-root, writing one output
@@ -109,18 +107,51 @@ def read_ast_table(path: str) -> tuple[pd.DataFrame, Optional[str]]:
     find_ast_evidence.py's extract_tables_from_xml() with a leading '# <caption>' comment line
     before the real header row, so this skips any leading '#'-prefixed lines (collecting the
     first one as the table's caption, useful context for the LLM prompt) before handing the rest
-    to pandas."""
+    to pandas.
+
+    A number of these tables also have a SECOND non-'#' line that is a merged/spanning
+    sub-header artifact from the original HTML/XML table (e.g. a lone "MIC (µg/mL)" label that
+    spans many drug columns, represented here as mostly-empty tab-separated cells). That line
+    has far fewer tab-separated fields than the real per-column header directly below it.
+    pandas silently mis-parses that mismatch -- rather than raising, it can shove the real
+    header's extra fields into the DataFrame's index instead of turning them into columns,
+    which hides the isolate/strain-name column from every downstream consumer (observed in the
+    wild: an isolate_id column full of generic "isolate_1".."isolate_17" placeholders instead
+    of the real strain names, because the LLM never saw a 'Strain' column to map from -- see
+    git history / PR discussion for the concrete case).
+
+    Detect and skip exactly ONE such short leading line, and only when doing so lines the next
+    line's width up with the data rows that follow it. This is intentionally conservative: a few
+    tables here have a genuine two-row header (two real, differently-shaped label rows, e.g. a
+    top-level grouping row like 'Etest | PAP-AUC' over per-column sub-labels) that this same
+    'shorter than what follows' pattern would also match, but skipping there would need to merge
+    two header rows, not discard one -- so this leaves those alone and lets them fall through to
+    pandas' own ragged-row error (caught by the caller) rather than risk quietly eating a real
+    data row as a fake header.
+    """
     with open(path, "r", encoding="utf-8", errors="replace") as f:
         lines = f.readlines()
     caption: Optional[str] = None
-    skip = 0
-    for line in lines:
-        if line.lstrip().startswith("#"):
-            if caption is None:
-                caption = line.lstrip("#").strip()
-            skip += 1
-        else:
-            break
+    idx = 0
+    while idx < len(lines) and lines[idx].lstrip().startswith("#"):
+        if caption is None:
+            caption = lines[idx].lstrip("#").strip()
+        idx += 1
+
+    remaining = lines[idx:]
+    non_blank = [line for line in remaining if line.strip()]
+    if len(non_blank) >= 3:
+        counts = [line.count("\t") + 1 for line in non_blank[:3]]
+        header_count, next_count, data_count = counts
+        if header_count < next_count and next_count == data_count:
+            skipped = 0
+            for line in remaining:
+                skipped += 1
+                if line.strip():
+                    break
+            idx += skipped
+
+    skip = idx
     df = pd.read_csv(path, sep="\t", skiprows=skip)
     return df, caption
 
