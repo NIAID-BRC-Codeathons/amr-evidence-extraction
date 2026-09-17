@@ -6,309 +6,444 @@ import re
 import numpy as np
 import pandas as pd
 
-# Standard abbreviations mapped to full drug names
-DRUG_ABBREVIATIONS = {
-    'AMK': 'Amikacin',
-    'AMP': 'Ampicillin',
-    'SAM': 'Ampicillin/sulbactam',
-    'ATM': 'Aztreonam',
-    'CZO': 'Cefazolin',
-    'FEP': 'Cefepime',
-    'CEF': 'Cephalothin',
-    'MEM': 'Meropenem',
-    'ETP': 'Ertapenem',
-    'CXM': 'Cefuroxime',
-    'GEN': 'Gentamicin',
-    'CIP': 'Ciprofloxacin',
-    'TZP': 'Piperacillin/tazobactam',
-    'FOX': 'Cefoxitin',
-    'TMP': 'Trimethoprim',
-    'SXT': 'Sulfamethoxazole/trimethoprim',
-    'SMX': 'Sulfamethoxazole',
-    'CPD': 'Cefpodoxime',
-    'CAZ': 'Ceftazidime',
-    'TOB': 'Tobramycin',
-    'TGC': 'Tigecycline',
-    'TIM': 'Ticarcillin/clavulanic acid',
-    'CRO': 'Ceftriaxone',
-    'TET': 'Tetracycline',
-    'COL': 'Colistin',
-    'CST': 'Colistin',
-    'AMX': 'Amoxicillin',
-    'AMC': 'Amoxicillin/clavulanic acid',
-    'AUG': 'Amoxicillin/clavulanic acid',
-    'AZM': 'Azithromycin',
-    'CHL': 'Chloramphenicol',
-    'CLI': 'Clindamycin',
-    'DOX': 'Doxycycline',
-    'ERY': 'Erythromycin',
-    'FFN': 'Florfenicol',
-    'FOF': 'Fosfomycin',
-    'IPM': 'Imipenem',
-    'KAN': 'Kanamycin',
-    'LNZ': 'Linezolid',
-    'MIN': 'Minocycline',
-    'NAL': 'Nalidixic acid',
-    'NEO': 'Neomycin',
-    'NIT': 'Nitrofurantoin',
-    'OXA': 'Oxacillin',
-    'PEN': 'Penicillin',
-    'PIP': 'Piperacillin',
-    'RIF': 'Rifampicin',
-    'STR': 'Streptomycin',
-    'TEC': 'Teicoplanin',
-    'VAN': 'Vancomycin',
-}
-
-NON_DRUG_COL_PATTERNS = [
-    r'unnamed',
-    r'isolate',
-    r'sample',
-    r'specimen',
-    r'strain',
-    r'patient',
-    r'species',
-    r'organism',
-    r'genus',
-    r'panel',
-    r'card',
-    r'date',
-    r'temperature',
-    r'accession',
-    r'biosample',
-    r'qc',
-    r'comment',
-    r'note',
-    r'run',
-    r'batch',
+PERMITTED_DRUGS = [
+    'amoxicillin/clavulanic acid', 'ampicillin', 'antibiotic', 'arbekacin', 'azithromycin',
+    'biapenem', 'cefazolin', 'cefoxitin', 'ceftarolin', 'ceftaroline', 'chloramphenicol',
+    'chlorhexidine gluconate', 'ciprofloxacin', 'clarithromycin', 'clindamycin',
+    'dalbavancin', 'daptomycin', 'doripenem', 'erythromycin', 'florfenicol',
+    'fosfomycin', 'fusidic acid', 'gentamicin', 'imipenem', 'kanamycin',
+    'levofloxacin', 'linezolid', 'meropenem', 'methicillin', 'minocycline',
+    'moxifloxacin', 'mupirocin', 'norfloxacin', 'oritavancin', 'oxacillin',
+    'penicillin', 'phosphomycin', 'quinupristin/dalfopristin', 'rifampin',
+    'streptomycin', 'sulfamethoxazole/trimethoprim', 'tedizolid', 'teicoplanin',
+    'telavancin', 'tetracycline', 'tiamulin', 'tigecycline', 'tobramycin',
+    'trimethoprim', 'trimethoprim/sulfamethoxazole', 'trimethoprim/sulfonamide',
+    'vancomycin'
 ]
 
+DRUG_MAPPING = {
+    # amoxicillin/clavulanic acid
+    'amoxicillin/clavulanic acid': 'amoxicillin/clavulanic acid',
+    'amoxicillin/clavulanate': 'amoxicillin/clavulanic acid',
+    'amoxicillin-clavulanic acid': 'amoxicillin/clavulanic acid',
+    'amoxicillin-clavulanate': 'amoxicillin/clavulanic acid',
+    'amoxicillin+clavulanic acid': 'amoxicillin/clavulanic acid',
+    'amoxicillin+clavulanate': 'amoxicillin/clavulanic acid',
+    'amoxicillin clavulanic acid': 'amoxicillin/clavulanic acid',
+    'amoxicillin clavulanate': 'amoxicillin/clavulanic acid',
+    'amox/clav': 'amoxicillin/clavulanic acid',
+    'amc': 'amoxicillin/clavulanic acid',
+    'aug': 'amoxicillin/clavulanic acid',
+    'augmentin': 'amoxicillin/clavulanic acid',
+    # ampicillin
+    'ampicillin': 'ampicillin',
+    'amp': 'ampicillin',
+    'am': 'ampicillin',
+    # antibiotic
+    'antibiotic': 'antibiotic',
+    # arbekacin
+    'arbekacin': 'arbekacin',
+    'abk': 'arbekacin',
+    # azithromycin
+    'azithromycin': 'azithromycin',
+    'azm': 'azithromycin',
+    'azi': 'azithromycin',
+    # biapenem
+    'biapenem': 'biapenem',
+    'bpm': 'biapenem',
+    # cefazolin
+    'cefazolin': 'cefazolin',
+    'cfz': 'cefazolin',
+    'cz': 'cefazolin',
+    'czo': 'cefazolin',
+    'faz': 'cefazolin',
+    # cefoxitin
+    'cefoxitin': 'cefoxitin',
+    'fox': 'cefoxitin',
+    'cxt': 'cefoxitin',
+    # ceftarolin / ceftaroline
+    'ceftarolin': 'ceftarolin',
+    'ceftaroline': 'ceftaroline',
+    'cpt': 'ceftaroline',
+    'cfl': 'ceftaroline',
+    # chloramphenicol
+    'chloramphenicol': 'chloramphenicol',
+    'chl': 'chloramphenicol',
+    'cam': 'chloramphenicol',
+    'chlo': 'chloramphenicol',
+    # chlorhexidine gluconate
+    'chlorhexidine gluconate': 'chlorhexidine gluconate',
+    'chlorhexidine': 'chlorhexidine gluconate',
+    'chx': 'chlorhexidine gluconate',
+    # ciprofloxacin
+    'ciprofloxacin': 'ciprofloxacin',
+    'cip': 'ciprofloxacin',
+    'cp': 'ciprofloxacin',
+    'cipro': 'ciprofloxacin',
+    # clarithromycin
+    'clarithromycin': 'clarithromycin',
+    'clr': 'clarithromycin',
+    'cla': 'clarithromycin',
+    # clindamycin
+    'clindamycin': 'clindamycin',
+    'cli': 'clindamycin',
+    'cc': 'clindamycin',
+    'cd': 'clindamycin',
+    'clinda': 'clindamycin',
+    # dalbavancin
+    'dalbavancin': 'dalbavancin',
+    'dal': 'dalbavancin',
+    # daptomycin
+    'daptomycin': 'daptomycin',
+    'dap': 'daptomycin',
+    'dpm': 'daptomycin',
+    # doripenem
+    'doripenem': 'doripenem',
+    'dor': 'doripenem',
+    # erythromycin
+    'erythromycin': 'erythromycin',
+    'ery': 'erythromycin',
+    'e': 'erythromycin',
+    'erm': 'erythromycin',
+    # florfenicol
+    'florfenicol': 'florfenicol',
+    'ffc': 'florfenicol',
+    'flo': 'florfenicol',
+    # fosfomycin
+    'fosfomycin': 'fosfomycin',
+    'fos': 'fosfomycin',
+    'ff': 'fosfomycin',
+    # fusidic acid
+    'fusidic acid': 'fusidic acid',
+    'fus': 'fusidic acid',
+    'fa': 'fusidic acid',
+    # gentamicin
+    'gentamicin': 'gentamicin',
+    'gentamycin': 'gentamicin',
+    'gen': 'gentamicin',
+    'gm': 'gentamicin',
+    'cn': 'gentamicin',
+    'gentamicin c': 'gentamicin',
+    # imipenem
+    'imipenem': 'imipenem',
+    'ipm': 'imipenem',
+    'imi': 'imipenem',
+    'imp': 'imipenem',
+    # kanamycin
+    'kanamycin': 'kanamycin',
+    'kan': 'kanamycin',
+    'kanamycin a': 'kanamycin',
+    # levofloxacin
+    'levofloxacin': 'levofloxacin',
+    'lfx': 'levofloxacin',
+    'lev': 'levofloxacin',
+    'lvx': 'levofloxacin',
+    # linezolid
+    'linezolid': 'linezolid',
+    'lnz': 'linezolid',
+    'lzd': 'linezolid',
+    # meropenem
+    'meropenem': 'meropenem',
+    'mem': 'meropenem',
+    'mer': 'meropenem',
+    'mero': 'meropenem',
+    # methicillin
+    'methicillin': 'methicillin',
+    'met': 'methicillin',
+    # minocycline
+    'minocycline': 'minocycline',
+    'min': 'minocycline',
+    'mno': 'minocycline',
+    # moxifloxacin
+    'moxifloxacin': 'moxifloxacin',
+    'mxf': 'moxifloxacin',
+    'mox': 'moxifloxacin',
+    # mupirocin
+    'mupirocin': 'mupirocin',
+    'mup': 'mupirocin',
+    # norfloxacin
+    'norfloxacin': 'norfloxacin',
+    'nor': 'norfloxacin',
+    'nfx': 'norfloxacin',
+    # oritavancin
+    'oritavancin': 'oritavancin',
+    'ori': 'oritavancin',
+    # oxacillin
+    'oxacillin': 'oxacillin',
+    'oxa': 'oxacillin',
+    'ox': 'oxacillin',
+    # penicillin
+    'penicillin': 'penicillin',
+    'pen': 'penicillin',
+    'penicillin g': 'penicillin',
+    # phosphomycin
+    'phosphomycin': 'phosphomycin',
+    # quinupristin/dalfopristin
+    'quinupristin/dalfopristin': 'quinupristin/dalfopristin',
+    'quinupristin+dalfopristin': 'quinupristin/dalfopristin',
+    'quinupristin-dalfopristin': 'quinupristin/dalfopristin',
+    'quinupristin dalfopristin': 'quinupristin/dalfopristin',
+    'q/d': 'quinupristin/dalfopristin',
+    'synercid': 'quinupristin/dalfopristin',
+    # rifampin
+    'rifampin': 'rifampin',
+    'rifampicin': 'rifampin',
+    'rif': 'rifampin',
+    'ra': 'rifampin',
+    'rd': 'rifampin',
+    # streptomycin
+    'streptomycin': 'streptomycin',
+    'str': 'streptomycin',
+    # sulfamethoxazole/trimethoprim
+    'sulfamethoxazole/trimethoprim': 'sulfamethoxazole/trimethoprim',
+    'sulfamethoxazole-trimethoprim': 'sulfamethoxazole/trimethoprim',
+    'sulfamethoxazole+trimethoprim': 'sulfamethoxazole/trimethoprim',
+    # tedizolid
+    'tedizolid': 'tedizolid',
+    'tzd': 'tedizolid',
+    # teicoplanin
+    'teicoplanin': 'teicoplanin',
+    'tec': 'teicoplanin',
+    # telavancin
+    'telavancin': 'telavancin',
+    'tla': 'telavancin',
+    # tetracycline
+    'tetracycline': 'tetracycline',
+    'tet': 'tetracycline',
+    'te': 'tetracycline',
+    'tc': 'tetracycline',
+    # tiamulin
+    'tiamulin': 'tiamulin',
+    'tia': 'tiamulin',
+    # tigecycline
+    'tigecycline': 'tigecycline',
+    'tgc': 'tigecycline',
+    'tig': 'tigecycline',
+    # tobramycin
+    'tobramycin': 'tobramycin',
+    'tob': 'tobramycin',
+    'tm': 'tobramycin',
+    'nn': 'tobramycin',
+    # trimethoprim
+    'trimethoprim': 'trimethoprim',
+    'tmp': 'trimethoprim',
+    'w': 'trimethoprim',
+    # trimethoprim/sulfamethoxazole
+    'trimethoprim/sulfamethoxazole': 'trimethoprim/sulfamethoxazole',
+    'trimethoprim-sulfamethoxazole': 'trimethoprim/sulfamethoxazole',
+    'trimethoprim+sulfamethoxazole': 'trimethoprim/sulfamethoxazole',
+    'trimethoprim sulfamethoxazole': 'trimethoprim/sulfamethoxazole',
+    'sxt': 'trimethoprim/sulfamethoxazole',
+    'cotrimoxazole': 'trimethoprim/sulfamethoxazole',
+    'co-trimoxazole': 'trimethoprim/sulfamethoxazole',
+    # trimethoprim/sulfonamide
+    'trimethoprim/sulfonamide': 'trimethoprim/sulfonamide',
+    'trimethoprim-sulfonamide': 'trimethoprim/sulfonamide',
+    'trimethoprim+sulfonamide': 'trimethoprim/sulfonamide',
+    # vancomycin
+    'vancomycin': 'vancomycin',
+    'van': 'vancomycin',
+    'va': 'vancomycin'
+}
 
-def normalize_sir(sir_str: str):
-    if not sir_str:
+ACCESSION_RE = re.compile(r'\b(SAM[NED][A-Z0-9]?\d+|SRS\d+|GC[AF]_\d+\.\d+|[ESD]RR\d+)\b')
+
+
+def normalize_sign(raw_sign: str | None) -> str | None:
+    if not raw_sign:
         return None
-    s = sir_str.strip().upper()
-    if s in ['S', 'SUSCEPTIBLE']:
-        return 'S'
-    if s in ['I', 'INTERMEDIATE']:
-        return 'I'
-    if s in ['R', 'RESISTANT']:
-        return 'R'
-    if s in ['SDD']:
-        return 'SDD'
-    if s in ['NS', 'NONSUSCEPTIBLE', 'NON-SUSCEPTIBLE']:
-        return 'NS'
+    raw_sign = raw_sign.strip()
+    if raw_sign in ('<=', '≤'):
+        return '<='
+    elif raw_sign in ('>=', '≥'):
+        return '>='
+    elif raw_sign in ('<', '>', '='):
+        return raw_sign
     return None
 
 
-def parse_mic_cell(val):
+def normalize_sir(raw_sir: str | None) -> str | None:
+    if not raw_sir:
+        return None
+    s = raw_sir.strip().upper()
+    sir_map = {
+        'S': 'S', 'SUSCEPTIBLE': 'S',
+        'I': 'I', 'INTERMEDIATE': 'I',
+        'R': 'R', 'RESISTANT': 'R',
+        'SDD': 'SDD', 'SUSCEPTIBLE-DOSE DEPENDENT': 'SDD', 'SUSCEPTIBLE DOSE DEPENDENT': 'SDD',
+        'NS': 'NS', 'NON-SUSCEPTIBLE': 'NS', 'NONSUSCEPTIBLE': 'NS'
+    }
+    return sir_map.get(s, None)
+
+
+def parse_ast_cell(val):
     if pd.isna(val):
         return None, None, None, None
-
     s = str(val).strip()
-    if not s or s.lower() in [
-        'nan',
-        'none',
-        'null',
-        'nd',
-        'n/a',
-        '-',
-        '.',
-        'na',
-        'neg',
-        'pos',
-    ]:
+    if not s or s.lower() in {'nan', 'none', 'null', 'nd', 'n/a', 'na', '-', '.', '/', 'not tested'}:
         return None, None, None, None
 
-    # Replace European decimal comma with dot (e.g. 0,5 -> 0.5)
-    s_clean = re.sub(r'(\d),(\d)', r'\1.\2', s)
+    # Replace comma between digits with dot (e.g. 0,5 -> 0.5)
+    s_clean = re.sub(r'(\d+),(\d+)', r'\1.\2', s)
 
-    # Pattern for MIC with optional inequality sign and optional SIR call
-    mic_sir_pattern = re.compile(
-        r'^\s*(?P<sign><=|>=|≤|≥|<|>|=)?\s*'
-        r'(?P<mic>\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)*)\s*'
-        r'(?:[\(\[\s]\s*(?P<sir>SDD|NS|S|I|R|SUSCEPTIBLE|INTERMEDIATE|RESISTANT|NONSUSCEPTIBLE)\s*[\)\]]?)?\s*$',
-        re.IGNORECASE,
-    )
+    # Pure SIR call check
+    sir_map = {
+        'S': 'S', 'SUSCEPTIBLE': 'S',
+        'I': 'I', 'INTERMEDIATE': 'I',
+        'R': 'R', 'RESISTANT': 'R',
+        'SDD': 'SDD', 'SUSCEPTIBLE-DOSE DEPENDENT': 'SDD', 'SUSCEPTIBLE DOSE DEPENDENT': 'SDD',
+        'NS': 'NS', 'NON-SUSCEPTIBLE': 'NS', 'NONSUSCEPTIBLE': 'NS'
+    }
+    if s_clean.upper() in sir_map:
+        return None, None, sir_map[s_clean.upper()], None
 
-    sir_only_pattern = re.compile(
-        r'^\s*[\(\[]?\s*(?P<sir>SDD|NS|S|I|R|SUSCEPTIBLE|INTERMEDIATE|RESISTANT|NONSUSCEPTIBLE)\s*[\)\]]?\s*$',
-        re.IGNORECASE,
-    )
+    sign_pattern = r'(?P<sign><=|>=|<=?|>=?|≤|≥|<|>|=)'
+    num_pattern = r'(?P<mic>\d+(?:\.\d+)?(?:\s*/\s*\d+(?:\.\d+)?)*)'
+    sir_pattern = r'(?P<sir>SDD|NS|SUSCEPTIBLE|INTERMEDIATE|RESISTANT|[SIR])'
 
-    m = mic_sir_pattern.match(s_clean)
-    if m:
-        raw_sign = m.group('sign')
-        raw_mic = m.group('mic')
-        raw_sir = m.group('sir')
+    # Pattern 1: sign? mic (sir)?
+    p1 = re.compile(rf'^\s*{sign_pattern}?\s*{num_pattern}\s*(?:[\(\[\s]\s*{sir_pattern}\s*[\)\]]?)?\s*$', re.I)
+    m1 = p1.match(s_clean)
+    if m1:
+        raw_sign = m1.group('sign')
+        raw_mic = m1.group('mic')
+        raw_sir = m1.group('sir')
 
-        if raw_sign in ['≤', '<=']:
-            mic_sign = '<='
-            notes = None
-        elif raw_sign in ['≥', '>=']:
-            mic_sign = '>='
-            notes = None
-        elif raw_sign == '<':
-            mic_sign = '<'
-            notes = None
-        elif raw_sign == '>':
-            mic_sign = '>'
-            notes = None
-        elif raw_sign == '=':
-            mic_sign = '='
+        mic = re.sub(r'\s*/\s*', '/', raw_mic)
+        sir_call = normalize_sir(raw_sir)
+        if raw_sign:
+            mic_sign = normalize_sign(raw_sign)
             notes = None
         else:
             mic_sign = '='
             notes = "mic_sign '=' inferred"
-
-        mic = raw_mic.replace(' ', '')
-        sir_call = normalize_sir(raw_sir)
         return mic_sign, mic, sir_call, notes
 
-    m_sir = sir_only_pattern.match(s_clean)
-    if m_sir:
-        sir_call = normalize_sir(m_sir.group('sir'))
-        return None, None, sir_call, None
+    # Pattern 2: sir (sign? mic)
+    p2 = re.compile(rf'^\s*{sir_pattern}\s*(?:[\(\[\s]\s*{sign_pattern}?\s*{num_pattern}\s*[\)\]]?)?\s*$', re.I)
+    m2 = p2.match(s_clean)
+    if m2:
+        raw_sir = m2.group('sir')
+        raw_sign = m2.group('sign')
+        raw_mic = m2.group('mic')
+
+        sir_call = normalize_sir(raw_sir)
+        if raw_mic:
+            mic = re.sub(r'\s*/\s*', '/', raw_mic)
+            if raw_sign:
+                mic_sign = normalize_sign(raw_sign)
+                notes = None
+            else:
+                mic_sign = '='
+                notes = "mic_sign '=' inferred"
+        else:
+            mic_sign = None
+            mic = None
+            notes = None
+        return mic_sign, mic, sir_call, notes
 
     return None, None, None, None
 
 
 def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty:
-        return pd.DataFrame(
-            columns=[
-                'isolate_id',
-                'accession',
-                'drug',
-                'mic_sign',
-                'mic',
-                'sir_call',
-                'notes',
-            ]
-        )
+    output_cols = ['isolate_id', 'accession', 'drug', 'mic_sign', 'mic', 'sir_call', 'notes']
+    if df is None or df.empty:
+        return pd.DataFrame(columns=output_cols)
 
-    # 1. Identify isolate ID column
-    isolate_col = None
+    # 1. Identify valid drug columns and map them
+    drug_col_map = {}
     for col in df.columns:
-        col_name = str(col).strip().lower()
-        if any(
-            k in col_name
-            for k in [
-                'isolate_id',
-                'isolate',
-                'specimen',
-                'strain',
-                'sample_id',
-                'sample',
-            ]
-        ):
+        col_str = str(col).strip().lower()
+        if col_str in DRUG_MAPPING:
+            drug_col_map[col] = DRUG_MAPPING[col_str]
+
+    # 2. Identify Isolate ID column
+    isolate_col = None
+    # Check explicitly named columns
+    for col in df.columns:
+        c_str = str(col).strip().lower()
+        if re.search(r'\b(isolate|specimen|sample|strain|patient)\b', c_str) and not re.search(r'source|date|type|site', c_str):
+            isolate_col = col
+            break
+        elif re.search(r'\bid\b', c_str) and not re.search(r'source|date|type|site', c_str):
             isolate_col = col
             break
 
+    # If not found, inspect non-drug columns
     if isolate_col is None:
-        # Fallback to examining first columns (Unnamed: 0, Unnamed: 1, etc.)
-        for col in df.columns[:5]:
-            non_nulls = df[col].dropna().astype(str).str.strip()
-            # Avoid columns that are entirely empty or look like species names
-            if (
-                len(non_nulls) > 0
-                and not non_nulls.str.contains('^[A-Z][a-z]+ [a-z]+').all()
-            ):
-                isolate_col = col
-                break
+        non_drug_cols = [c for c in df.columns if c not in drug_col_map]
+        for col in non_drug_cols:
+            vals = df[col].dropna().astype(str).str.strip()
+            vals = vals[vals != ''].tolist()
+            if not vals:
+                continue
+            # Skip if species/genus
+            if any('coli' in v.lower() or 'aureus' in v.lower() or 'klebsiella' in v.lower() for v in vals[:5]):
+                continue
+            # Skip if panel/method
+            if any(k in v.lower() for k in ['gn3f', 'frcol', 'sensititre', 'vitek', 'panel'] for v in vals[:5]):
+                continue
+            # Skip if pure accession
+            if all(ACCESSION_RE.match(v) for v in vals[:5]):
+                continue
+            isolate_col = col
+            break
 
-    # 2. Identify accession column(s)
-    accession_cols = []
-    acc_pattern = re.compile(
-        r'\b(SAM[NED][A-Z]?\d+|SRS\d+|PRJ[NED][A-Z]?\d+|GCA_\d+\.\d+|GCF_\d+\.\d+|[SED]RR\d+|[SED]RX\d+|[SED]RA\d+)\b'
-    )
+    # 3. Identify Accession columns
+    acc_cols = []
     for col in df.columns:
-        col_name = str(col).strip().lower()
-        if any(
-            k in col_name
-            for k in ['accession', 'biosample', 'sra', 'genbank', 'ena']
-        ):
-            accession_cols.append(col)
-
-    # 3. Identify drug columns
-    drug_cols = []
-    for col in df.columns:
-        col_str = str(col).strip()
-        col_lower = col_str.lower()
-
-        # Skip isolate column, accession column, and known non-drug metadata
-        if col == isolate_col or col in accession_cols:
+        if col in drug_col_map or col == isolate_col:
             continue
-        if any(re.search(pat, col_lower) for pat in NON_DRUG_COL_PATTERNS):
-            continue
+        col_str = str(col).strip().lower()
+        if any(k in col_str for k in ['accession', 'biosample', 'sra_run', 'run_accession', 'assembly_accession']):
+            acc_cols.append(col)
+        else:
+            sample_vals = df[col].dropna().astype(str).str.strip()
+            if not sample_vals.empty:
+                matches = sample_vals.apply(lambda x: bool(ACCESSION_RE.search(x)))
+                if matches.mean() > 0.5:
+                    acc_cols.append(col)
 
-        drug_cols.append(col)
+    # Pre-extract accessions per row index
+    row_accessions = {}
+    for idx in df.index:
+        found_accs = []
+        for ac in acc_cols:
+            val = str(df.at[idx, ac]) if pd.notna(df.at[idx, ac]) else ''
+            for acc in ACCESSION_RE.findall(val):
+                if acc not in found_accs:
+                    found_accs.append(acc)
+        row_accessions[idx] = ','.join(found_accs) if found_accs else None
 
-    # 4. Extract rows
+    # 4. Extract records
     records = []
-    for idx, row in df.iterrows():
+    for idx in df.index:
         # Get isolate_id
-        isolate_val = row[isolate_col] if isolate_col is not None else None
-        if pd.isna(isolate_val) or str(isolate_val).strip() == '':
-            continue
-        isolate_id = str(isolate_val).strip()
+        iso_id = None
+        if isolate_col is not None and pd.notna(df.at[idx, isolate_col]):
+            val_str = str(df.at[idx, isolate_col]).strip()
+            if val_str and val_str.lower() not in {'nan', 'none', 'null'}:
+                iso_id = val_str
 
-        # Extract public accessions
-        accessions = []
-        for acc_col in accession_cols:
-            val = row[acc_col]
-            if pd.notna(val):
-                found = acc_pattern.findall(str(val))
-                accessions.extend(found)
+        acc_val = row_accessions.get(idx, None)
 
-        # Check full row for potential accession strings if none found in dedicated columns
-        if not accessions:
-            for val in row.values:
-                if pd.notna(val):
-                    found = acc_pattern.findall(str(val))
-                    accessions.extend(found)
-
-        accessions = list(dict.fromkeys(accessions))  # deduplicate preserving order
-        accession_str = ','.join(accessions) if accessions else None
-
-        # Parse each drug
-        for drug_col in drug_cols:
-            cell_val = row[drug_col]
-            mic_sign, mic, sir_call, notes = parse_mic_cell(cell_val)
-
-            # Discard cells without valid mic or sir_call
+        for col, drug_name in drug_col_map.items():
+            cell_val = df.at[idx, col]
+            mic_sign, mic, sir_call, notes = parse_ast_cell(cell_val)
             if mic is None and sir_call is None:
                 continue
 
-            # Standardize drug name
-            raw_drug = str(drug_col).strip()
-            drug_upper = raw_drug.upper()
-            drug_name = DRUG_ABBREVIATIONS.get(drug_upper, raw_drug)
+            records.append({
+                'isolate_id': iso_id,
+                'accession': acc_val,
+                'drug': drug_name,
+                'mic_sign': mic_sign,
+                'mic': mic,
+                'sir_call': sir_call,
+                'notes': notes
+            })
 
-            records.append(
-                {
-                    'isolate_id': isolate_id,
-                    'accession': accession_str,
-                    'drug': drug_name,
-                    'mic_sign': mic_sign,
-                    'mic': mic,
-                    'sir_call': sir_call,
-                    'notes': notes,
-                }
-            )
-
-    result_df = pd.DataFrame(
-        records,
-        columns=[
-            'isolate_id',
-            'accession',
-            'drug',
-            'mic_sign',
-            'mic',
-            'sir_call',
-            'notes',
-        ],
-    )
+    result_df = pd.DataFrame(records, columns=output_cols)
     return result_df
 
 # ==========================================================
@@ -322,105 +457,100 @@ import pandas as pd
 
 def extract_metadata(df: pd.DataFrame) -> pd.DataFrame:
     """Extracts mapping records between isolate identifiers and public database accessions."""
-    df_clean = df.copy()
-
-    # Identify isolate ID column
+    # 1. Identify isolate / sample ID column
     isolate_col = None
-    for col in df_clean.columns:
-        col_str = str(col).strip()
-        if re.search(
-            r"^(?:id\b|isolate|strain|sample[\s_-]*id|cvm[\s_-]*number|lab[\s_-]*id)",
-            col_str,
-            re.IGNORECASE,
-        ):
-            isolate_col = col
+    isolate_patterns = [
+        r"^(id(\s*\(\d+\))?|isolate([_\s]*id)?|sample([_\s]*id)?|strain|specimen([_\s]*id)?|lab([_\s]*id)?|cvm_number)$",
+        r"(isolate|sample)[_\s]*id",
+        r"^id\b",
+    ]
+
+    for pat in isolate_patterns:
+        for col in df.columns:
+            clean_col = str(col).strip()
+            if re.search(pat, clean_col, re.IGNORECASE):
+                isolate_col = col
+                break
+        if isolate_col:
             break
 
-    if isolate_col is None:
-        # Fallback search for any column containing 'id'
-        for col in df_clean.columns:
-            if re.search(r"\bid\b", str(col), re.IGNORECASE):
+    # Fallback: if not found, search for any column with 'id' or 'sample' that is not QC/Accession
+    if not isolate_col:
+        for col in df.columns:
+            clean_col = str(col).strip().lower()
+            if (
+                "id" in clean_col or "sample" in clean_col
+            ) and "accession" not in clean_col:
                 isolate_col = col
                 break
 
-    # Identify accession columns
-    ers_cols = []
-    err_cols = []
-    other_acc_cols = []
+    # 2. Identify public repository accession columns
+    accession_cols = []
+    for col in df.columns:
+        clean_col = str(col).strip()
+        if re.search(
+            r"(accession|biosample|sra|ena|run|assembly)", clean_col, re.IGNORECASE
+        ):
+            accession_cols.append(col)
 
-    for col in df_clean.columns:
-        col_str = str(col).strip()
-        if re.search(r"ers|biosample|samea|samn|samd", col_str, re.IGNORECASE):
-            ers_cols.append(col)
-        elif re.search(
-            r"err|srr|drr|run[\s_-]*accession", col_str, re.IGNORECASE
-        ):
-            err_cols.append(col)
-        elif (
-            re.search(r"accession", col_str, re.IGNORECASE)
-            and col != isolate_col
-        ):
-            other_acc_cols.append(col)
+    # Patterns for BioSample vs. other public accessions
+    biosample_pattern = re.compile(
+        r"^(SAM[NED][A-Z]?\d+|[ESD]RS\d+)$", re.IGNORECASE
+    )
+    general_accession_pattern = re.compile(
+        r"\b(SAM[NED][A-Z]?\d+|[ESD]R[SRXP]\d+|GC[AF]_\d+\.\d+|[A-Z]{1,2}\d{5,8}|[A-Z]{4}\d{8,10})\b",
+        re.IGNORECASE,
+    )
 
     records = []
-    for idx, row in df_clean.iterrows():
+    for _, row in df.iterrows():
         # Extract isolate ID
         iso_val = ""
         if isolate_col is not None and pd.notna(row[isolate_col]):
-            val_str = str(row[isolate_col]).strip()
-            if val_str and val_str.lower() not in ["nan", "none", "null"]:
-                iso_val = val_str
+            iso_str = str(row[isolate_col]).strip()
+            if iso_str.lower() not in ("", "nan", "none", "null"):
+                iso_val = iso_str
 
-        # Extract primary / all accessions
-        primary_accs = []
-        secondary_accs = []
+        # Extract all accessions from identified accession columns
+        row_accessions = []
+        for col in accession_cols:
+            val = row[col]
+            if pd.notna(val):
+                val_str = str(val).strip()
+                if val_str.lower() not in ("", "nan", "none", "null"):
+                    # Find accession tokens matching standard repository patterns
+                    tokens = general_accession_pattern.findall(val_str)
+                    if tokens:
+                        for token in tokens:
+                            if token not in row_accessions:
+                                row_accessions.append(token)
+                    else:
+                        # If no token extracted by regex, use raw value if not trivial
+                        if val_str not in row_accessions:
+                            row_accessions.append(val_str)
 
-        all_candidate_cols = ers_cols + err_cols + other_acc_cols
-        # If no specific columns matched, check across all columns
-        if not all_candidate_cols:
-            all_candidate_cols = [c for c in df_clean.columns if c != isolate_col]
-
-        for col in all_candidate_cols:
-            if pd.notna(row[col]):
-                val = str(row[col]).strip()
-                if val and val.lower() not in ["nan", "none", "null"]:
-                    # Match accession patterns
-                    found = re.findall(
-                        r"\b(?:[E|S|D]RS\d+|[E|S|D]RR\d+|SAM[NED][A-Z]?\d+|GCA_\d+\.\d+|GCF_\d+\.\d+|[A-Z]{1,2}\d{5,8}(?:\.\d+)?)\b",
-                        val,
-                        re.IGNORECASE,
-                    )
-                    if found:
-                        for acc in found:
-                            if acc not in primary_accs:
-                                primary_accs.append(acc)
-                            if re.match(
-                                r"^[E|S|D]RR\d+", acc, re.IGNORECASE
-                            ) and (acc not in secondary_accs):
-                                secondary_accs.append(acc)
-                    elif col in ers_cols + err_cols + other_acc_cols:
-                        if val not in primary_accs:
-                            primary_accs.append(val)
-                        if col in err_cols and val not in secondary_accs:
-                            secondary_accs.append(val)
+        # Categorize into BioSample vs. secondary (non-BioSample)
+        secondary_accs = [
+            acc for acc in row_accessions if not biosample_pattern.match(acc)
+        ]
 
         accession_str = (
-            ",".join(primary_accs) if primary_accs else None
+            ",".join(row_accessions) if row_accessions else np.nan
         )
-        sec_acc_str = (
+        secondary_str = (
             ",".join(secondary_accs) if secondary_accs else None
         )
-        iso_str = iso_val if iso_val else None
+        isolate_id_val = iso_val if iso_val != "" else np.nan
 
-        # Discard if both isolate_id and accession are missing/blank
-        if iso_str is None and accession_str is None:
+        # Discard rows where BOTH isolate_id and accession are missing/blank
+        if pd.isna(isolate_id_val) and pd.isna(accession_str):
             continue
 
         records.append(
             {
-                "isolate_id": iso_str,
+                "isolate_id": isolate_id_val,
                 "accession": accession_str,
-                "secondary_accession": sec_acc_str,
+                "secondary_accession": secondary_str,
             }
         )
 

@@ -1,0 +1,25 @@
+pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+22238576	Table_2.tsv	Table_2	1) A8115b								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	1) A8115b								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10135								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10135								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10151								daptomycin	=	4		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10151								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10152								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10152								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	2) A8117c								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	2) A8117c								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10136								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10136								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10153								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10153								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10154								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10154								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	3) A5948d								daptomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	3) A5948d								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A6658								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A6658								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10155								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10155								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10156								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10156								vancomycin	=	0.5		mic_sign '=' inferred
