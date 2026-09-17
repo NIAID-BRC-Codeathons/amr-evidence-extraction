@@ -1,0 +1,533 @@
+file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+Table_1.xlsx	ST1	12-01739								Daptomycin	=	8.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-01740								Daptomycin	=	8.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-03872								Daptomycin	=	8.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01065								Daptomycin	=	8.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	09-01199								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	08-02052								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	09-02538								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-00109-2								Antibiotic resistance patternc			I	
+Table_1.xlsx	ST1	10-00109-2								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-00785								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-02824								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-00260								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-03269								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-03623								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-00556								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03523-2								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03831								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-04344								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00724								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00753								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01258								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01371								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02151								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02510								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03170								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03171								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03244								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00345								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00434								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00574								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00711								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00752								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01414								Daptomycin	=	4.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	08-02376								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-03920								Antibiotic resistance patternc			I	
+Table_1.xlsx	ST1	12-03920								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-02338								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-02671								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-02987-1								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03385								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-04050								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-04448								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01459								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02100								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02229								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02720								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03011								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03706								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01169								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01202								Daptomycin	=	2.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-00014								Daptomycin	=	1.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-01676								Daptomycin	=	1.0		mic_sign '=' inferred
+Table_1.xlsx	ST1	08-00141								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-01970								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-02779								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-02222								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-00543								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-01132								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-00983								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03524								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-01538								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00490								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00561								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03767								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01760								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02152-2								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01705								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02912								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-02943								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00535								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-01017								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-03283								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00702								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00531								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00387								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00382								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00826								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-00680								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01873								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	15-01303								Daptomycin	=	0.5		mic_sign '=' inferred
+Table_1.xlsx	ST1	09-01101								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	09-00347								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-01243								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	10-00410								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	11-01772								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-03784								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-03831-2								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	12-03108								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-00896								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-01337								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-00373								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	13-03184								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00046								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00409								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00671								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00160								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_1.xlsx	ST1	14-00482								Daptomycin	=	0.25		mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03340								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03340								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03341								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03341								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03499								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03499								Oxacillin	>	4	R	
+Table_2.xlsx	ST2	06-00998								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	06-00998								Oxacillin	=	16	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	06-01624								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	06-01624								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02858-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02858-1								Oxacillin	>	4	R	
+Table_2.xlsx	ST2	10-03087								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-03087								Oxacillin	=	4	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-01718								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-01718								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-03066								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-03066								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-02900								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-02900								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-01857								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-01857								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01092								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01092								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03136								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03136								Oxacillin	=	64	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02942								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02942								Oxacillin	=	16	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02658								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02658								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02278								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02278								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02289								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02289								Oxacillin	=	96	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02755								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02755								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02846								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02846								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02895								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02895								Oxacillin	=	256	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03081								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03081								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03139								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03139								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03561-1								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03561-1								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02600								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02600								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02888								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02888								Oxacillin	=	64	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02461								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02461								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02856								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02856								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-03048								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-03048								Oxacillin	=	34	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02541-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02541-1								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-02017								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-02017								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-03477-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-03477-1								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01528								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01528								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00598								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00598								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01482								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01482								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02956								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02956								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03280								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03280								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-02150								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-02150								Oxacillin	=	16	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	08-00271								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	08-00271								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	15-02439								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	15-02439								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02028								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02028								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00249								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00249								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00729								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00729								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-02919								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-02919								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00490								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00490								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-02667								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-02667								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00264								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00264								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01267								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01267								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01734								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-01734								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00329								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00329								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02627								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02627								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02354								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02354								Oxacillin	=	256	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02813								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02813								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02973								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02973								Oxacillin	=	64	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03094								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03094								Oxacillin	=	96	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03546								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03546								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-03505								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	14-03505								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02225								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02225								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02230								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02230								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02870								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02870								Oxacillin	=	8	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03115								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03115								Oxacillin	>	4	R	
+Table_2.xlsx	ST2	12-02427-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02427-1								Oxacillin	>	4	R	
+Table_2.xlsx	ST2	12-00046								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00046								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	98-01155-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	98-01155-2								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-00453								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-00453								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	99-00653								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	99-00653								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02831								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02831								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00567								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-00567								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00777								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00777								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	02-03179								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	02-03179								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01257-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01257-2								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01263								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01263								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-00668								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-00668								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-03330								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-03330								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02057-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02057-2								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03222								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03222								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02408-1								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-02408-1								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	08-01162-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	08-01162-2								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01507								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-01507								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-01456-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-01456-2								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-00215								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-00215								Oxacillin	=	3	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-00212								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	09-00212								Oxacillin	=	128	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-01226								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	11-01226								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00856								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	10-00856								Oxacillin	=	8	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03411								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03411								Oxacillin	=	512	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	15-01585								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	15-01585								Oxacillin	=	1	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03317								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	12-03317								Oxacillin	=	1024	R	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02597								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_2.xlsx	ST2	16-02597								Oxacillin	=	32	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03340								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03340								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03341								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03341								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03499								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03499								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	06-00998								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	06-00998								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	06-01624								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	06-01624								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02858-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02858-1								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-03087								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-03087								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	09-01718								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	09-01718								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	09-03066								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	09-03066								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	14-02900								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-02900								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-01857								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-01857								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	14-01092								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-01092								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03136								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03136								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	16-02942								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	16-02942								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	16-02658								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	16-02658								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02278								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02278								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02289								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02289								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02755								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02755								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02846								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02846								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02895								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02895								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03081								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03081								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03139								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03139								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03561-1								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03561-1								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02600								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02600								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02888								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02888								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02461								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02461								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02856								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02856								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	16-03048								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	16-03048								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	16-02541-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	16-02541-1								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	11-02017								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-02017								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	11-03477-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-03477-1								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	14-01528								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-01528								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	10-00598								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00598								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	10-01482								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-01482								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-02956								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02956								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03280								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03280								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	14-02150								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-02150								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	08-00271								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	08-00271								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	15-02439								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	15-02439								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-02028								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02028								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	10-00249								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00249								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-00729								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00729								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-02919								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-02919								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-00490								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-00490								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	11-02667								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-02667								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-00264								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-00264								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-01267								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-01267								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	14-01734								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-01734								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-00329								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00329								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-02627								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02627								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02354								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02354								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02813								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02813								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02973								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02973								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03094								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03094								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03546								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03546								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	14-03505								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	14-03505								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02225								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02225								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02230								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02230								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02870								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02870								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03115								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03115								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02427-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02427-1								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-00046								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-00046								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	98-01155-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	98-01155-2								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	11-00453								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-00453								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	99-00653								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	99-00653								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02831								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02831								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-00567								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-00567								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-00777								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00777								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	02-03179								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	02-03179								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-01257-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-01257-2								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-01263								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-01263								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	11-00668								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-00668								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	11-03330								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-03330								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02057-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02057-2								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-03222								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03222								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-02408-1								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-02408-1								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	08-01162-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	08-01162-2								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	10-01507								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-01507								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	12-01456-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-01456-2								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	09-00215								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	09-00215								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	09-00212								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	09-00212								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	11-01226								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	11-01226								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	10-00856								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	10-00856								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03411								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03411								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	15-01585								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	15-01585								Ciprofloxacin			S	
+Table_5.xlsx	Tabelle1	12-03317								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	12-03317								Ciprofloxacin			R	
+Table_5.xlsx	Tabelle1	16-02597								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_5.xlsx	Tabelle1	16-02597								Ciprofloxacin			R	
+Table_6.xlsx	ST2	12-03340								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03341								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03499								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	06-00998								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	06-01624								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02858-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-03087								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	09-01718								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	09-03066								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-02900								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-01857								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-01092								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03136								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	16-02942								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	16-02658								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02278								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02289								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02755								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02846								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02895								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03081								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03139								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03561-1								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02600								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02888								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02461								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02856								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	16-03048								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	16-02541-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-02017								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-03477-1								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-01528								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00598								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-01482								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02956								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03280								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-02150								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	08-00271								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	15-02439								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02028								Ceftaroline	=	0.063	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00249								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00729								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-02919								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-00490								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-02667								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-00264								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-01267								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-01734								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00329								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02627								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02354								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02813								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02973								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03094								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03546								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	14-03505								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02225								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02230								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02870								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03115								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02427-1								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-00046								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	98-01155-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-00453								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	99-00653								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02831								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-00567								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00777								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	02-03179								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-01257-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-01263								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-00668								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-03330								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02057-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03222								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-02408-1								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	08-01162-2								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-01507								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-01456-2								Ceftaroline	=	2.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	09-00215								Ceftaroline	=	1.0	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	09-00212								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	11-01226								Ceftaroline	=	0.25	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	10-00856								Ceftaroline	=	0.5	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03411								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	15-01585								Ceftaroline	=	0.125	S	mic_sign '=' inferred
+Table_6.xlsx	ST2	12-03317								Ceftaroline	=	4.0	R	mic_sign '=' inferred
+Table_6.xlsx	ST2	16-02597								Ceftaroline	=	0.5	S	mic_sign '=' inferred

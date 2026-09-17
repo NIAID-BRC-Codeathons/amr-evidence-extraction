@@ -8,7 +8,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 2,
       "bvbrc_genomes": 452,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 3501,
       "failures": 0
     },
     {
@@ -52,7 +52,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 0,
       "bvbrc_genomes": 181,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 443,
       "failures": 0
     },
     {
@@ -206,7 +206,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 1,
       "bvbrc_genomes": 99,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 1584,
       "failures": 0
     },
     {
@@ -250,7 +250,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 1,
       "bvbrc_genomes": 64,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 1479,
       "failures": 0
     },
     {
@@ -261,7 +261,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 0,
       "bvbrc_genomes": 109,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 202,
       "failures": 0
     },
     {
@@ -294,7 +294,7 @@
       "supplement_downloaded": 0,
       "ast_tables_extracted": 2,
       "bvbrc_genomes": 47,
-      "ast_records_extracted": 0,
+      "ast_records_extracted": 1034,
       "failures": 0
     },
     {

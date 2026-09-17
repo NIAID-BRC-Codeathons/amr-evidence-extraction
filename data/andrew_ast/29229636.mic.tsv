@@ -1,0 +1,203 @@
+file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700924	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700924	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700925	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700925	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700926	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700926	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700927	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700927	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700928	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700928	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700929	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700929	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700930	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700930	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700931	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700931	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700932	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700932	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700933	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700933	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700934	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700934	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700935	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700935	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700936	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700936	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700937	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700937	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700938	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700938	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700939	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700939	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700940	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700940	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700941	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700941	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700942	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700942	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700943	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700943	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700944	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700944	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700945	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700945	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700946	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700946	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700947	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700947	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700948	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700948	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700949	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700949	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700950	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700950	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700951	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700951	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700953	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700953	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700954	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700954	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700955	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700955	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700956	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700956	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700957	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700957	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700958	PRJNA412108							Fusidic acid	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700958	PRJNA412108							Mupirocin	=	0.125		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700959	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700959	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700960	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700960	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700961	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700961	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700962	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700962	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700963	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700963	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700964	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700964	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700965	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700965	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700966	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700966	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700967	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700967	PRJNA412108							Mupirocin	=	0.5		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700968	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700968	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700969	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700969	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700970	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700970	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700971	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700971	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700972	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700972	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700973	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700973	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700975	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700975	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ14487	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ14487	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700977	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700977	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700978	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700978	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700979	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700979	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700980	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700980	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700981	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700981	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700982	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700982	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700983	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700983	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700984	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700984	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700985	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700985	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700987	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700987	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700988	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700988	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700989	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700989	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700990	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700990	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700992	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700992	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700993	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700993	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700994	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700994	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700996	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700996	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701000	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701000	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701001	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701001	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701002	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701002	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701003	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701003	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701004	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701004	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701005	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701005	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701006	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701006	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701007	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701007	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701009	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701009	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701010	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701010	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701011	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701011	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701012	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701012	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701013	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701013	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701014	PRJNA412108							Fusidic acid	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701014	PRJNA412108							Mupirocin	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701015	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701015	PRJNA412108							Mupirocin	=	512		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701016	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701016	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701017	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701017	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701018	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701018	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701019	PRJNA412108							Fusidic acid	=	0.25		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701019	PRJNA412108							Mupirocin	=	0.125		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701020	PRJNA412108							Fusidic acid	=	4		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701020	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701021	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701021	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701022	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701022	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701023	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701023	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701024	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701024	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701025	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701025	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701026	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701026	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701027	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701027	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701028	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701028	PRJNA412108							Mupirocin	=	0.06		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701029	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701029	PRJNA412108							Mupirocin	=	0.12		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701030	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701030	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701031	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701031	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701032	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701032	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701033	PRJNA412108							Fusidic acid	=	8		mic_sign '=' inferred
+AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701033	PRJNA412108							Mupirocin	=	1024		mic_sign '=' inferred
