@@ -13,12 +13,25 @@ whatever's in the table into the same long-format schema used for supplement ext
 QC-validate the result (retrying once with the QC errors fed back if anything fails), and write
 the combined output as a TSV.
 
-IMPORTANT CAVEAT: unlike the raw per-isolate spreadsheets extract_excel_codegen.py usually sees,
-many main-text AST tables are already-aggregated summaries (accuracy/concordance stats per drug,
-resistant-vs-susceptible counts per species, etc.) with no per-isolate ID or accession at all. The
-QC rules here (same ones extract_excel_codegen.py uses) require every record to have an
-isolate_id or accession, so a purely aggregate table will legitimately produce zero valid records
--- that's an accurate reflection of the source table, not a bug in this script.
+IMPORTANT CAVEATS:
+  1. Unlike the raw per-isolate spreadsheets extract_excel_codegen.py usually sees, many
+     main-text AST tables are already-aggregated summaries (accuracy/concordance stats per drug,
+     resistant-vs-susceptible counts per species, etc.) with no per-isolate ID or accession at
+     all. The QC rules here (same ones extract_excel_codegen.py uses) require every record to
+     have an isolate_id or accession, so a purely aggregate table will legitimately produce zero
+     valid records -- that's an accurate reflection of the source table, not a bug in this script.
+  2. The accession columns (bioproject_accession, biosample_accession, assembly_accession,
+     genbank_accessions, refseq_accessions, sra_accession, other_accessions) will be empty in
+     EVERY row this script produces, even for tables that extract real per-isolate records.
+     Checked directly: none of the main-text ast_tables/*/*.tsv files in this repo contain
+     anything that looks like a BioSample/SRA/BioProject/GenBank accession (SAMN*, SRR*, PRJNA*,
+     GCA_*, etc.) -- journal main-text tables report strain names / clinical data, not deposited-
+     database identifiers; those almost always live in a separate supplementary data-availability
+     file instead, which is what extract_excel_codegen.py (run against downloaded supplements)
+     is for. This isn't a bug or a prompt-tuning issue -- there's nothing for the LLM to find in
+     these particular source tables. Getting accessions attached to main-text isolate records
+     would require a deliberate cross-file join against a paper's supplement/accession table, not
+     just extraction from ast_tables/ alone.
 
 USAGE
     # Batch mode (default): process every PMID folder under --tables-root, writing one output
@@ -112,23 +125,46 @@ def read_ast_table(path: str) -> tuple[pd.DataFrame, Optional[str]]:
     return df, caption
 
 
+# str(nan) and str(inf)/str(-inf) are valid tokens in Python's repr() of a tuple/list containing
+# a float NaN or infinity (e.g. str((x, float("nan")))), but they are NOT valid `ast` literal
+# syntax on their own -- ast.literal_eval("(1, nan)") raises SyntaxError even though the string
+# genuinely is a dumped collection. Neutralize them (quote them) before the fallback parse so
+# real-world rows with missing/NaN values don't slip past this check.
+_BARE_NAN_RE = re.compile(r"(?<![\w.])nan(?![\w])")
+_BARE_INF_RE = re.compile(r"(?<![\w.])-?inf(?![\w])")
+
+
 def _looks_like_dumped_collection(val) -> bool:
     """True if val is a string that itself looks like the repr of a Python tuple/list/dict --
     a sign the LLM's generated transform code accidentally assigned an entire row (or a slice
     of one) to a single field instead of a single scalar value (observed in the wild: an
-    isolate_id column filled with strings like "('KG-03', '24', '0.5', ...)"). Caught here as
-    an extra QC pass beyond validate_extracted_records(), which only checks that isolate_id/
-    accession are non-blank, not that they're a sane shape."""
+    isolate_id column filled with strings like "('KG-03', '24', '0.5', ...)" or, with a missing
+    value in the mix, "('N315', nan, '1', '0.5', ...)"). Caught here as an extra QC pass beyond
+    validate_extracted_records(), which only checks that isolate_id/accession are non-blank, not
+    that they're a sane shape."""
     if val is None:
         return False
     s = str(val).strip()
     if len(s) < 2 or s[0] not in "([{" or s[-1] not in ")]}":
         return False
-    try:
-        parsed = ast.literal_eval(s)
-    except (ValueError, SyntaxError):
-        return False
-    return isinstance(parsed, (tuple, list, dict))
+
+    def _try_parse(text: str) -> bool:
+        try:
+            parsed = ast.literal_eval(text)
+        except (ValueError, SyntaxError):
+            return False
+        return isinstance(parsed, (tuple, list, dict))
+
+    if _try_parse(s):
+        return True
+
+    # Fallback: neutralize bare nan/inf tokens (invalid `ast` literal syntax, but valid inside a
+    # real Python repr) and retry, so a tuple/list containing a NaN is still recognized.
+    neutralized = _BARE_NAN_RE.sub("'nan'", s)
+    neutralized = _BARE_INF_RE.sub("'inf'", neutralized)
+    if neutralized != s:
+        return _try_parse(neutralized)
+    return False
 
 
 def _normalize_numeric_id(val):
