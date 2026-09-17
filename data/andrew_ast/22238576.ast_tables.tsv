@@ -1,25 +1,64 @@
 pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+22238576	Table_1.tsv	Table_1	1) A8819								daptomycin	=	0.25		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	1) A8819								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A8817								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A8817								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	2) A10102								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	2) A10102								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A10103								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A10103								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	3) A9299								daptomycin	=	0.25		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	3) A9299								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9305								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9305								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	4) A9719								daptomycin	=	0.25		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	4) A9719								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9744								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9744								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	5) A9754								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	5) A9754								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9757								daptomycin	=	4.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9757								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	6) A8796								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	6) A8796								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A8799								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A8799								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	7) A9763								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	7) A9763								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9764								daptomycin	=	4.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9764								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	8) A9765								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	8) A9765								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9766								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9766								vancomycin	=	2		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	9) A9781								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	9) A9781								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9784								daptomycin	=	0.5		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9788								daptomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9792								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9798								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_1.tsv	Table_1	A9798								vancomycin	=	2		mic_sign '=' inferred
 22238576	Table_2.tsv	Table_2	1) A8115b								daptomycin	=	0.5		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	1) A8115b								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10135								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10135								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10151								daptomycin	=	4		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10151								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10152								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10152								vancomycin	=	1		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	1) A8115b								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10135								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10135								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10151								daptomycin	=	4.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10151								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10152								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10152								vancomycin	=	1.0		mic_sign '=' inferred
 22238576	Table_2.tsv	Table_2	2) A8117c								daptomycin	=	0.5		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	2) A8117c								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10136								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10136								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10153								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10153								vancomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10154								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10154								vancomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	3) A5948d								daptomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	3) A5948d								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A6658								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A6658								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10155								daptomycin	=	2		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10155								vancomycin	=	1		mic_sign '=' inferred
-22238576	Table_2.tsv	Table_2	A10156								daptomycin	=	2		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	2) A8117c								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10136								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10136								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10153								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10153								vancomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10154								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10154								vancomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	3) A5948d								daptomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	3) A5948d								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A6658								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A6658								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10155								daptomycin	=	2.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10155								vancomycin	=	1.0		mic_sign '=' inferred
+22238576	Table_2.tsv	Table_2	A10156								daptomycin	=	2.0		mic_sign '=' inferred
 22238576	Table_2.tsv	Table_2	A10156								vancomycin	=	0.5		mic_sign '=' inferred

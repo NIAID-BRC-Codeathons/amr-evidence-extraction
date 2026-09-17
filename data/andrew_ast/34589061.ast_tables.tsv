@@ -1,15 +1,15 @@
 pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
-34589061	TABLE_1.tsv	TABLE_1	6								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	6								tedizolid	=	4		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	2								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	2								tedizolid	=	16		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	2								linezolid	=	32		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	2								tedizolid	=	2		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	20								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	20								tedizolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	10								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	10								tedizolid	=	8		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	6								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	6								tedizolid	=	8		mic_sign '=' inferred
-34589061	TABLE_1.tsv	TABLE_1	1								linezolid	>	32		
-34589061	TABLE_1.tsv	TABLE_1	1								tedizolid	=	0.25		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								tedizolid	=	4		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								tedizolid	=	16		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								linezolid	=	32		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								tedizolid	=	2		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. epidermidis								tedizolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. hominis								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. hominis								tedizolid	=	8		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. hominis								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. hominis								tedizolid	=	8		mic_sign '=' inferred
+34589061	TABLE_1.tsv	TABLE_1	S. haemolyticus								linezolid	>	32		
+34589061	TABLE_1.tsv	TABLE_1	S. haemolyticus								tedizolid	=	0.25		mic_sign '=' inferred

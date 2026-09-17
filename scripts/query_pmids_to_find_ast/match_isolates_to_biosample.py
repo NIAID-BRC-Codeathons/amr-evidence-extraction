@@ -143,7 +143,12 @@ def bioproject_uid_to_biosample_uids(uid: str, api_key: Optional[str], email: Op
     return []
 
 
-_STRAIN_FROM_INFRASPECIES_RE = re.compile(r"strain:\s*(.+)$", re.IGNORECASE)
+# NCBI's 'infraspecies' field concatenates multiple infraspecific attributes with '; '
+# when a BioSample has more than one (e.g. both a 'strain' and a separate 'isolate'
+# attribute: "strain: AUS0325-b; isolate: AUS0325-b"). Stop at the next ';' rather than
+# greedily capturing to end of string, or a strain name like "AUS0325-b" comes out as
+# "AUS0325-b; isolate: AUS0325-b" and only ever fuzzy-matches instead of matching exactly.
+_STRAIN_FROM_INFRASPECIES_RE = re.compile(r"strain:\s*([^;]+)", re.IGNORECASE)
 _SRA_FROM_IDENTIFIERS_RE = re.compile(r"\bSRA:\s*([A-Z]{3}\d+)", re.IGNORECASE)
 
 

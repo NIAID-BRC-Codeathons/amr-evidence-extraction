@@ -1,0 +1,831 @@
+pmid	source_file	isolate_id	match_type	matched_strain	bioproject_accession	biosample_accession	sra_accession
+34589061	34589061.mic.tsv	LRKNS080	no_match				
+34589061	34589061.mic.tsv	Scl31	no_match				
+34589061	34589061.mic.tsv	Scl25	no_match				
+34589061	34589061.mic.tsv	KEB09	no_match				
+34589061	34589061.mic.tsv	VCU105	no_match				
+34589061	34589061.mic.tsv	JCM 2414	no_match				
+34589061	34589061.mic.tsv	978_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS081	no_match				
+34589061	34589061.mic.tsv	949_S8	no_match				
+34589061	34589061.mic.tsv	ET-024	no_match				
+34589061	34589061.mic.tsv	UBA4169	no_match				
+34589061	34589061.mic.tsv	SNUC 1209	no_match				
+34589061	34589061.mic.tsv	SNUC 4029	no_match				
+34589061	34589061.mic.tsv	NIHLM020	no_match				
+34589061	34589061.mic.tsv	VCU081	no_match				
+34589061	34589061.mic.tsv	Qt1p44	no_match				
+34589061	34589061.mic.tsv	SNUC 5038	no_match				
+34589061	34589061.mic.tsv	VCU109	no_match				
+34589061	34589061.mic.tsv	916_SEPI	no_match				
+34589061	34589061.mic.tsv	ACEF09	no_match				
+34589061	34589061.mic.tsv	MTCC 3382	no_match				
+34589061	34589061.mic.tsv	NIHLM067	no_match				
+34589061	34589061.mic.tsv	917_2_SEPI	no_match				
+34589061	34589061.mic.tsv	M26	no_match				
+34589061	34589061.mic.tsv	695_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5153	no_match				
+34589061	34589061.mic.tsv	237_SEPI	no_match				
+34589061	34589061.mic.tsv	8400	no_match				
+34589061	34589061.mic.tsv	643_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR1301	no_match				
+34589061	34589061.mic.tsv	SNUC 2569	no_match				
+34589061	34589061.mic.tsv	I4	no_match				
+34589061	34589061.mic.tsv	NIH05003	no_match				
+34589061	34589061.mic.tsv	LRKNS014	no_match				
+34589061	34589061.mic.tsv	KED12	no_match				
+34589061	34589061.mic.tsv	M25	no_match				
+34589061	34589061.mic.tsv	SNUC 75	no_match				
+34589061	34589061.mic.tsv	VCU050	no_match				
+34589061	34589061.mic.tsv	M01	no_match				
+34589061	34589061.mic.tsv	AU12-03	no_match				
+34589061	34589061.mic.tsv	1311_SEPI	no_match				
+34589061	34589061.mic.tsv	0123W_32_35	no_match				
+34589061	34589061.mic.tsv	ABKWQ	no_match				
+34589061	34589061.mic.tsv	E13A	no_match				
+34589061	34589061.mic.tsv	73_SEPI	no_match				
+34589061	34589061.mic.tsv	917_SEPI	no_match				
+34589061	34589061.mic.tsv	161_SEPI	no_match				
+34589061	34589061.mic.tsv	818_SEPI	no_match				
+34589061	34589061.mic.tsv	314_SEPI	no_match				
+34589061	34589061.mic.tsv	M22	no_match				
+34589061	34589061.mic.tsv	677_SEPI	no_match				
+34589061	34589061.mic.tsv	248_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU127	no_match				
+34589061	34589061.mic.tsv	SNUC 2538	no_match				
+34589061	34589061.mic.tsv	ICE173	no_match				
+34589061	34589061.mic.tsv	1457	no_match				
+34589061	34589061.mic.tsv	ENVL300	no_match				
+34589061	34589061.mic.tsv	I6	no_match				
+34589061	34589061.mic.tsv	1306.rep1_SEPI	no_match				
+34589061	34589061.mic.tsv	AU21	no_match				
+34589061	34589061.mic.tsv	ICE146	no_match				
+34589061	34589061.mic.tsv	1144_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU036	no_match				
+34589061	34589061.mic.tsv	0514Y_32_9	no_match				
+34589061	34589061.mic.tsv	154_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR1172	no_match				
+34589061	34589061.mic.tsv	VCU125	no_match				
+34589061	34589061.mic.tsv	1306.rep2_SEPI	no_match				
+34589061	34589061.mic.tsv	1296_SEPI	no_match				
+34589061	34589061.mic.tsv	1289_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS077	no_match				
+34589061	34589061.mic.tsv	AU24	no_match				
+34589061	34589061.mic.tsv	VCU123	no_match				
+34589061	34589061.mic.tsv	PEI-B-P-06	no_match				
+34589061	34589061.mic.tsv	134_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU028	no_match				
+34589061	34589061.mic.tsv	SNUC 258	no_match				
+34589061	34589061.mic.tsv	VCU117	no_match				
+34589061	34589061.mic.tsv	SCH-13	no_match				
+34589061	34589061.mic.tsv	971_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU037	no_match				
+34589061	34589061.mic.tsv	VCU126	no_match				
+34589061	34589061.mic.tsv	ICE25	no_match				
+34589061	34589061.mic.tsv	1115_SEPI	no_match				
+34589061	34589061.mic.tsv	236_SEPI	no_match				
+34589061	34589061.mic.tsv	849_SEPI	no_match				
+34589061	34589061.mic.tsv	1097_SEPI	no_match				
+34589061	34589061.mic.tsv	654_SEPI	no_match				
+34589061	34589061.mic.tsv	ENVL_032	no_match				
+34589061	34589061.mic.tsv	NCTC 11047	no_match				
+34589061	34589061.mic.tsv	Mt1p16	no_match				
+34589061	34589061.mic.tsv	393_SEPI	no_match				
+34589061	34589061.mic.tsv	899_SEPI	no_match				
+34589061	34589061.mic.tsv	246_SEPI	no_match				
+34589061	34589061.mic.tsv	838_SEPI	no_match				
+34589061	34589061.mic.tsv	196_SEPI	no_match				
+34589061	34589061.mic.tsv	655_SEPI	no_match				
+34589061	34589061.mic.tsv	NIHLM070	no_match				
+34589061	34589061.mic.tsv	AHKF08	no_match				
+34589061	34589061.mic.tsv	AEEG06	no_match				
+34589061	34589061.mic.tsv	125_SEPI	no_match				
+34589061	34589061.mic.tsv	402_SEPI	no_match				
+34589061	34589061.mic.tsv	M04	no_match				
+34589061	34589061.mic.tsv	ATCC 14990	no_match				
+34589061	34589061.mic.tsv	ENVH350	no_match				
+34589061	34589061.mic.tsv	SAM-3	no_match				
+34589061	34589061.mic.tsv	C3	no_match				
+34589061	34589061.mic.tsv	644_SEPI	no_match				
+34589061	34589061.mic.tsv	NIHLM018	no_match				
+34589061	34589061.mic.tsv	919_SEPI	no_match				
+34589061	34589061.mic.tsv	SNUC 2400	no_match				
+34589061	34589061.mic.tsv	ALKB06	no_match				
+34589061	34589061.mic.tsv	Bt1p3	no_match				
+34589061	34589061.mic.tsv	VCU057	no_match				
+34589061	34589061.mic.tsv	NIHLM049	no_match				
+34589061	34589061.mic.tsv	972_SEPI	no_match				
+34589061	34589061.mic.tsv	MCO7	no_match				
+34589061	34589061.mic.tsv	ZSC	no_match				
+34589061	34589061.mic.tsv	920_SEPI	no_match				
+34589061	34589061.mic.tsv	947_SEPI	no_match				
+34589061	34589061.mic.tsv	946_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU045	no_match				
+34589061	34589061.mic.tsv	SNUC 29	no_match				
+34589061	34589061.mic.tsv	ESP40	no_match				
+34589061	34589061.mic.tsv	504_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-12	no_match				
+34589061	34589061.mic.tsv	1067_SEPI	no_match				
+34589061	34589061.mic.tsv	Y24	no_match				
+34589061	34589061.mic.tsv	DAR4892	no_match				
+34589061	34589061.mic.tsv	DAR5982	no_match				
+34589061	34589061.mic.tsv	597_SEPI	no_match				
+34589061	34589061.mic.tsv	A1KF08	no_match				
+34589061	34589061.mic.tsv	ST14	no_match				
+34589061	34589061.mic.tsv	SCH-11	no_match				
+34589061	34589061.mic.tsv	1284_SEPI	no_match				
+34589061	34589061.mic.tsv	NIH05005	no_match				
+34589061	34589061.mic.tsv	1029_SEPI	no_match				
+34589061	34589061.mic.tsv	SNUC 291	no_match				
+34589061	34589061.mic.tsv	NIHLM021	no_match				
+34589061	34589061.mic.tsv	NIHLM088	no_match				
+34589061	34589061.mic.tsv	MIT 14-1777-C6	no_match				
+34589061	34589061.mic.tsv	ENVH113	no_match				
+34589061	34589061.mic.tsv	NIH04003	no_match				
+34589061	34589061.mic.tsv	ICE181	no_match				
+34589061	34589061.mic.tsv	1321_SEPI	no_match				
+34589061	34589061.mic.tsv	312_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS057	no_match				
+34589061	34589061.mic.tsv	705_SEPI	no_match				
+34589061	34589061.mic.tsv	1142_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS062	no_match				
+34589061	34589061.mic.tsv	590_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU111	no_match				
+34589061	34589061.mic.tsv	SCH-18	no_match				
+34589061	34589061.mic.tsv	1028_SEPI	no_match				
+34589061	34589061.mic.tsv	1143_SEPI	no_match				
+34589061	34589061.mic.tsv	AU23	no_match				
+34589061	34589061.mic.tsv	938_SEPI	no_match				
+34589061	34589061.mic.tsv	HUR103	no_match				
+34589061	34589061.mic.tsv	MEX104	no_match				
+34589061	34589061.mic.tsv	1204_SEPI	no_match				
+34589061	34589061.mic.tsv	NIH051475	no_match				
+34589061	34589061.mic.tsv	JAP25	no_match				
+34589061	34589061.mic.tsv	NIH08001	no_match				
+34589061	34589061.mic.tsv	URU91	no_match				
+34589061	34589061.mic.tsv	686_SEPI	no_match				
+34589061	34589061.mic.tsv	935_SEPI	no_match				
+34589061	34589061.mic.tsv	934_SEPI	no_match				
+34589061	34589061.mic.tsv	94_SEPI	no_match				
+34589061	34589061.mic.tsv	SNUC 1357	no_match				
+34589061	34589061.mic.tsv	XE_C06	no_match				
+34589061	34589061.mic.tsv	ICE91	no_match				
+34589061	34589061.mic.tsv	CV94	no_match				
+34589061	34589061.mic.tsv	91_SEPI	no_match				
+34589061	34589061.mic.tsv	1057	no_match				
+34589061	34589061.mic.tsv	GTH12	no_match				
+34589061	34589061.mic.tsv	551_SEPI	no_match				
+34589061	34589061.mic.tsv	ENVH144	no_match				
+34589061	34589061.mic.tsv	1188_SEPI	no_match				
+34589061	34589061.mic.tsv	SNUC 2473	no_match				
+34589061	34589061.mic.tsv	ICE34	no_match				
+34589061	34589061.mic.tsv	Lt3p20	no_match				
+34589061	34589061.mic.tsv	ENVL_287	no_match				
+34589061	34589061.mic.tsv	384_SEPI	no_match				
+34589061	34589061.mic.tsv	C7	no_match				
+34589061	34589061.mic.tsv	ENVP605	no_match				
+34589061	34589061.mic.tsv	DAR5910	no_match				
+34589061	34589061.mic.tsv	178_SEPI	no_match				
+34589061	34589061.mic.tsv	SK135	no_match				
+34589061	34589061.mic.tsv	VCU014	no_match				
+34589061	34589061.mic.tsv	MEX54	no_match				
+34589061	34589061.mic.tsv	BUG123	no_match				
+34589061	34589061.mic.tsv	Ae-e06	no_match				
+34589061	34589061.mic.tsv	998_SEPI	no_match				
+34589061	34589061.mic.tsv	NIHLM039	no_match				
+34589061	34589061.mic.tsv	1024_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5909	no_match				
+34589061	34589061.mic.tsv	477_SEPI	no_match				
+34589061	34589061.mic.tsv	1129_SEPI	no_match				
+34589061	34589061.mic.tsv	DEN167	no_match				
+34589061	34589061.mic.tsv	M0026	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_161	no_match				
+34589061	34589061.mic.tsv	180_SEPI	no_match				
+34589061	34589061.mic.tsv	IS-K	no_match				
+34589061	34589061.mic.tsv	M23864:W2(grey)	no_match				
+34589061	34589061.mic.tsv	DAR5988	no_match				
+34589061	34589061.mic.tsv	1130_SEPI	no_match				
+34589061	34589061.mic.tsv	1249_SEPI	no_match				
+34589061	34589061.mic.tsv	479_SEPI	no_match				
+34589061	34589061.mic.tsv	1340_SEPI	no_match				
+34589061	34589061.mic.tsv	749_SEPI	no_match				
+34589061	34589061.mic.tsv	475_SEPI	no_match				
+34589061	34589061.mic.tsv	270_SEPI	no_match				
+34589061	34589061.mic.tsv	1226_SEPI	no_match				
+34589061	34589061.mic.tsv	281_SEPI	no_match				
+34589061	34589061.mic.tsv	Kt1p58	no_match				
+34589061	34589061.mic.tsv	59_SEPI	no_match				
+34589061	34589061.mic.tsv	ATCC 12228	no_match				
+34589061	34589061.mic.tsv	604_SEPI	no_match				
+34589061	34589061.mic.tsv	ABKWR	no_match				
+34589061	34589061.mic.tsv	pK_B01	no_match				
+34589061	34589061.mic.tsv	1337_SEPI	no_match				
+34589061	34589061.mic.tsv	1056_SEPI	no_match				
+34589061	34589061.mic.tsv	URU81	no_match				
+34589061	34589061.mic.tsv	IS-250	no_match				
+34589061	34589061.mic.tsv	SNUC 901.1	no_match				
+34589061	34589061.mic.tsv	DAR5416	no_match				
+34589061	34589061.mic.tsv	890_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU065	no_match				
+34589061	34589061.mic.tsv	801_SEPI	no_match				
+34589061	34589061.mic.tsv	596_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR2037	no_match				
+34589061	34589061.mic.tsv	1032_SEPI	no_match				
+34589061	34589061.mic.tsv	PR246B0	no_match				
+34589061	34589061.mic.tsv	DAR5991	no_match				
+34589061	34589061.mic.tsv	1023_SEPI	no_match				
+34589061	34589061.mic.tsv	87_SEPI	no_match				
+34589061	34589061.mic.tsv	18_SEPI	no_match				
+34589061	34589061.mic.tsv	165_SEPI	no_match				
+34589061	34589061.mic.tsv	656_SEPI	no_match				
+34589061	34589061.mic.tsv	7759	no_match				
+34589061	34589061.mic.tsv	520_SEPI	no_match				
+34589061	34589061.mic.tsv	939_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5981	no_match				
+34589061	34589061.mic.tsv	C10C	no_match				
+34589061	34589061.mic.tsv	ENVL_370	no_match				
+34589061	34589061.mic.tsv	897_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU120	no_match				
+34589061	34589061.mic.tsv	819_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR4900	no_match				
+34589061	34589061.mic.tsv	162_SEPI	no_match				
+34589061	34589061.mic.tsv	158_SEPI	no_match				
+34589061	34589061.mic.tsv	623_SEPI	no_match				
+34589061	34589061.mic.tsv	634_SEPI	no_match				
+34589061	34589061.mic.tsv	B45679-10	no_match				
+34589061	34589061.mic.tsv	DAR4894	no_match				
+34589061	34589061.mic.tsv	652_SEPI	no_match				
+34589061	34589061.mic.tsv	DEN112	no_match				
+34589061	34589061.mic.tsv	DAR5908	no_match				
+34589061	34589061.mic.tsv	160_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5907	no_match				
+34589061	34589061.mic.tsv	1026_SEPI	no_match				
+34589061	34589061.mic.tsv	795_SEPI	no_match				
+34589061	34589061.mic.tsv	AOKB02	no_match				
+34589061	34589061.mic.tsv	563_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-23	no_match				
+34589061	34589061.mic.tsv	1088_SEPI	no_match				
+34589061	34589061.mic.tsv	764_SEPI	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_153	no_match				
+34589061	34589061.mic.tsv	760_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5953	no_match				
+34589061	34589061.mic.tsv	767_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS042	no_match				
+34589061	34589061.mic.tsv	DAR5954	no_match				
+34589061	34589061.mic.tsv	DAR5955	no_match				
+34589061	34589061.mic.tsv	DEN154	no_match				
+34589061	34589061.mic.tsv	799_SEPI	no_match				
+34589061	34589061.mic.tsv	365_SEPI	no_match				
+34589061	34589061.mic.tsv	642_SEPI	no_match				
+34589061	34589061.mic.tsv	407_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5959	no_match				
+34589061	34589061.mic.tsv	DAR1186	no_match				
+34589061	34589061.mic.tsv	DAR6049	no_match				
+34589061	34589061.mic.tsv	AGT127	no_match				
+34589061	34589061.mic.tsv	422.rep1_SEPI	no_match				
+34589061	34589061.mic.tsv	AG42	no_match				
+34589061	34589061.mic.tsv	DAR5958	no_match				
+34589061	34589061.mic.tsv	422.rep2_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-9	no_match				
+34589061	34589061.mic.tsv	LRKNS075	no_match				
+34589061	34589061.mic.tsv	585_SEPI	no_match				
+34589061	34589061.mic.tsv	460_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS086	no_match				
+34589061	34589061.mic.tsv	SCH-2	no_match				
+34589061	34589061.mic.tsv	1063_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU041	no_match				
+34589061	34589061.mic.tsv	1191_SEPI	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_83	no_match				
+34589061	34589061.mic.tsv	SCH-5	no_match				
+34589061	34589061.mic.tsv	DAR5401	no_match				
+34589061	34589061.mic.tsv	DEN121	no_match				
+34589061	34589061.mic.tsv	NIHLM003	no_match				
+34589061	34589061.mic.tsv	21_SEPI	no_match				
+34589061	34589061.mic.tsv	386_SEPI	no_match				
+34589061	34589061.mic.tsv	872_SEPI	no_match				
+34589061	34589061.mic.tsv	535_SEPI	no_match				
+34589061	34589061.mic.tsv	ERS1599555	no_match				
+34589061	34589061.mic.tsv	921_SEPI	no_match				
+34589061	34589061.mic.tsv	802_SEPI	no_match				
+34589061	34589061.mic.tsv	803_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-14	no_match				
+34589061	34589061.mic.tsv	BCM-HMP0060	no_match				
+34589061	34589061.mic.tsv	1062_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-8	no_match				
+34589061	34589061.mic.tsv	ITL638	no_match				
+34589061	34589061.mic.tsv	761_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR4891	no_match				
+34589061	34589061.mic.tsv	DAR1888	no_match				
+34589061	34589061.mic.tsv	SCH-4	no_match				
+34589061	34589061.mic.tsv	1013_SEPI	no_match				
+34589061	34589061.mic.tsv	NIH05001	no_match				
+34589061	34589061.mic.tsv	PM221	no_match				
+34589061	34589061.mic.tsv	1021.rep1_SEPI	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_157	no_match				
+34589061	34589061.mic.tsv	NIH06004	no_match				
+34589061	34589061.mic.tsv	DAR5918	no_match				
+34589061	34589061.mic.tsv	1022_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR4887	no_match				
+34589061	34589061.mic.tsv	LRKNS087	no_match				
+34589061	34589061.mic.tsv	1040_SEPI	no_match				
+34589061	34589061.mic.tsv	B13258	no_match				
+34589061	34589061.mic.tsv	bTMA-013	no_match				
+34589061	34589061.mic.tsv	529_SEPI	no_match				
+34589061	34589061.mic.tsv	1021.rep2_SEPI	no_match				
+34589061	34589061.mic.tsv	961_SEPI	no_match				
+34589061	34589061.mic.tsv	VCU013	no_match				
+34589061	34589061.mic.tsv	568_SEPI	no_match				
+34589061	34589061.mic.tsv	DAR5990	no_match				
+34589061	34589061.mic.tsv	GRE40	no_match				
+34589061	34589061.mic.tsv	15_SEPI	no_match				
+34589061	34589061.mic.tsv	MEX130	no_match				
+34589061	34589061.mic.tsv	16_SEPI	no_match				
+34589061	34589061.mic.tsv	101_SEPI	no_match				
+34589061	34589061.mic.tsv	458_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-3	no_match				
+34589061	34589061.mic.tsv	SCH-1	no_match				
+34589061	34589061.mic.tsv	SCH-7	no_match				
+34589061	34589061.mic.tsv	450_SEPI	no_match				
+34589061	34589061.mic.tsv	SCH-10	no_match				
+34589061	34589061.mic.tsv	NGS-ED-1118	no_match				
+34589061	34589061.mic.tsv	1295_SEPI	no_match				
+34589061	34589061.mic.tsv	NGS-ED-1117	no_match				
+34589061	34589061.mic.tsv	364_SEPI	no_match				
+34589061	34589061.mic.tsv	92_SEPI	no_match				
+34589061	34589061.mic.tsv	439_SEPI	no_match				
+34589061	34589061.mic.tsv	B12916	no_match				
+34589061	34589061.mic.tsv	798_SEPI	no_match				
+34589061	34589061.mic.tsv	MCO13	no_match				
+34589061	34589061.mic.tsv	366_SEPI	no_match				
+34589061	34589061.mic.tsv	DEN49	no_match				
+34589061	34589061.mic.tsv	M0881	no_match				
+34589061	34589061.mic.tsv	B13587	no_match				
+34589061	34589061.mic.tsv	8_SEPI	no_match				
+34589061	34589061.mic.tsv	821_SEPI	no_match				
+34589061	34589061.mic.tsv	DEN13	no_match				
+34589061	34589061.mic.tsv	B647	no_match				
+34589061	34589061.mic.tsv	B16261	no_match				
+34589061	34589061.mic.tsv	HUR104	no_match				
+34589061	34589061.mic.tsv	MEX39	no_match				
+34589061	34589061.mic.tsv	SCH-6	no_match				
+34589061	34589061.mic.tsv	RP62A	no_match				
+34589061	34589061.mic.tsv	ICE117	no_match				
+34589061	34589061.mic.tsv	663_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS046	no_match				
+34589061	34589061.mic.tsv	DEN60	no_match				
+34589061	34589061.mic.tsv	NGS-ED-1110	no_match				
+34589061	34589061.mic.tsv	B12142	no_match				
+34589061	34589061.mic.tsv	B59	no_match				
+34589061	34589061.mic.tsv	MCO4	no_match				
+34589061	34589061.mic.tsv	DAR2142	no_match				
+34589061	34589061.mic.tsv	LRKNS079	no_match				
+34589061	34589061.mic.tsv	MEX28	no_match				
+34589061	34589061.mic.tsv	41tr	no_match				
+34589061	34589061.mic.tsv	528m	no_match				
+34589061	34589061.mic.tsv	B2731	no_match				
+34589061	34589061.mic.tsv	LRKNS076	no_match				
+34589061	34589061.mic.tsv	102_SEPI	no_match				
+34589061	34589061.mic.tsv	36-1	no_match				
+34589061	34589061.mic.tsv	LRKNS082	no_match				
+34589061	34589061.mic.tsv	LRKNS117	no_match				
+34589061	34589061.mic.tsv	NIH051668	no_match				
+34589061	34589061.mic.tsv	ENVH115	no_match				
+34589061	34589061.mic.tsv	LRKNS112	no_match				
+34589061	34589061.mic.tsv	678_SEPI	no_match				
+34589061	34589061.mic.tsv	936_SEPI	no_match				
+34589061	34589061.mic.tsv	SH06_17	no_match				
+34589061	34589061.mic.tsv	SH06_16	no_match				
+34589061	34589061.mic.tsv	354_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS048	no_match				
+34589061	34589061.mic.tsv	ITL533	no_match				
+34589061	34589061.mic.tsv	DAR5986	no_match				
+34589061	34589061.mic.tsv	NGS-ED-1107	no_match				
+34589061	34589061.mic.tsv	DAR2143	no_match				
+34589061	34589061.mic.tsv	DAR5984	no_match				
+34589061	34589061.mic.tsv	LRKNS059	no_match				
+34589061	34589061.mic.tsv	LRKNS111	no_match				
+34589061	34589061.mic.tsv	URU27	no_match				
+34589061	34589061.mic.tsv	LRKNS017	no_match				
+34589061	34589061.mic.tsv	LRKNS116	no_match				
+34589061	34589061.mic.tsv	100_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS118	no_match				
+34589061	34589061.mic.tsv	973_SEPI	no_match				
+34589061	34589061.mic.tsv	282_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS115	no_match				
+34589061	34589061.mic.tsv	NGS-ED-1111	no_match				
+34589061	34589061.mic.tsv	LRKNS085	no_match				
+34589061	34589061.mic.tsv	LRKNS084	no_match				
+34589061	34589061.mic.tsv	LRKNS056	no_match				
+34589061	34589061.mic.tsv	LRKNS009	no_match				
+34589061	34589061.mic.tsv	LRKNS037	no_match				
+34589061	34589061.mic.tsv	LRKNS064	no_match				
+34589061	34589061.mic.tsv	LRKNS092	no_match				
+34589061	34589061.mic.tsv	ENVH150	no_match				
+34589061	34589061.mic.tsv	LRKNS068	no_match				
+34589061	34589061.mic.tsv	LRKNS072	no_match				
+34589061	34589061.mic.tsv	LRKNS073	no_match				
+34589061	34589061.mic.tsv	ENVH131	no_match				
+34589061	34589061.mic.tsv	LRKNS029	no_match				
+34589061	34589061.mic.tsv	MEX86	no_match				
+34589061	34589061.mic.tsv	LRKNS093	no_match				
+34589061	34589061.mic.tsv	NIH04008	no_match				
+34589061	34589061.mic.tsv	LRKNS114	no_match				
+34589061	34589061.mic.tsv	SCH-19	no_match				
+34589061	34589061.mic.tsv	SH07_17	no_match				
+34589061	34589061.mic.tsv	LRKNS026	no_match				
+34589061	34589061.mic.tsv	LRKNS054	no_match				
+34589061	34589061.mic.tsv	B2461	no_match				
+34589061	34589061.mic.tsv	1190_SEPI	no_match				
+34589061	34589061.mic.tsv	B7234	no_match				
+34589061	34589061.mic.tsv	SCH-17	no_match				
+34589061	34589061.mic.tsv	LRKNS020	no_match				
+34589061	34589061.mic.tsv	AGT133	no_match				
+34589061	34589061.mic.tsv	LRKNS039	no_match				
+34589061	34589061.mic.tsv	LRKNS089	no_match				
+34589061	34589061.mic.tsv	LRKNS050	no_match				
+34589061	34589061.mic.tsv	B10873	no_match				
+34589061	34589061.mic.tsv	SCH-20	no_match				
+34589061	34589061.mic.tsv	SH03_17	no_match				
+34589061	34589061.mic.tsv	SCH-21	no_match				
+34589061	34589061.mic.tsv	296_SEPI	no_match				
+34589061	34589061.mic.tsv	LRKNS113	no_match				
+34589061	34589061.mic.tsv	BPH0662	no_match				
+34589061	34589061.mic.tsv	SCH-22	no_match				
+34589061	34589061.mic.tsv	1068_SEPI	no_match				
+34589061	34589061.mic.tsv	926_SEPI	no_match				
+34589061	34589061.mic.tsv	110_SEPI	no_match				
+34589061	34589061.mic.tsv	6_SEPI	no_match				
+34589061	34589061.mic.tsv	1312_SEPI	no_match				
+34589061	34589061.mic.tsv	S_epi_1B2	no_match				
+34589061	34589061.mic.tsv	S_epi_1C6	no_match				
+34589061	34589061.mic.tsv	S_epi_1F2	no_match				
+34589061	34589061.mic.tsv	S_epi_1F7	no_match				
+34589061	34589061.mic.tsv	S_epi_1H6	no_match				
+34589061	34589061.mic.tsv	S_epi_1H8	no_match				
+34589061	34589061.mic.tsv	S_epi_2A9	no_match				
+34589061	34589061.mic.tsv	S_epi_2B10	no_match				
+34589061	34589061.mic.tsv	S_epi_2B2	no_match				
+34589061	34589061.mic.tsv	S_epi_2B8	no_match				
+34589061	34589061.mic.tsv	S_epi_2C10	no_match				
+34589061	34589061.mic.tsv	S_epi_2D5	no_match				
+34589061	34589061.mic.tsv	S_epi_2E10	no_match				
+34589061	34589061.mic.tsv	S_epi_2E2	no_match				
+34589061	34589061.mic.tsv	S_epi_2E5	no_match				
+34589061	34589061.mic.tsv	S_epi_2E6	no_match				
+34589061	34589061.mic.tsv	S_epi_2E8	no_match				
+34589061	34589061.mic.tsv	S_epi_2E9	no_match				
+34589061	34589061.mic.tsv	S_epi_2F10	no_match				
+34589061	34589061.mic.tsv	S_epi_2F1	no_match				
+34589061	34589061.mic.tsv	S_epi_2F5	no_match				
+34589061	34589061.mic.tsv	S_epi_2F6	no_match				
+34589061	34589061.mic.tsv	S_epi_2G10	no_match				
+34589061	34589061.mic.tsv	S_epi_2G1B	no_match				
+34589061	34589061.mic.tsv	S_epi_2G1	no_match				
+34589061	34589061.mic.tsv	S_epi_2G2	no_match				
+34589061	34589061.mic.tsv	S_epi_2G3	no_match				
+34589061	34589061.mic.tsv	S_epi_2G4	no_match				
+34589061	34589061.mic.tsv	S_epi_2G5	no_match				
+34589061	34589061.mic.tsv	S_epi_2G9	no_match				
+34589061	34589061.mic.tsv	S_epi_2H10	no_match				
+34589061	34589061.mic.tsv	S_epi_2H2	no_match				
+34589061	34589061.mic.tsv	S_epi_2H5	no_match				
+34589061	34589061.mic.tsv	S_epi_2H6	no_match				
+34589061	34589061.mic.tsv	S_epi_2H7	no_match				
+34589061	34589061.mic.tsv	S_epi_2H8	no_match				
+34589061	34589061.mic.tsv	S_epi_2H9	no_match				
+34589061	34589061.mic.tsv	S_epi_2I10	no_match				
+34589061	34589061.mic.tsv	S_epi_2I4	no_match				
+34589061	34589061.mic.tsv	S_epi_2I6	no_match				
+34589061	34589061.mic.tsv	S_epi_2I8	no_match				
+34589061	34589061.mic.tsv	S_epi_2I9	no_match				
+34589061	34589061.mic.tsv	S_epi_2J1	no_match				
+34589061	34589061.mic.tsv	S_epi_2J2	no_match				
+34589061	34589061.mic.tsv	S_epi_2J3	no_match				
+34589061	34589061.mic.tsv	CNS144	exact	CNS144	PRJNA384130	SAMN06829248	SRS2149809
+34589061	34589061.mic.tsv	CNS172	exact	CNS172	PRJNA384130	SAMN06829250	SRS2149807
+34589061	34589061.mic.tsv	CNS178	exact	CNS178	PRJNA384130	SAMN06829253	SRS2149804
+34589061	34589061.mic.tsv	CNS180	exact	CNS180	PRJNA384130	SAMN06829255	SRS2149802
+34589061	34589061.mic.tsv	CNS183	exact	CNS183	PRJNA384130	SAMN06829258	SRS2149799
+34589061	34589061.mic.tsv	CNS184	exact	CNS184	PRJNA384130	SAMN06829259	SRS2149798
+34589061	34589061.mic.tsv	CNS185	exact	CNS185	PRJNA384130	SAMN06829260	SRS2149797
+34589061	34589061.mic.tsv	CNS187	exact	CNS187	PRJNA384130	SAMN06829262	SRS2149795
+34589061	34589061.mic.tsv	CNS188	exact	CNS188	PRJNA384130	SAMN06829263	SRS2149794
+34589061	34589061.mic.tsv	CNS189	exact	CNS189	PRJNA384130	SAMN06829264	SRS2149793
+34589061	34589061.mic.tsv	CNS190	exact	CNS190	PRJNA384130	SAMN06829265	SRS2149792
+34589061	34589061.mic.tsv	CNS191	exact	CNS191	PRJNA384130	SAMN06829266	SRS2149791
+34589061	34589061.mic.tsv	CNS202	exact	CNS202	PRJNA384130	SAMN10717546	SRS4238823
+34589061	34589061.mic.tsv	CNS203	exact	CNS203	PRJNA384130	SAMN10717547	SRS4238821
+34589061	34589061.mic.tsv	CNS204	exact	CNS204	PRJNA384130	SAMN10717548	SRS4238825
+34589061	34589061.mic.tsv	CNS205	exact	CNS205	PRJNA384130	SAMN10717549	SRS4238824
+34589061	34589061.mic.tsv	CNS206	exact	CNS206	PRJNA384130	SAMN10717550	SRS4238827
+34589061	34589061.mic.tsv	CNS207	exact	CNS207	PRJNA384130	SAMN10717551	SRS4238826
+34589061	34589061.mic.tsv	CNS208	exact	CNS208	PRJNA384130	SAMN10717552	SRS4238828
+34589061	34589061.mic.tsv	CNS209	exact	CNS209	PRJNA384130	SAMN10717553	SRS4238829
+34589061	34589061.mic.tsv	CNS210	exact	CNS210	PRJNA384130	SAMN10717554	SRS4238833
+34589061	34589061.mic.tsv	CNS212	exact	CNS212	PRJNA384130	SAMN10717556	SRS4238834
+34589061	34589061.mic.tsv	CNS213	exact	CNS213	PRJNA384130	SAMN10717557	SRS4238835
+34589061	34589061.mic.tsv	CNS216	exact	CNS216	PRJNA384130	SAMN10717558	SRS4238837
+34589061	34589061.mic.tsv	CNS222	exact	CNS222	PRJNA384130	SAMN10717560	SRS4238838
+34589061	34589061.mic.tsv	CNS228	exact	CNS228	PRJNA384130	SAMN10717562	SRS4238831
+34589061	34589061.mic.tsv	CNS235	exact	CNS235	PRJNA384130	SAMN10717563	SRS4238830
+34589061	34589061.mic.tsv	CNS243	exact	CNS243	PRJNA384130	SAMN10717568	SRS4238817
+34589061	34589061.mic.tsv	CNS244	exact	CNS244	PRJNA384130	SAMN10717569	SRS4238818
+34589061	34589061.mic.tsv	SA0658	exact	SA0658	PRJNA384130	SAMN06829247	SRS2149810
+34589061	34589061.mic.tsv	UCLA-Sa-LR-3	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-04	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-5	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-6	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-7	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-13	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-14	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-15	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-17	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-18	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-19	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-20	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-21	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-22	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-23	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-25	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-26	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-27	no_match				
+34589061	34589061.mic.tsv	UCLA-Sa-LR-28	no_match				
+34589061	34589061.mic.tsv	CNS223	exact	CNS223	PRJNA384130	SAMN10717561	SRS4238839
+34589061	34589061.mic.tsv	CNS221	exact	CNS221	PRJNA384130	SAMN10717559	SRS4238836
+34589061	34589061.mic.tsv	CNS211	exact	CNS211	PRJNA384130	SAMN10717555	SRS4238832
+34589061	34589061.mic.tsv	CNS201	exact	CNS201	PRJNA384130	SAMN10717545	SRS4238820
+34589061	34589061.mic.tsv	CNS245	exact	CNS245	PRJNA384130	SAMN10717570	SRS4238819
+34589061	34589061.mic.tsv	CNS242	exact	CNS242	PRJNA384130	SAMN10717567	SRS4238816
+34589061	34589061.mic.tsv	CNS241	exact	CNS241	PRJNA384130	SAMN10717566	SRS4238815
+34589061	34589061.mic.tsv	CNS239	exact	CNS239	PRJNA384130	SAMN10717565	SRS4238814
+34589061	34589061.mic.tsv	CNS238	exact	CNS238	PRJNA384130	SAMN10717564	SRS4238813
+34589061	34589061.mic.tsv	CNS186	exact	CNS186	PRJNA384130	SAMN06829261	SRS2149796
+34589061	34589061.mic.tsv	CNS182	exact	CNS182	PRJNA384130	SAMN06829257	SRS2149800
+34589061	34589061.mic.tsv	CNS181	exact	CNS181	PRJNA384130	SAMN06829256	SRS2149801
+34589061	34589061.mic.tsv	CNS173	exact	CNS173	PRJNA384130	SAMN06829251	SRS2149806
+34589061	34589061.mic.tsv	CNS171	exact	CNS171	PRJNA384130	SAMN06829249	SRS2149808
+34589061	34589061.mic.tsv	CNS179	exact	CNS179	PRJNA384130	SAMN06829254	SRS2149803
+34589061	34589061.mic.tsv	CNS175	exact	CNS175	PRJNA384130	SAMN06829252	SRS2149805
+34589061	34589061.mic.tsv	SK119	no_match				
+34589061	34589061.mic.tsv	C80	no_match				
+34589061	34589061.mic.tsv	VCU122	no_match				
+34589061	34589061.mic.tsv	ZBW5	no_match				
+34589061	34589061.mic.tsv	As3	no_match				
+34589061	34589061.mic.tsv	As1	no_match				
+34589061	34589061.mic.tsv	As2	no_match				
+34589061	34589061.mic.tsv	1288_SEPI	no_match				
+34589061	34589061.mic.tsv	238_SHAE	no_match				
+34589061	34589061.mic.tsv	336_SHAE	no_match				
+34589061	34589061.mic.tsv	515_SHAE	no_match				
+34589061	34589061.mic.tsv	202_SEPI	no_match				
+34589061	34589061.mic.tsv	437_SHAE	no_match				
+34589061	34589061.mic.tsv	438_SHAE	no_match				
+34589061	34589061.mic.tsv	513_SHAE	no_match				
+34589061	34589061.mic.tsv	657_SHAE	no_match				
+34589061	34589061.mic.tsv	692_SHAE	no_match				
+34589061	34589061.mic.tsv	858_SHAE	no_match				
+34589061	34589061.mic.tsv	793_SHAE	no_match				
+34589061	34589061.mic.tsv	794_SEPI	no_match				
+34589061	34589061.mic.tsv	RIT-PI-k	no_match				
+34589061	34589061.mic.tsv	H69	no_match				
+34589061	34589061.mic.tsv	LRKNS031	no_match				
+34589061	34589061.mic.tsv	Hudgins	no_match				
+34589061	34589061.mic.tsv	IIF4SC-B9	no_match				
+34589061	34589061.mic.tsv	RE2.8	no_match				
+34589061	34589061.mic.tsv	RE2.7	no_match				
+34589061	34589061.mic.tsv	RE2.10	no_match				
+34589061	34589061.mic.tsv	BHG17	no_match				
+34589061	34589061.mic.tsv	MMP2	no_match				
+34589061	34589061.mic.tsv	K1	no_match				
+34589061	34589061.mic.tsv	KR	no_match				
+34589061	34589061.mic.tsv	SH08_17	no_match				
+34589061	34589061.mic.tsv	SH04_17	no_match				
+34589061	34589061.mic.tsv	UMB0272	no_match				
+34589061	34589061.mic.tsv	NCTC 11320	no_match				
+34589061	34589061.mic.tsv	CCUG 42399	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_136	no_match				
+34589061	34589061.mic.tsv	SNUC 5746	no_match				
+34589061	34589061.mic.tsv	SNUC 5336	no_match				
+34589061	34589061.mic.tsv	SNUC 3404	no_match				
+34589061	34589061.mic.tsv	SNUC 2694	no_match				
+34589061	34589061.mic.tsv	SNUC 2620	no_match				
+34589061	34589061.mic.tsv	SNUC 2444	no_match				
+34589061	34589061.mic.tsv	SNUC 5852	no_match				
+34589061	34589061.mic.tsv	J31	no_match				
+34589061	34589061.mic.tsv	J23	no_match				
+34589061	34589061.mic.tsv	J27	no_match				
+34589061	34589061.mic.tsv	J11	no_match				
+34589061	34589061.mic.tsv	B10	no_match				
+34589061	34589061.mic.tsv	J6	no_match				
+34589061	34589061.mic.tsv	NCTC11320	no_match				
+34589061	34589061.mic.tsv	1118_SHAE	no_match				
+34589061	34589061.mic.tsv	1137_SHAE	no_match				
+34589061	34589061.mic.tsv	JCSC1435	no_match				
+34589061	34589061.mic.tsv	R1P1	no_match				
+34589061	34589061.mic.tsv	DNF00585	no_match				
+34589061	34589061.mic.tsv	C10D	no_match				
+34589061	34589061.mic.tsv	C10A	no_match				
+34589061	34589061.mic.tsv	Sh29/312/L2	no_match				
+34589061	34589061.mic.tsv	1HT3	no_match				
+34589061	34589061.mic.tsv	96671	no_match				
+34589061	34589061.mic.tsv	1328_SHAE	no_match				
+34589061	34589061.mic.tsv	1292_SHAE	no_match				
+34589061	34589061.mic.tsv	164_SHAE	no_match				
+34589061	34589061.mic.tsv	235_SHAE	no_match				
+34589061	34589061.mic.tsv	285_SHAE	no_match				
+34589061	34589061.mic.tsv	6035	no_match				
+34589061	34589061.mic.tsv	51-50	no_match				
+34589061	34589061.mic.tsv	CN1175	no_match				
+34589061	34589061.mic.tsv	278-10	no_match				
+34589061	34589061.mic.tsv	6_13	no_match				
+34589061	34589061.mic.tsv	51-26	no_match				
+34589061	34589061.mic.tsv	103709	no_match				
+34589061	34589061.mic.tsv	625	no_match				
+34589061	34589061.mic.tsv	131776	no_match				
+34589061	34589061.mic.tsv	115601	no_match				
+34589061	34589061.mic.tsv	6660	no_match				
+34589061	34589061.mic.tsv	51-16	no_match				
+34589061	34589061.mic.tsv	92271	no_match				
+34589061	34589061.mic.tsv	AB	no_match				
+34589061	34589061.mic.tsv	140376	no_match				
+34589061	34589061.mic.tsv	F033	no_match				
+34589061	34589061.mic.tsv	25-29	no_match				
+34589061	34589061.mic.tsv	JCSC_1435	no_match				
+34589061	34589061.mic.tsv	114126	no_match				
+34589061	34589061.mic.tsv	T_621	no_match				
+34589061	34589061.mic.tsv	51-07	no_match				
+34589061	34589061.mic.tsv	51-21	no_match				
+34589061	34589061.mic.tsv	121875	no_match				
+34589061	34589061.mic.tsv	127639	no_match				
+34589061	34589061.mic.tsv	95671	no_match				
+34589061	34589061.mic.tsv	51-34	no_match				
+34589061	34589061.mic.tsv	51-18	no_match				
+34589061	34589061.mic.tsv	26-24	no_match				
+34589061	34589061.mic.tsv	T_480	no_match				
+34589061	34589061.mic.tsv	25-12	no_match				
+34589061	34589061.mic.tsv	51-44	no_match				
+34589061	34589061.mic.tsv	51-41	no_match				
+34589061	34589061.mic.tsv	51-20	no_match				
+34589061	34589061.mic.tsv	25-59	no_match				
+34589061	34589061.mic.tsv	135665	no_match				
+34589061	34589061.mic.tsv	127925	no_match				
+34589061	34589061.mic.tsv	51-45	no_match				
+34589061	34589061.mic.tsv	51-37	no_match				
+34589061	34589061.mic.tsv	51-17	no_match				
+34589061	34589061.mic.tsv	W59	no_match				
+34589061	34589061.mic.tsv	105731	no_match				
+34589061	34589061.mic.tsv	51-27	no_match				
+34589061	34589061.mic.tsv	113101	no_match				
+34589061	34589061.mic.tsv	643	no_match				
+34589061	34589061.mic.tsv	115472	no_match				
+34589061	34589061.mic.tsv	112056	no_match				
+34589061	34589061.mic.tsv	25-57	no_match				
+34589061	34589061.mic.tsv	51-24	no_match				
+34589061	34589061.mic.tsv	137133	no_match				
+34589061	34589061.mic.tsv	CN1219	no_match				
+34589061	34589061.mic.tsv	51-08	no_match				
+34589061	34589061.mic.tsv	8-9	no_match				
+34589061	34589061.mic.tsv	109919	no_match				
+34589061	34589061.mic.tsv	CN1138	no_match				
+34589061	34589061.mic.tsv	51-11	no_match				
+34589061	34589061.mic.tsv	124304	no_match				
+34589061	34589061.mic.tsv	51-03	no_match				
+34589061	34589061.mic.tsv	F06	no_match				
+34589061	34589061.mic.tsv	51-33	no_match				
+34589061	34589061.mic.tsv	104658	no_match				
+34589061	34589061.mic.tsv	W_75	no_match				
+34589061	34589061.mic.tsv	94759	no_match				
+34589061	34589061.mic.tsv	124655	no_match				
+34589061	34589061.mic.tsv	W114	no_match				
+34589061	34589061.mic.tsv	51-09	no_match				
+34589061	34589061.mic.tsv	CN1167	no_match				
+34589061	34589061.mic.tsv	51-39	no_match				
+34589061	34589061.mic.tsv	135073	no_match				
+34589061	34589061.mic.tsv	51-55	no_match				
+34589061	34589061.mic.tsv	51-72	no_match				
+34589061	34589061.mic.tsv	131974	no_match				
+34589061	34589061.mic.tsv	89727	no_match				
+34589061	34589061.mic.tsv	51-52	no_match				
+34589061	34589061.mic.tsv	102938	no_match				
+34589061	34589061.mic.tsv	CN1197	no_match				
+34589061	34589061.mic.tsv	115609	no_match				
+34589061	34589061.mic.tsv	708075	no_match				
+34589061	34589061.mic.tsv	136731	no_match				
+34589061	34589061.mic.tsv	109939	no_match				
+34589061	34589061.mic.tsv	26-4	no_match				
+34589061	34589061.mic.tsv	2111	no_match				
+34589061	34589061.mic.tsv	51-06	no_match				
+34589061	34589061.mic.tsv	25-38	no_match				
+34589061	34589061.mic.tsv	CN1234	no_match				
+34589061	34589061.mic.tsv	133319	no_match				
+34589061	34589061.mic.tsv	F01	no_match				
+34589061	34589061.mic.tsv	132337	no_match				
+34589061	34589061.mic.tsv	F0_34	no_match				
+34589061	34589061.mic.tsv	137772	no_match				
+34589061	34589061.mic.tsv	123477	no_match				
+34589061	34589061.mic.tsv	51-32	no_match				
+34589061	34589061.mic.tsv	21116	no_match				
+34589061	34589061.mic.tsv	131062	no_match				
+34589061	34589061.mic.tsv	F045	no_match				
+34589061	34589061.mic.tsv	51-13	no_match				
+34589061	34589061.mic.tsv	112622	no_match				
+34589061	34589061.mic.tsv	113952	no_match				
+34589061	34589061.mic.tsv	CN1134	no_match				
+34589061	34589061.mic.tsv	51-42	no_match				
+34589061	34589061.mic.tsv	51-47	no_match				
+34589061	34589061.mic.tsv	123268	no_match				
+34589061	34589061.mic.tsv	25-60	no_match				
+34589061	34589061.mic.tsv	51-22	no_match				
+34589061	34589061.mic.tsv	51-51	no_match				
+34589061	34589061.mic.tsv	114564	no_match				
+34589061	34589061.mic.tsv	CN1011	no_match				
+34589061	34589061.mic.tsv	7532	no_match				
+34589061	34589061.mic.tsv	134634	no_match				
+34589061	34589061.mic.tsv	51-15	no_match				
+34589061	34589061.mic.tsv	6682	no_match				
+34589061	34589061.mic.tsv	M-176	no_match				
+34589061	34589061.mic.tsv	144377	no_match				
+34589061	34589061.mic.tsv	51-30	no_match				
+34589061	34589061.mic.tsv	51-04	no_match				
+34589061	34589061.mic.tsv	104626	no_match				
+34589061	34589061.mic.tsv	6249	no_match				
+34589061	34589061.mic.tsv	s5	no_match				
+34589061	34589061.mic.tsv	51-31	no_match				
+34589061	34589061.mic.tsv	25-44	no_match				
+34589061	34589061.mic.tsv	51-35	no_match				
+34589061	34589061.mic.tsv	51-46	no_match				
+34589061	34589061.mic.tsv	97208	no_match				
+34589061	34589061.mic.tsv	25-63	no_match				
+34589061	34589061.mic.tsv	51-29	no_match				
+34589061	34589061.mic.tsv	8074328	no_match				
+34589061	34589061.mic.tsv	2263-3461	no_match				
+34589061	34589061.mic.tsv	51-10	no_match				
+34589061	34589061.mic.tsv	CN1115	no_match				
+34589061	34589061.mic.tsv	135814	no_match				
+34589061	34589061.mic.tsv	51-43	no_match				
+34589061	34589061.mic.tsv	W_139	no_match				
+34589061	34589061.mic.tsv	7589	no_match				
+34589061	34589061.mic.tsv	MTCC 3383	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_148	no_match				
+34589061	34589061.mic.tsv	FDAARGOS_130	no_match				
+34589061	34589061.mic.tsv	SHN36	no_match				
+34589061	34589061.mic.tsv	SHN65	no_match				
+34589061	34589061.mic.tsv	SH1752	no_match				
+34589061	34589061.mic.tsv	SH1574	no_match				
+34589061	34589061.mic.tsv	SH747	no_match				
+34589061	34589061.mic.tsv	S167	no_match				
+34589061	34589061.mic.tsv	421	no_match				
+34589061	34589061.mic.tsv	864-1	no_match				
+34589061	34589061.mic.tsv	527	no_match				
+34589061	34589061.mic.tsv	39	no_match				
+34589061	34589061.mic.tsv	IIF2SW-P5	no_match				
+34589061	34589061.mic.tsv	VB31546	no_match				
+34589061	34589061.mic.tsv	BC05211	no_match				
+34589061	34589061.mic.tsv	NW19	no_match				
+34589061	34589061.mic.tsv	SW007	no_match				
+34589061	34589061.mic.tsv	IPK_TSA25	no_match				
+34589061	34589061.mic.tsv	SH06	no_match				
+34589061	34589061.mic.tsv	OG2	no_match				
+34589061	34589061.mic.tsv	SH05_17	no_match				
+34589061	34589061.mic.tsv	Z52	no_match				
+34589061	34589061.mic.tsv	NCTC 11042	no_match				
+34589061	34589061.mic.tsv	83131A	no_match				
+34589061	34589061.mic.tsv	B	no_match				
+34589061	34589061.mic.tsv	A109N1B1	no_match				
+34589061	34589061.mic.tsv	G811N2B1	no_match				
+34589061	34589061.mic.tsv	SGAir0252	no_match				
+34589061	34589061.mic.tsv	SNUC 4966	no_match				
+34589061	34589061.mic.tsv	SNUC 5782	no_match				
+34589061	34589061.mic.tsv	SNUC 4488	no_match				
+34589061	34589061.mic.tsv	SNUC 2814	no_match				
+34589061	34589061.mic.tsv	SNUC 1361	no_match				
+34589061	34589061.mic.tsv	SNUC 1317	no_match				
+34589061	34589061.mic.tsv	SNUC 1584	no_match				
+34589061	34589061.mic.tsv	SNUC 136	no_match				
+34589061	34589061.mic.tsv	SNUC 1450	no_match				
+34589061	34589061.mic.tsv	SNUC 128	no_match				
+34589061	34589061.mic.tsv	SNUC 127	no_match				
+34589061	34589061.mic.tsv	SNUC 1114	no_match				
+34589061	34589061.mic.tsv	SNUC 4637	no_match				
+34589061	34589061.mic.tsv	SNUC 3825	no_match				
+34589061	34589061.mic.tsv	SNUC 2139	no_match				
+34589061	34589061.mic.tsv	SNUC 3453	no_match				
+34589061	34589061.mic.tsv	SNUC 1408	no_match				
+34589061	34589061.mic.tsv	SNUC 220	no_match				
+34589061	34589061.mic.tsv	SNUC 823	no_match				
+34589061	34589061.mic.tsv	SNUC 203	no_match				
+34589061	34589061.mic.tsv	SNUC 123	no_match				
+34589061	34589061.mic.tsv	SNUC 109	no_match				
+34589061	34589061.mic.tsv	K8	no_match				
+34589061	34589061.mic.tsv	NCTC11042	no_match				
+34589061	34589061.mic.tsv	CNS200	exact	CNS200	PRJNA384130	SAMN10717544	SRS4238822
+34589061	34589061.mic.tsv	UCLA-Sh-LR-9	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-10	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-16	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-8	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-11	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-12	no_match				
+34589061	34589061.mic.tsv	UCLA-Sh-LR-24	no_match				
+34589061	34589061.ast_tables.tsv	S. epidermidis	no_match				
+34589061	34589061.ast_tables.tsv	S. hominis	no_match				
+34589061	34589061.ast_tables.tsv	S. haemolyticus	no_match				

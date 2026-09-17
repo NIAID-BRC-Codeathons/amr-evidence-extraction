@@ -6,434 +6,288 @@ import re
 import numpy as np
 import pandas as pd
 
-PERMITTED_DRUGS = [
-    'amoxicillin/clavulanic acid',
-    'ampicillin',
-    'antibiotic',
-    'arbekacin',
-    'azithromycin',
-    'biapenem',
-    'cefazolin',
-    'cefoxitin',
-    'ceftarolin',
-    'ceftaroline',
-    'chloramphenicol',
-    'chlorhexidine gluconate',
-    'ciprofloxacin',
-    'clarithromycin',
-    'clindamycin',
-    'dalbavancin',
-    'daptomycin',
-    'doripenem',
-    'erythromycin',
-    'florfenicol',
-    'fosfomycin',
-    'fusidic acid',
-    'gentamicin',
-    'imipenem',
-    'kanamycin',
-    'levofloxacin',
-    'linezolid',
-    'meropenem',
-    'methicillin',
-    'minocycline',
-    'moxifloxacin',
-    'mupirocin',
-    'norfloxacin',
-    'oritavancin',
-    'oxacillin',
-    'penicillin',
-    'phosphomycin',
-    'quinupristin/dalfopristin',
-    'rifampin',
-    'streptomycin',
-    'sulfamethoxazole/trimethoprim',
-    'tedizolid',
-    'teicoplanin',
-    'telavancin',
-    'tetracycline',
-    'tiamulin',
-    'tigecycline',
-    'tobramycin',
-    'trimethoprim',
-    'trimethoprim/sulfamethoxazole',
-    'trimethoprim/sulfonamide',
-    'vancomycin',
-]
-
-SYNONYMS = {
-    'amc': 'amoxicillin/clavulanic acid',
-    'amx/clv': 'amoxicillin/clavulanic acid',
-    'amoxicillin-clavulanic acid': 'amoxicillin/clavulanic acid',
-    'amoxicillin-clavulanate': 'amoxicillin/clavulanic acid',
-    'amoxicillin/clavulanate': 'amoxicillin/clavulanic acid',
-    'augmentin': 'amoxicillin/clavulanic acid',
-    'amp': 'ampicillin',
-    'abk': 'arbekacin',
-    'azm': 'azithromycin',
-    'azithro': 'azithromycin',
-    'bip': 'biapenem',
-    'cfz': 'cefazolin',
-    'cz': 'cefazolin',
-    'czo': 'cefazolin',
-    'fox': 'cefoxitin',
-    'cpt': 'ceftaroline',
-    'chl': 'chloramphenicol',
-    'chg': 'chlorhexidine gluconate',
-    'cip': 'ciprofloxacin',
-    'cpfx': 'ciprofloxacin',
-    'clr': 'clarithromycin',
-    'cam': 'clarithromycin',
-    'cla': 'clarithromycin',
-    'cli': 'clindamycin',
-    'cldm': 'clindamycin',
-    'cc': 'clindamycin',
-    'cd': 'clindamycin',
-    'dal': 'dalbavancin',
-    'dap': 'daptomycin',
-    'dapto': 'daptomycin',
-    'dor': 'doripenem',
-    'ery': 'erythromycin',
-    'em': 'erythromycin',
-    'e': 'erythromycin',
-    'ffc': 'florfenicol',
-    'fos': 'fosfomycin',
-    'fom': 'fosfomycin',
-    'fa': 'fusidic acid',
-    'fd': 'fusidic acid',
-    'fusidate': 'fusidic acid',
-    'gen': 'gentamicin',
-    'gm': 'gentamicin',
-    'cn': 'gentamicin',
-    'genta': 'gentamicin',
-    'ipm': 'imipenem',
-    'imi': 'imipenem',
-    'kan': 'kanamycin',
-    'k': 'kanamycin',
-    'lvx': 'levofloxacin',
-    'lev': 'levofloxacin',
-    'lvfx': 'levofloxacin',
-    'lnz': 'linezolid',
-    'lzd': 'linezolid',
-    'mem': 'meropenem',
-    'mer': 'meropenem',
-    'met': 'methicillin',
-    'me': 'methicillin',
-    'min': 'minocycline',
-    'mino': 'minocycline',
-    'mxf': 'moxifloxacin',
-    'mox': 'moxifloxacin',
-    'mup': 'mupirocin',
-    'nor': 'norfloxacin',
-    'ori': 'oritavancin',
-    'oxa': 'oxacillin',
-    'ox': 'oxacillin',
-    'pen': 'penicillin',
-    'p': 'penicillin',
-    'pcg': 'penicillin',
-    'qpr/dpr': 'quinupristin/dalfopristin',
-    'q/d': 'quinupristin/dalfopristin',
-    'qd': 'quinupristin/dalfopristin',
-    'synercid': 'quinupristin/dalfopristin',
-    'rif': 'rifampin',
-    'rifampicin': 'rifampin',
-    'rfp': 'rifampin',
-    'ra': 'rifampin',
-    'str': 'streptomycin',
-    's': 'streptomycin',
-    'sxt': 'trimethoprim/sulfamethoxazole',
-    'st': 'trimethoprim/sulfamethoxazole',
-    's/t': 'trimethoprim/sulfamethoxazole',
-    'tmp/smx': 'trimethoprim/sulfamethoxazole',
-    'smx/tmp': 'trimethoprim/sulfamethoxazole',
-    'cotrimoxazole': 'trimethoprim/sulfamethoxazole',
-    'co-trimoxazole': 'trimethoprim/sulfamethoxazole',
-    'ted': 'tedizolid',
-    'tzd': 'tedizolid',
-    'tec': 'teicoplanin',
-    'teic': 'teicoplanin',
-    'tlv': 'telavancin',
-    'tet': 'tetracycline',
-    'tc': 'tetracycline',
-    'te': 'tetracycline',
-    'tia': 'tiamulin',
-    'tgc': 'tigecycline',
-    'tig': 'tigecycline',
-    'tob': 'tobramycin',
-    'to': 'tobramycin',
-    'nn': 'tobramycin',
-    'tmp': 'trimethoprim',
-    'van': 'vancomycin',
-    'vcm': 'vancomycin',
-    'va': 'vancomycin',
-    'v': 'vancomycin',
+# Permitted drug names strictly allowed in output
+PERMITTED_DRUGS = {
+    "amoxicillin/clavulanic acid",
+    "ampicillin",
+    "antibiotic",
+    "arbekacin",
+    "azithromycin",
+    "biapenem",
+    "cefazolin",
+    "cefoxitin",
+    "ceftarolin",
+    "ceftaroline",
+    "chloramphenicol",
+    "chlorhexidine gluconate",
+    "ciprofloxacin",
+    "clarithromycin",
+    "clindamycin",
+    "dalbavancin",
+    "daptomycin",
+    "doripenem",
+    "erythromycin",
+    "florfenicol",
+    "fosfomycin",
+    "fusidic acid",
+    "gentamicin",
+    "imipenem",
+    "kanamycin",
+    "levofloxacin",
+    "linezolid",
+    "meropenem",
+    "methicillin",
+    "minocycline",
+    "moxifloxacin",
+    "mupirocin",
+    "norfloxacin",
+    "oritavancin",
+    "oxacillin",
+    "penicillin",
+    "phosphomycin",
+    "quinupristin/dalfopristin",
+    "rifampin",
+    "streptomycin",
+    "sulfamethoxazole/trimethoprim",
+    "tedizolid",
+    "teicoplanin",
+    "telavancin",
+    "tetracycline",
+    "tiamulin",
+    "tigecycline",
+    "tobramycin",
+    "trimethoprim",
+    "trimethoprim/sulfamethoxazole",
+    "trimethoprim/sulfonamide",
+    "vancomycin",
 }
 
-DRUG_MAP = {d.lower(): d for d in PERMITTED_DRUGS}
-DRUG_MAP.update(SYNONYMS)
-
-
-def clean_header(name: str) -> str:
-    s = str(name).strip()
-    s = re.sub(
-        r'[\(\[]?\s*(?:μg|ug|mg)\s*/\s*(?:ml|l)\s*[\)\]]?',
-        '',
-        s,
-        flags=re.IGNORECASE,
-    )
-    s = re.sub(r'\bmic\b', '', s, flags=re.IGNORECASE)
-    return s.strip()
-
-
-def resolve_drug_column(name: str):
-    cleaned = clean_header(name).lower()
-    if not cleaned:
-        return None
-
-    if cleaned in DRUG_MAP:
-        return [DRUG_MAP[cleaned]]
-
-    if '/' in cleaned:
-        parts = [p.strip() for p in cleaned.split('/')]
-        resolved = [DRUG_MAP.get(p) for p in parts]
-        if all(resolved):
-            return resolved
-
-    return None
+# Mapping of abbreviations / column headers to standardized drug names
+DRUG_NAME_MAP = {
+    "van": "vancomycin",
+    "teic": "teicoplanin",
+    "dap": "daptomycin",
+    "lzd": "linezolid",
+    "lnz": "linezolid",
+    "abk": "arbekacin",
+    "oxa": "oxacillin",
+    "amp": "ampicillin",
+    "ipm": "imipenem",
+    "mepm": "meropenem",
+    "mem": "meropenem",
+    "bipm": "biapenem",
+    "drpm": "doripenem",
+    "dor": "doripenem",
+    "lvfx": "levofloxacin",
+    "lfx": "levofloxacin",
+    "cpfx": "ciprofloxacin",
+    "cip": "ciprofloxacin",
+    "mino": "minocycline",
+    "min": "minocycline",
+    "st": "trimethoprim/sulfamethoxazole",
+    "sxt": "trimethoprim/sulfamethoxazole",
+    "tmp/smx": "trimethoprim/sulfamethoxazole",
+    "qpr/dpr": "quinupristin/dalfopristin",
+    "qd": "quinupristin/dalfopristin",
+    "quinupristin/dalfopristin": "quinupristin/dalfopristin",
+    "erythromycin": "erythromycin",
+    "clindamycin": "clindamycin",
+}
 
 
 def parse_mic_cell(val):
+    """Parses a cell value into (mic_sign, mic, sir_call, notes)."""
     if pd.isna(val):
-        return None
+        return None, None, None, None
 
-    s = str(val).strip()
-    if s.lower() in [
-        '',
-        'nan',
-        'none',
-        '-',
-        '--',
-        'nd',
-        'na',
-        'n/a',
-        '.',
-        'neg',
-        'pos',
-        'this study',
-    ]:
-        return None
+    val_str = str(val).strip()
+    if not val_str or val_str.lower() in {
+        "nan",
+        "none",
+        "nd",
+        "n/a",
+        "-",
+        ".",
+        "nr",
+        "null",
+    }:
+        return None, None, None, None
 
     sir_call = None
-
-    paren_match = re.search(
-        r'[\(\[]\s*(SDD|NS|[SIR])\s*[\)\]]', s, re.IGNORECASE
+    # Match standard SIR calls: (S), (I), (R), (SDD), (NS) or standalone/trailing
+    sir_match = re.search(
+        r"(?:\((SDD|NS|[SIR])\)|[\s,;](SDD|NS|[SIR])$|^([SIR]|SDD|NS)$)",
+        val_str,
+        re.I,
     )
-    if paren_match:
-        sir_call = paren_match.group(1).upper()
-        s = re.sub(
-            r'[\(\[]\s*(?:SDD|NS|[SIR])\s*[\)\]]', '', s, flags=re.IGNORECASE
+    if sir_match:
+        sir_call = (
+            sir_match.group(1) or sir_match.group(2) or sir_match.group(3)
+        ).upper()
+        val_str = re.sub(
+            r"\((SDD|NS|[SIR])\)|[\s,;](SDD|NS|[SIR])$|^([SIR]|SDD|NS)$",
+            "",
+            val_str,
+            flags=re.I,
         ).strip()
-    elif s.upper() in ['S', 'I', 'R', 'SDD', 'NS']:
-        sir_call = s.upper()
-        s = ''
-    else:
-        end_match = re.search(r'\s+(SDD|NS|[SIR])$', s, re.IGNORECASE)
-        if end_match:
-            sir_call = end_match.group(1).upper()
-            s = s[: end_match.start()].strip()
 
     mic_sign = None
     mic = None
     notes = None
 
-    if s:
-        s_norm = s.replace('≤', '<=').replace('≥', '>=')
-        m_mic = re.search(
-            r'(<=|>=|<|>|=)?\s*(\d+(?:\.\d+)?(?:\s*/\s*\d+(?:\.\d+)?)?)', s_norm
-        )
-        if m_mic:
-            sign_part = m_mic.group(1)
-            num_part = re.sub(r'\s+', '', m_mic.group(2))
-            mic = num_part
-            if sign_part:
-                mic_sign = sign_part
-                notes = None
-            else:
-                mic_sign = '='
-                notes = "mic_sign '=' inferred"
+    sign_match = re.search(r"^(<=|>=|<|>|=)\s*(.+)$", val_str)
+    if sign_match:
+        mic_sign = sign_match.group(1)
+        mic_part = sign_match.group(2).strip()
+    elif re.search(r"\d", val_str):
+        mic_sign = "="
+        mic_part = val_str
+        notes = "mic_sign '=' inferred"
+    else:
+        mic_part = None
+
+    if mic_part:
+        # Extract numeric MIC or ratio (e.g., 32/16 or 0.25)
+        m = re.search(r"(\d+(?:\.\d+)?(?:\s*/\s*\d+(?:\.\d+)?)*)", mic_part)
+        if m:
+            raw_mic = m.group(1).replace(" ", "")
+            parts = raw_mic.split("/")
+            clean_parts = []
+            for p in parts:
+                try:
+                    f = float(p)
+                    if f.is_integer():
+                        clean_parts.append(str(int(f)))
+                    else:
+                        clean_parts.append(p)
+                except ValueError:
+                    clean_parts.append(p)
+            mic = "/".join(clean_parts)
 
     if mic is None and sir_call is None:
-        return None
+        return None, None, None, None
 
-    return {
-        'mic_sign': mic_sign,
-        'mic': mic,
-        'sir_call': sir_call,
-        'notes': notes,
-    }
+    if mic is None:
+        mic_sign = None
+        notes = None
+
+    return mic_sign, mic, sir_call, notes
 
 
 def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty:
-        return pd.DataFrame(
-            columns=[
-                'isolate_id',
-                'accession',
-                'drug',
-                'mic_sign',
-                'mic',
-                'sir_call',
-                'notes',
-            ]
-        )
+    df = df.copy()
 
-    working_df = df.copy()
-
-    unnamed_count = sum(
-        1 for c in working_df.columns if str(c).startswith('Unnamed:')
-    )
-    row0_vals = [
-        str(x).strip() for x in working_df.iloc[0].values if pd.notna(x)
-    ]
-    row0_has_drugs = any(
-        resolve_drug_column(v) is not None for v in row0_vals
-    )
-    col_has_drugs = any(
-        resolve_drug_column(c) is not None for c in working_df.columns
-    )
-
-    if (
-        unnamed_count >= len(working_df.columns) / 2 or row0_has_drugs
-    ) and not col_has_drugs:
-        new_cols = []
-        for c, r0 in zip(working_df.columns, working_df.iloc[0]):
-            r0_str = str(r0).strip() if pd.notna(r0) else ''
-            if r0_str and r0_str.lower() not in ['nan', 'none']:
-                new_cols.append(r0_str)
-            else:
-                new_cols.append(str(c))
-        working_df = working_df.iloc[1:].copy()
-        working_df.columns = new_cols
-
+    # 1. Identify isolate ID column
     isolate_col = None
-    accession_col = None
-
-    for col in working_df.columns:
-        c_clean = str(col).strip().lower()
-        if not isolate_col and re.match(
-            r'^(isolate|sample|strain|specimen|patient|patient[_\s]?isolate|id|no\.?|isolate[_\s]?id|sample[_\s]?id)$',
-            c_clean,
+    for col in df.columns:
+        col_clean = str(col).strip().lower()
+        if any(
+            k in col_clean
+            for k in [
+                "strain",
+                "isolate",
+                "sample",
+                "specimen",
+                "id",
+                "patient isolate",
+            ]
         ):
             isolate_col = col
-        if not accession_col and re.search(
-            r'accession|biosample|sra|genbank', c_clean
-        ):
-            accession_col = col
+            break
 
-    drug_col_map = {}
-    for col in working_df.columns:
-        if col in (isolate_col, accession_col):
+    # 2. Identify accession column
+    accession_cols = []
+    for col in df.columns:
+        col_clean = str(col).strip().lower()
+        if "accession" in col_clean or "biosample" in col_clean:
+            accession_cols.append(col)
+
+    # 3. Handle combined drug column EM/CLDM if present
+    for col in list(df.columns):
+        if str(col).strip().upper() == "EM/CLDM":
+
+            def split_em(v):
+                if pd.isna(v):
+                    return np.nan
+                s = str(v).strip()
+                return s.split("/")[0] if "/" in s else s
+
+            def split_cldm(v):
+                if pd.isna(v):
+                    return np.nan
+                s = str(v).strip()
+                return s.split("/")[1] if "/" in s else s
+
+            df["erythromycin"] = df[col].apply(split_em)
+            df["clindamycin"] = df[col].apply(split_cldm)
+            df = df.drop(columns=[col])
+
+    # 4. Identify AST drug columns
+    drug_mapping = {}
+    for col in df.columns:
+        if col == isolate_col or col in accession_cols:
             continue
-        resolved = resolve_drug_column(col)
-        if resolved:
-            drug_col_map[col] = resolved
+        col_clean = str(col).strip().lower()
+        if col_clean in DRUG_NAME_MAP:
+            std_drug = DRUG_NAME_MAP[col_clean]
+            if std_drug in PERMITTED_DRUGS:
+                drug_mapping[col] = std_drug
+        elif col_clean in PERMITTED_DRUGS:
+            drug_mapping[col] = col_clean
 
     records = []
-
-    for row_idx, (idx, row) in enumerate(working_df.iterrows()):
-        isolate_id = None
-        if isolate_col and pd.notna(row[isolate_col]):
-            val_str = str(row[isolate_col]).strip()
-            if val_str and val_str.lower() not in ['nan', 'none']:
-                if re.match(r'^\d+\.0$', val_str):
-                    val_str = val_str[:-2]
-                isolate_id = val_str
-
-        if not isolate_id and pd.notna(idx):
-            idx_str = str(idx).strip()
-            if idx_str and idx_str.lower() not in ['nan', 'none']:
-                if re.match(r'^\d+\.0$', idx_str):
-                    idx_str = idx_str[:-2]
-                isolate_id = idx_str
-
-        if not isolate_id:
-            isolate_id = f'isolate_{row_idx + 1}'
+    for _, row in df.iterrows():
+        isolate_id = (
+            str(row[isolate_col]).strip()
+            if isolate_col and pd.notna(row[isolate_col])
+            else None
+        )
 
         accession = None
-        if accession_col and pd.notna(row[accession_col]):
-            text = str(row[accession_col]).strip()
-            found = re.findall(
-                r'\b(?:SAMN\d+|SAMEA\d+|SAMD\d+|SRS\d+|GCA_\d+\.\d+|GCF_\d+\.\d+|[ESD]RR\d+)\b',
-                text,
-            )
-            if found:
-                accession = ','.join(dict.fromkeys(found))
-
-        for col, drugs in drug_col_map.items():
-            cell_val = row[col]
-            if pd.isna(cell_val):
-                continue
-
-            cell_str = str(cell_val).strip()
-            if cell_str.lower() in [
-                '',
-                'nan',
-                'none',
-                '-',
-                '--',
-                'nd',
-                'na',
-                'n/a',
-                '.',
-                'this study',
-            ]:
-                continue
-
-            if len(drugs) > 1 and '/' in cell_str:
-                parts = [p.strip() for p in cell_str.split('/')]
-                if len(parts) == len(drugs):
-                    for d_name, p_val in zip(drugs, parts):
-                        parsed = parse_mic_cell(p_val)
-                        if parsed:
-                            records.append(
-                                {
-                                    'isolate_id': isolate_id,
-                                    'accession': accession,
-                                    'drug': d_name,
-                                    'mic_sign': parsed['mic_sign'],
-                                    'mic': parsed['mic'],
-                                    'sir_call': parsed['sir_call'],
-                                    'notes': parsed['notes'],
-                                }
-                            )
-                    continue
-
-            for d_name in drugs:
-                parsed = parse_mic_cell(cell_str)
-                if parsed:
-                    records.append(
-                        {
-                            'isolate_id': isolate_id,
-                            'accession': accession,
-                            'drug': d_name,
-                            'mic_sign': parsed['mic_sign'],
-                            'mic': parsed['mic'],
-                            'sir_call': parsed['sir_call'],
-                            'notes': parsed['notes'],
-                        }
+        if accession_cols:
+            found_accs = []
+            for ac in accession_cols:
+                val = row[ac]
+                if pd.notna(val):
+                    acc_matches = re.findall(
+                        r"\b(?:SAM[NED][A-Z]?\d+|SRS\d+|GC[AF]_\d+\.\d+|[SED]RR\d+)\b",
+                        str(val),
                     )
+                    found_accs.extend(acc_matches)
+            if found_accs:
+                accession = ",".join(sorted(set(found_accs)))
 
-    out_df = pd.DataFrame(
-        records,
-        columns=[
-            'isolate_id',
-            'accession',
-            'drug',
-            'mic_sign',
-            'mic',
-            'sir_call',
-            'notes',
-        ],
-    )
-    return out_df
+        for col, drug_name in drug_mapping.items():
+            cell_val = row[col]
+            mic_sign, mic, sir_call, notes = parse_mic_cell(cell_val)
+
+            # Discard if both mic and sir_call are missing
+            if mic is None and sir_call is None:
+                continue
+
+            records.append(
+                {
+                    "isolate_id": isolate_id,
+                    "accession": accession,
+                    "drug": drug_name,
+                    "mic_sign": mic_sign,
+                    "mic": mic,
+                    "sir_call": sir_call,
+                    "notes": notes,
+                }
+            )
+
+    output_cols = [
+        "isolate_id",
+        "accession",
+        "drug",
+        "mic_sign",
+        "mic",
+        "sir_call",
+        "notes",
+    ]
+    if not records:
+        return pd.DataFrame(columns=output_cols)
+
+    return pd.DataFrame(records)[output_cols]
 

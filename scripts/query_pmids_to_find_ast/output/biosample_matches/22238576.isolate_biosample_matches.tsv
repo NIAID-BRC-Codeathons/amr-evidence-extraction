@@ -1,0 +1,34 @@
+pmid	source_file	isolate_id	match_type	matched_strain	bioproject_accession	biosample_accession	sra_accession
+22238576	22238576.ast_tables.tsv	1) A8819	no_match				
+22238576	22238576.ast_tables.tsv	A8817	no_match				
+22238576	22238576.ast_tables.tsv	2) A10102	fuzzy	A10102	PRJNA39223	SAMN02595337	
+22238576	22238576.ast_tables.tsv	A10103	no_match				
+22238576	22238576.ast_tables.tsv	3) A9299	fuzzy	A9299	PRJNA36475	SAMN02595322	
+22238576	22238576.ast_tables.tsv	A9305	no_match				
+22238576	22238576.ast_tables.tsv	4) A9719	fuzzy	A9719	PRJNA36479	SAMN02595324	
+22238576	22238576.ast_tables.tsv	A9744	no_match				
+22238576	22238576.ast_tables.tsv	5) A9754	no_match				
+22238576	22238576.ast_tables.tsv	A9757	no_match				
+22238576	22238576.ast_tables.tsv	6) A8796	fuzzy	A8796	PRJNA43715	SAMN02595393	
+22238576	22238576.ast_tables.tsv	A8799	no_match				
+22238576	22238576.ast_tables.tsv	7) A9763	fuzzy	A9763	PRJNA36481	SAMN02595325	
+22238576	22238576.ast_tables.tsv	A9764	no_match				
+22238576	22238576.ast_tables.tsv	8) A9765	fuzzy	A9765	PRJNA39221	SAMN02595336	
+22238576	22238576.ast_tables.tsv	A9766	no_match				
+22238576	22238576.ast_tables.tsv	9) A9781	fuzzy	A9781	PRJNA36483	SAMN02595326	
+22238576	22238576.ast_tables.tsv	A9784	no_match				
+22238576	22238576.ast_tables.tsv	A9788	no_match				
+22238576	22238576.ast_tables.tsv	A9792	no_match				
+22238576	22238576.ast_tables.tsv	A9798	no_match				
+22238576	22238576.ast_tables.tsv	1) A8115b	fuzzy	A8115	PRJNA36473	SAMN02595321	
+22238576	22238576.ast_tables.tsv	A10135	no_match				
+22238576	22238576.ast_tables.tsv	A10151	no_match				
+22238576	22238576.ast_tables.tsv	A10152	no_match				
+22238576	22238576.ast_tables.tsv	2) A8117c	fuzzy	A8117	PRJNA40181	SAMN02595361	
+22238576	22238576.ast_tables.tsv	A10136	no_match				
+22238576	22238576.ast_tables.tsv	A10153	no_match				
+22238576	22238576.ast_tables.tsv	A10154	no_match				
+22238576	22238576.ast_tables.tsv	3) A5948d	fuzzy	A5948	PRJNA36467	SAMN02595318	
+22238576	22238576.ast_tables.tsv	A6658	no_match				
+22238576	22238576.ast_tables.tsv	A10155	no_match				
+22238576	22238576.ast_tables.tsv	A10156	no_match				
