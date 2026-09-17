@@ -51,12 +51,26 @@ NETWORK
 
 OUTPUT (written under --outdir)
     paper_classification_<basename>.tsv   one row per unique PMID (includes supplement_paths:
-                                           local file paths of every downloaded supplement)
+                                           local file paths of every downloaded supplement, and
+                                           data_availability_accessions: any BioSample/SRA/
+                                           BioProject/GenBank/RefSeq accessions found in the
+                                           paper's own Data Availability statement -- see NOTE
+                                           ON DATA AVAILABILITY ACCESSIONS below)
     ast_tables/<pmid>/<table_label>.tsv   extracted main-text AST table contents
     ast_records_extracted.tsv             normalized per-isolate AST records pulled from
                                            downloaded .xlsx/.xls supplements (if any + GOOGLE_API_KEY)
     download_report.json                  per-paper supplement download summary + failure log
     supplements/<pmid>/...                downloaded supplementary files, where retrievable
+
+NOTE ON DATA AVAILABILITY ACCESSIONS: `extract_data_availability_accessions()` looks for a Data
+    Availability statement in the paper's full-text XML (tagged explicitly by some publishers,
+    or matched by heading text like "Data Availability" / "Accession Numbers" for the rest) and
+    scrapes any accession-looking tokens out of it. This is a PAPER-LEVEL list, not tied to any
+    specific isolate/strain -- a paper that says "all reads deposited under BioProject
+    PRJNA123456" gives you that one accession with no indication of which isolate_id in
+    ast_tables/ or the supplement extraction it belongs to. Getting a real per-isolate mapping
+    would need a separate LLM-based pass (out of scope here); this is the cheap first step to see
+    how much the paper-level list is worth before building that.
 """
 
 from __future__ import annotations
@@ -119,6 +133,26 @@ ACCESSION_RE = re.compile(
     r"\b(SAMN\d+|SAMEA\d+|SAMD\d+|PRJNA\d+|PRJEB\d+|PRJDB\d+|SRR\d+|ERR\d+|DRR\d+|BioSample|BioProject)\b"
 )
 
+# Broader than ACCESSION_RE above (which is only used as a yes/no "does this paper mention
+# accessions at all" hint): this one actually collects real accession tokens, so it also covers
+# assembly (GCA_/GCF_) and RefSeq (NZ_/NC_) accessions, and SRA/ENA/DDBJ experiment IDs
+# (SRX/ERX/DRX), which papers' Data Availability statements commonly use.
+DATA_AVAIL_ACCESSION_RE = re.compile(
+    r"\b(SAMN\d+|SAMEA\d+|SAMD\d+|PRJNA\d+|PRJEB\d+|PRJDB\d+|"
+    r"SRR\d+|ERR\d+|DRR\d+|SRX\d+|ERX\d+|DRX\d+|"
+    r"GCA_\d+(?:\.\d+)?|GCF_\d+(?:\.\d+)?|"
+    r"(?:NZ_|NC_)[A-Z]{2,4}\d+(?:\.\d+)?)\b"
+)
+
+# Matches common heading phrasing for a paper's data-deposition statement, used as a fallback
+# when the JATS XML doesn't tag the section explicitly via sec-type="data-availability" (many
+# publishers just use a plain <title> instead).
+DATA_AVAILABILITY_HEADING_RE = re.compile(
+    r"data\s+availab|availability\s+of\s+data|accession\s+number|data\s+deposition|"
+    r"sequence\s+data\s+availab",
+    re.IGNORECASE,
+)
+
 
 @dataclass
 class PaperRecord:
@@ -145,6 +179,11 @@ class PaperRecord:
     genbank_accessions: list[str] = field(default_factory=list)
     refseq_accessions: list[str] = field(default_factory=list)
     accessions_confirmed_in_text: str = "unclear"
+    # Accessions scraped from the paper's own Data Availability statement (paper-level, not
+    # tied to a specific isolate -- see scripts/ast_tables_codegen/README.md for why per-isolate
+    # accession joining is a separate, harder problem).
+    data_availability_accessions: list[str] = field(default_factory=list)
+    data_availability_section_found: bool = False
     # LLM-based extraction from downloaded xlsx/xls supplements
     ast_records_extracted: int = 0
     extraction_notes: list[str] = field(default_factory=list)
@@ -369,6 +408,51 @@ def extract_tables_from_xml(xml_bytes: bytes) -> list[dict]:
     return tables
 
 
+def extract_data_availability_accessions(xml_bytes: bytes) -> tuple[list[str], bool]:
+    """Looks for a Data Availability statement in the JATS full-text XML -- tagged explicitly
+    via sec-type/notes-type/fn-type="data-availability" by some publishers, or (far more common)
+    just a plain <sec>/<notes>/<fn> whose <title> matches DATA_AVAILABILITY_HEADING_RE -- and
+    pulls any accession-looking tokens out of it with DATA_AVAIL_ACCESSION_RE.
+
+    This is a paper-level scrape: it tells you which accessions the paper says it deposited
+    somewhere, not which isolate/strain each one belongs to. Papers vary a lot in how (or
+    whether) they spell that mapping out in prose; a real per-isolate join would need a separate,
+    smarter pass (see the "LLM-based per-isolate join" discussion in this repo's history) -- this
+    is the cheaper first step to see how much the paper-level list alone is worth on its own.
+
+    Returns (accessions, section_found) so callers can tell "no such section in this paper" (both
+    empty / False) apart from "section exists but didn't contain anything accession-shaped"
+    (empty list, True).
+    """
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError:
+        return [], False
+
+    section_texts: list[str] = []
+    for el in root.iter():
+        tag = _local(el.tag)
+        if tag not in ("sec", "notes", "fn"):
+            continue
+        type_attr = (
+            el.attrib.get("sec-type") or el.attrib.get("notes-type") or el.attrib.get("fn-type") or ""
+        )
+        title_text = ""
+        for child in el:
+            if _local(child.tag) == "title":
+                title_text = "".join(child.itertext())
+                break
+        if "data-availability" in type_attr.lower() or DATA_AVAILABILITY_HEADING_RE.search(title_text):
+            section_texts.append("".join(el.itertext()))
+
+    if not section_texts:
+        return [], False
+
+    combined = " ".join(section_texts)
+    accessions = sorted(set(DATA_AVAIL_ACCESSION_RE.findall(combined)))
+    return accessions, True
+
+
 def classify_fulltext(xml_bytes: bytes) -> tuple[str, list[str], str, str, list[dict]]:
     """Return (ast_location, supplement_filenames, biosample_hint, details, ast_tables)."""
     try:
@@ -475,6 +559,10 @@ def fetch_and_classify(records: dict[str, PaperRecord], outdir: Path) -> None:
         rec.supplement_files = supp_files
         rec.biosample_hint = biosample_hint
         rec.details = details
+
+        da_accessions, da_section_found = extract_data_availability_accessions(data)
+        rec.data_availability_accessions = da_accessions
+        rec.data_availability_section_found = da_section_found
 
         # Cross-check BV-BRC accessions against the full text.
         all_accessions = (
@@ -822,7 +910,8 @@ def write_outputs(records: dict[str, PaperRecord], outdir: Path, basename: str, 
         "ast_location", "biosample_hint", "supplement_files", "supplement_downloaded",
         "supplement_paths", "ast_table_files", "bvbrc_genome_ids", "bioproject_accessions",
         "biosample_accessions", "assembly_accessions", "genbank_accessions", "refseq_accessions",
-        "accessions_confirmed_in_text", "ast_records_extracted", "extraction_notes", "details",
+        "accessions_confirmed_in_text", "data_availability_section_found",
+        "data_availability_accessions", "ast_records_extracted", "extraction_notes", "details",
     ]
 
     def sort_key(pmid: str) -> int:
@@ -842,6 +931,8 @@ def write_outputs(records: dict[str, PaperRecord], outdir: Path, basename: str, 
                 ";".join(r.bioproject_accessions), ";".join(r.biosample_accessions),
                 ";".join(r.assembly_accessions), ";".join(r.genbank_accessions),
                 ";".join(r.refseq_accessions), r.accessions_confirmed_in_text,
+                "yes" if r.data_availability_section_found else "no",
+                ";".join(r.data_availability_accessions),
                 str(r.ast_records_extracted), " | ".join(r.extraction_notes), r.details,
             ]
             f.write("\t".join(x.replace("\t", " ").replace("\n", " ") for x in row) + "\n")

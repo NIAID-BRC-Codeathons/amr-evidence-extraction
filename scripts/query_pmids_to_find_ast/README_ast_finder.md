@@ -241,6 +241,34 @@ Everything below is written under `--outdir` (default `output/`, i.e. `scripts/q
 | `download_report.json` | Machine-readable summary of the whole run: per-paper counts (supplement files found/downloaded, AST tables extracted, BV-BRC genomes matched, extraction failures) plus the full list of download failures with their error messages. Handy for scripting a "what still needs attention" check without re-parsing the main TSV. |
 | `anti_bot_samples/<pmid>_<filename>.html` | **Debugging output, not data.** When PMC refuses to serve a supplement file — even after the Playwright browser fallback — the script saves up to 3 examples of exactly what PMC sent back instead (almost always its "Preparing to download..." anti-bot interstitial page). This exists so you can *see* what a block actually looks like (a JS challenge vs. a captcha vs. a plain 403) rather than just getting an error string. Once you've confirmed why a handful of downloads failed, this folder is safe to delete — it doesn't feed into anything else the script does. |
 
+## New: `data_availability_accessions` — scraped from the paper's own Data Availability statement
+
+`paper_classification_<name>.tsv` now has two more columns: `data_availability_section_found`
+(`yes`/`no`) and `data_availability_accessions`. `extract_data_availability_accessions()` looks
+for a Data Availability statement in the full-text XML the script already fetches for
+classification -- tagged explicitly via `sec-type`/`notes-type`/`fn-type="data-availability"` by
+some publishers, or (much more common) just a plain `<sec>`/`<notes>`/`<fn>` whose `<title>`
+matches phrasing like "Data Availability", "Availability of data and materials", or "Accession
+Numbers". Whatever text is in that section gets scanned for BioSample (`SAMN*`), SRA/ENA/DDBJ
+(`SRR*`/`ERR*`/`DRR*`/`SRX*`/`ERX*`/`DRX*`), BioProject (`PRJNA*`/`PRJEB*`/`PRJDB*`), and
+assembly/RefSeq (`GCA_*`/`GCF_*`/`NZ_*`/`NC_*`) accessions.
+
+**This is a paper-level list, not a per-isolate mapping.** A paper that says "all reads were
+deposited under BioProject PRJNA123456" gives you that one accession with no indication of which
+`isolate_id` in `ast_tables/` or the supplement extraction it corresponds to -- and for tables
+that reference classic, decades-old reference strains (N315, Mu50, etc.) alongside a study's own
+new isolates, those reference strains' accessions usually aren't even in *this* paper's Data
+Availability statement at all, since they were deposited by someone else entirely, long ago. This
+was deliberately built as the cheap first step (reusing full-text XML already being fetched for
+classification, no new network calls or LLM calls) to see how often papers even have a clean
+enough Data Availability section to be worth harvesting, before deciding whether a smarter,
+LLM-based per-isolate join (matching the paper's prose to `ast_tables_codegen`'s `isolate_id`
+column) is worth building on top of it.
+
+`data_availability_section_found` lets you tell "this paper has no such section at all" apart
+from "the section exists but just says data is available on request" (`found=yes`, accessions
+empty) -- useful for gauging how much value this column is actually adding across your corpus.
+
 ## Usage
 
 ```
