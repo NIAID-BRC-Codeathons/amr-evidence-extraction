@@ -8,12 +8,49 @@ from pathlib import Path
 import pandas as pd
 from typing import List, Optional
 from pydantic import BaseModel, Field
+import httpx
 from google import genai
+from google.genai import errors as genai_errors
 from google.genai import types
 
 from amr_extraction.excel_extractor import detect_header_row
 
 DEFAULT_MODEL = "models/gemini-3.8-flash"
+_RETRYABLE_HTTP_CODES = {429, 503}
+_CODEGEN_RETRY_DELAYS = [5, 15, 30]  # seconds; 3 attempts before giving up
+
+
+def _generate_content_with_retry(client: genai.Client, model: str, contents, config, context: str = ""):
+    """Wraps client.models.generate_content() with retry-with-backoff for transient failures:
+    Gemini 429 (rate limit) / 503 (overload) responses, and raw network-transport errors
+    (dropped connections, timeouts -- e.g. httpx.RemoteProtocolError, seen in practice on large
+    generated-code responses that take a while to stream back). Without this, any transient
+    hiccup crashes the whole script instead of just costing a short retry. Mirrors the retry
+    logic in amr_extraction.llm.query_structured(), which this module doesn't share directly
+    since it manages its own genai.Client rather than going through that provider dispatcher."""
+    attempt = 0
+    while True:
+        try:
+            return client.models.generate_content(model=model, contents=contents, config=config)
+        except genai_errors.APIError as e:
+            code = getattr(e, "code", None)
+            if code not in _RETRYABLE_HTTP_CODES or attempt >= len(_CODEGEN_RETRY_DELAYS):
+                raise
+            reason = f"HTTP {code}"
+        except httpx.TransportError as e:
+            if attempt >= len(_CODEGEN_RETRY_DELAYS):
+                raise
+            reason = f"network error ({type(e).__name__}: {e})"
+
+        delay = _CODEGEN_RETRY_DELAYS[attempt]
+        attempt += 1
+        label = f" [{context}]" if context else ""
+        print(
+            f"\n[!] Gemini request failed: {reason}{label} -- retrying in {delay}s "
+            f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
+            file=sys.stderr,
+        )
+        time.sleep(delay)
 DEFAULT_ANTIBIOTICS_PATH = str(Path(__file__).resolve().parent / "antibiotics.list.txt")
 
 
@@ -77,15 +114,15 @@ Explain your reasoning clearly in 'reasoning'.
 """
 
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
             response_schema=SheetSelection,
             temperature=0.0,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"classify_single_sheet: {sheet_name}",
     )
     elapsed = time.time() - t0
 
@@ -396,13 +433,13 @@ def generate_metadata_code(
 
     print(f"[*] Requesting metadata extraction code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.0,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"generate_metadata_code: {sheet_name}",
     )
     elapsed = time.time() - t0
 
@@ -672,19 +709,20 @@ def generate_transformation_code(
     token_tracker: dict,
     previous_errors: Optional[List[str]] = None,
     antibiotics_list: Optional[List[str]] = None,
+    temperature: float = 0.0,
 ) -> str:
     """Prompts Gemini to generate a pure Python transformation function for this table layout."""
     prompt = build_transformation_prompt(sheet_name, preview_df, previous_errors=previous_errors, antibiotics_list=antibiotics_list)
 
-    print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
+    print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini (temp={temperature})...", end=" ", flush=True)
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.0,
+            temperature=temperature,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"generate_transformation_code: {sheet_name}",
     )
     elapsed = time.time() - t0
 
@@ -716,6 +754,147 @@ def execute_generated_code(code_str: str, df: pd.DataFrame) -> pd.DataFrame:
     transform_fn = local_scope["transform_sheet"]
     result_df = transform_fn(df.copy())
     return result_df
+
+
+def normalize_mic_value(val: Any) -> Optional[str]:
+    """Normalizes numeric MIC strings (e.g. '4.0' -> '4', '0.50' -> '0.5') for comparison."""
+    if val is None or pd.isna(val):
+        return None
+    s = str(val).strip()
+    if not s or s.lower() in {"none", "nan", "null"}:
+        return None
+    try:
+        f = float(s)
+        if f.is_integer():
+            return str(int(f))
+        return f"{f:g}"
+    except ValueError:
+        if "/" in s:
+            parts = s.split("/")
+            try:
+                norm_parts = []
+                for p in parts:
+                    pf = float(p.strip())
+                    norm_parts.append(str(int(pf)) if pf.is_integer() else f"{pf:g}")
+                return "/".join(norm_parts)
+            except ValueError:
+                pass
+        return s
+
+
+def ensemble_extracted_records(
+    dfs: list[pd.DataFrame]
+) -> tuple[pd.DataFrame, list[dict]]:
+    """Merges records across multiple extraction passes and drops conflicting records.
+
+    Key matching:
+      isolate_id + drug, or accession + drug if isolate_id is missing.
+
+    Conflict conditions (between non-empty values):
+      - mic_sign disagreement
+      - normalized mic disagreement
+      - sir_call disagreement
+
+    Non-conflicting attributes (e.g. one pass has accession, another has sir_call) are merged.
+    Non-empty accessions are combined across matching records.
+
+    Returns:
+      (ensembled_df, dropped_conflicts_list)
+    """
+    valid_dfs = [df for df in dfs if df is not None and not df.empty]
+    if not valid_dfs:
+        return pd.DataFrame(), []
+    if len(valid_dfs) == 1:
+        return valid_dfs[0].copy(), []
+
+    def _clean(val: Any) -> Optional[str]:
+        if val is None or pd.isna(val):
+            return None
+        s = str(val).strip()
+        return s if s and s.lower() not in {"none", "nan", "null"} else None
+
+    # Group all records by key
+    grouped: dict[tuple, list[dict]] = {}
+    for df in valid_dfs:
+        for _, row in df.iterrows():
+            iso = _clean(row.get("isolate_id"))
+            acc = _clean(row.get("accession"))
+            drug = _clean(row.get("drug"))
+            if not drug or (not iso and not acc):
+                continue
+            key = (iso, drug) if iso else (acc, drug)
+            if key not in grouped:
+                grouped[key] = []
+            grouped[key].append(row.to_dict())
+
+    retained_rows = []
+    dropped_conflicts = []
+
+    for key, records in grouped.items():
+        # Check conflicts across records
+        mic_signs = set()
+        mics_norm = set()
+        sir_calls = set()
+
+        for r in records:
+            s_sign = _clean(r.get("mic_sign"))
+            if s_sign:
+                mic_signs.add(s_sign)
+
+            s_mic = _clean(r.get("mic"))
+            if s_mic:
+                m_norm = normalize_mic_value(s_mic)
+                if m_norm:
+                    mics_norm.add(m_norm)
+
+            s_sir = _clean(r.get("sir_call"))
+            if s_sir:
+                sir_calls.add(s_sir.upper())
+
+        reasons = []
+        if len(mic_signs) > 1:
+            reasons.append(f"conflicting mic_sign: {sorted(mic_signs)}")
+        if len(mics_norm) > 1:
+            reasons.append(f"conflicting mic: {sorted(mics_norm)}")
+        if len(sir_calls) > 1:
+            reasons.append(f"conflicting sir_call: {sorted(sir_calls)}")
+
+        if reasons:
+            dropped_conflicts.append({
+                "key": key,
+                "reason": "; ".join(reasons),
+                "records": records,
+            })
+            continue
+
+        # No conflict: merge attributes
+        merged_row = {}
+        for r in records:
+            for col, val in r.items():
+                if col not in merged_row or merged_row[col] is None or pd.isna(merged_row[col]):
+                    merged_row[col] = val
+
+        # Ensure normalized mic is stored if mic was present
+        if mics_norm:
+            merged_row["mic"] = next(iter(mics_norm))
+        if mic_signs:
+            merged_row["mic_sign"] = next(iter(mic_signs))
+        if sir_calls:
+            merged_row["sir_call"] = next(iter(sir_calls))
+
+        # Combine all accessions across records
+        all_accs = []
+        for r in records:
+            acc_val = _clean(r.get("accession"))
+            if acc_val:
+                all_accs.extend(extract_accession_tokens(acc_val))
+        if all_accs:
+            merged_row["accession"] = format_combined_accessions(all_accs)
+
+        retained_rows.append(merged_row)
+
+    ensembled_df = pd.DataFrame(retained_rows)
+    return ensembled_df, dropped_conflicts
 
 
 def finalize_extracted_dataframe(
@@ -841,6 +1020,7 @@ def process_excel_with_code_gen(
     supp_dir: Optional[str] = None,
     antibiotics_list_path: Optional[str] = None,
     pmid: Optional[str] = None,
+    num_passes: int = 1,
 ):
     if excel_path is None and supp_dir is None:
         print("[!] Error: Either excel_path or supp_dir must be provided.", file=sys.stderr)
@@ -885,6 +1065,7 @@ def process_excel_with_code_gen(
     all_extracted_dfs = []
     generated_scripts = {}
     processed_sheets_by_file = {}
+    log_sheet_records = []
 
     for file_path in target_files:
         base_name = os.path.basename(file_path)
@@ -918,7 +1099,7 @@ def process_excel_with_code_gen(
             print(f"[*] No AST sheets found in '{base_name}'.", flush=True)
             continue
 
-        # 2. For each relevant sheet, generate code & execute locally (with QC and retry)
+        # 2. For each relevant sheet, generate code & execute locally (with QC, retry, and multi-pass ensembling)
         for cur_sheet in sheets_to_process:
             print(f"\n--- Sheet: '{cur_sheet}' (in {base_name}) ---", flush=True)
             print(f"[*] Reading full sheet data...", flush=True)
@@ -928,54 +1109,102 @@ def process_excel_with_code_gen(
             full_df = pd.read_excel(excel_file, sheet_name=cur_sheet, header=hdr)
             print(f"[+] Loaded {len(full_df)} rows and {len(full_df.columns)} columns.", flush=True)
 
-            max_attempts = 2
-            sheet_valid_df = None
-            last_code = None
-            qc_errors = None
+            pass_dfs = []
+            pass_records_info = []
 
-            for attempt in range(1, max_attempts + 1):
-                if attempt > 1:
-                    print(f"[*] [Retry Attempt {attempt}/{max_attempts}] Generating improved transformation code...", flush=True)
-                else:
-                    print(f"[*] [Attempt {attempt}/{max_attempts}] Generating transformation code...", flush=True)
+            for pass_num in range(1, num_passes + 1):
+                pass_temp = 0.0 if pass_num == 1 else 0.2
+                if num_passes > 1:
+                    print(f"\n[*] === Pass {pass_num}/{num_passes} (temp={pass_temp}) for sheet '{cur_sheet}' ===", flush=True)
 
-                code = generate_transformation_code(
-                    cur_sheet, full_df, client, token_tracker, previous_errors=qc_errors, antibiotics_list=antibiotics_list
-                )
-                last_code = code
+                max_attempts = 2
+                pass_valid_df = None
+                last_code = None
+                qc_errors = None
 
-                print(f"[*] Executing transformation code locally on {len(full_df)} rows...", end=" ", flush=True)
-                t_exec_start = time.time()
-                try:
-                    raw_transformed_df = execute_generated_code(code, full_df)
-                    t_exec_elapsed = time.time() - t_exec_start
-                    print(f"done in {t_exec_elapsed:.3f}s -> produced {len(raw_transformed_df)} records.", flush=True)
-                except Exception as err:
-                    print(f"\n[!] Error executing generated code for sheet '{cur_sheet}': {err}", file=sys.stderr)
-                    qc_errors = [f"Code execution raised exception: {err}"]
-                    continue
-
-                valid_df, invalid_df, errors = validate_extracted_records(raw_transformed_df)
-                if len(invalid_df) == 0:
-                    print(f"[OK] All {len(valid_df)} extracted records passed QC.", flush=True)
-                    sheet_valid_df = valid_df
-                    break
-                else:
-                    qc_errors = errors
-                    print(f"[!] QC check found {len(invalid_df)} invalid record(s) out of {len(raw_transformed_df)}.", flush=True)
-                    if attempt < max_attempts:
-                        print(f"[*] Retrying code generation with QC error feedback...", flush=True)
+                for attempt in range(1, max_attempts + 1):
+                    if attempt > 1:
+                        print(f"[*] [Retry Attempt {attempt}/{max_attempts}] Generating improved transformation code...", flush=True)
                     else:
-                        print(f"\n[!] Failure: Sheet '{cur_sheet}' failed QC on Attempt {max_attempts}.", file=sys.stderr)
-                        print(f"[!] Script failed to convert {len(invalid_df)} record(s) accurately.", file=sys.stderr)
-                        print(f"[!] Sample QC failure reasons:", file=sys.stderr)
-                        for err_msg in errors[:5]:
-                            print(f"    - {err_msg}", file=sys.stderr)
-                        print(f"[*] Omitted {len(invalid_df)} invalid record(s); retaining {len(valid_df)} valid record(s) for final TSV.", flush=True)
-                        sheet_valid_df = valid_df
+                        print(f"[*] [Attempt {attempt}/{max_attempts}] Generating transformation code...", flush=True)
 
-            script_key = f"{base_name}::{cur_sheet}" if len(target_files) > 1 else cur_sheet
-            generated_scripts[script_key] = last_code
+                    import inspect
+                    gen_params = inspect.signature(generate_transformation_code).parameters
+                    if "temperature" in gen_params or any(p.kind == inspect.Parameter.VAR_KEYWORD for p in gen_params.values()):
+                        code = generate_transformation_code(
+                            cur_sheet, full_df, client, token_tracker, previous_errors=qc_errors, antibiotics_list=antibiotics_list, temperature=pass_temp
+                        )
+                    else:
+                        code = generate_transformation_code(
+                            cur_sheet, full_df, client, token_tracker, previous_errors=qc_errors, antibiotics_list=antibiotics_list
+                        )
+                    last_code = code
+
+                    print(f"[*] Executing transformation code locally on {len(full_df)} rows...", end=" ", flush=True)
+                    t_exec_start = time.time()
+                    try:
+                        raw_transformed_df = execute_generated_code(code, full_df)
+                        t_exec_elapsed = time.time() - t_exec_start
+                        print(f"done in {t_exec_elapsed:.3f}s -> produced {len(raw_transformed_df)} records.", flush=True)
+                    except Exception as err:
+                        print(f"\n[!] Error executing generated code for sheet '{cur_sheet}': {err}", file=sys.stderr)
+                        qc_errors = [f"Code execution raised exception: {err}"]
+                        continue
+
+                    valid_df, invalid_df, errors = validate_extracted_records(raw_transformed_df)
+                    if len(invalid_df) == 0:
+                        print(f"[OK] All {len(valid_df)} extracted records passed QC.", flush=True)
+                        pass_valid_df = valid_df
+                        break
+                    else:
+                        qc_errors = errors
+                        print(f"[!] QC check found {len(invalid_df)} invalid record(s) out of {len(raw_transformed_df)}.", flush=True)
+                        if attempt < max_attempts:
+                            print(f"[*] Retrying code generation with QC error feedback...", flush=True)
+                        else:
+                            print(f"\n[!] Failure: Sheet '{cur_sheet}' failed QC on Attempt {max_attempts}.", file=sys.stderr)
+                            print(f"[!] Script failed to convert {len(invalid_df)} record(s) accurately.", file=sys.stderr)
+                            print(f"[!] Sample QC failure reasons:", file=sys.stderr)
+                            for err_msg in errors[:5]:
+                                print(f"    - {err_msg}", file=sys.stderr)
+                            print(f"[*] Omitted {len(invalid_df)} invalid record(s); retaining {len(valid_df)} valid record(s) for final TSV.", flush=True)
+                            pass_valid_df = valid_df
+
+                script_key = (
+                    f"{base_name}::{cur_sheet} (pass {pass_num})"
+                    if num_passes > 1
+                    else (f"{base_name}::{cur_sheet}" if len(target_files) > 1 else cur_sheet)
+                )
+                generated_scripts[script_key] = last_code
+
+                if pass_valid_df is not None and not pass_valid_df.empty:
+                    pass_dfs.append(pass_valid_df)
+                    pass_records_info.append(f"Pass {pass_num}: {len(pass_valid_df)} records")
+                else:
+                    pass_records_info.append(f"Pass {pass_num}: 0 records")
+
+            sheet_dropped = []
+            if num_passes > 1 and len(pass_dfs) > 1:
+                print(f"\n[*] Ensembling results across {len(pass_dfs)} passes for sheet '{cur_sheet}'...", flush=True)
+                sheet_valid_df, sheet_dropped = ensemble_extracted_records(pass_dfs)
+                if sheet_dropped:
+                    print(f"[!] Ensembling dropped {len(sheet_dropped)} conflicting record(s):", file=sys.stderr)
+                    for d in sheet_dropped[:5]:
+                        print(f"    - Key {d['key']}: {d['reason']}", file=sys.stderr)
+                print(f"[+] Ensembling completed: {len(sheet_valid_df)} consensus records retained.", flush=True)
+            elif pass_dfs:
+                sheet_valid_df = pass_dfs[0]
+            else:
+                sheet_valid_df = None
+
+            log_sheet_records.append({
+                "sheet": cur_sheet,
+                "file": base_name,
+                "passes": pass_records_info,
+                "retained": len(sheet_valid_df) if sheet_valid_df is not None else 0,
+                "dropped_count": len(sheet_dropped),
+                "dropped": sheet_dropped,
+            })
 
             if sheet_valid_df is not None and not sheet_valid_df.empty:
                 sheet_df = sheet_valid_df.copy()
@@ -985,6 +1214,7 @@ def process_excel_with_code_gen(
             elif sheet_valid_df is not None and sheet_valid_df.empty:
                 print(f"[!] Warning: No valid records retained for sheet '{cur_sheet}'.", file=sys.stderr)
 
+    total_records = 0
     if all_extracted_dfs:
         combined_df = pd.concat(all_extracted_dfs, ignore_index=True)
 
@@ -1012,11 +1242,11 @@ def process_excel_with_code_gen(
         if out_dir:
             os.makedirs(out_dir, exist_ok=True)
         combined_df.to_csv(output_tsv, sep="\t", index=False, na_rep="")
-        print(f"\n[OK] Successfully wrote {len(combined_df)} total records to '{output_tsv}'", flush=True)
+        total_records = len(combined_df)
+        print(f"\n[OK] Successfully wrote {total_records} total records to '{output_tsv}'", flush=True)
     else:
         print("[!] Notice: No worksheets with AST data (MIC or SIR) were found.", file=sys.stderr)
         print("[!] No output file generated.", file=sys.stderr)
-        return
 
     # Save generated code to file for inspection / reuse
     if save_code_path and generated_scripts:
@@ -1030,6 +1260,40 @@ def process_excel_with_code_gen(
 
     total_time = time.time() - start_total_time
     total_tokens = token_tracker["input_tokens"] + token_tracker["output_tokens"]
+
+    # Write companion .log file alongside output TSV
+    base_out, _ = os.path.splitext(output_tsv)
+    log_file_path = base_out + ".log"
+    try:
+        log_dir = os.path.dirname(log_file_path)
+        if log_dir:
+            os.makedirs(log_dir, exist_ok=True)
+        with open(log_file_path, "w", encoding="utf-8") as f_log:
+            f_log.write("=== AMR Extraction Log ===\n")
+            f_log.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f_log.write(f"PMID: {resolved_pmid or 'Unknown'}\n")
+            f_log.write(f"Output TSV: {output_tsv}\n")
+            f_log.write(f"Passes configured: {num_passes}\n")
+            f_log.write(f"Files processed: {[os.path.basename(f) for f in target_files]}\n\n")
+            f_log.write("=== Ensemble Summary ===\n")
+            for entry in log_sheet_records:
+                f_log.write(f"Sheet: {entry['sheet']} ({entry['file']})\n")
+                for p_info in entry["passes"]:
+                    f_log.write(f"  - {p_info}\n")
+                f_log.write(f"  - Retained consensus records: {entry['retained']}\n")
+                f_log.write(f"  - Dropped conflicting records: {entry['dropped_count']}\n")
+                if entry["dropped"]:
+                    f_log.write(f"  - Conflict Details:\n")
+                    for d in entry["dropped"]:
+                        f_log.write(f"      * Key {d['key']}: {d['reason']}\n")
+                f_log.write("\n")
+            f_log.write(f"Total Output Records: {total_records}\n")
+            f_log.write(f"Total LLM Calls: {token_tracker['calls']}\n")
+            f_log.write(f"Total Tokens: {total_tokens:,}\n")
+            f_log.write(f"Total Duration: {total_time:.2f} seconds\n")
+        print(f"[OK] Saved extraction log to '{log_file_path}'")
+    except Exception as e:
+        print(f"[!] Warning: Could not write companion log file '{log_file_path}': {e}", file=sys.stderr)
 
     print("\n" + "=" * 55)
     print("PERFORMANCE & TOKEN USAGE REPORT (CODE GENERATION)")
@@ -1054,6 +1318,7 @@ def build_cli_parser() -> argparse.ArgumentParser:
     parser.add_argument("--supp-dir", default=None, help="Directory containing additional supplementary spreadsheets (.xlsx, .xls) to scan or search for BioSample metadata mapping (default: same directory as input file)")
     parser.add_argument("--antibiotics-list", default=DEFAULT_ANTIBIOTICS_PATH, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
     parser.add_argument("--pmid", default=None, help="PubMed ID associated with the dataset (if not specified, inferred from path)")
+    parser.add_argument("--num-passes", type=int, default=1, help="Number of code generation passes to run and ensemble per AST sheet (default: 1)")
     return parser
 
 
@@ -1076,6 +1341,7 @@ if __name__ == "__main__":
         supp_dir=args.supp_dir,
         antibiotics_list_path=args.antibiotics_list,
         pmid=args.pmid,
+        num_passes=args.num_passes,
     )
 
 

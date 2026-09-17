@@ -1108,6 +1108,309 @@ def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
     assert "ciprofloxacin" in captured_antibiotics["list"]
 
 
+def test_cli_parser_num_passes():
+    """Verify CLI parser sets default --num-passes to 1 and parses integer."""
+    from amr_extraction.extract_excel_codegen import build_cli_parser
+    parser = build_cli_parser()
+    args = parser.parse_args(["some_file.xlsx"])
+    assert args.num_passes == 1
+
+    args_multi = parser.parse_args(["some_file.xlsx", "--num-passes", "3"])
+    assert args_multi.num_passes == 3
+
+
+def test_ensemble_extracted_records_merges_disjoint_drugs():
+    """Verify ensembling combines non-overlapping drug records from different passes."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "linezolid",
+        "mic_sign": "=",
+        "mic": "2",
+        "sir_call": "S",
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "cefoxitin",
+        "mic_sign": "<=",
+        "mic": "0.5",
+        "sir_call": "S",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 2
+    assert len(dropped) == 0
+    drugs = set(ensembled_df["drug"])
+    assert drugs == {"linezolid", "cefoxitin"}
+
+
+def test_ensemble_extracted_records_merges_partial_attributes():
+    """Verify ensembling fills in missing attributes across passes without conflict."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "ciprofloxacin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": None,
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": "SAMN001",
+        "drug": "ciprofloxacin",
+        "mic_sign": None,
+        "mic": None,
+        "sir_call": "R",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 1
+    assert len(dropped) == 0
+    row = ensembled_df.iloc[0]
+    assert row["isolate_id"] == "ISO-1"
+    assert row["accession"] == "SAMN001"
+    assert row["drug"] == "ciprofloxacin"
+    assert row["mic"] == "4"
+    assert row["mic_sign"] == "="
+    assert row["sir_call"] == "R"
+
+
+def test_ensemble_extracted_records_merges_accessions():
+    """Verify ensembling merges accessions from both passes when keys match."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": "SAMN100",
+        "drug": "daptomycin",
+        "mic_sign": "=",
+        "mic": "1",
+        "sir_call": "S",
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": "ERR200",
+        "drug": "daptomycin",
+        "mic_sign": "=",
+        "mic": "1",
+        "sir_call": "S",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 1
+    assert len(dropped) == 0
+    assert ensembled_df.iloc[0]["accession"] == "SAMN100,ERR200"
+
+
+def test_ensemble_extracted_records_normalizes_numeric_mic():
+    """Verify numeric strings like '4.0' and '4' are recognized as identical and not dropped."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "daptomycin",
+        "mic_sign": "=",
+        "mic": "4.0",
+        "sir_call": "R",
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "daptomycin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": "R",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 1
+    assert len(dropped) == 0
+    assert ensembled_df.iloc[0]["mic"] == "4"
+
+
+def test_ensemble_extracted_records_drops_conflicting_mic():
+    """Verify conflicting numeric mic values for same isolate and drug are dropped entirely."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "gentamicin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": None,
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "gentamicin",
+        "mic_sign": "=",
+        "mic": "8",
+        "sir_call": None,
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 0
+    assert len(dropped) == 1
+    assert dropped[0]["key"] == ("ISO-1", "gentamicin")
+    assert "mic" in dropped[0]["reason"]
+
+
+def test_ensemble_extracted_records_drops_conflicting_sir():
+    """Verify conflicting SIR calls for same isolate and drug are dropped entirely."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "ampicillin",
+        "mic_sign": None,
+        "mic": None,
+        "sir_call": "S",
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "ampicillin",
+        "mic_sign": None,
+        "mic": None,
+        "sir_call": "R",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 0
+    assert len(dropped) == 1
+    assert "sir_call" in dropped[0]["reason"]
+
+
+def test_ensemble_extracted_records_drops_conflicting_mic_sign():
+    """Verify conflicting mic signs ('=' vs '<=') are dropped entirely."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "vancomycin",
+        "mic_sign": "=",
+        "mic": "1",
+        "sir_call": None,
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "vancomycin",
+        "mic_sign": "<=",
+        "mic": "1",
+        "sir_call": None,
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 0
+    assert len(dropped) == 1
+    assert "mic_sign" in dropped[0]["reason"]
+
+
+def test_ensemble_extracted_records_fallback_to_accession_key():
+    """Verify fallback to accession key when isolate_id is None."""
+    from amr_extraction.extract_excel_codegen import ensemble_extracted_records
+
+    df1 = pd.DataFrame([{
+        "isolate_id": None,
+        "accession": "SAMN999",
+        "drug": "penicillin",
+        "mic_sign": ">=",
+        "mic": "16",
+        "sir_call": "R",
+        "notes": None,
+    }])
+    df2 = pd.DataFrame([{
+        "isolate_id": None,
+        "accession": "SAMN999",
+        "drug": "penicillin",
+        "mic_sign": ">=",
+        "mic": "16",
+        "sir_call": "R",
+        "notes": None,
+    }])
+
+    ensembled_df, dropped = ensemble_extracted_records([df1, df2])
+    assert len(ensembled_df) == 1
+    assert len(dropped) == 0
+
+
+def test_process_excel_writes_companion_log_file(monkeypatch, tmp_path):
+    """Verify process_excel_with_code_gen writes companion .log file alongside output."""
+    excel_file = tmp_path / "test.xlsx"
+    with pd.ExcelWriter(excel_file) as writer:
+        pd.DataFrame({"Isolate": ["ISO-1"], "CIP": ["4"]}).to_excel(writer, sheet_name="AST", index=False)
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.classify_single_sheet",
+        lambda sheet_name, preview_df, client, token_tracker: SheetSelection(
+            sheet_name=sheet_name,
+            contains_ast_data=True,
+            has_mic_values=True,
+            has_sir_calls=False,
+            reasoning="AST sheet",
+        ),
+    )
+
+    def mock_gen_code(sheet_name, preview_df, client, token_tracker, previous_errors=None, antibiotics_list=None, temperature=0.0):
+        return """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "Ciprofloxacin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": None,
+        "notes": None,
+    }])
+"""
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_transformation_code",
+        mock_gen_code,
+    )
+
+    out_tsv = tmp_path / "29729180.mic.tsv"
+    process_excel_with_code_gen(
+        excel_path=str(excel_file),
+        output_tsv=str(out_tsv),
+        num_passes=2,
+    )
+
+    log_file = tmp_path / "29729180.mic.log"
+    assert out_tsv.exists()
+    assert log_file.exists()
+    log_content = log_file.read_text()
+    assert "Passes configured: 2" in log_content
+    assert "Ensemble Summary" in log_content
+
+
+
 
 
 
