@@ -1,0 +1,25 @@
+extracted_row	pmid	isolate_id	drug	normalized_drug	genome_id	matched_accessions	genome_match_status	extracted_sir_raw	extracted_sir	ground_truth_sir_raw	ground_truth_sir	sir_result	extracted_mic_sign_raw	extracted_mic_raw	extracted_mic_sign	extracted_mic	ground_truth_mic_sign	ground_truth_mic	mic_result
+2	22238576	1) A8115b	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	0.5	=	0.5			NOT_EVALUATED
+3	22238576	1) A8115b	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+4	22238576	A10135	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+5	22238576	A10135	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+6	22238576	A10151	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	4	=	4			NOT_EVALUATED
+7	22238576	A10151	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+8	22238576	A10152	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+9	22238576	A10152	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+10	22238576	2) A8117c	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	0.5	=	0.5			NOT_EVALUATED
+11	22238576	2) A8117c	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+12	22238576	A10136	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+13	22238576	A10136	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+14	22238576	A10153	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+15	22238576	A10153	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+16	22238576	A10154	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+17	22238576	A10154	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+18	22238576	3) A5948d	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+19	22238576	3) A5948d	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+20	22238576	A6658	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+21	22238576	A6658	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+22	22238576	A10155	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+23	22238576	A10155	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	1	=	1			NOT_EVALUATED
+24	22238576	A10156	daptomycin	daptomycin			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+25	22238576	A10156	vancomycin	vancomycin			NO_ACCESSIONS					NOT_EVALUATED	=	0.5	=	0.5			NOT_EVALUATED

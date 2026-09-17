@@ -1,0 +1,14 @@
+extracted_row	pmid	isolate_id	drug	normalized_drug	genome_id	matched_accessions	genome_match_status	extracted_sir_raw	extracted_sir	ground_truth_sir_raw	ground_truth_sir	sir_result	extracted_mic_sign_raw	extracted_mic_raw	extracted_mic_sign	extracted_mic	ground_truth_mic_sign	ground_truth_mic	mic_result
+2	33293382	AUS0325	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	0.5	=	0.5			NOT_EVALUATED
+3	33293382	AUS0326	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+4	33293382	AUS0327	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+5	33293382	AUS0328	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+6	33293382	AUS0329	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+7	33293382	AUS0331	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+8	33293382	AUS0332	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	1.0	=	1			NOT_EVALUATED
+9	33293382	21162	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	0.25	=	0.25			NOT_EVALUATED
+10	33293382	21163	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	4.0	=	4			NOT_EVALUATED
+11	33293382	21164	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	0.25	=	0.25			NOT_EVALUATED
+12	33293382	21165	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	2.0	=	2			NOT_EVALUATED
+13	33293382	21166	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	0.25	=	0.25			NOT_EVALUATED
+14	33293382	23506	oxacillin	oxacillin			NO_ACCESSIONS					NOT_EVALUATED	=	0.5	=	0.5			NOT_EVALUATED

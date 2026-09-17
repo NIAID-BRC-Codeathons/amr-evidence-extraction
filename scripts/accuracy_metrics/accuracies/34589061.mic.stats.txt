@@ -1,0 +1,70 @@
+Extracted rows: 1870
+Ground-truth rows: 38931
+Ground-truth genomes: 4743
+Building ground-truth accession index...
+Unique accession keys: 14507
+Building genome/drug lookup...
+Comparing extracted records...
+
+============================================================
+GENOME MATCHING
+============================================================
+Extracted rows:                 1870
+Genome matched:                 1107
+No genome match:                763
+No accessions supplied:         0
+Ambiguous genome match:         0
+Genome match rate:              59.20%
+
+Genome match status breakdown:
+MATCHED            1107
+NO_GENOME_MATCH     763
+
+============================================================
+GENOME + DRUG MATCHING
+============================================================
+Matched genome, missing GT drug: 5
+
+============================================================
+S/I/R/NS/NR EXTRACTION
+============================================================
+LLM categorical calls:          68
+Correct calls:                  0
+Incorrect calls:                0
+Missing LLM calls:              0
+Unrecognized LLM calls:         0
+Extracted calls without GT:     68
+
+Not applicable:
+  Neither side has SIR value:   1034
+
+Not evaluable:
+  Drug absent from GT:          5
+  Genome not evaluable:         763
+
+Categorical rows compared:      0
+GT categorical values avail.:   0
+
+============================================================
+MIC EXTRACTION
+============================================================
+LLM MIC values:                 1034
+Correct MICs:                   1034
+Incorrect MICs:                 0
+Missing LLM MICs:               68
+Extracted MICs without GT:      0
+
+Not applicable:
+  Neither side has MIC value:   0
+
+Not evaluable:
+  Drug absent from GT:          5
+  Genome not evaluable:         763
+
+MIC rows compared:              1034
+GT MIC values available:        1102
+MIC accuracy when comparable:   100.00%
+LLM MIC coverage:               93.83%
+Overall correct MIC:            93.83%
+
+Detailed results written to: accuracies/34589061.mic.tsv

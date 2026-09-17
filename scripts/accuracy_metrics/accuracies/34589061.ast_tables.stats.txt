@@ -1,0 +1,66 @@
+Extracted rows: 14
+Ground-truth rows: 38931
+Ground-truth genomes: 4743
+Building ground-truth accession index...
+Unique accession keys: 14507
+Building genome/drug lookup...
+Comparing extracted records...
+
+============================================================
+GENOME MATCHING
+============================================================
+Extracted rows:                 14
+Genome matched:                 0
+No genome match:                0
+No accessions supplied:         14
+Ambiguous genome match:         0
+Genome match rate:              0.00%
+
+Genome match status breakdown:
+NO_ACCESSIONS    14
+
+============================================================
+GENOME + DRUG MATCHING
+============================================================
+Matched genome, missing GT drug: 0
+
+============================================================
+S/I/R/NS/NR EXTRACTION
+============================================================
+LLM categorical calls:          0
+Correct calls:                  0
+Incorrect calls:                0
+Missing LLM calls:              0
+Unrecognized LLM calls:         0
+Extracted calls without GT:     0
+
+Not applicable:
+  Neither side has SIR value:   0
+
+Not evaluable:
+  Drug absent from GT:          0
+  Genome not evaluable:         14
+
+Categorical rows compared:      0
+GT categorical values avail.:   0
+
+============================================================
+MIC EXTRACTION
+============================================================
+LLM MIC values:                 0
+Correct MICs:                   0
+Incorrect MICs:                 0
+Missing LLM MICs:               0
+Extracted MICs without GT:      0
+
+Not applicable:
+  Neither side has MIC value:   0
+
+Not evaluable:
+  Drug absent from GT:          0
+  Genome not evaluable:         14
+
+MIC rows compared:              0
+GT MIC values available:        0
+
+Detailed results written to: accuracies/34589061.ast_tables.tsv

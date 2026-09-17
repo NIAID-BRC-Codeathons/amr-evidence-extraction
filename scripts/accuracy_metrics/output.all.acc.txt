@@ -1,0 +1,74 @@
+Extracted rows: 11592
+Ground-truth rows: 38931
+Ground-truth genomes: 4743
+Building ground-truth accession index...
+Unique accession keys: 14507
+Building genome/drug lookup...
+Comparing extracted records...
+
+============================================================
+GENOME MATCHING
+============================================================
+Extracted rows:                 11592
+Genome matched:                 3303
+No genome match:                4727
+No accessions supplied:         3562
+Ambiguous genome match:         0
+Genome match rate:              28.49%
+
+Genome match status breakdown:
+NO_GENOME_MATCH    4727
+NO_ACCESSIONS      3562
+MATCHED            3303
+
+============================================================
+GENOME + DRUG MATCHING
+============================================================
+Matched genome, missing GT drug: 611
+
+============================================================
+S/I/R/NS/NR EXTRACTION
+============================================================
+LLM categorical calls:          1454
+Correct calls:                  1364
+Incorrect calls:                22
+Missing LLM calls:              0
+Unrecognized LLM calls:         0
+Extracted calls without GT:     68
+
+Not applicable:
+  Neither side has SIR value:   1238
+
+Not evaluable:
+  Drug absent from GT:          611
+  Genome not evaluable:         8289
+
+Categorical rows compared:      1386
+GT categorical values avail.:   1386
+Accuracy when comparable:       98.41%
+LLM categorical coverage:       100.00%
+Overall correct extraction:     98.41%
+
+============================================================
+MIC EXTRACTION
+============================================================
+LLM MIC values:                 2624
+Correct MICs:                   1850
+Incorrect MICs:                 774
+Missing LLM MICs:               68
+Extracted MICs without GT:      0
+
+Not applicable:
+  Neither side has MIC value:   0
+
+Not evaluable:
+  Drug absent from GT:          611
+  Genome not evaluable:         8289
+
+MIC rows compared:              2624
+GT MIC values available:        2692
+MIC accuracy when comparable:   70.50%
+LLM MIC coverage:               97.47%
+Overall correct MIC:            68.72%
+
+Detailed results written to: output.all.comp.tsv

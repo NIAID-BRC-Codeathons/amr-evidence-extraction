@@ -1,0 +1,71 @@
+Extracted rows: 4574
+Ground-truth rows: 38931
+Ground-truth genomes: 4743
+Building ground-truth accession index...
+Unique accession keys: 14507
+Building genome/drug lookup...
+Comparing extracted records...
+
+============================================================
+GENOME MATCHING
+============================================================
+Extracted rows:                 4574
+Genome matched:                 612
+No genome match:                3954
+No accessions supplied:         8
+Ambiguous genome match:         0
+Genome match rate:              13.38%
+
+Genome match status breakdown:
+NO_GENOME_MATCH    3954
+MATCHED             612
+NO_ACCESSIONS         8
+
+============================================================
+GENOME + DRUG MATCHING
+============================================================
+Matched genome, missing GT drug: 408
+
+============================================================
+S/I/R/NS/NR EXTRACTION
+============================================================
+LLM categorical calls:          0
+Correct calls:                  0
+Incorrect calls:                0
+Missing LLM calls:              0
+Unrecognized LLM calls:         0
+Extracted calls without GT:     0
+
+Not applicable:
+  Neither side has SIR value:   204
+
+Not evaluable:
+  Drug absent from GT:          408
+  Genome not evaluable:         3962
+
+Categorical rows compared:      0
+GT categorical values avail.:   0
+
+============================================================
+MIC EXTRACTION
+============================================================
+LLM MIC values:                 204
+Correct MICs:                   57
+Incorrect MICs:                 147
+Missing LLM MICs:               0
+Extracted MICs without GT:      0
+
+Not applicable:
+  Neither side has MIC value:   0
+
+Not evaluable:
+  Drug absent from GT:          408
+  Genome not evaluable:         3962
+
+MIC rows compared:              204
+GT MIC values available:        204
+MIC accuracy when comparable:   27.94%
+LLM MIC coverage:               100.00%
+Overall correct MIC:            27.94%
+
+Detailed results written to: accuracies/35756053.mic.tsv
