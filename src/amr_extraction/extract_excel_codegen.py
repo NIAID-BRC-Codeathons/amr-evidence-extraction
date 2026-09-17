@@ -135,11 +135,27 @@ def discover_relevant_sheets(excel_path: str, client: genai.Client, token_tracke
         return []
 
 
+ACCESSION_COLUMNS = [
+    "bioproject_accession",
+    "biosample_accession",
+    "assembly_accession",
+    "genbank_accessions",
+    "refseq_accessions",
+    "sra_accession",
+    "other_accessions",
+]
+
 EXPECTED_OUTPUT_COLUMNS = [
     "file_name",
     "sheet_name",
     "isolate_id",
-    "accession",
+    "bioproject_accession",
+    "biosample_accession",
+    "assembly_accession",
+    "genbank_accessions",
+    "refseq_accessions",
+    "sra_accession",
+    "other_accessions",
     "drug",
     "mic_sign",
     "mic",
@@ -152,8 +168,95 @@ VALID_MIC_SIGNS = {"=", ">", ">=", "<", "<="}
 VALID_SIR_CALLS = {"S", "I", "R", "SDD", "NS"}
 MIC_NUMERIC_PATTERN = re.compile(r"^\d+(\.\d+)?(/\d+(\.\d+)?)*$")
 
+BIOPROJECT_PATTERN = re.compile(r"^PRJ(NA|EB|DB)?[A-Z]?\d+$", re.IGNORECASE)
 BIOSAMPLE_PATTERN = re.compile(r"^SAM(N|EA?|D)\d+(\.\d+)?$", re.IGNORECASE)
-PUBLIC_ACCESSION_PATTERN = re.compile(r"(SAM[NED]\w*\d+|GC[AF]_\d+|[SED]RR\d+|[A-Z]{4,6}\d{6,8})", re.IGNORECASE)
+ASSEMBLY_PATTERN = re.compile(r"^GC[AF]_\d+(\.\d+)?$", re.IGNORECASE)
+REFSEQ_PATTERN = re.compile(r"^(NZ_|NC_|NM_|NR_|NP_|XM_|XR_|XP_)[A-Z]{2,6}_?\d+(\.\d+)?$", re.IGNORECASE)
+SRA_PATTERN = re.compile(r"^[SED]R[RAXPXZS]\d+$", re.IGNORECASE)
+GENBANK_PATTERN = re.compile(r"^([A-Z]{1,2}\d{5,6}|[A-Z]{4,6}\d{2}\d{6,8}|[A-Z]{4,6}\d{6,8})(\.\d+)?$", re.IGNORECASE)
+PUBLIC_ACCESSION_PATTERN = re.compile(r"(PRJ\w*\d+|SAM[NED]\w*\d+|GC[AF]_\d+|[SED]R[RAXPXZS]\d+|[A-Z]{1,6}\d{5,8})", re.IGNORECASE)
+
+
+def extract_accession_tokens(val: Any) -> list[str]:
+    """Extracts individual accession strings from a scalar value or delimited string."""
+    if val is None or pd.isna(val):
+        return []
+    s = str(val).strip()
+    if not s or s.lower() in {"none", "nan", "null", "-"}:
+        return []
+    parts = re.split(r"[,;\s]+", s)
+    tokens = []
+    for p in parts:
+        p_clean = p.strip().strip("'\"")
+        if p_clean and p_clean.lower() not in {"none", "nan", "null", "-"}:
+            tokens.append(p_clean)
+    return tokens
+
+
+def format_combined_accessions(accessions: list[str]) -> Optional[str]:
+    """Deduplicates and sorts accessions with BioSample first, comma-separated without spaces."""
+    if not accessions:
+        return None
+
+    seen = set()
+    biosamples = []
+    others = []
+
+    for acc in accessions:
+        for token in extract_accession_tokens(acc):
+            key = token.upper()
+            if key in seen:
+                continue
+            seen.add(key)
+            if is_biosample_accession(token):
+                biosamples.append(token)
+            else:
+                others.append(token)
+
+    biosamples.sort()
+    others.sort()
+    all_sorted = biosamples + others
+    return ",".join(all_sorted) if all_sorted else None
+
+
+def split_accession_tokens(accessions: Any) -> dict[str, Optional[str]]:
+    """Classifies accession tokens into the 7 typed categories."""
+    tokens = extract_accession_tokens(accessions)
+    buckets: dict[str, list[str]] = {col: [] for col in ACCESSION_COLUMNS}
+    seen: dict[str, set[str]] = {col: set() for col in ACCESSION_COLUMNS}
+
+    for tok in tokens:
+        clean_tok = tok.strip()
+        tok_upper = clean_tok.upper()
+        if BIOPROJECT_PATTERN.match(clean_tok):
+            col = "bioproject_accession"
+        elif BIOSAMPLE_PATTERN.match(clean_tok):
+            col = "biosample_accession"
+        elif ASSEMBLY_PATTERN.match(clean_tok):
+            col = "assembly_accession"
+        elif REFSEQ_PATTERN.match(clean_tok):
+            col = "refseq_accessions"
+        elif SRA_PATTERN.match(clean_tok):
+            col = "sra_accession"
+        elif GENBANK_PATTERN.match(clean_tok):
+            col = "genbank_accessions"
+        else:
+            col = "other_accessions"
+
+        if tok_upper not in seen[col]:
+            seen[col].add(tok_upper)
+            buckets[col].append(clean_tok)
+
+    result = {}
+    for col in ACCESSION_COLUMNS:
+        items = buckets[col]
+        if items:
+            items.sort()
+            result[col] = ",".join(items)
+        else:
+            result[col] = None
+
+    return result
 
 
 def is_biosample_accession(val: Optional[str]) -> bool:
@@ -164,12 +267,18 @@ def is_biosample_accession(val: Optional[str]) -> bool:
     return bool(BIOSAMPLE_PATTERN.match(s))
 
 
+def contains_biosample_accession(val: Optional[str]) -> bool:
+    """Returns True if val contains at least one valid BioSample accession."""
+    tokens = extract_accession_tokens(val)
+    return any(is_biosample_accession(t) for t in tokens)
+
+
 def needs_accession_enrichment(df: pd.DataFrame) -> bool:
     """Checks whether the extracted DataFrame has missing or non-BioSample accessions."""
     if df.empty or "accession" not in df.columns:
         return False
     for acc in df["accession"]:
-        if not is_biosample_accession(acc):
+        if not contains_biosample_accession(acc):
             return True
     return False
 
@@ -223,12 +332,11 @@ Write a Python function named `extract_metadata(df: pd.DataFrame) -> pd.DataFram
 
 Requirements:
 1. Identify the isolate / sample ID column (e.g., Strain, Isolate ID, Sample ID, CVM_NUMBER, Lab ID, etc.) and map to 'isolate_id'.
-2. Identify the public accession column:
-   - Prioritize BioSample accessions (e.g., SAMN*, SAMEA*, SAMD*).
-   - If no BioSample is present, use assembly accessions (GCA_*, GCF_*, WGS contigs) or SRA runs (ERR*, SRR*, DRR*).
-   - Map this primary accession to 'accession'.
-3. Identify secondary public accessions if the table contains multiple public IDs (e.g., GenBank/SRA run alongside BioSample):
-   - Map this secondary public identifier to 'secondary_accession' (leave None if not present).
+2. Identify all public repository accession columns (e.g. BioSample accessions like SAMN*, SAMEA*, SAMD*; SRA/ENA runs like SRR*, ERR*, DRR*; assemblies like GCA_*, GCF_*; or GenBank nucleotide accessions).
+   - If the worksheet has multiple accession columns, combine all found public accessions for each isolate into a comma-delimited string (e.g. 'SAMN12345678,ERR123456') and map to 'accession'.
+   - If only a single accession column is found, map it to 'accession'.
+3. Secondary accession column:
+   - For backwards compatibility, you may also populate 'secondary_accession' with non-BioSample public accessions (or None if not present).
 4. Discard rows where BOTH 'isolate_id' and 'accession' are missing/blank.
 5. Return a pandas DataFrame with exactly these columns:
    ['isolate_id', 'accession', 'secondary_accession']
@@ -294,27 +402,35 @@ def enrich_ast_with_metadata(
     ast_df: pd.DataFrame,
     metadata_df: pd.DataFrame
 ) -> pd.DataFrame:
-    """Enriches AST DataFrame with BioSample or assembly accessions from metadata mapping."""
+    """Enriches AST DataFrame with all BioSample or public accessions from metadata mapping."""
     if ast_df.empty or metadata_df.empty:
         return ast_df.copy()
 
     res_df = ast_df.copy()
 
-    # Build isolate_id -> accession map (first non-empty)
-    iso_to_acc = {}
+    # Build isolate_id -> list of accessions and token -> list of accessions
+    iso_to_accs: dict[str, list[str]] = {}
+    sec_to_accs: dict[str, list[str]] = {}
+
     for _, row in metadata_df.iterrows():
         iso = str(row.get("isolate_id", "")).strip() if pd.notna(row.get("isolate_id")) else ""
-        acc = str(row.get("accession", "")).strip() if pd.notna(row.get("accession")) else ""
-        if iso and acc and iso not in iso_to_acc and acc.lower() not in {"none", "nan", "null"}:
-            iso_to_acc[iso] = acc
+        row_accs = []
+        for col in ["accession", "secondary_accession"]:
+            if col in metadata_df.columns:
+                row_accs.extend(extract_accession_tokens(row.get(col)))
+        for col in metadata_df.columns:
+            if col not in {"isolate_id", "accession", "secondary_accession"} and "accession" in col.lower():
+                row_accs.extend(extract_accession_tokens(row.get(col)))
 
-    # Build secondary_accession -> accession map
-    sec_to_acc = {}
-    for _, row in metadata_df.iterrows():
-        sec = str(row.get("secondary_accession", "")).strip() if pd.notna(row.get("secondary_accession")) else ""
-        acc = str(row.get("accession", "")).strip() if pd.notna(row.get("accession")) else ""
-        if sec and acc and sec not in sec_to_acc and acc.lower() not in {"none", "nan", "null"}:
-            sec_to_acc[sec] = acc
+        if iso and row_accs:
+            if iso not in iso_to_accs:
+                iso_to_accs[iso] = []
+            iso_to_accs[iso].extend(row_accs)
+
+        for acc in row_accs:
+            if acc not in sec_to_accs:
+                sec_to_accs[acc] = []
+            sec_to_accs[acc].extend(row_accs)
 
     def clean_str(val):
         if val is None or pd.isna(val):
@@ -325,31 +441,39 @@ def enrich_ast_with_metadata(
     for idx in range(len(res_df)):
         iso = clean_str(res_df.at[idx, "isolate_id"])
         curr_acc = clean_str(res_df.at[idx, "accession"])
+        curr_acc_tokens = extract_accession_tokens(curr_acc)
         notes_val = clean_str(res_df.at[idx, "notes"])
 
-        # If already has BioSample accession, keep it
-        if is_biosample_accession(curr_acc):
-            continue
-
-        new_acc = None
+        matched_accs = []
         # 1. Match by isolate_id
-        if iso and iso in iso_to_acc:
-            new_acc = iso_to_acc[iso]
-        # 2. Fallback match by secondary accession / current non-biosample accession
-        elif curr_acc and curr_acc in sec_to_acc:
-            new_acc = sec_to_acc[curr_acc]
-        elif curr_acc and curr_acc in iso_to_acc:
-            new_acc = iso_to_acc[curr_acc]
+        if iso and iso in iso_to_accs:
+            matched_accs.extend(iso_to_accs[iso])
+        # 2. Fallback match by current accession tokens
+        if not matched_accs and curr_acc_tokens:
+            for tok in curr_acc_tokens:
+                if tok in sec_to_accs:
+                    matched_accs.extend(sec_to_accs[tok])
+                elif tok in iso_to_accs:
+                    matched_accs.extend(iso_to_accs[tok])
 
-        if new_acc:
+        if matched_accs:
+            had_biosample = any(is_biosample_accession(t) for t in curr_acc_tokens)
+            all_tokens = curr_acc_tokens + matched_accs
+            formatted = format_combined_accessions(all_tokens)
+            has_biosample = any(is_biosample_accession(t) for t in extract_accession_tokens(formatted))
+
             # If upgrading non-BioSample to BioSample, record note provenance
-            if curr_acc and not is_biosample_accession(curr_acc) and is_biosample_accession(new_acc):
+            if not had_biosample and has_biosample and curr_acc:
                 orig_note = f"original accession: {curr_acc}"
                 if notes_val:
-                    res_df.at[idx, "notes"] = f"{notes_val}; {orig_note}"
+                    if orig_note not in notes_val:
+                        res_df.at[idx, "notes"] = f"{notes_val}; {orig_note}"
                 else:
                     res_df.at[idx, "notes"] = orig_note
-            res_df.at[idx, "accession"] = new_acc
+
+            res_df.at[idx, "accession"] = formatted
+        elif curr_acc_tokens:
+            res_df.at[idx, "accession"] = format_combined_accessions(curr_acc_tokens)
 
     return res_df
 
@@ -396,7 +520,8 @@ def validate_extracted_records(
         # 2. Identifier check (at least one of isolate_id or accession must be present)
         iso_val = row.get("isolate_id")
         acc_val = row.get("accession")
-        if is_blank(iso_val) and is_blank(acc_val):
+        has_acc = not is_blank(acc_val) or any(not is_blank(row.get(c)) for c in ACCESSION_COLUMNS if c in row)
+        if is_blank(iso_val) and not has_acc:
             row_errors.append(f"Row {idx}: missing identifier (both 'isolate_id' and 'accession' are blank)")
 
         # 3. sir_call check
@@ -445,6 +570,7 @@ def build_transformation_prompt(
     sheet_name: str,
     preview_df: pd.DataFrame,
     previous_errors: Optional[List[str]] = None,
+    antibiotics_list: Optional[List[str]] = None,
 ) -> str:
     """Build the LLM prompt to generate transformation code for an AST sheet."""
     csv_sample = preview_df.head(8).to_csv(index=False)
@@ -461,6 +587,11 @@ The code generated on the previous attempt produced records with the following v
 Please fix your transformation logic so that all extracted rows strictly adhere to the requirements below.
 """
 
+    antibiotics_instructions = ""
+    if antibiotics_list:
+        valid_drugs_str = ", ".join(f"'{d}'" for d in antibiotics_list)
+        antibiotics_instructions = f"\n   - CRITICAL: You MUST standardize all extracted drug names against the following permitted list: [{valid_drugs_str}]. Do NOT output any drug name that is not strictly in this list (case-insensitive mapping is fine, but output exactly the name from this list). If the column is not an antimicrobial drug, ignore it."
+
     return f"""You are an expert Python data engineer writing robust Pandas transformation code for bioinformatics.
 Given the sample structure and top rows of an AST (antimicrobial susceptibility testing) Excel worksheet:
 
@@ -476,9 +607,11 @@ Requirements:
 1. Identify the sample / isolate ID column (e.g. Specimen number, Strain name, Sample ID, Patient isolate ID, etc.) and map to 'isolate_id'. Leave blank (or None) if missing.
 2. Extract the 'accession' column:
    - Identify public repository accessions (e.g., BioSample accessions like SAMN*, SAMEA*, SAMD*, SRS*, or GenBank/ENA/DDBJ assembly/run accessions like GCA_*, GCF_*, ERR*, SRR*).
+   - If the sheet contains multiple accession columns, combine all found public accessions into a comma-delimited string in 'accession' (e.g. 'SAMN12345678,ERR123456').
    - IMPORTANT: Do NOT fall back to using the isolate identifier. If no public database accession exists, leave 'accession' blank (None or np.nan).
-3. Identify all antibiotic / antimicrobial testing columns. Ignore non-AST metadata columns (patient demographics, date, source, species, QC, etc.).
+3. Identify all antibiotic / antimicrobial testing columns. Ignore non-AST metadata columns (patient demographics, date, source, species, QC, interpretation, etc.). The column must represent a specific antimicrobial drug.
 4. Unpivot (melt) the drug columns into long format, setting the drug name to 'drug'.
+   - IMPORTANT: If the column headers are drug abbreviations (e.g. 'LNZ', 'CIP', 'ERY'), you must resolve them to their full drug names (e.g. 'Linezolid', 'Ciprofloxacin', 'Erythromycin') in the 'drug' column. Do not output abbreviations.{antibiotics_instructions}
 5. Parse the measurement values per isolate and drug:
    - 'mic_sign': Inequality sign ('<', '<=', '>', '>=', '='). If a numeric MIC has no prefix symbol (e.g. '4', '0.25', '32/16'), set 'mic_sign' to '='. If there is no numeric MIC (e.g. SIR-only cell), set to None (or np.nan).
    - 'mic': The clean numeric MIC value or combination ratio string (e.g., '32/16', '0.25/4.75', '4', '0.5'). If cell only contains qualitative SIR call (e.g. 'S', 'I', 'R'), set to None (or np.nan).
@@ -501,9 +634,10 @@ def generate_transformation_code(
     client: genai.Client,
     token_tracker: dict,
     previous_errors: Optional[List[str]] = None,
+    antibiotics_list: Optional[List[str]] = None,
 ) -> str:
     """Prompts Gemini to generate a pure Python transformation function for this table layout."""
-    prompt = build_transformation_prompt(sheet_name, preview_df, previous_errors=previous_errors)
+    prompt = build_transformation_prompt(sheet_name, preview_df, previous_errors=previous_errors, antibiotics_list=antibiotics_list)
 
     print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
@@ -547,12 +681,29 @@ def execute_generated_code(code_str: str, df: pd.DataFrame) -> pd.DataFrame:
     return result_df
 
 
-def finalize_extracted_dataframe(df: pd.DataFrame, file_path: str, sheet_name: str) -> pd.DataFrame:
-    """Prepends file_name and sheet_name and ensures all expected columns exist in order."""
+def finalize_extracted_dataframe(
+    df: pd.DataFrame,
+    file_path: Optional[str] = None,
+    sheet_name: Optional[str] = None,
+) -> pd.DataFrame:
+    """Prepends file_name and sheet_name, splits accessions into typed columns, and ensures expected schema."""
     res = df.copy()
-    base_file_name = os.path.basename(file_path)
-    res.insert(0, "sheet_name", sheet_name)
-    res.insert(0, "file_name", base_file_name)
+    if sheet_name is not None and "sheet_name" not in res.columns:
+        res.insert(0, "sheet_name", sheet_name)
+    elif sheet_name is not None:
+        res["sheet_name"] = sheet_name
+
+    if file_path is not None and "file_name" not in res.columns:
+        res.insert(0, "file_name", os.path.basename(file_path))
+    elif file_path is not None:
+        res["file_name"] = os.path.basename(file_path)
+
+    if "accession" in res.columns:
+        parsed_dicts = [split_accession_tokens(val) for val in res["accession"]]
+        parsed_df = pd.DataFrame(parsed_dicts, index=res.index)
+        for col in ACCESSION_COLUMNS:
+            res[col] = parsed_df[col]
+        res.drop(columns=["accession"], inplace=True)
 
     for col in EXPECTED_OUTPUT_COLUMNS:
         if col not in res.columns:
@@ -563,70 +714,76 @@ def finalize_extracted_dataframe(df: pd.DataFrame, file_path: str, sheet_name: s
 
 def discover_and_apply_metadata(
     current_df: pd.DataFrame,
-    primary_excel_path: str,
-    processed_sheets: list[str],
-    supp_dir: Optional[str],
-    client: genai.Client,
-    token_tracker: dict,
-    generated_scripts: dict,
+    primary_excel_path: Optional[str] = None,
+    processed_sheets: Optional[list[str]] = None,
+    supp_dir: Optional[str] = None,
+    client: Optional[genai.Client] = None,
+    token_tracker: Optional[dict] = None,
+    generated_scripts: Optional[dict] = None,
+    processed_sheets_by_file: Optional[dict[str, list[str]]] = None,
 ) -> pd.DataFrame:
-    """Discovers metadata sheets in current workbook or supp_dir and enriches current_df with BioSample accessions."""
-    if not needs_accession_enrichment(current_df):
-        return current_df
-
+    """Discovers metadata sheets in current workbook and supp_dir and enriches current_df with all public accessions."""
     target_isolate_ids = set(current_df["isolate_id"].dropna().unique())
-    target_accessions = set(current_df["accession"].dropna().unique())
+    target_accessions = set()
+    for val in current_df["accession"].dropna().unique():
+        target_accessions.update(extract_accession_tokens(val))
 
-    # 1. Search remaining sheets in primary Excel workbook
-    print("[*] Checking remaining sheets in current workbook for BioSample metadata mapping...", flush=True)
-    try:
-        primary_file = pd.ExcelFile(primary_excel_path)
-        candidate_sheets = [s for s in primary_file.sheet_names if s not in processed_sheets]
-        for c_sheet in candidate_sheets:
-            hdr = detect_header_row(primary_file, c_sheet)
-            sample_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr, nrows=8)
-            if is_candidate_metadata_sheet(sample_df, target_isolate_ids, target_accessions):
-                print(f"[+] Found candidate metadata mapping sheet: '{c_sheet}' in '{os.path.basename(primary_excel_path)}'", flush=True)
-                full_sheet_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr)
-                meta_code = generate_metadata_code(c_sheet, full_sheet_df, client, token_tracker)
-                generated_scripts[f"{os.path.basename(primary_excel_path)}::{c_sheet}"] = meta_code
-                meta_df = execute_metadata_code(meta_code, full_sheet_df)
-                current_df = enrich_ast_with_metadata(current_df, meta_df)
-                if not needs_accession_enrichment(current_df):
-                    print("[+] All isolate records successfully enriched with BioSample accessions.", flush=True)
-                    return current_df
-    except Exception as e:
-        print(f"[!] Warning while checking workbook sheets for metadata: {e}", file=sys.stderr)
-
-    if not needs_accession_enrichment(current_df):
-        return current_df
+    # 1. Search remaining sheets in primary Excel workbook (if provided)
+    if primary_excel_path and os.path.exists(primary_excel_path):
+        print("[*] Checking remaining sheets in current workbook for BioSample metadata mapping...", flush=True)
+        try:
+            primary_file = pd.ExcelFile(primary_excel_path)
+            candidate_sheets = [s for s in primary_file.sheet_names if s not in (processed_sheets or [])]
+            for c_sheet in candidate_sheets:
+                hdr = detect_header_row(primary_file, c_sheet)
+                sample_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr, nrows=8)
+                if is_candidate_metadata_sheet(sample_df, target_isolate_ids, target_accessions):
+                    print(f"[+] Found candidate metadata mapping sheet: '{c_sheet}' in '{os.path.basename(primary_excel_path)}'", flush=True)
+                    full_sheet_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr)
+                    meta_code = generate_metadata_code(c_sheet, full_sheet_df, client, token_tracker)
+                    if generated_scripts is not None:
+                        generated_scripts[f"{os.path.basename(primary_excel_path)}::{c_sheet}"] = meta_code
+                    meta_df = execute_metadata_code(meta_code, full_sheet_df)
+                    current_df = enrich_ast_with_metadata(current_df, meta_df)
+                    target_accessions = set()
+                    for val in current_df["accession"].dropna().unique():
+                        target_accessions.update(extract_accession_tokens(val))
+        except Exception as e:
+            print(f"[!] Warning while checking workbook sheets for metadata: {e}", file=sys.stderr)
 
     # 2. Search other .xlsx / .xls files in supp_dir
     if supp_dir and os.path.isdir(supp_dir):
         print(f"[*] Searching supplementary directory '{supp_dir}' for BioSample metadata mapping...", flush=True)
-        primary_abs = os.path.abspath(primary_excel_path)
+        primary_abs = os.path.abspath(primary_excel_path) if primary_excel_path else None
         for fname in sorted(os.listdir(supp_dir)):
             if fname.startswith(("~$", ".")) or not fname.lower().endswith((".xlsx", ".xls")):
                 continue
             fpath = os.path.join(supp_dir, fname)
-            if os.path.abspath(fpath) == primary_abs:
+            abs_fpath = os.path.abspath(fpath)
+            if primary_abs and abs_fpath == primary_abs:
                 continue
+
+            already_processed = set()
+            if processed_sheets_by_file and abs_fpath in processed_sheets_by_file:
+                already_processed = set(processed_sheets_by_file[abs_fpath])
 
             try:
                 supp_file = pd.ExcelFile(fpath)
-                for s_name in supp_file.sheet_names:
+                candidate_sheets = [s for s in supp_file.sheet_names if s not in already_processed]
+                for s_name in candidate_sheets:
                     hdr = detect_header_row(supp_file, s_name)
                     sample_df = pd.read_excel(supp_file, sheet_name=s_name, header=hdr, nrows=8)
                     if is_candidate_metadata_sheet(sample_df, target_isolate_ids, target_accessions):
                         print(f"[+] Found candidate metadata mapping sheet: '{s_name}' in '{fname}'", flush=True)
                         full_sheet_df = pd.read_excel(supp_file, sheet_name=s_name, header=hdr)
                         meta_code = generate_metadata_code(s_name, full_sheet_df, client, token_tracker)
-                        generated_scripts[f"{fname}::{s_name}"] = meta_code
+                        if generated_scripts is not None:
+                            generated_scripts[f"{fname}::{s_name}"] = meta_code
                         meta_df = execute_metadata_code(meta_code, full_sheet_df)
                         current_df = enrich_ast_with_metadata(current_df, meta_df)
-                        if not needs_accession_enrichment(current_df):
-                            print("[+] All isolate records successfully enriched with BioSample accessions.", flush=True)
-                            return current_df
+                        target_accessions = set()
+                        for val in current_df["accession"].dropna().unique():
+                            target_accessions.update(extract_accession_tokens(val))
             except Exception as e:
                 print(f"[!] Warning while inspecting '{fname}': {e}", file=sys.stderr)
 
@@ -634,14 +791,38 @@ def discover_and_apply_metadata(
 
 
 def process_excel_with_code_gen(
-    excel_path: str,
+    excel_path: Optional[str] = None,
     output_tsv: str = "gemini_ast_codegen.tsv",
     sheet_name: Optional[str] = None,
     save_code_path: Optional[str] = "generated_transform.py",
     supp_dir: Optional[str] = None,
+    antibiotics_list_path: Optional[str] = None,
 ):
-    if supp_dir is None:
+    if excel_path is None and supp_dir is None:
+        print("[!] Error: Either excel_path or supp_dir must be provided.", file=sys.stderr)
+        return
+
+    if excel_path is not None and supp_dir is None:
         supp_dir = os.path.dirname(os.path.abspath(excel_path))
+
+    target_files = []
+    if excel_path is not None:
+        target_files = [excel_path]
+    elif supp_dir and os.path.isdir(supp_dir):
+        for fname in sorted(os.listdir(supp_dir)):
+            if fname.startswith(("~$", ".")) or not fname.lower().endswith((".xlsx", ".xls")):
+                continue
+            target_files.append(os.path.join(supp_dir, fname))
+
+    if not target_files:
+        print(f"[!] Notice: No Excel files (.xlsx, .xls) found to process.", file=sys.stderr)
+        return
+
+    antibiotics_list = None
+    if antibiotics_list_path and os.path.exists(antibiotics_list_path):
+        with open(antibiotics_list_path, 'r') as f:
+            antibiotics_list = [line.strip() for line in f if line.strip()]
+        print(f"[*] Loaded {len(antibiotics_list)} standard antibiotics from '{antibiotics_list_path}'", flush=True)
 
     token_tracker = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
     start_total_time = time.time()
@@ -649,110 +830,141 @@ def process_excel_with_code_gen(
     print("[*] Initializing Gemini client...", flush=True)
     client = genai.Client()
 
-    excel_file = pd.ExcelFile(excel_path)
-
-    # 1. Discover sheets
-    if sheet_name:
-        if sheet_name not in excel_file.sheet_names:
-            print(f"[!] Error: Sheet '{sheet_name}' not found. Available: {excel_file.sheet_names}", file=sys.stderr)
-            sys.exit(1)
-        sheets_to_process = [sheet_name]
-    else:
-        sheets_to_process = discover_relevant_sheets(excel_path, client, token_tracker)
-
-    if not sheets_to_process:
-        print("[!] Notice: No worksheets with AST data (MIC or SIR) were found.", file=sys.stderr)
-        print("[!] No output file generated.", file=sys.stderr)
-        return
-
     all_extracted_dfs = []
     generated_scripts = {}
+    processed_sheets_by_file = {}
 
-    # 2. For each relevant sheet, generate code & execute locally (with QC and retry)
-    for cur_sheet in sheets_to_process:
-        print(f"\n--- Sheet: '{cur_sheet}' ---", flush=True)
-        print(f"[*] Reading full sheet data...", flush=True)
-        hdr = detect_header_row(excel_file, cur_sheet)
-        if hdr > 0:
-            print(f"[*] Detected column headers at row {hdr} (skipping title rows).", flush=True)
-        full_df = pd.read_excel(excel_file, sheet_name=cur_sheet, header=hdr)
-        print(f"[+] Loaded {len(full_df)} rows and {len(full_df.columns)} columns.", flush=True)
+    for file_path in target_files:
+        base_name = os.path.basename(file_path)
+        if len(target_files) > 1:
+            print(f"\n==================================================", flush=True)
+            print(f"[*] Processing Excel file: '{base_name}'", flush=True)
+            print(f"==================================================", flush=True)
 
-        max_attempts = 2
-        sheet_valid_df = None
-        last_code = None
-        qc_errors = None
+        try:
+            excel_file = pd.ExcelFile(file_path)
+        except Exception as e:
+            print(f"[!] Error opening Excel file '{file_path}': {e}", file=sys.stderr)
+            continue
 
-        for attempt in range(1, max_attempts + 1):
-            if attempt > 1:
-                print(f"[*] [Retry Attempt {attempt}/{max_attempts}] Generating improved transformation code...", flush=True)
+        # 1. Discover sheets
+        if sheet_name:
+            if sheet_name in excel_file.sheet_names:
+                sheets_to_process = [sheet_name]
             else:
-                print(f"[*] [Attempt {attempt}/{max_attempts}] Generating transformation code...", flush=True)
-
-            code = generate_transformation_code(
-                cur_sheet, full_df, client, token_tracker, previous_errors=qc_errors
-            )
-            last_code = code
-
-            print(f"[*] Executing transformation code locally on {len(full_df)} rows...", end=" ", flush=True)
-            t_exec_start = time.time()
-            try:
-                raw_transformed_df = execute_generated_code(code, full_df)
-                t_exec_elapsed = time.time() - t_exec_start
-                print(f"done in {t_exec_elapsed:.3f}s -> produced {len(raw_transformed_df)} records.", flush=True)
-            except Exception as err:
-                print(f"\n[!] Error executing generated code for sheet '{cur_sheet}': {err}", file=sys.stderr)
-                qc_errors = [f"Code execution raised exception: {err}"]
-                continue
-
-            valid_df, invalid_df, errors = validate_extracted_records(raw_transformed_df)
-            if len(invalid_df) == 0:
-                print(f"[OK] All {len(valid_df)} extracted records passed QC.", flush=True)
-                sheet_valid_df = valid_df
-                break
-            else:
-                qc_errors = errors
-                print(f"[!] QC check found {len(invalid_df)} invalid record(s) out of {len(raw_transformed_df)}.", flush=True)
-                if attempt < max_attempts:
-                    print(f"[*] Retrying code generation with QC error feedback...", flush=True)
+                if len(target_files) == 1:
+                    print(f"[!] Error: Sheet '{sheet_name}' not found. Available: {excel_file.sheet_names}", file=sys.stderr)
+                    sys.exit(1)
                 else:
-                    print(f"\n[!] Failure: Sheet '{cur_sheet}' failed QC on Attempt {max_attempts}.", file=sys.stderr)
-                    print(f"[!] Script failed to convert {len(invalid_df)} record(s) accurately.", file=sys.stderr)
-                    print(f"[!] Sample QC failure reasons:", file=sys.stderr)
-                    for err_msg in errors[:5]:
-                        print(f"    - {err_msg}", file=sys.stderr)
-                    print(f"[*] Omitted {len(invalid_df)} invalid record(s); retaining {len(valid_df)} valid record(s) for final TSV.", flush=True)
+                    sheets_to_process = []
+        else:
+            sheets_to_process = discover_relevant_sheets(file_path, client, token_tracker)
+
+        processed_sheets_by_file[os.path.abspath(file_path)] = sheets_to_process
+
+        if not sheets_to_process:
+            print(f"[*] No AST sheets found in '{base_name}'.", flush=True)
+            continue
+
+        # 2. For each relevant sheet, generate code & execute locally (with QC and retry)
+        for cur_sheet in sheets_to_process:
+            print(f"\n--- Sheet: '{cur_sheet}' (in {base_name}) ---", flush=True)
+            print(f"[*] Reading full sheet data...", flush=True)
+            hdr = detect_header_row(excel_file, cur_sheet)
+            if hdr > 0:
+                print(f"[*] Detected column headers at row {hdr} (skipping title rows).", flush=True)
+            full_df = pd.read_excel(excel_file, sheet_name=cur_sheet, header=hdr)
+            print(f"[+] Loaded {len(full_df)} rows and {len(full_df.columns)} columns.", flush=True)
+
+            max_attempts = 2
+            sheet_valid_df = None
+            last_code = None
+            qc_errors = None
+
+            for attempt in range(1, max_attempts + 1):
+                if attempt > 1:
+                    print(f"[*] [Retry Attempt {attempt}/{max_attempts}] Generating improved transformation code...", flush=True)
+                else:
+                    print(f"[*] [Attempt {attempt}/{max_attempts}] Generating transformation code...", flush=True)
+
+                code = generate_transformation_code(
+                    cur_sheet, full_df, client, token_tracker, previous_errors=qc_errors, antibiotics_list=antibiotics_list
+                )
+                last_code = code
+
+                print(f"[*] Executing transformation code locally on {len(full_df)} rows...", end=" ", flush=True)
+                t_exec_start = time.time()
+                try:
+                    raw_transformed_df = execute_generated_code(code, full_df)
+                    t_exec_elapsed = time.time() - t_exec_start
+                    print(f"done in {t_exec_elapsed:.3f}s -> produced {len(raw_transformed_df)} records.", flush=True)
+                except Exception as err:
+                    print(f"\n[!] Error executing generated code for sheet '{cur_sheet}': {err}", file=sys.stderr)
+                    qc_errors = [f"Code execution raised exception: {err}"]
+                    continue
+
+                valid_df, invalid_df, errors = validate_extracted_records(raw_transformed_df)
+                if len(invalid_df) == 0:
+                    print(f"[OK] All {len(valid_df)} extracted records passed QC.", flush=True)
                     sheet_valid_df = valid_df
+                    break
+                else:
+                    qc_errors = errors
+                    print(f"[!] QC check found {len(invalid_df)} invalid record(s) out of {len(raw_transformed_df)}.", flush=True)
+                    if attempt < max_attempts:
+                        print(f"[*] Retrying code generation with QC error feedback...", flush=True)
+                    else:
+                        print(f"\n[!] Failure: Sheet '{cur_sheet}' failed QC on Attempt {max_attempts}.", file=sys.stderr)
+                        print(f"[!] Script failed to convert {len(invalid_df)} record(s) accurately.", file=sys.stderr)
+                        print(f"[!] Sample QC failure reasons:", file=sys.stderr)
+                        for err_msg in errors[:5]:
+                            print(f"    - {err_msg}", file=sys.stderr)
+                        print(f"[*] Omitted {len(invalid_df)} invalid record(s); retaining {len(valid_df)} valid record(s) for final TSV.", flush=True)
+                        sheet_valid_df = valid_df
 
-        generated_scripts[cur_sheet] = last_code
+            script_key = f"{base_name}::{cur_sheet}" if len(target_files) > 1 else cur_sheet
+            generated_scripts[script_key] = last_code
 
-        if sheet_valid_df is not None and not sheet_valid_df.empty:
-            finalized_df = finalize_extracted_dataframe(sheet_valid_df, excel_path, cur_sheet)
-            all_extracted_dfs.append(finalized_df)
-        elif sheet_valid_df is not None and sheet_valid_df.empty:
-            print(f"[!] Warning: No valid records retained for sheet '{cur_sheet}'.", file=sys.stderr)
+            if sheet_valid_df is not None and not sheet_valid_df.empty:
+                sheet_df = sheet_valid_df.copy()
+                sheet_df.insert(0, "sheet_name", cur_sheet)
+                sheet_df.insert(0, "file_name", base_name)
+                all_extracted_dfs.append(sheet_df)
+            elif sheet_valid_df is not None and sheet_valid_df.empty:
+                print(f"[!] Warning: No valid records retained for sheet '{cur_sheet}'.", file=sys.stderr)
 
     if all_extracted_dfs:
         combined_df = pd.concat(all_extracted_dfs, ignore_index=True)
 
-        # 3. If accessions are missing or non-BioSample, search metadata sheets to enrich
-        if needs_accession_enrichment(combined_df):
-            print("\n[*] Checking for BioSample accession mappings across sheets and supplementary files...", flush=True)
-            combined_df = discover_and_apply_metadata(
-                combined_df,
-                primary_excel_path=excel_path,
-                processed_sheets=sheets_to_process,
-                supp_dir=supp_dir,
-                client=client,
-                token_tracker=token_tracker,
-                generated_scripts=generated_scripts,
-            )
+        # 3. Discover and merge all accessions from metadata sheets in workbook and supplementary files
+        print("\n[*] Checking for accession mappings across sheets and supplementary files...", flush=True)
+        primary_processed = (
+            processed_sheets_by_file.get(os.path.abspath(excel_path), [])
+            if excel_path and os.path.abspath(excel_path) in processed_sheets_by_file
+            else []
+        )
+        combined_df = discover_and_apply_metadata(
+            combined_df,
+            primary_excel_path=excel_path,
+            processed_sheets=primary_processed,
+            supp_dir=supp_dir,
+            client=client,
+            token_tracker=token_tracker,
+            generated_scripts=generated_scripts,
+            processed_sheets_by_file=processed_sheets_by_file,
+        )
+
+        combined_df = finalize_extracted_dataframe(combined_df)
 
         out_dir = os.path.dirname(output_tsv)
         if out_dir:
             os.makedirs(out_dir, exist_ok=True)
         combined_df.to_csv(output_tsv, sep="\t", index=False, na_rep="")
         print(f"\n[OK] Successfully wrote {len(combined_df)} total records to '{output_tsv}'", flush=True)
+    else:
+        print("[!] Notice: No worksheets with AST data (MIC or SIR) were found.", file=sys.stderr)
+        print("[!] No output file generated.", file=sys.stderr)
+        return
 
     # Save generated code to file for inspection / reuse
     if save_code_path and generated_scripts:
@@ -778,26 +990,38 @@ def process_excel_with_code_gen(
     print("=" * 55 + "\n")
 
 
-if __name__ == "__main__":
+def build_cli_parser() -> argparse.ArgumentParser:
+    """Builds and returns the command-line argument parser."""
     parser = argparse.ArgumentParser(
         description="Extract AST records by using Gemini to synthesize and execute local Pandas transformation code."
     )
-    parser.add_argument("excel_file", help="Path to the Excel file to process")
+    parser.add_argument("excel_file", nargs="?", default=None, help="Path to the Excel file to process (optional if --supp-dir is specified)")
     parser.add_argument("-s", "--sheet", default=None, help="Specific sheet name to process (default: auto-discover AST sheets)")
     parser.add_argument("-o", "--output", default="gemini_ast_codegen.tsv", help="Output TSV file (default: gemini_ast_codegen.tsv)")
     parser.add_argument("--save-code", default="generated_transform.py", help="File to save generated Python code (default: generated_transform.py)")
-    parser.add_argument("--supp-dir", default=None, help="Directory containing additional supplementary spreadsheets (.xlsx, .xls) to search for BioSample metadata mapping (default: same directory as input file)")
+    parser.add_argument("--supp-dir", default=None, help="Directory containing additional supplementary spreadsheets (.xlsx, .xls) to scan or search for BioSample metadata mapping (default: same directory as input file)")
+    parser.add_argument("--antibiotics-list", default=None, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
+    return parser
+
+
+if __name__ == "__main__":
+    parser = build_cli_parser()
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
         sys.exit(1)
 
     args = parser.parse_args()
+    if not args.excel_file and not args.supp_dir:
+        parser.error("Either excel_file or --supp-dir must be provided.")
+
     process_excel_with_code_gen(
-        args.excel_file,
+        excel_path=args.excel_file,
         output_tsv=args.output,
         sheet_name=args.sheet,
         save_code_path=args.save_code,
         supp_dir=args.supp_dir,
+        antibiotics_list_path=args.antibiotics_list,
     )
+
 

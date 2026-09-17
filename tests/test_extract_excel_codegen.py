@@ -26,7 +26,13 @@ def test_expected_output_columns_definition():
         "file_name",
         "sheet_name",
         "isolate_id",
-        "accession",
+        "bioproject_accession",
+        "biosample_accession",
+        "assembly_accession",
+        "genbank_accessions",
+        "refseq_accessions",
+        "sra_accession",
+        "other_accessions",
         "drug",
         "mic_sign",
         "mic",
@@ -48,10 +54,11 @@ def test_build_transformation_prompt_requirements():
     for col in ["isolate_id", "accession", "drug", "mic_sign", "mic", "sir_call", "notes"]:
         assert col in prompt
 
-    # Accession rule: no fallback to isolate_id
+    # Accession rule: no fallback to isolate_id, comma-delimited if multiple
     assert "accession" in prompt
     assert "SAMN" in prompt or "BioSample" in prompt
     assert "fallback" in prompt.lower() or "leave blank" in prompt.lower()
+    assert "comma" in prompt.lower()
 
     # Normalization of SIR
     assert "SDD" in prompt
@@ -128,11 +135,42 @@ def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
     assert result_df.loc[0, "mic"] == "4"
 
 
-def test_finalize_extracted_dataframe_prepends_file_and_sheet():
-    """Verify finalize_extracted_dataframe adds file_name and sheet_name in correct order."""
+def test_split_accession_tokens_classification():
+    """Verify classification of accessions into the 7 typed categories."""
+    from amr_extraction.extract_excel_codegen import split_accession_tokens
+
+    raw = "PRJNA12345,SAMN001,SAMEA002,GCA_001.1,NZ_CP012345.1,SRR100,ERR200,CP099999,XYZ123"
+    result = split_accession_tokens(raw)
+
+    assert result["bioproject_accession"] == "PRJNA12345"
+    assert result["biosample_accession"] == "SAMEA002,SAMN001"
+    assert result["assembly_accession"] == "GCA_001.1"
+    assert result["genbank_accessions"] == "CP099999"
+    assert result["refseq_accessions"] == "NZ_CP012345.1"
+    assert result["sra_accession"] == "ERR200,SRR100"
+    assert result["other_accessions"] == "XYZ123"
+
+
+def test_split_accession_tokens_empty_fields():
+    """Verify missing accession categories return None / blank."""
+    from amr_extraction.extract_excel_codegen import split_accession_tokens
+
+    raw = "SAMN12345"
+    result = split_accession_tokens(raw)
+    assert result["biosample_accession"] == "SAMN12345"
+    assert result["bioproject_accession"] is None
+    assert result["assembly_accession"] is None
+    assert result["genbank_accessions"] is None
+    assert result["refseq_accessions"] is None
+    assert result["sra_accession"] is None
+    assert result["other_accessions"] is None
+
+
+def test_finalize_extracted_dataframe_splits_accessions():
+    """Verify finalize_extracted_dataframe splits accession and formats columns."""
     inner_df = pd.DataFrame([{
         "isolate_id": "ISO-100",
-        "accession": None,
+        "accession": "SAMN001,ERR100",
         "drug": "Gentamicin",
         "mic_sign": "<=",
         "mic": "1",
@@ -147,10 +185,13 @@ def test_finalize_extracted_dataframe_prepends_file_and_sheet():
     )
 
     assert list(final_df.columns) == EXPECTED_OUTPUT_COLUMNS
+    assert "accession" not in final_df.columns
     assert final_df.loc[0, "file_name"] == "test_paper_s1.xlsx"
     assert final_df.loc[0, "sheet_name"] == "Table S1"
     assert final_df.loc[0, "isolate_id"] == "ISO-100"
-    assert pd.isna(final_df.loc[0, "accession"]) or final_df.loc[0, "accession"] is None
+    assert final_df.loc[0, "biosample_accession"] == "SAMN001"
+    assert final_df.loc[0, "sra_accession"] == "ERR100"
+    assert pd.isna(final_df.loc[0, "assembly_accession"]) or final_df.loc[0, "assembly_accession"] is None
 
 
 def test_export_tsv_clean_blanks():
@@ -159,7 +200,13 @@ def test_export_tsv_clean_blanks():
         "file_name": "paper.xlsx",
         "sheet_name": "Sheet1",
         "isolate_id": "ISO-1",
-        "accession": None,
+        "bioproject_accession": None,
+        "biosample_accession": "SAMN001",
+        "assembly_accession": None,
+        "genbank_accessions": None,
+        "refseq_accessions": None,
+        "sra_accession": None,
+        "other_accessions": None,
         "drug": "Ampicillin",
         "mic_sign": "=",
         "mic": "8",
@@ -176,10 +223,12 @@ def test_export_tsv_clean_blanks():
     row = lines[1].split("\t")
 
     assert header == EXPECTED_OUTPUT_COLUMNS
-    accession_idx = header.index("accession")
+    biosample_idx = header.index("biosample_accession")
+    sra_idx = header.index("sra_accession")
     sir_call_idx = header.index("sir_call")
 
-    assert row[accession_idx] == ""
+    assert row[biosample_idx] == "SAMN001"
+    assert row[sra_idx] == ""
     assert row[sir_call_idx] == ""
     assert "None" not in row
     assert "nan" not in row
@@ -416,12 +465,12 @@ def test_enrich_ast_with_metadata_join_by_isolate_id():
     enriched_df = enrich_ast_with_metadata(ast_df, meta_df)
     assert enriched_df.loc[0, "accession"] == "SAMN001"
     assert pd.isna(enriched_df.loc[0, "notes"]) or enriched_df.loc[0, "notes"] is None
-    assert enriched_df.loc[1, "accession"] == "SAMN002"
+    assert enriched_df.loc[1, "accession"] == "SAMN002,ERR002"
     assert enriched_df.loc[1, "notes"] == "mic_sign '=' inferred"
 
 
 def test_enrich_ast_with_metadata_upgrade_to_biosample_records_notes():
-    """Verify upgrading a non-BioSample accession records the original in notes."""
+    """Verify upgrading a non-BioSample accession records the original in notes and retains both accessions."""
     ast_df = pd.DataFrame([
         {"isolate_id": "ISO-1", "accession": "ERR100", "drug": "Amp", "notes": None},
         {"isolate_id": "ISO-2", "accession": "GCA_200", "drug": "Cip", "notes": "mic_sign '=' inferred"},
@@ -432,10 +481,10 @@ def test_enrich_ast_with_metadata_upgrade_to_biosample_records_notes():
     ])
 
     enriched_df = enrich_ast_with_metadata(ast_df, meta_df)
-    assert enriched_df.loc[0, "accession"] == "SAMN001"
+    assert enriched_df.loc[0, "accession"] == "SAMN001,ERR100"
     assert enriched_df.loc[0, "notes"] == "original accession: ERR100"
 
-    assert enriched_df.loc[1, "accession"] == "SAMN002"
+    assert enriched_df.loc[1, "accession"] == "SAMN002,GCA_200"
     assert enriched_df.loc[1, "notes"] == "mic_sign '=' inferred; original accession: GCA_200"
 
 
@@ -449,12 +498,12 @@ def test_enrich_ast_with_metadata_fallback_join_by_secondary_accession():
     ])
 
     enriched_df = enrich_ast_with_metadata(ast_df, meta_df)
-    assert enriched_df.loc[0, "accession"] == "SAMN999"
+    assert enriched_df.loc[0, "accession"] == "SAMN999,ERR555"
     assert enriched_df.loc[0, "notes"] == "original accession: ERR555"
 
 
 def test_enrich_ast_with_metadata_collision_resolution():
-    """Verify collision resolves by taking the first non-empty accession."""
+    """Verify multiple metadata accessions are aggregated comma-delimited."""
     ast_df = pd.DataFrame([
         {"isolate_id": "ISO-1", "accession": None, "drug": "Amp", "notes": None},
     ])
@@ -465,7 +514,25 @@ def test_enrich_ast_with_metadata_collision_resolution():
 
     enriched_df = enrich_ast_with_metadata(ast_df, meta_df)
     assert len(enriched_df) == 1
-    assert enriched_df.loc[0, "accession"] == "SAMN001"
+    assert enriched_df.loc[0, "accession"] == "SAMN001,SAMN999"
+
+
+def test_enrich_ast_with_metadata_aggregates_all_public_accessions():
+    """Verify all unique public accessions are merged comma-delimited with BioSample first."""
+    ast_df = pd.DataFrame([
+        {"isolate_id": "ISO-1", "accession": "ERR100", "drug": "Amp", "notes": None},
+    ])
+    meta_df = pd.DataFrame([
+        {
+            "isolate_id": "ISO-1",
+            "accession": "SAMN001,SRR200",
+            "secondary_accession": "CP012345",
+        },
+    ])
+
+    enriched_df = enrich_ast_with_metadata(ast_df, meta_df)
+    assert enriched_df.loc[0, "accession"] == "SAMN001,CP012345,ERR100,SRR200"
+    assert enriched_df.loc[0, "notes"] == "original accession: ERR100"
 
 
 def test_is_candidate_metadata_sheet():
@@ -489,7 +556,7 @@ def test_is_candidate_metadata_sheet():
 
 
 def test_build_metadata_transformation_prompt():
-    """Verify metadata transformation prompt requires isolate_id, accession, and secondary_accession."""
+    """Verify metadata transformation prompt requires extracting all accession columns comma-delimited."""
     preview_df = pd.DataFrame({
         "Strain": ["S1"],
         "BioSample": ["SAMN001"],
@@ -499,6 +566,7 @@ def test_build_metadata_transformation_prompt():
     assert "isolate_id" in prompt
     assert "accession" in prompt
     assert "secondary_accession" in prompt
+    assert "comma" in prompt.lower()
     assert "extract_metadata" in prompt
 
 
@@ -561,10 +629,208 @@ def extract_metadata(df: pd.DataFrame) -> pd.DataFrame:
         generated_scripts=scripts,
     )
 
-    assert enriched.loc[0, "accession"] == "SAMN11111111"
+    assert enriched.loc[0, "accession"] == "SAMN11111111,GCA_001"
     assert pd.isna(enriched.loc[0, "notes"]) or enriched.loc[0, "notes"] is None
 
-    assert enriched.loc[1, "accession"] == "SAMN22222222"
+    assert enriched.loc[1, "accession"] == "SAMN22222222,GCA_002"
     assert enriched.loc[1, "notes"] == "mic_sign '=' inferred; original accession: GCA_002"
+
+
+def test_discover_and_apply_metadata_scans_all_sheets_without_early_stop(tmp_path, monkeypatch):
+    """Verify discover_and_apply_metadata continues scanning all candidate sheets even if BioSamples exist."""
+    from amr_extraction.extract_excel_codegen import discover_and_apply_metadata
+
+    # Primary excel has AST data and a metadata sheet
+    primary_file = tmp_path / "primary.xlsx"
+    with pd.ExcelWriter(primary_file) as writer:
+        pd.DataFrame({
+            "Sample": ["ISO-1"],
+            "Amp": ["4"],
+        }).to_excel(writer, sheet_name="AST_Data", index=False)
+        pd.DataFrame({
+            "Isolate": ["ISO-1"],
+            "RunAccession": ["ERR101"],
+        }).to_excel(writer, sheet_name="Meta_Sheet_1", index=False)
+
+    # Supp dir has a second metadata excel
+    supp_dir = tmp_path / "supp"
+    supp_dir.mkdir()
+    meta_file2 = supp_dir / "meta2.xlsx"
+    with pd.ExcelWriter(meta_file2) as writer:
+        pd.DataFrame({
+            "Isolate": ["ISO-1"],
+            "Assembly": ["GCA_101"],
+        }).to_excel(writer, sheet_name="Meta_Sheet_2", index=False)
+
+    # ast_df already has BioSample accession
+    ast_df = pd.DataFrame([
+        {"isolate_id": "ISO-1", "accession": "SAMN101", "drug": "Ampicillin", "mic_sign": "=", "mic": "4", "notes": None},
+    ])
+
+    def mock_gen_code(sheet_name, preview_df, client, tracker):
+        if sheet_name == "Meta_Sheet_1":
+            return """
+import pandas as pd
+def extract_metadata(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame({
+        "isolate_id": df["Isolate"],
+        "accession": df["RunAccession"],
+        "secondary_accession": None,
+    })
+"""
+        else:
+            return """
+import pandas as pd
+def extract_metadata(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame({
+        "isolate_id": df["Isolate"],
+        "accession": df["Assembly"],
+        "secondary_accession": None,
+    })
+"""
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_metadata_code",
+        mock_gen_code,
+    )
+
+    enriched = discover_and_apply_metadata(
+        current_df=ast_df,
+        primary_excel_path=str(primary_file),
+        processed_sheets=["AST_Data"],
+        supp_dir=str(supp_dir),
+        client=MagicMock(),
+        token_tracker={"calls": 0, "input_tokens": 0, "output_tokens": 0},
+    )
+
+    # Both ERR101 and GCA_101 must be accumulated alongside SAMN101
+    assert enriched.loc[0, "accession"] == "SAMN101,ERR101,GCA_101"
+
+
+
+def test_process_excel_with_code_gen_directory_mode(tmp_path, monkeypatch):
+    """Verify process_excel_with_code_gen processes all files in supp_dir when excel_path is None."""
+    from amr_extraction.extract_excel_codegen import process_excel_with_code_gen
+
+    supp_dir = tmp_path / "supplements"
+    supp_dir.mkdir()
+
+    file_a = supp_dir / "paper_supp_a.xlsx"
+    with pd.ExcelWriter(file_a) as writer:
+        pd.DataFrame({
+            "Isolate": ["ISO-1"],
+            "Ciprofloxacin": ["<=0.5"],
+        }).to_excel(writer, sheet_name="AST_A", index=False)
+
+    file_b = supp_dir / "paper_supp_b.xlsx"
+    with pd.ExcelWriter(file_b) as writer:
+        pd.DataFrame({
+            "Isolate": ["ISO-2"],
+            "Gentamicin": ["4"],
+        }).to_excel(writer, sheet_name="AST_B", index=False)
+        pd.DataFrame({
+            "Isolate ID": ["ISO-1", "ISO-2"],
+            "BioSample": ["SAMN99900001", "SAMN99900002"],
+        }).to_excel(writer, sheet_name="Accession_Map", index=False)
+
+    # Mock genai.Client
+    mock_client = MagicMock()
+    monkeypatch.setattr("amr_extraction.extract_excel_codegen.genai.Client", lambda: mock_client)
+
+    # Mock sheet discovery
+    def mock_discover_relevant_sheets(excel_path, client, token_tracker):
+        if "paper_supp_a" in excel_path:
+            return ["AST_A"]
+        elif "paper_supp_b" in excel_path:
+            return ["AST_B"]
+        return []
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.discover_relevant_sheets",
+        mock_discover_relevant_sheets,
+    )
+
+    # Mock AST transformation code generation
+    def mock_generate_transformation_code(sheet_name, preview_df, client, token_tracker, previous_errors=None, antibiotics_list=None):
+        if sheet_name == "AST_A":
+            return """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "Ciprofloxacin",
+        "mic_sign": "<=",
+        "mic": "0.5",
+        "sir_call": None,
+        "notes": None,
+    }])
+"""
+        elif sheet_name == "AST_B":
+            return """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-2",
+        "accession": None,
+        "drug": "Gentamicin",
+        "mic_sign": "=",
+        "mic": "4",
+        "sir_call": None,
+        "notes": "mic_sign '=' inferred",
+    }])
+"""
+        return ""
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_transformation_code",
+        mock_generate_transformation_code,
+    )
+
+    # Mock metadata transformation code generation
+    def mock_generate_metadata_code(sheet_name, preview_df, client, token_tracker):
+        return """
+import pandas as pd
+def extract_metadata(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame({
+        "isolate_id": df["Isolate ID"],
+        "accession": df["BioSample"],
+        "secondary_accession": None,
+    })
+"""
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_metadata_code",
+        mock_generate_metadata_code,
+    )
+
+    out_tsv = tmp_path / "output.tsv"
+    save_code = tmp_path / "code.py"
+
+    process_excel_with_code_gen(
+        excel_path=None,
+        output_tsv=str(out_tsv),
+        save_code_path=str(save_code),
+        supp_dir=str(supp_dir),
+    )
+
+    assert out_tsv.exists()
+    result_df = pd.read_csv(out_tsv, sep="\t")
+    assert len(result_df) == 2
+    assert set(result_df["file_name"]) == {"paper_supp_a.xlsx", "paper_supp_b.xlsx"}
+    assert set(result_df["isolate_id"]) == {"ISO-1", "ISO-2"}
+    assert list(result_df["biosample_accession"]) == ["SAMN99900001", "SAMN99900002"]
+
+
+def test_cli_parser_supp_dir_only():
+    """Verify build_cli_parser allows omitting excel_file when --supp-dir is passed."""
+    from amr_extraction.extract_excel_codegen import build_cli_parser
+
+    parser = build_cli_parser()
+    args = parser.parse_args(["--supp-dir", "/path/to/supplements"])
+    assert args.excel_file is None
+    assert args.supp_dir == "/path/to/supplements"
+
+
 
 
