@@ -8,12 +8,49 @@ from pathlib import Path
 import pandas as pd
 from typing import List, Optional
 from pydantic import BaseModel, Field
+import httpx
 from google import genai
+from google.genai import errors as genai_errors
 from google.genai import types
 
 from amr_extraction.excel_extractor import detect_header_row
 
 DEFAULT_MODEL = "models/gemini-3.8-flash"
+_RETRYABLE_HTTP_CODES = {429, 503}
+_CODEGEN_RETRY_DELAYS = [5, 15, 30]  # seconds; 3 attempts before giving up
+
+
+def _generate_content_with_retry(client: genai.Client, model: str, contents, config, context: str = ""):
+    """Wraps client.models.generate_content() with retry-with-backoff for transient failures:
+    Gemini 429 (rate limit) / 503 (overload) responses, and raw network-transport errors
+    (dropped connections, timeouts -- e.g. httpx.RemoteProtocolError, seen in practice on large
+    generated-code responses that take a while to stream back). Without this, any transient
+    hiccup crashes the whole script instead of just costing a short retry. Mirrors the retry
+    logic in amr_extraction.llm.query_structured(), which this module doesn't share directly
+    since it manages its own genai.Client rather than going through that provider dispatcher."""
+    attempt = 0
+    while True:
+        try:
+            return client.models.generate_content(model=model, contents=contents, config=config)
+        except genai_errors.APIError as e:
+            code = getattr(e, "code", None)
+            if code not in _RETRYABLE_HTTP_CODES or attempt >= len(_CODEGEN_RETRY_DELAYS):
+                raise
+            reason = f"HTTP {code}"
+        except httpx.TransportError as e:
+            if attempt >= len(_CODEGEN_RETRY_DELAYS):
+                raise
+            reason = f"network error ({type(e).__name__}: {e})"
+
+        delay = _CODEGEN_RETRY_DELAYS[attempt]
+        attempt += 1
+        label = f" [{context}]" if context else ""
+        print(
+            f"\n[!] Gemini request failed: {reason}{label} -- retrying in {delay}s "
+            f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
+            file=sys.stderr,
+        )
+        time.sleep(delay)
 DEFAULT_ANTIBIOTICS_PATH = str(Path(__file__).resolve().parent / "antibiotics.list.txt")
 
 
@@ -77,15 +114,15 @@ Explain your reasoning clearly in 'reasoning'.
 """
 
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
             response_schema=SheetSelection,
             temperature=0.0,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"classify_single_sheet: {sheet_name}",
     )
     elapsed = time.time() - t0
 
@@ -396,13 +433,13 @@ def generate_metadata_code(
 
     print(f"[*] Requesting metadata extraction code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.0,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"generate_metadata_code: {sheet_name}",
     )
     elapsed = time.time() - t0
 
@@ -678,13 +715,13 @@ def generate_transformation_code(
 
     print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
     t0 = time.time()
-    response = client.models.generate_content(
-        model=DEFAULT_MODEL,
-        contents=prompt,
+    response = _generate_content_with_retry(
+        client, model=DEFAULT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(
             temperature=0.0,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
+        context=f"generate_transformation_code: {sheet_name}",
     )
     elapsed = time.time() - t0
 

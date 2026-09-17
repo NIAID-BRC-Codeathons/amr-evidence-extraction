@@ -1,0 +1,14 @@
+pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+33293382	TABLE_1.tsv	TABLE_1	AUS0325								oxacillin	=	0.5		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0326								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0327								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0328								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0329								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0331								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	AUS0332								oxacillin	=	1.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	21162								oxacillin	=	0.25		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	21163								oxacillin	=	4.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	21164								oxacillin	=	0.25		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	21165								oxacillin	=	2.0		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	21166								oxacillin	=	0.25		mic_sign '=' inferred
+33293382	TABLE_1.tsv	TABLE_1	23506								oxacillin	=	0.5		mic_sign '=' inferred

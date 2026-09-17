@@ -1,0 +1,17 @@
+pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+31474962	TABLE_1.tsv	TABLE_1	('N315', nan, '1', '0.5', '0.5', '2', '1', '32', '16', '1', '4', '4', '1', '0.5', '0.5', '0.125')								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	('N315', nan, '1', '0.5', '0.5', '2', '1', '32', '16', '1', '4', '4', '1', '0.5', '0.5', '0.125')								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('N315', nan, '1', '0.5', '0.5', '2', '1', '32', '16', '1', '4', '4', '1', '0.5', '0.5', '0.125')								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('N315', nan, '1', '0.5', '0.5', '2', '1', '32', '16', '1', '4', '4', '1', '0.5', '0.5', '0.125')								quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu3', nan, '2', '8', '1', '2', '4', '>128', '16', '64', '32', '64', '32', '16', '32', '16')								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	('Mu3', nan, '2', '8', '1', '2', '4', '>128', '16', '64', '32', '64', '32', '16', '32', '16')								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu3', nan, '2', '8', '1', '2', '4', '>128', '16', '64', '32', '64', '32', '16', '32', '16')								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu3', nan, '2', '8', '1', '2', '4', '>128', '16', '64', '32', '64', '32', '16', '32', '16')								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu50', nan, '8', '8', '2', '2', '4', '>128', '16', '16', '8', '16', '8', '32', '>16', '8')								erythromycin	>	4		
+31474962	TABLE_1.tsv	TABLE_1	('Mu50', nan, '8', '8', '2', '2', '4', '>128', '16', '16', '8', '16', '8', '32', '>16', '8')								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu50', nan, '8', '8', '2', '2', '4', '>128', '16', '16', '8', '16', '8', '32', '>16', '8')								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('Mu50', nan, '8', '8', '2', '2', '4', '>128', '16', '16', '8', '16', '8', '32', '>16', '8')								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('ATCC29213', nan, '1', '1', '0.5', '2', '1', '<=0.5', '0.5', '<=0.06', '<=0.06', '<=0.06', '<=0.06', '0.5', '0.25', '0.125')								erythromycin	<=	4		
+31474962	TABLE_1.tsv	TABLE_1	('ATCC29213', nan, '1', '1', '0.5', '2', '1', '<=0.5', '0.5', '<=0.06', '<=0.06', '<=0.06', '<=0.06', '0.5', '0.25', '0.125')								clindamycin	=	0.5		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('ATCC29213', nan, '1', '1', '0.5', '2', '1', '<=0.5', '0.5', '<=0.06', '<=0.06', '<=0.06', '<=0.06', '0.5', '0.25', '0.125')								trimethoprim/sulfamethoxazole	=	0.125		mic_sign '=' inferred
+31474962	TABLE_1.tsv	TABLE_1	('ATCC29213', nan, '1', '1', '0.5', '2', '1', '<=0.5', '0.5', '<=0.06', '<=0.06', '<=0.06', '<=0.06', '0.5', '0.25', '0.125')								quinupristin/dalfopristin	=	0.5		mic_sign '=' inferred
