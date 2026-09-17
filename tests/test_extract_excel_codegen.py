@@ -9,6 +9,7 @@ from amr_extraction.extract_excel_codegen import (
     classify_single_sheet,
     enrich_ast_with_metadata,
     execute_generated_code,
+    extract_pmid_from_paths,
     finalize_extracted_dataframe,
     generate_transformation_code,
     is_biosample_accession,
@@ -23,6 +24,7 @@ from amr_extraction.extract_excel_codegen import (
 def test_expected_output_columns_definition():
     """Verify standard schema column list and ordering."""
     assert EXPECTED_OUTPUT_COLUMNS == [
+        "pmid",
         "file_name",
         "sheet_name",
         "isolate_id",
@@ -197,6 +199,7 @@ def test_finalize_extracted_dataframe_splits_accessions():
 def test_export_tsv_clean_blanks():
     """Verify writing final DataFrame to TSV produces clean empty fields without 'nan' or 'None'."""
     df = pd.DataFrame([{
+        "pmid": "31266463",
         "file_name": "paper.xlsx",
         "sheet_name": "Sheet1",
         "isolate_id": "ISO-1",
@@ -830,6 +833,196 @@ def test_cli_parser_supp_dir_only():
     args = parser.parse_args(["--supp-dir", "/path/to/supplements"])
     assert args.excel_file is None
     assert args.supp_dir == "/path/to/supplements"
+
+
+def test_cli_parser_pmid_argument():
+    """Verify build_cli_parser parses --pmid flag."""
+    from amr_extraction.extract_excel_codegen import build_cli_parser
+
+    parser = build_cli_parser()
+    args = parser.parse_args(["data/file.xlsx", "--pmid", "31266463"])
+    assert args.pmid == "31266463"
+
+
+def test_extract_pmid_from_paths():
+    """Verify extraction of 7-8 digit PMIDs from paths with precedence."""
+    # From excel_file path with 8 digits
+    pmid = extract_pmid_from_paths(
+        excel_path="data/starter/31266463/supplements/12866_2019_1520_MOESM1_ESM.xlsx"
+    )
+    assert pmid == "31266463"
+
+    # From supp_dir path with 8 digits
+    pmid = extract_pmid_from_paths(
+        supp_dir="scripts/query_pmids_to_find_ast/output/supplements/33658988/"
+    )
+    assert pmid == "33658988"
+
+    # Precedence: excel_path checked first
+    pmid = extract_pmid_from_paths(
+        excel_path="/data/27381390/table.xlsx",
+        supp_dir="/data/31266463/supps",
+    )
+    assert pmid == "27381390"
+
+    # Fallback to supp_dir if excel_path has no PMID
+    pmid = extract_pmid_from_paths(
+        excel_path="/tmp/table.xlsx",
+        supp_dir="data/starter/35651495/supplements",
+    )
+    assert pmid == "35651495"
+
+    # No PMID found in paths
+    pmid = extract_pmid_from_paths(
+        excel_path="/tmp/unrelated_table_2020.xlsx",
+        supp_dir="/tmp/other_dir",
+    )
+    assert pmid is None
+
+
+def test_finalize_extracted_dataframe_with_pmid():
+    """Verify finalize_extracted_dataframe populates pmid as the first column."""
+    inner_df = pd.DataFrame([{
+        "isolate_id": "ISO-100",
+        "accession": "SAMN001",
+        "drug": "Gentamicin",
+        "mic_sign": "<=",
+        "mic": "1",
+        "sir_call": "S",
+        "notes": None,
+    }])
+
+    final_df = finalize_extracted_dataframe(
+        inner_df,
+        file_path="test_paper.xlsx",
+        sheet_name="Table S1",
+        pmid="31266463",
+    )
+
+    assert list(final_df.columns) == EXPECTED_OUTPUT_COLUMNS
+    assert final_df.columns[0] == "pmid"
+    assert final_df.loc[0, "pmid"] == "31266463"
+    assert final_df.loc[0, "file_name"] == "test_paper.xlsx"
+
+
+def test_finalize_extracted_dataframe_without_pmid():
+    """Verify finalize_extracted_dataframe leaves pmid None if omitted."""
+    inner_df = pd.DataFrame([{
+        "isolate_id": "ISO-100",
+        "accession": "SAMN001",
+        "drug": "Gentamicin",
+        "mic_sign": "<=",
+        "mic": "1",
+        "sir_call": "S",
+        "notes": None,
+    }])
+
+    final_df = finalize_extracted_dataframe(
+        inner_df,
+        file_path="test_paper.xlsx",
+        sheet_name="Table S1",
+    )
+
+    assert list(final_df.columns) == EXPECTED_OUTPUT_COLUMNS
+    assert final_df.columns[0] == "pmid"
+    assert pd.isna(final_df.loc[0, "pmid"]) or final_df.loc[0, "pmid"] is None
+
+
+def test_process_excel_with_inferred_pmid(tmp_path, monkeypatch):
+    """Verify process_excel_with_code_gen extracts PMID from directory path."""
+    from amr_extraction.extract_excel_codegen import process_excel_with_code_gen
+
+    pmid_dir = tmp_path / "31266463" / "supplements"
+    pmid_dir.mkdir(parents=True)
+    excel_file = pmid_dir / "supplement.xlsx"
+    with pd.ExcelWriter(excel_file) as writer:
+        pd.DataFrame({
+            "Isolate": ["ISO-1"],
+            "Ciprofloxacin": ["<=0.5"],
+        }).to_excel(writer, sheet_name="AST_Data", index=False)
+
+    monkeypatch.setattr("amr_extraction.extract_excel_codegen.genai.Client", lambda: MagicMock())
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.discover_relevant_sheets",
+        lambda excel_path, client, token_tracker: ["AST_Data"],
+    )
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_transformation_code",
+        lambda sheet_name, preview_df, client, token_tracker, previous_errors=None, antibiotics_list=None: """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "Ciprofloxacin",
+        "mic_sign": "<=",
+        "mic": "0.5",
+        "sir_call": None,
+        "notes": None,
+    }])
+""",
+    )
+
+    out_tsv = tmp_path / "output.tsv"
+    process_excel_with_code_gen(
+        excel_path=str(excel_file),
+        output_tsv=str(out_tsv),
+    )
+
+    assert out_tsv.exists()
+    df = pd.read_csv(out_tsv, sep="\t", dtype=str)
+    assert list(df.columns) == EXPECTED_OUTPUT_COLUMNS
+    assert df.loc[0, "pmid"] == "31266463"
+
+
+def test_process_excel_with_explicit_pmid(tmp_path, monkeypatch):
+    """Verify process_excel_with_code_gen uses explicit --pmid over path."""
+    from amr_extraction.extract_excel_codegen import process_excel_with_code_gen
+
+    pmid_dir = tmp_path / "31266463" / "supplements"
+    pmid_dir.mkdir(parents=True)
+    excel_file = pmid_dir / "supplement.xlsx"
+    with pd.ExcelWriter(excel_file) as writer:
+        pd.DataFrame({
+            "Isolate": ["ISO-1"],
+            "Ciprofloxacin": ["<=0.5"],
+        }).to_excel(writer, sheet_name="AST_Data", index=False)
+
+    monkeypatch.setattr("amr_extraction.extract_excel_codegen.genai.Client", lambda: MagicMock())
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.discover_relevant_sheets",
+        lambda excel_path, client, token_tracker: ["AST_Data"],
+    )
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.generate_transformation_code",
+        lambda sheet_name, preview_df, client, token_tracker, previous_errors=None, antibiotics_list=None: """
+import pandas as pd
+def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame([{
+        "isolate_id": "ISO-1",
+        "accession": None,
+        "drug": "Ciprofloxacin",
+        "mic_sign": "<=",
+        "mic": "0.5",
+        "sir_call": None,
+        "notes": None,
+    }])
+""",
+    )
+
+    out_tsv = tmp_path / "output.tsv"
+    process_excel_with_code_gen(
+        excel_path=str(excel_file),
+        output_tsv=str(out_tsv),
+        pmid="99999999",
+    )
+
+    assert out_tsv.exists()
+    df = pd.read_csv(out_tsv, sep="\t", dtype=str)
+    assert list(df.columns) == EXPECTED_OUTPUT_COLUMNS
+    assert df.loc[0, "pmid"] == "99999999"
+
+
 
 
 

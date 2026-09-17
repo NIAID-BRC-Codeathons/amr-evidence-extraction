@@ -146,6 +146,7 @@ ACCESSION_COLUMNS = [
 ]
 
 EXPECTED_OUTPUT_COLUMNS = [
+    "pmid",
     "file_name",
     "sheet_name",
     "isolate_id",
@@ -167,6 +168,25 @@ EXPECTED_OUTPUT_COLUMNS = [
 VALID_MIC_SIGNS = {"=", ">", ">=", "<", "<="}
 VALID_SIR_CALLS = {"S", "I", "R", "SDD", "NS"}
 MIC_NUMERIC_PATTERN = re.compile(r"^\d+(\.\d+)?(/\d+(\.\d+)?)*$")
+
+PMID_PATTERN = re.compile(r"\b\d{7,8}\b")
+
+
+def extract_pmid_from_paths(
+    excel_path: Optional[str] = None,
+    supp_dir: Optional[str] = None,
+) -> Optional[str]:
+    """Extracts a 7-8 digit PubMed ID from path components, checking excel_path first, then supp_dir."""
+    for p in [excel_path, supp_dir]:
+        if not p:
+            continue
+        parts = os.path.normpath(str(p)).split(os.sep)
+        for part in reversed(parts):
+            matches = PMID_PATTERN.findall(part)
+            if matches:
+                return matches[0]
+    return None
+
 
 BIOPROJECT_PATTERN = re.compile(r"^PRJ(NA|EB|DB)?[A-Z]?\d+$", re.IGNORECASE)
 BIOSAMPLE_PATTERN = re.compile(r"^SAM(N|EA?|D)\d+(\.\d+)?$", re.IGNORECASE)
@@ -685,9 +705,15 @@ def finalize_extracted_dataframe(
     df: pd.DataFrame,
     file_path: Optional[str] = None,
     sheet_name: Optional[str] = None,
+    pmid: Optional[str] = None,
 ) -> pd.DataFrame:
-    """Prepends file_name and sheet_name, splits accessions into typed columns, and ensures expected schema."""
+    """Prepends pmid, file_name, and sheet_name, splits accessions into typed columns, and ensures expected schema."""
     res = df.copy()
+    if pmid is not None and "pmid" not in res.columns:
+        res.insert(0, "pmid", pmid)
+    elif pmid is not None:
+        res["pmid"] = pmid
+
     if sheet_name is not None and "sheet_name" not in res.columns:
         res.insert(0, "sheet_name", sheet_name)
     elif sheet_name is not None:
@@ -797,10 +823,21 @@ def process_excel_with_code_gen(
     save_code_path: Optional[str] = "generated_transform.py",
     supp_dir: Optional[str] = None,
     antibiotics_list_path: Optional[str] = None,
+    pmid: Optional[str] = None,
 ):
     if excel_path is None and supp_dir is None:
         print("[!] Error: Either excel_path or supp_dir must be provided.", file=sys.stderr)
         return
+
+    resolved_pmid = pmid
+    if not resolved_pmid:
+        resolved_pmid = extract_pmid_from_paths(excel_path=excel_path, supp_dir=supp_dir)
+        if resolved_pmid:
+            print(f"[*] Inferred PMID '{resolved_pmid}' from input path.", flush=True)
+        else:
+            print("[!] Warning: No PMID specified and none could be inferred from input path.", flush=True)
+    else:
+        print(f"[*] Using specified PMID '{resolved_pmid}'.", flush=True)
 
     if excel_path is not None and supp_dir is None:
         supp_dir = os.path.dirname(os.path.abspath(excel_path))
@@ -954,7 +991,7 @@ def process_excel_with_code_gen(
             processed_sheets_by_file=processed_sheets_by_file,
         )
 
-        combined_df = finalize_extracted_dataframe(combined_df)
+        combined_df = finalize_extracted_dataframe(combined_df, pmid=resolved_pmid)
 
         out_dir = os.path.dirname(output_tsv)
         if out_dir:
@@ -1001,6 +1038,7 @@ def build_cli_parser() -> argparse.ArgumentParser:
     parser.add_argument("--save-code", default="generated_transform.py", help="File to save generated Python code (default: generated_transform.py)")
     parser.add_argument("--supp-dir", default=None, help="Directory containing additional supplementary spreadsheets (.xlsx, .xls) to scan or search for BioSample metadata mapping (default: same directory as input file)")
     parser.add_argument("--antibiotics-list", default=None, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
+    parser.add_argument("--pmid", default=None, help="PubMed ID associated with the dataset (if not specified, inferred from path)")
     return parser
 
 
@@ -1022,6 +1060,7 @@ if __name__ == "__main__":
         save_code_path=args.save_code,
         supp_dir=args.supp_dir,
         antibiotics_list_path=args.antibiotics_list,
+        pmid=args.pmid,
     )
 
 
