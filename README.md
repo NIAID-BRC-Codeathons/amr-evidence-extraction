@@ -6,6 +6,8 @@ Extract AST data from supplementary data in published articles.
 
 Project page: https://niaid-brc-codeathons.github.io/projects/amr-evidence-extraction/
 
+See [docs/pipeline_overview.md](docs/pipeline_overview.md) for a diagram of the full pipeline, from PMID list through extraction, NCBI accession cross-referencing, and evaluation.
+
 ## Goal (proposed)
 
 Extract antimicrobial susceptibility and genotype–phenotype evidence from literature, harmonize AMR and virulence databases
