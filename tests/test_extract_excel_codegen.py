@@ -15,6 +15,7 @@ from amr_extraction.extract_excel_codegen import (
     generate_transformation_code,
     is_biosample_accession,
     is_candidate_metadata_sheet,
+    is_pathogenic_stacked_sheet,
     load_antibiotics_list,
     needs_accession_enrichment,
     process_excel_with_code_gen,
@@ -1408,6 +1409,92 @@ def transform_sheet(df: pd.DataFrame) -> pd.DataFrame:
     log_content = log_file.read_text()
     assert "Passes configured: 2" in log_content
     assert "Ensemble Summary" in log_content
+
+
+def test_is_pathogenic_stacked_sheet_single_header():
+    """Verify single header table is not flagged as pathogenic."""
+    drugs = ["Amikacin", "Ciprofloxacin", "Gentamicin"]
+    data = [
+        ["Isolate", "Amikacin", "Ciprofloxacin", "Gentamicin"],
+    ]
+    for i in range(20):
+        data.append([f"ISO-{i}", "1.0", "0.5", "2.0"])
+
+    df = pd.DataFrame(data)
+    assert not is_pathogenic_stacked_sheet(df, known_drugs=drugs)
+
+
+def test_is_pathogenic_stacked_sheet_multiline_header():
+    """Verify multi-row header (adjacent header rows) is not flagged as pathogenic."""
+    drugs = ["Amikacin", "Ciprofloxacin", "Gentamicin"]
+    data = [
+        ["Class", "Aminoglycoside", "Fluoroquinolone", "Aminoglycoside"],
+        ["Isolate", "Amikacin", "Ciprofloxacin", "Gentamicin"],
+    ]
+    for i in range(20):
+        data.append([f"ISO-{i}", "1.0", "0.5", "2.0"])
+
+    df = pd.DataFrame(data)
+    assert not is_pathogenic_stacked_sheet(df, known_drugs=drugs)
+
+
+def test_is_pathogenic_stacked_sheet_detected():
+    """Verify stacked tables separated by data rows are detected as pathogenic."""
+    drugs = ["Amikacin", "Ciprofloxacin", "Gentamicin", "Ampicillin", "Meropenem", "Vancomycin"]
+    data = [
+        ["Isolate", "Amikacin", "Ciprofloxacin", "Gentamicin"],
+    ]
+    for i in range(15):
+        data.append([f"ISO-{i}", "1.0", "0.5", "2.0"])
+
+    # Second stacked header
+    data.append(["Isolate", "Ampicillin", "Meropenem", "Vancomycin"])
+    for i in range(15):
+        data.append([f"ISO-{i}", "4.0", "0.25", "1.0"])
+
+    df = pd.DataFrame(data)
+    assert is_pathogenic_stacked_sheet(df, known_drugs=drugs)
+
+
+def test_process_excel_with_code_gen_skips_pathogenic_sheet(tmp_path, monkeypatch, capsys):
+    """Verify process_excel_with_code_gen logs an error and skips pathogenic sheets."""
+    data = [
+        ["Isolate", "Ampicillin", "Ciprofloxacin", "Gentamicin"],
+    ]
+    for i in range(15):
+        data.append([f"ISO-{i}", "1.0", "0.5", "2.0"])
+    data.append(["Isolate", "Meropenem", "Vancomycin", "Levofloxacin"])
+    for i in range(15):
+        data.append([f"ISO-{i}", "4.0", "0.25", "1.0"])
+
+    df = pd.DataFrame(data)
+    excel_file = tmp_path / "pathogenic.xlsx"
+    with pd.ExcelWriter(excel_file) as writer:
+        df.to_excel(writer, sheet_name="PathogenicSheet", header=False, index=False)
+
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.discover_relevant_sheets",
+        lambda *args, **kwargs: ["PathogenicSheet"],
+    )
+
+    # genai client mock
+    mock_client = MagicMock()
+    monkeypatch.setattr(
+        "amr_extraction.extract_excel_codegen.genai.Client",
+        lambda: mock_client,
+    )
+
+    out_tsv = tmp_path / "output.tsv"
+    process_excel_with_code_gen(
+        excel_path=str(excel_file),
+        output_tsv=str(out_tsv),
+    )
+
+    captured = capsys.readouterr()
+    assert "pathogenic" in captured.err.lower() or "skipping" in captured.err.lower()
+    # Output TSV should not have been created because the sheet was skipped
+    assert not out_tsv.exists()
+
 
 
 

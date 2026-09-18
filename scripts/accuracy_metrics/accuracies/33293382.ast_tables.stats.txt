@@ -10,14 +10,15 @@ Comparing extracted records...
 GENOME MATCHING
 ============================================================
 Extracted rows:                 13
-Genome matched:                 0
+Genome matched:                 13
 No genome match:                0
-No accessions supplied:         13
+No accessions supplied:         0
 Ambiguous genome match:         0
-Genome match rate:              0.00%
+Genome match rate:              100.00%
 
 Genome match status breakdown:
-NO_ACCESSIONS    13
+genome_match_status
+MATCHED    13
 
 ============================================================
 GENOME + DRUG MATCHING
@@ -35,11 +36,11 @@ Unrecognized LLM calls:         0
 Extracted calls without GT:     0
 
 Not applicable:
-  Neither side has SIR value:   0
+  Neither side has SIR value:   13
 
 Not evaluable:
   Drug absent from GT:          0
-  Genome not evaluable:         13
+  Genome not evaluable:         0
 
 Categorical rows compared:      0
 GT categorical values avail.:   0
@@ -47,8 +48,8 @@ GT categorical values avail.:   0
 ============================================================
 MIC EXTRACTION
 ============================================================
-LLM MIC values:                 0
-Correct MICs:                   0
+LLM MIC values:                 13
+Correct MICs:                   13
 Incorrect MICs:                 0
 Missing LLM MICs:               0
 Extracted MICs without GT:      0
@@ -58,9 +59,12 @@ Not applicable:
 
 Not evaluable:
   Drug absent from GT:          0
-  Genome not evaluable:         13
+  Genome not evaluable:         0
 
-MIC rows compared:              0
-GT MIC values available:        0
+MIC rows compared:              13
+GT MIC values available:        13
+MIC accuracy when comparable:   100.00%
+LLM MIC coverage:               100.00%
+Overall correct MIC:            100.00%
 
 Detailed results written to: accuracies/33293382.ast_tables.tsv

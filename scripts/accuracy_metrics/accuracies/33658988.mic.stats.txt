@@ -1,4 +1,4 @@
-Extracted rows: 530
+Extracted rows: 617
 Ground-truth rows: 38931
 Ground-truth genomes: 4743
 Building ground-truth accession index...
@@ -9,15 +9,16 @@ Comparing extracted records...
 ============================================================
 GENOME MATCHING
 ============================================================
-Extracted rows:                 530
+Extracted rows:                 617
 Genome matched:                 0
 No genome match:                0
-No accessions supplied:         530
+No accessions supplied:         617
 Ambiguous genome match:         0
 Genome match rate:              0.00%
 
 Genome match status breakdown:
-NO_ACCESSIONS    530
+genome_match_status
+NO_ACCESSIONS    617
 
 ============================================================
 GENOME + DRUG MATCHING
@@ -39,7 +40,7 @@ Not applicable:
 
 Not evaluable:
   Drug absent from GT:          0
-  Genome not evaluable:         530
+  Genome not evaluable:         617
 
 Categorical rows compared:      0
 GT categorical values avail.:   0
@@ -58,7 +59,7 @@ Not applicable:
 
 Not evaluable:
   Drug absent from GT:          0
-  Genome not evaluable:         530
+  Genome not evaluable:         617
 
 MIC rows compared:              0
 GT MIC values available:        0

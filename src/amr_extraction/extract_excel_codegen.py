@@ -6,7 +6,7 @@ import sys
 import time
 from pathlib import Path
 import pandas as pd
-from typing import List, Optional
+from typing import Any, List, Optional, Union
 from pydantic import BaseModel, Field
 import httpx
 from google import genai
@@ -14,6 +14,50 @@ from google.genai import errors as genai_errors
 from google.genai import types
 
 from amr_extraction.excel_extractor import detect_header_row
+
+def load_sheet_with_merged_headers(excel_file, sheet_name: str, hdr: int, nrows: int = None) -> pd.DataFrame:
+    """
+    Loads an Excel sheet, detecting and merging multi-level headers.
+    If rows above `hdr` look like parent headers (e.g., drug names over merged MIC/SIR columns),
+    they are forward-filled and concatenated with the main header row to prevent information loss.
+    """
+    if hdr == 0:
+        return pd.read_excel(excel_file, sheet_name=sheet_name, header=0, nrows=nrows)
+
+    # Peek at rows 0 to hdr
+    raw_head = pd.read_excel(excel_file, sheet_name=sheet_name, header=None, nrows=hdr + 1)
+    
+    header_rows = []
+    for i in range(hdr):
+        row_vals = raw_head.iloc[i].dropna()
+        # Count non-null strings
+        non_null_strings = sum(1 for v in row_vals if isinstance(v, str) and v.strip())
+        if non_null_strings > 1:
+            header_rows.append(i)
+    
+    header_rows.append(hdr)
+    
+    if len(header_rows) == 1:
+        return pd.read_excel(excel_file, sheet_name=sheet_name, header=hdr, nrows=nrows)
+        
+    df = pd.read_excel(excel_file, sheet_name=sheet_name, header=header_rows, nrows=nrows)
+    
+    # Flatten the MultiIndex columns
+    new_cols = []
+    for col_tuple in df.columns:
+        parts = []
+        if not isinstance(col_tuple, tuple):
+            col_tuple = (col_tuple,)
+            
+        for level_val in col_tuple:
+            s = str(level_val).strip()
+            if s and not s.startswith("Unnamed:") and s.lower() != 'nan':
+                parts.append(s)
+        
+        new_cols.append("_".join(parts) if parts else "Unnamed")
+        
+    df.columns = new_cols
+    return df
 
 DEFAULT_MODEL = "models/gemini-3.8-flash"
 _RETRYABLE_HTTP_CODES = {429, 503}
@@ -65,6 +109,86 @@ def load_antibiotics_list(path: Optional[str] = None) -> list[str]:
         raise FileNotFoundError(f"Antibiotics list file not found: {target_path}")
     with open(target_path, "r", encoding="utf-8") as f:
         return [line.strip() for line in f if line.strip()]
+
+
+def is_pathogenic_stacked_sheet(
+    data: Any,
+    sheet_name: Optional[str] = None,
+    antibiotics_list: Optional[list[str]] = None,
+    known_drugs: Optional[list[str]] = None,
+    min_drugs_per_header: int = 2,
+    min_row_gap: int = 5,
+) -> bool:
+    """Detects whether a sheet contains multiple stacked AST tables.
+
+    A stacked table occurs when multiple distinct MIC panels or sub-tables
+    are concatenated vertically in the same sheet, each introducing its own
+    header row with drug names.
+
+    Returns True if multiple distinct header candidate rows separated by
+    data rows are detected, indicating a pathogenic layout.
+    """
+    if isinstance(data, pd.DataFrame):
+        df_raw = data
+    else:
+        try:
+            df_raw = pd.read_excel(data, sheet_name=sheet_name, header=None)
+        except Exception:
+            return False
+
+    target_drugs = known_drugs if known_drugs is not None else antibiotics_list
+    if target_drugs is None:
+        try:
+            target_drugs = load_antibiotics_list()
+        except Exception:
+            return False
+
+    drug_set = {d.lower().strip() for d in target_drugs if d and len(d.strip()) >= 3}
+    if not drug_set:
+        return False
+
+    header_candidate_rows: list[int] = []
+
+    for row_idx in range(len(df_raw)):
+        row_vals = df_raw.iloc[row_idx]
+        drug_count = 0
+        for val in row_vals:
+            if isinstance(val, str):
+                v_clean = val.lower().strip()
+                if not v_clean:
+                    continue
+                if v_clean in drug_set or any(d in v_clean for d in drug_set if len(d) > 4):
+                    drug_count += 1
+        if drug_count >= min_drugs_per_header:
+            header_candidate_rows.append(row_idx)
+
+    if len(header_candidate_rows) <= 1:
+        return False
+
+    # Group adjacent header rows (e.g. multi-row headers spanning 1-3 lines)
+    header_groups: list[list[int]] = []
+    current_group: list[int] = []
+    for r in header_candidate_rows:
+        if not current_group or (r - current_group[-1] <= 3):
+            current_group.append(r)
+        else:
+            header_groups.append(current_group)
+            current_group = [r]
+    if current_group:
+        header_groups.append(current_group)
+
+    if len(header_groups) <= 1:
+        return False
+
+    # Check if the gap between any two consecutive header groups is >= min_row_gap
+    for i in range(len(header_groups) - 1):
+        prev_end = header_groups[i][-1]
+        next_start = header_groups[i + 1][0]
+        if (next_start - prev_end - 1) >= min_row_gap:
+            return True
+
+    return False
+
 
 # ---------------------------------------------------------------------------
 # Pydantic schema for sheet discovery
@@ -169,7 +293,7 @@ def discover_relevant_sheets(excel_path: str, client: genai.Client, token_tracke
             hdr = detect_header_row(excel_file, name)
             if hdr > 0:
                 print(f"(header row {hdr})...", end=" ", flush=True)
-            sample_df = pd.read_excel(excel_file, sheet_name=name, header=hdr, nrows=8)
+            sample_df = load_sheet_with_merged_headers(excel_file, sheet_name=name, hdr=hdr, nrows=8)
             selection = classify_single_sheet(name, sample_df, client, token_tracker)
             if selection.has_mic_values:
                 mic_sheets.append(name)
@@ -958,10 +1082,10 @@ def discover_and_apply_metadata(
             candidate_sheets = [s for s in primary_file.sheet_names if s not in (processed_sheets or [])]
             for c_sheet in candidate_sheets:
                 hdr = detect_header_row(primary_file, c_sheet)
-                sample_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr, nrows=8)
+                sample_df = load_sheet_with_merged_headers(primary_file, sheet_name=c_sheet, hdr=hdr, nrows=8)
                 if is_candidate_metadata_sheet(sample_df, target_isolate_ids, target_accessions):
                     print(f"[+] Found candidate metadata mapping sheet: '{c_sheet}' in '{os.path.basename(primary_excel_path)}'", flush=True)
-                    full_sheet_df = pd.read_excel(primary_file, sheet_name=c_sheet, header=hdr)
+                    full_sheet_df = load_sheet_with_merged_headers(primary_file, sheet_name=c_sheet, hdr=hdr)
                     meta_code = generate_metadata_code(c_sheet, full_sheet_df, client, token_tracker)
                     if generated_scripts is not None:
                         generated_scripts[f"{os.path.basename(primary_excel_path)}::{c_sheet}"] = meta_code
@@ -994,10 +1118,10 @@ def discover_and_apply_metadata(
                 candidate_sheets = [s for s in supp_file.sheet_names if s not in already_processed]
                 for s_name in candidate_sheets:
                     hdr = detect_header_row(supp_file, s_name)
-                    sample_df = pd.read_excel(supp_file, sheet_name=s_name, header=hdr, nrows=8)
+                    sample_df = load_sheet_with_merged_headers(supp_file, sheet_name=s_name, hdr=hdr, nrows=8)
                     if is_candidate_metadata_sheet(sample_df, target_isolate_ids, target_accessions):
                         print(f"[+] Found candidate metadata mapping sheet: '{s_name}' in '{fname}'", flush=True)
-                        full_sheet_df = pd.read_excel(supp_file, sheet_name=s_name, header=hdr)
+                        full_sheet_df = load_sheet_with_merged_headers(supp_file, sheet_name=s_name, hdr=hdr)
                         meta_code = generate_metadata_code(s_name, full_sheet_df, client, token_tracker)
                         if generated_scripts is not None:
                             generated_scripts[f"{fname}::{s_name}"] = meta_code
@@ -1102,11 +1226,19 @@ def process_excel_with_code_gen(
         # 2. For each relevant sheet, generate code & execute locally (with QC, retry, and multi-pass ensembling)
         for cur_sheet in sheets_to_process:
             print(f"\n--- Sheet: '{cur_sheet}' (in {base_name}) ---", flush=True)
+
+            if is_pathogenic_stacked_sheet(excel_file, sheet_name=cur_sheet, antibiotics_list=antibiotics_list):
+                print(
+                    f"[!] Error: Sheet '{cur_sheet}' in '{base_name}' contains multiple stacked AST tables (pathogenic layout). Skipping sheet.",
+                    file=sys.stderr,
+                )
+                continue
+
             print(f"[*] Reading full sheet data...", flush=True)
             hdr = detect_header_row(excel_file, cur_sheet)
             if hdr > 0:
                 print(f"[*] Detected column headers at row {hdr} (skipping title rows).", flush=True)
-            full_df = pd.read_excel(excel_file, sheet_name=cur_sheet, header=hdr)
+            full_df = load_sheet_with_merged_headers(excel_file, sheet_name=cur_sheet, hdr=hdr)
             print(f"[+] Loaded {len(full_df)} rows and {len(full_df.columns)} columns.", flush=True)
 
             pass_dfs = []

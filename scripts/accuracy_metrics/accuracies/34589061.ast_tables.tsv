@@ -1,15 +1,15 @@
 extracted_row	pmid	isolate_id	drug	normalized_drug	genome_id	matched_accessions	genome_match_status	extracted_sir_raw	extracted_sir	ground_truth_sir_raw	ground_truth_sir	sir_result	extracted_mic_sign_raw	extracted_mic_raw	extracted_mic_sign	extracted_mic	ground_truth_mic_sign	ground_truth_mic	mic_result
-2	34589061	6	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-3	34589061	6	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	4	=	4			NOT_EVALUATED
-4	34589061	2	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-5	34589061	2	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	16	=	16			NOT_EVALUATED
-6	34589061	2	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	=	32	=	32			NOT_EVALUATED
-7	34589061	2	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
-8	34589061	20	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-9	34589061	20	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-10	34589061	10	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-11	34589061	10	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	8	=	8			NOT_EVALUATED
-12	34589061	6	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-13	34589061	6	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	8	=	8			NOT_EVALUATED
-14	34589061	1	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
-15	34589061	1	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	0.25	=	0.25			NOT_EVALUATED
+2	34589061	S. epidermidis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+3	34589061	S. epidermidis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	4	=	4			NOT_EVALUATED
+4	34589061	S. epidermidis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+5	34589061	S. epidermidis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	16	=	16			NOT_EVALUATED
+6	34589061	S. epidermidis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	=	32	=	32			NOT_EVALUATED
+7	34589061	S. epidermidis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	2	=	2			NOT_EVALUATED
+8	34589061	S. epidermidis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+9	34589061	S. epidermidis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+10	34589061	S. hominis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+11	34589061	S. hominis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	8	=	8			NOT_EVALUATED
+12	34589061	S. hominis	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+13	34589061	S. hominis	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	8	=	8			NOT_EVALUATED
+14	34589061	S. haemolyticus	linezolid	linezolid			NO_ACCESSIONS					NOT_EVALUATED	>	32	>	32			NOT_EVALUATED
+15	34589061	S. haemolyticus	tedizolid	tedizolid			NO_ACCESSIONS					NOT_EVALUATED	=	0.25	=	0.25			NOT_EVALUATED

@@ -17,19 +17,20 @@ Ambiguous genome match:         0
 Genome match rate:              100.00%
 
 Genome match status breakdown:
+genome_match_status
 MATCHED    1584
 
 ============================================================
 GENOME + DRUG MATCHING
 ============================================================
-Matched genome, missing GT drug: 198
+Matched genome, missing GT drug: 0
 
 ============================================================
 S/I/R/NS/NR EXTRACTION
 ============================================================
-LLM categorical calls:          1386
-Correct calls:                  1364
-Incorrect calls:                22
+LLM categorical calls:          1584
+Correct calls:                  1584
+Incorrect calls:                0
 Missing LLM calls:              0
 Unrecognized LLM calls:         0
 Extracted calls without GT:     0
@@ -38,21 +39,21 @@ Not applicable:
   Neither side has SIR value:   0
 
 Not evaluable:
-  Drug absent from GT:          198
+  Drug absent from GT:          0
   Genome not evaluable:         0
 
-Categorical rows compared:      1386
-GT categorical values avail.:   1386
-Accuracy when comparable:       98.41%
+Categorical rows compared:      1584
+GT categorical values avail.:   1584
+Accuracy when comparable:       100.00%
 LLM categorical coverage:       100.00%
-Overall correct extraction:     98.41%
+Overall correct extraction:     100.00%
 
 ============================================================
 MIC EXTRACTION
 ============================================================
-LLM MIC values:                 1386
-Correct MICs:                   759
-Incorrect MICs:                 627
+LLM MIC values:                 1584
+Correct MICs:                   1584
+Incorrect MICs:                 0
 Missing LLM MICs:               0
 Extracted MICs without GT:      0
 
@@ -60,13 +61,13 @@ Not applicable:
   Neither side has MIC value:   0
 
 Not evaluable:
-  Drug absent from GT:          198
+  Drug absent from GT:          0
   Genome not evaluable:         0
 
-MIC rows compared:              1386
-GT MIC values available:        1386
-MIC accuracy when comparable:   54.76%
+MIC rows compared:              1584
+GT MIC values available:        1584
+MIC accuracy when comparable:   100.00%
 LLM MIC coverage:               100.00%
-Overall correct MIC:            54.76%
+Overall correct MIC:            100.00%
 
 Detailed results written to: accuracies/29729180.mic.tsv

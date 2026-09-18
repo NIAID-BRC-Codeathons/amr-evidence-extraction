@@ -208,3 +208,28 @@ Steps performed by `runAllAcc.sh`:
 4. **Extract Errors**: Runs `extractErrors.py` on `output.all.comp.tsv` to output rows with incorrect SIR or MIC values to `output.all.err.tsv`.
 5. **Per-Paper Evaluation**: Iterates over each individual paper TSV in `../../data/andrew_ast/*.tsv`, running `computeAccuracy1.py` and `statToTab.py` to write per-paper comparison tables and statistics into the `accuracies/` directory.
 
+### `check_one_isolate.sh`
+
+The shell script `check_one_isolate.sh` runs end-to-end extraction and accuracy evaluation for a single paper/PMID. It extracts AST data from supplementary Excel files using `extract_excel_codegen.py` and evaluates extraction accuracy against ground truth using `computeAccuracy1.py`, `statToTab.py`, and `extractErrors.py`.
+
+Usage:
+
+```bash
+# Can be run from repo root or inside scripts/accuracy_metrics
+bash scripts/accuracy_metrics/check_one_isolate.sh <PMID> [SUPP_DIR] [GROUND_TRUTH]
+```
+
+Arguments:
+
+- `<PMID>` (required): The PubMed ID to evaluate.
+- `[SUPP_DIR]` (optional): Directory containing supplementary Excel files (.xlsx, .xls). If omitted, automatically checks `scripts/query_pmids_to_find_ast/output/supplements/<PMID>` and `data/starter/<PMID>/supplements`.
+- `[GROUND_TRUTH]` (optional): Ground truth file. Defaults to `data/rawTSV/dataset.staph.merged.txt`.
+
+Outputs generated under `scripts/accuracy_metrics/output/<PMID>/`:
+
+- `<PMID>.mic.tsv`: Extracted AST table.
+- `<PMID>.transform_code.py`: LLM-generated Python transformation script.
+- `<PMID>.comp.tsv`: Detailed comparison table against ground truth.
+- `<PMID>.stats.txt`: Summary accuracy metrics report.
+- `<PMID>.stats.tsv`: Tabulated accuracy metrics.
+- `<PMID>.err.tsv`: Rows with erroneous SIR or MIC calls.

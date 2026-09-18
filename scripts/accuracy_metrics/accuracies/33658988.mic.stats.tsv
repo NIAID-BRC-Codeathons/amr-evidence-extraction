@@ -1,8 +1,8 @@
 Section	Metric	Value
-GENOME MATCHING	Extracted rows	530
+GENOME MATCHING	Extracted rows	617
 GENOME MATCHING	Genome matched	0
 GENOME MATCHING	No genome match	0
-GENOME MATCHING	No accessions supplied	530
+GENOME MATCHING	No accessions supplied	617
 GENOME MATCHING	Ambiguous genome match	0
 GENOME MATCHING	Genome match rate	0.00%
 GENOME + DRUG MATCHING	Matched genome, missing GT drug	0
@@ -14,7 +14,7 @@ S/I/R/NS/NR EXTRACTION	Unrecognized LLM calls	0
 S/I/R/NS/NR EXTRACTION	Extracted calls without GT	0
 S/I/R/NS/NR EXTRACTION	Neither side has SIR value	0
 S/I/R/NS/NR EXTRACTION	Drug absent from GT	0
-S/I/R/NS/NR EXTRACTION	Genome not evaluable	530
+S/I/R/NS/NR EXTRACTION	Genome not evaluable	617
 S/I/R/NS/NR EXTRACTION	Categorical rows compared	0
 S/I/R/NS/NR EXTRACTION	GT categorical values avail.	0
 MIC EXTRACTION	LLM MIC values	0
@@ -24,7 +24,7 @@ MIC EXTRACTION	Missing LLM MICs	0
 MIC EXTRACTION	Extracted MICs without GT	0
 MIC EXTRACTION	Neither side has MIC value	0
 MIC EXTRACTION	Drug absent from GT	0
-MIC EXTRACTION	Genome not evaluable	530
+MIC EXTRACTION	Genome not evaluable	617
 MIC EXTRACTION	MIC rows compared	0
 MIC EXTRACTION	GT MIC values available	0
 MIC EXTRACTION	Detailed results written to	accuracies/33658988.mic.tsv

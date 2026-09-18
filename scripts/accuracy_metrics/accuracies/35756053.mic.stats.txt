@@ -17,6 +17,7 @@ Ambiguous genome match:         0
 Genome match rate:              13.38%
 
 Genome match status breakdown:
+genome_match_status
 NO_GENOME_MATCH    3954
 MATCHED             612
 NO_ACCESSIONS         8
