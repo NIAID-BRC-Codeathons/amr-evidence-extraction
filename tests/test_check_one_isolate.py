@@ -127,16 +127,27 @@ fi
         "OUTPUT_BASE_DIR": str(out_base),
     }
 
-    result = run_script(pmid, str(supp_dir), str(gt_file), env=env)
-    assert result.returncode == 0, f"STDOUT: {result.stdout}\nSTDERR: {result.stderr}"
+    ast_dir = REPO_ROOT / "data" / "andrew_ast"
+    expected_mic = ast_dir / f"{pmid}.mic.tsv"
+    expected_code = ast_dir / f"{pmid}.transform_code.py"
 
-    # Verify all expected files exist
-    assert (out_dir / f"{pmid}.mic.tsv").exists()
-    assert (out_dir / f"{pmid}.transform_code.py").exists()
-    assert (out_dir / f"{pmid}.comp.tsv").exists()
-    assert (out_dir / f"{pmid}.stats.txt").exists()
-    assert (out_dir / f"{pmid}.stats.tsv").exists()
-    assert (out_dir / f"{pmid}.err.tsv").exists()
+    try:
+        result = run_script(pmid, str(supp_dir), str(gt_file), env=env)
+        assert result.returncode == 0, f"STDOUT: {result.stdout}\nSTDERR: {result.stderr}"
 
-    # Check that summary stats were echoed
-    assert "Accuracy: 100%" in result.stdout
+        # Verify all expected files exist
+        assert expected_mic.exists()
+        assert expected_code.exists()
+        assert (out_dir / f"{pmid}.comp.tsv").exists()
+        assert (out_dir / f"{pmid}.stats.txt").exists()
+        assert (out_dir / f"{pmid}.stats.tsv").exists()
+        assert (out_dir / f"{pmid}.err.tsv").exists()
+
+        # Check that summary stats were echoed
+        assert "Accuracy: 100%" in result.stdout
+    finally:
+        if expected_mic.exists():
+            expected_mic.unlink()
+        if expected_code.exists():
+            expected_code.unlink()
+

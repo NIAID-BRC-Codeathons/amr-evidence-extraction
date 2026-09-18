@@ -70,8 +70,11 @@ OUT_BASE="${OUTPUT_BASE_DIR:-${REPO_ROOT}/scripts/accuracy_metrics/output}"
 OUT_DIR="${OUT_BASE}/${PMID}"
 mkdir -p "$OUT_DIR"
 
-EXTRACTED_TSV="${OUT_DIR}/${PMID}.mic.tsv"
-TRANSFORM_CODE="${OUT_DIR}/${PMID}.transform_code.py"
+AST_DIR="${REPO_ROOT}/data/andrew_ast"
+mkdir -p "$AST_DIR"
+
+EXTRACTED_TSV="${AST_DIR}/${PMID}.mic.tsv"
+TRANSFORM_CODE="${AST_DIR}/${PMID}.transform_code.py"
 COMP_TSV="${OUT_DIR}/${PMID}.comp.tsv"
 STATS_TXT="${OUT_DIR}/${PMID}.stats.txt"
 STATS_TSV="${OUT_DIR}/${PMID}.stats.tsv"
