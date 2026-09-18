@@ -22,10 +22,10 @@ Use BV-BRC curated data as the truth set. Report extraction precision/recall, ac
 
 ## Membership
 
-- Marcus Nguyen Co-team-lead
-- Arjun Prasad  Co-team-lead
-- Andrew Davis
-- Liliana Brown
+- Marcus Nguyen, Argonne National Laboratory, Co-team-lead
+- Arjun Prasad, National Center for Biotechnology Information, NLM,  Co-team-lead
+- Andrew Davis, JMI Laboratories 
+- Liliana Brown, National Institute for Allergy and Infectious Disease
 
 ## Setup
 
