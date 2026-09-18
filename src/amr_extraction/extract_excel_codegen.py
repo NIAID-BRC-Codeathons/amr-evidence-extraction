@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import argparse
+from dataclasses import dataclass
+import json
 import os
 import re
 import sys
@@ -14,6 +16,20 @@ from google.genai import errors as genai_errors
 from google.genai import types
 
 from amr_extraction.excel_extractor import detect_header_row
+
+# Automatically load .env if present
+for env_candidate in [Path(".env"), Path(__file__).resolve().parent.parent.parent / ".env"]:
+    if env_candidate.exists():
+        for _line in env_candidate.read_text().splitlines():
+            _line = _line.strip()
+            if not _line or _line.startswith("#"):
+                continue
+            _line = re.sub(r"^export\s+", "", _line)
+            if "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip("\"'"))
+        break
+
 
 def load_sheet_with_merged_headers(excel_file, sheet_name: str, hdr: int, nrows: int = None) -> pd.DataFrame:
     """
@@ -60,22 +76,187 @@ def load_sheet_with_merged_headers(excel_file, sheet_name: str, hdr: int, nrows:
     return df
 
 DEFAULT_MODEL = "models/gemini-3.8-flash"
+DEFAULT_ARGO_MODEL = "gpt56sol"
 _RETRYABLE_HTTP_CODES = {429, 503}
 _CODEGEN_RETRY_DELAYS = [5, 15, 30]  # seconds; 3 attempts before giving up
 
 
-def _generate_content_with_retry(client: genai.Client, model: str, contents, config, context: str = ""):
-    """Wraps client.models.generate_content() with retry-with-backoff for transient failures:
-    Gemini 429 (rate limit) / 503 (overload) responses, and raw network-transport errors
-    (dropped connections, timeouts -- e.g. httpx.RemoteProtocolError, seen in practice on large
-    generated-code responses that take a while to stream back). Without this, any transient
-    hiccup crashes the whole script instead of just costing a short retry. Mirrors the retry
-    logic in amr_extraction.llm.query_structured(), which this module doesn't share directly
-    since it manages its own genai.Client rather than going through that provider dispatcher."""
+@dataclass
+class UsageMetadata:
+    prompt_token_count: int = 0
+    candidates_token_count: int = 0
+
+
+@dataclass
+class LLMResponse:
+    text: str
+    parsed: Any = None
+    usage_metadata: Optional[UsageMetadata] = None
+
+
+class ArgoClient:
+    """Client for Argonne National Laboratory's Argo LLM gateway."""
+
+    def __init__(self, user: Optional[str] = None, model: Optional[str] = None):
+        self.provider = "argo"
+        self.user = user or os.environ.get("ARGO_USER")
+        if not self.user:
+            raise ValueError(
+                "ARGO_USER environment variable is not set. "
+                "Please set ARGO_USER (your Argonne username) before running with the Argo provider."
+            )
+        self._model = model
+
+    @property
+    def model(self) -> str:
+        return self._model or os.environ.get("ARGO_MODEL", DEFAULT_ARGO_MODEL)
+
+
+def get_llm_description(client: Any, model: Optional[str] = None) -> str:
+    """Returns a formatted description of the LLM provider and model, e.g. 'Argo (claudesonnet5)'."""
+    if getattr(client, "provider", None) == "argo":
+        target_model = getattr(client, "model", None) or os.environ.get("ARGO_MODEL", DEFAULT_ARGO_MODEL)
+        return f"Argo ({target_model})"
+    target_model = getattr(client, "model", None) or model or os.environ.get("GEMINI_MODEL", DEFAULT_MODEL)
+    if isinstance(target_model, str) and target_model.startswith("models/"):
+        display_model = target_model[len("models/"):]
+    else:
+        display_model = str(target_model)
+    return f"Gemini ({display_model})"
+
+
+def _generate_content_with_retry(client: Any, model: str, contents, config, context: str = ""):
+    """Wraps client calls (Gemini or Argo) with retry-with-backoff for transient failures:
+    429 (rate limit) / 503 (overload) responses, and raw network-transport errors.
+    """
+    if getattr(client, "provider", None) == "argo":
+        target_model = getattr(client, "model", None) or os.environ.get("ARGO_MODEL", DEFAULT_ARGO_MODEL)
+        response_schema = getattr(config, "response_schema", None)
+        temperature = getattr(config, "temperature", 0.0)
+
+        if response_schema is not None:
+            schema_json = json.dumps(response_schema.model_json_schema(), indent=2)
+            augmented_prompt = (
+                f"{contents}\n\n"
+                f"IMPORTANT: Respond ONLY with a valid JSON object conforming to this schema:\n"
+                f"```json\n{schema_json}\n```\n"
+                f"Do not include any explanation or commentary outside the JSON."
+            )
+        else:
+            augmented_prompt = contents
+
+        payload = {
+            "model": target_model,
+            "messages": [{"role": "user", "content": augmented_prompt}],
+        }
+        is_claude = target_model.lower().startswith("claude")
+        if not (target_model.lower().startswith(("gpt56sol", "o1", "o3")) or is_claude):
+            payload["temperature"] = temperature
+
+        if is_claude:
+            payload["stream"] = True
+
+        headers = {
+            "Authorization": f"Bearer {client.user}",
+            "Content-Type": "application/json",
+        }
+        url = "https://apps.inside.anl.gov/argoapi/v1/chat/completions"
+
+        attempt = 0
+        with httpx.Client(timeout=120.0) as http_client:
+            while True:
+                try:
+                    if is_claude:
+                        content_parts = []
+                        usage = {}
+                        with http_client.stream("POST", url, headers=headers, json=payload) as resp:
+                            if resp.status_code in _RETRYABLE_HTTP_CODES:
+                                if attempt >= len(_CODEGEN_RETRY_DELAYS):
+                                    resp.raise_for_status()
+                                delay = _CODEGEN_RETRY_DELAYS[attempt]
+                                attempt += 1
+                                label = f" [{context}]" if context else ""
+                                print(
+                                    f"\n[!] Argo request failed: HTTP {resp.status_code}{label} - retrying in {delay}s "
+                                    f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
+                                    file=sys.stderr,
+                                )
+                                time.sleep(delay)
+                                continue
+                            resp.raise_for_status()
+                            for line in resp.iter_lines():
+                                if not line:
+                                    continue
+                                if line.startswith("data: "):
+                                    data_str = line[6:].strip()
+                                    if data_str == "[DONE]":
+                                        break
+                                    try:
+                                        chunk = json.loads(data_str)
+                                    except Exception:
+                                        continue
+                                    choices = chunk.get("choices", [])
+                                    if choices:
+                                        delta = choices[0].get("delta", {})
+                                        if "content" in delta and delta["content"]:
+                                            content_parts.append(delta["content"])
+                                    if "usage" in chunk and chunk["usage"]:
+                                        usage = chunk["usage"]
+                        raw_text = "".join(content_parts)
+                        break
+                    else:
+                        resp = http_client.post(url, headers=headers, json=payload)
+                        if resp.status_code in _RETRYABLE_HTTP_CODES:
+                            if attempt >= len(_CODEGEN_RETRY_DELAYS):
+                                resp.raise_for_status()
+                            delay = _CODEGEN_RETRY_DELAYS[attempt]
+                            attempt += 1
+                            label = f" [{context}]" if context else ""
+                            print(
+                                f"\n[!] Argo request failed: HTTP {resp.status_code}{label} - retrying in {delay}s "
+                                f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
+                                file=sys.stderr,
+                            )
+                            time.sleep(delay)
+                            continue
+                        resp.raise_for_status()
+                        data = resp.json()
+                        raw_text = data["choices"][0]["message"]["content"]
+                        usage = data.get("usage", {})
+                        break
+                except httpx.TransportError as e:
+                    if attempt >= len(_CODEGEN_RETRY_DELAYS):
+                        raise
+                    delay = _CODEGEN_RETRY_DELAYS[attempt]
+                    attempt += 1
+                    label = f" [{context}]" if context else ""
+                    print(
+                        f"\n[!] Argo network error: {type(e).__name__}: {e}{label} - retrying in {delay}s "
+                        f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
+                        file=sys.stderr,
+                    )
+                    time.sleep(delay)
+
+        parsed = None
+        if response_schema is not None:
+            clean_text = raw_text.strip()
+            if clean_text.startswith("```"):
+                clean_text = re.sub(r"^```(?:json)?\s*", "", clean_text)
+                clean_text = re.sub(r"\s*```$", "", clean_text)
+            parsed = response_schema.model_validate_json(clean_text)
+
+        usage_meta = UsageMetadata(
+            prompt_token_count=usage.get("prompt_tokens", 0) or 0,
+            candidates_token_count=usage.get("completion_tokens", 0) or 0,
+        )
+        return LLMResponse(text=raw_text, parsed=parsed, usage_metadata=usage_meta)
+
+    # Gemini client
     attempt = 0
+    target_model = getattr(client, "model", None) or model or os.environ.get("GEMINI_MODEL", DEFAULT_MODEL)
     while True:
         try:
-            return client.models.generate_content(model=model, contents=contents, config=config)
+            return client.models.generate_content(model=target_model, contents=contents, config=config)
         except genai_errors.APIError as e:
             code = getattr(e, "code", None)
             if code not in _RETRYABLE_HTTP_CODES or attempt >= len(_CODEGEN_RETRY_DELAYS):
@@ -90,7 +271,7 @@ def _generate_content_with_retry(client: genai.Client, model: str, contents, con
         attempt += 1
         label = f" [{context}]" if context else ""
         print(
-            f"\n[!] Gemini request failed: {reason}{label} -- retrying in {delay}s "
+            f"\n[!] Gemini request failed: {reason}{label} - retrying in {delay}s "
             f"(attempt {attempt}/{len(_CODEGEN_RETRY_DELAYS)})...",
             file=sys.stderr,
         )
@@ -552,10 +733,11 @@ def generate_metadata_code(
     client: genai.Client,
     token_tracker: dict
 ) -> str:
-    """Prompts Gemini to generate a Python metadata extraction function for this table layout."""
+    """Prompts LLM to generate a Python metadata extraction function for this table layout."""
     prompt = build_metadata_transformation_prompt(sheet_name, preview_df)
 
-    print(f"[*] Requesting metadata extraction code for sheet '{sheet_name}' from Gemini...", end=" ", flush=True)
+    desc = get_llm_description(client)
+    print(f"[*] Requesting metadata extraction code for sheet '{sheet_name}' from {desc}...", end=" ", flush=True)
     t0 = time.time()
     response = _generate_content_with_retry(
         client, model=DEFAULT_MODEL, contents=prompt,
@@ -835,10 +1017,11 @@ def generate_transformation_code(
     antibiotics_list: Optional[List[str]] = None,
     temperature: float = 0.0,
 ) -> str:
-    """Prompts Gemini to generate a pure Python transformation function for this table layout."""
+    """Prompts LLM to generate a pure Python transformation function for this table layout."""
     prompt = build_transformation_prompt(sheet_name, preview_df, previous_errors=previous_errors, antibiotics_list=antibiotics_list)
 
-    print(f"[*] Requesting transformation code for sheet '{sheet_name}' from Gemini (temp={temperature})...", end=" ", flush=True)
+    desc = get_llm_description(client)
+    print(f"[*] Requesting transformation code for sheet '{sheet_name}' from {desc} (temp={temperature})...", end=" ", flush=True)
     t0 = time.time()
     response = _generate_content_with_retry(
         client, model=DEFAULT_MODEL, contents=prompt,
@@ -1145,6 +1328,9 @@ def process_excel_with_code_gen(
     antibiotics_list_path: Optional[str] = None,
     pmid: Optional[str] = None,
     num_passes: int = 1,
+    llm_provider: Optional[str] = None,
+    model: Optional[str] = None,
+    argo_user: Optional[str] = None,
 ):
     if excel_path is None and supp_dir is None:
         print("[!] Error: Either excel_path or supp_dir must be provided.", file=sys.stderr)
@@ -1183,8 +1369,22 @@ def process_excel_with_code_gen(
     token_tracker = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
     start_total_time = time.time()
 
-    print("[*] Initializing Gemini client...", flush=True)
-    client = genai.Client()
+    active_provider = (llm_provider or os.environ.get("LLM_PROVIDER", "gemini")).strip().lower()
+    if active_provider == "argo":
+        user = argo_user or os.environ.get("ARGO_USER")
+        client = ArgoClient(user=user, model=model)
+        print(f"[*] Initializing Argo client (user={client.user}, model={client.model})...", flush=True)
+    elif active_provider == "gemini":
+        gemini_model = model or os.environ.get("GEMINI_MODEL", DEFAULT_MODEL)
+        display_model = gemini_model[len("models/"):] if gemini_model.startswith("models/") else gemini_model
+        print(f"[*] Initializing Gemini client (model={display_model})...", flush=True)
+        client = genai.Client()
+        client.model = gemini_model
+    else:
+        raise ValueError(
+            f"Unknown LLM provider {active_provider!r} (from --llm-provider / LLM_PROVIDER). "
+            f"Expected 'gemini' or 'argo'."
+        )
 
     all_extracted_dfs = []
     generated_scripts = {}
@@ -1404,6 +1604,7 @@ def process_excel_with_code_gen(
             f_log.write("=== AMR Extraction Log ===\n")
             f_log.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
             f_log.write(f"PMID: {resolved_pmid or 'Unknown'}\n")
+            f_log.write(f"LLM: {get_llm_description(client)}\n")
             f_log.write(f"Output TSV: {output_tsv}\n")
             f_log.write(f"Passes configured: {num_passes}\n")
             f_log.write(f"Files processed: {[os.path.basename(f) for f in target_files]}\n\n")
@@ -1430,6 +1631,7 @@ def process_excel_with_code_gen(
     print("\n" + "=" * 55)
     print("PERFORMANCE & TOKEN USAGE REPORT (CODE GENERATION)")
     print("=" * 55)
+    print(f"  LLM:               {get_llm_description(client)}")
     print(f"  Total Duration:    {total_time:.2f} seconds")
     print(f"  Total LLM Calls:   {token_tracker['calls']}")
     print(f"  Input Tokens:      {token_tracker['input_tokens']:,}")
@@ -1441,7 +1643,7 @@ def process_excel_with_code_gen(
 def build_cli_parser() -> argparse.ArgumentParser:
     """Builds and returns the command-line argument parser."""
     parser = argparse.ArgumentParser(
-        description="Extract AST records by using Gemini to synthesize and execute local Pandas transformation code."
+        description="Extract AST records by using an LLM to synthesize and execute local Pandas transformation code."
     )
     parser.add_argument("excel_file", nargs="?", default=None, help="Path to the Excel file to process (optional if --supp-dir is specified)")
     parser.add_argument("-s", "--sheet", default=None, help="Specific sheet name to process (default: auto-discover AST sheets)")
@@ -1451,6 +1653,9 @@ def build_cli_parser() -> argparse.ArgumentParser:
     parser.add_argument("--antibiotics-list", default=DEFAULT_ANTIBIOTICS_PATH, help="Path to a text file containing standard antibiotic names (one per line). Extracted drugs will be standardized to this list.")
     parser.add_argument("--pmid", default=None, help="PubMed ID associated with the dataset (if not specified, inferred from path)")
     parser.add_argument("--num-passes", type=int, default=1, help="Number of code generation passes to run and ensemble per AST sheet (default: 1)")
+    parser.add_argument("--llm-provider", default=None, choices=["gemini", "argo"], help="LLM provider backend to use (default: LLM_PROVIDER env var, or 'gemini')")
+    parser.add_argument("--model", default=None, help="LLM model name override (default: GEMINI_MODEL / ARGO_MODEL env var, or provider default)")
+    parser.add_argument("--argo-user", default=None, help="Argo username / Bearer token (default: ARGO_USER env var)")
     return parser
 
 
@@ -1474,6 +1679,10 @@ if __name__ == "__main__":
         antibiotics_list_path=args.antibiotics_list,
         pmid=args.pmid,
         num_passes=args.num_passes,
+        llm_provider=args.llm_provider,
+        model=args.model,
+        argo_user=args.argo_user,
     )
+
 
 

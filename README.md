@@ -168,13 +168,17 @@ rmvirtualenv amr-evidence-extraction   # delete it entirely
 |       |-- find_ast_evidence.py
 |       `-- README_ast_finder.md
 |-- src/               
-|   `-- amr_excel_extraction/  # Python source code for extraction package
+|   `-- amr_extraction/        # Python source code for extraction package
+|       |-- antibiotics.list.txt
 |       |-- excel_extractor.py
+|       |-- extract_excel_codegen.py
 |       |-- llm.py
 |       `-- schemas.py
 `-- tests/             # Layered unit and integration test suite
     |-- conftest.py
-    `-- test_excel_extractor.py
+    |-- test_check_one_isolate.py
+    |-- test_excel_extractor.py
+    `-- test_extract_excel_codegen.py
 ```
 
 ### Directory Details
@@ -182,8 +186,71 @@ rmvirtualenv amr-evidence-extraction   # delete it entirely
 - **`data/`**: Input literature files and evaluation benchmarks. The `data/starter/` directory contains curated evaluation papers organized by PMID, including raw supplementary files (Excel, XML, PDF), paper metadata, and BV-BRC ground truth TSV files where available.
 - **`docs/`**: Project documentation, including corpus categorization and the testing guide ([docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md)).
 - **`scripts/`**: Standalone scripts that use the `amr_extraction` package but aren't part of it - e.g. `query_pmids_to_find_ast/find_ast_evidence.py`, which takes a PMID list and finds/downloads AST evidence (see its own README for details), and `accuracy_metrics/runAllAcc.sh` for evaluating extraction accuracy against ground truth. Distinct from `src/` (the installable package) and `data/` (pure input/benchmark data).
-- **`src/`**: Source code. Currently contains only the `amr_extraction` package, implementing the hybrid LLM sheet/column mapping and deterministic table unpivoting pipeline.
+- **`src/`**: Source code. Contains the `amr_extraction` package and `extract_excel_codegen.py`, implementing LLM-driven code generation extraction, AST table parsing, header detection, and accession mapping.
 - **`tests/`**: Contains tests. See [docs/amr_excel_extraction_testing.md](docs/amr_excel_extraction_testing.md) for execution instructions.
+
+## Excel AST Extraction with Code Generation (`extract_excel_codegen.py`)
+
+The script `src/amr_extraction/extract_excel_codegen.py` extracts antimicrobial susceptibility testing (AST) data (MIC values and SIR interpretations) from supplementary Excel files (`.xlsx`, `.xls`).
+
+Instead of sending raw table rows through LLM context windows, it inspects spreadsheet structure, prompts Gemini (`gemini-3.8-flash` by default) to generate Python/pandas transformation code (`transform_sheet(df)`), and executes the code locally.
+
+### Key Capabilities
+
+- **Automated Sheet Discovery**: Detects worksheets that contain AST data or processes a specified sheet.
+- **Header Flattening**: Merges multi-level and merged header cells (such as antibiotic names spanning MIC and SIR columns).
+- **Stacked Table Detection**: Identifies pathogenic sheets with multiple vertically stacked tables and handles each panel.
+- **Local Execution and Self-Correction**: Runs generated transformation code locally with QC checks. If execution or validation fails, error feedback is returned to Gemini for automated repair.
+- **Multi-Pass Ensembling**: Supports running multiple code generation passes per sheet (`--num-passes`), retaining consensus records and dropping conflicting values.
+- **Metadata and Accession Linking**: Scans other worksheets and supplementary spreadsheets (`--supp-dir`) to map isolate IDs to NCBI BioSample accessions (`SAMN*`, `SAMEA*`, `SAMD*`) and other public accessions (BioProject, Assembly, SRA, GenBank, RefSeq).
+- **Drug Standardization**: Normalizes extracted antibiotic names against standard nomenclature (`src/amr_extraction/antibiotics.list.txt`).
+
+### Usage
+
+Requires `GOOGLE_API_KEY` to be set in your environment.
+
+```bash
+# Basic usage: process a single Excel file
+python src/amr_extraction/extract_excel_codegen.py path/to/supplement.xlsx -o output.mic.tsv
+
+# Process an entire directory of supplements for a PMID
+python src/amr_extraction/extract_excel_codegen.py --supp-dir data/starter/31266463/supplements -o 31266463.mic.tsv
+
+# Multi-pass ensembling with saved transformation code
+python src/amr_extraction/extract_excel_codegen.py path/to/supplement.xlsx \
+    --num-passes 3 \
+    --save-code transform.py \
+    -o output.mic.tsv
+```
+
+### Command-Line Arguments
+
+| Argument | Type | Default | Description |
+|---|---|---|---|
+| `excel_file` | Positional | None | Path to Excel file (optional if `--supp-dir` is provided). |
+| `-s`, `--sheet` | Option | None | Specific sheet name to process (default: auto-discover). |
+| `-o`, `--output` | Option | `gemini_ast_codegen.tsv` | Output TSV file path. |
+| `--save-code` | Option | `generated_transform.py` | Path to save generated Python transformation script. |
+| `--supp-dir` | Option | None | Directory with supplementary spreadsheets to scan for data or BioSample metadata. |
+| `--antibiotics-list` | Option | `antibiotics.list.txt` | Text file of standard antibiotic names for normalization. |
+| `--pmid` | Option | None | PubMed ID (inferred from input path if omitted). |
+| `--num-passes` | Option | `1` | Number of code generation passes to run and ensemble. |
+| `--llm-provider` | Option | `gemini` | LLM backend: `gemini` or `argo` (default: `LLM_PROVIDER` env var, or `gemini`). |
+| `--model` | Option | None | LLM model override (default: `GEMINI_MODEL` / `ARGO_MODEL` env var, or provider default). |
+| `--argo-user` | Option | None | Argonne username / bearer token for Argo (default: `ARGO_USER` env var). |
+
+### Output Files
+
+1. **TSV Output (`-o`)**: Contains standardized AST records with the following columns:
+   - `pmid`: PubMed ID.
+   - `file_name`: Name of the source supplementary file.
+   - `sheet_name`: Name of the worksheet.
+   - `isolate_id`: Local isolate identifier.
+   - Accession columns: `bioproject_accession`, `biosample_accession`, `assembly_accession`, `genbank_accessions`, `refseq_accessions`, `sra_accession`, `other_accessions`.
+   - AST measurements: `drug`, `mic_sign` (`=`, `>`, `>=`, `<`, `<=`), `mic` (numeric value), `sir_call` (`S`, `I`, `R`, `SDD`, `NS`).
+   - `notes`: Extraction notes and provenance details.
+2. **Companion Log (`<output>.log`)**: Records execution time, token usage, LLM calls, pass summaries, consensus counts, and conflict details.
+3. **Generated Code (`--save-code`)**: Standalone Python script with the generated `transform_sheet` function for inspection and reproducibility.
 
 ## Accuracy Metrics Scripts (`scripts/accuracy_metrics`)
 
