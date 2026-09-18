@@ -1,203 +1,380 @@
 pmid	file_name	sheet_name	isolate_id	bioproject_accession	biosample_accession	assembly_accession	genbank_accessions	refseq_accessions	sra_accession	other_accessions	drug	mic_sign	mic	sir_call	notes
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	CIGC128	PRJNA60705							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	MSSA476	PRJNA266							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	MW2	PRJNA203440							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700922	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700923	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR118595	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR118602	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR118365	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR158696	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	S2395	PRJEB1380							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3228	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3308	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3315	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3397	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3418	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3440	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3444	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3464	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3470	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3494	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3551	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3573	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3599	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3614	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3729	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3730	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR118455	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR118456	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR134351	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3213	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3246	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3248	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3275	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3279	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3288	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3294	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3300	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3325	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3342	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3364	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3447	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3461	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3569	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3583	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3630	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH3685	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	CO-41	PRJNA53831							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR111068	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	ERR111113	PRJEB2756							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	KT-314250	PRJNA174844							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2812	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2822	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2839	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2845	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2848	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2912	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2922	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2949	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	BPH2954	PRJEB22792							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	MUM475	PRJNA231226							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1001	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1002	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1003	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1004	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1005	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ1006	PRJEB12333							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	327	PRJNA258046							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	337	PRJNA257536							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	1269	PRJNA378176							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700924	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700924	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700924	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700925	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700925	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700925	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700926	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700926	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700926	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700927	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700927	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700927	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700928	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700928	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700928	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700929	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700929	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700929	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700930	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700930	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700930	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700931	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700931	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700931	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700932	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700932	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700932	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700933	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700933	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700933	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700934	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700934	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700934	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700935	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700935	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700935	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700936	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700936	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700936	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700937	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700937	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700937	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700938	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700938	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700938	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700939	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700939	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700939	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700940	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700940	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700940	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700941	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700941	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700941	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700942	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700942	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700942	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700943	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700943	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700943	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700944	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700944	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700944	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700945	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700945	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700945	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700946	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700946	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700946	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700947	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700947	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700947	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700948	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700948	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700948	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700949	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700949	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700949	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700950	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700950	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700950	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700951	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700951	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700951	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700952	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700953	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700953	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700953	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700954	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700954	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700954	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700955	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700955	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700955	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700956	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700956	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700956	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700957	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700957	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700957	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700958	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700958	PRJNA412108							fusidic acid	=	0.25		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700958	PRJNA412108							mupirocin	=	0.125		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700959	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700959	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700959	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700960	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700960	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700960	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700961	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700961	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700961	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700962	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700962	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700962	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700963	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700963	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700963	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700964	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700964	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700964	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700965	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700965	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700965	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700966	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700966	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700966	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700967	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700967	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700967	PRJNA412108							mupirocin	=	0.5		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700968	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700968	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700968	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700969	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700969	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700969	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700970	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700970	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700970	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700971	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700971	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700971	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700972	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700972	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700972	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700973	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700973	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700973	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700974	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700975	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700975	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700975	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ14487	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ14487	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	NZ14487	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700977	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700977	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700977	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700978	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700978	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700978	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700979	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700979	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700979	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700980	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700980	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700980	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700981	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700981	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700981	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700982	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700982	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700982	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700983	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700983	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700983	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700984	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700984	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700984	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700985	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700985	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700985	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700986	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700987	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700987	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700987	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700988	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700988	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700988	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700989	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700989	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700989	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700990	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700990	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700990	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700991	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700992	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700992	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700992	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700993	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700993	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700993	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700994	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700994	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700994	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700995	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700996	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700996	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700996	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700997	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700998	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1700999	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701000	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701000	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701000	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701001	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701001	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701001	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701002	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701002	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701002	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701003	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701003	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701003	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701004	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701004	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701004	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701005	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701005	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701006	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701006	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701006	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701007	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701007	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701007	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701008	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701009	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701009	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701009	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701010	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701010	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701010	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701011	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701011	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701011	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701012	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701012	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701013	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701013	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701013	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701014	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701014	PRJNA412108							fusidic acid	=	0.25		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701014	PRJNA412108							mupirocin	=	0.25		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701015	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701015	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701015	PRJNA412108							mupirocin	=	512		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701016	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701016	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701016	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701017	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701017	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701017	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701018	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701018	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701018	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701019	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701019	PRJNA412108							fusidic acid	=	0.25		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701019	PRJNA412108							mupirocin	=	0.125		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701020	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701020	PRJNA412108							fusidic acid	=	4		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701020	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701021	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701021	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701021	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701022	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701022	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701022	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701023	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701023	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701023	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701024	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701024	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701024	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701025	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701025	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701025	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701026	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701026	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701026	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701027	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701027	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701027	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701028	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701028	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701028	PRJNA412108							mupirocin	=	0.06		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701029	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701029	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701029	PRJNA412108							mupirocin	=	0.12		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701030	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701030	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701030	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701031	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701031	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701031	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701032	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701032	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701032	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
+29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701033	PRJNA412108							quinupristin/dalfopristin	=	1		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701033	PRJNA412108							fusidic acid	=	8		mic_sign '=' inferred
 29229636	AAC.02000-17_zac002186908s1.xlsx	Sheet1	DMG1701033	PRJNA412108							mupirocin	=	1024		mic_sign '=' inferred
