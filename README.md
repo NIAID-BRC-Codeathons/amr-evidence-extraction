@@ -1,8 +1,12 @@
-# AMR-Evidence Extraction, Integration, and Interoperability
+<p align="center">
+  <img src="docs/ASTRA-logo.jpeg" alt="ASTRA Logo" width="500">
+</p>
+
+# Team Antimicrobial Susceptibility Testing Retrieval and Analysis (ASTRA)
 
 **NIAID-BRCs AI Codeathon 2.0** · September 16–18, 2026 · Argonne National Laboratory
 
-Extract AST data from supplementary data in published articles.
+## Extract AST data from published articles.
 
 Project page: https://niaid-brc-codeathons.github.io/projects/amr-evidence-extraction/
 
